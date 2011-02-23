@@ -1,0 +1,240 @@
+{
+  "include" :
+  [
+    {
+      "path" : "${QOOXDOO_PATH}/tool/data/config/application.json"
+    },
+
+    {
+      "path" : "image.json"
+    }
+  ],
+
+  "export":
+  [
+    "api",
+    "api-data",
+    //"build",
+    "clean",
+    "distclean",
+    "fix",
+    "images",
+    "lint",
+    "lint-test",
+    "provider",
+    "test",
+    "test-inline",
+    "test-source",
+    "translation",
+    "qxoo-build",
+    "qxoo-noopt"
+  ],
+
+
+  "let" :
+  {
+    "APPLICATION"  : "qx",
+    "QOOXDOO_PATH" : "..",
+    "API_EXCLUDE"  : ["qx.test.*"],
+    "TEST_INCLUDE" : "qx.test.*",
+    "LOCALES"      : [ "de", "en", "es", "fr", "it", "nl", "sv","ro" ],
+    "CACHE"        : "${TMPDIR}/cache"
+  },
+
+  "jobs":
+  {
+
+    "qxoo" : 
+    {
+      "library" :
+      [
+        {
+          "manifest" : "${QOOXDOO_PATH}/framework/Manifest.json",
+          "uri" : ".."          
+        }
+      ],
+
+      "extend" : [ "cache" ],
+      
+      "include" : 
+      [
+        "qx.Class",
+        "qx.Mixin",
+        "qx.Interface"
+      ],
+      
+      "exclude" :
+      [
+        "qx.event.GlobalError"
+      ],
+
+      "variants" :
+      {
+        "qx.debug" : ["off"],
+        "qx.aspects" : ["off"]
+      },
+
+      "settings" :
+      {
+        "qx.globalErrorHandling" : "off"
+      },
+
+      "compile-options" :
+      {
+        "paths" :
+        {
+          "loader-template" : "../tool/data/generator/oo.loader.tmpl.js"
+        },
+        "uris" :
+        {
+          "script"   : ".",
+          "resource" : "."
+        }
+      }
+    },
+
+
+    "qxoo-build" : 
+    {
+      "extend" : [ "qxoo" ],
+      
+      "compile-options" :
+      {
+        "paths" :
+        {
+          "file" : "build/script/qx-oo.js"
+        },
+        "code" :
+        {
+          "format"   : true,
+          "optimize" : [ "variables", "basecalls", "privates", "strings" ]
+        }
+      },
+      "compile" : { "type" : "build" }
+    },
+    
+    
+    "qxoo-noopt" : 
+    {
+      "extend" : [ "qxoo" ],
+      
+      "compile-options" :
+      {
+        "paths" :
+        {
+          "file" : "build/script/qx-oo-noopt.js"
+        },
+        "code" :
+        {
+          "format"   : true,
+          "optimize" : [ ]
+        }
+      },
+      "compile" : { "type" : "build" }
+    },
+    
+    
+    "build" :
+    {
+      "library" :
+      [
+        {
+          "manifest" : "Manifest.json"
+        }
+      ],
+
+      "extend" : [ "cache" ],
+
+      "include": ["qx.*"],
+      "exclude": ["=qx.test.*"],
+
+      "variants" :
+      {
+        "qx.debug" : ["on"],
+        "qx.aspects" : ["off"]
+      },
+
+      "compile-options" :
+      {
+        "paths" :
+        {
+          "file"     : "build/script/qx.js"
+        },
+        "code"  :
+        {
+          "format"   : "on",
+          "optimize" : ["basecalls", "variables", "privates", "strings"]
+        }
+      },
+      
+      "compile" : { "type" : "build" },
+
+      "copy-resources" :
+      {
+        "target" : "build"
+      }
+    },
+
+
+    "test" :
+    {
+      "run" : ["test-copy-files"],
+
+      "let" :
+      {
+        "LOCALES" : ["de", "de_DE", "en", "en_GB", "en_US"]
+      }
+    },
+    
+    "test-inline" :
+    {
+      "run" : ["test-copy-files"],
+
+      "let" :
+      {
+        "LOCALES" : ["de", "de_DE", "en", "en_GB", "en_US"]
+      }
+    },
+
+    "test-copy-files" :
+    {
+      "extend" : [ "cache" ],
+
+      "copy-files" :
+      {
+        "files"    : [ "test" ],
+        "source"   : "source/resource/qx",
+        "target"   : "test/resource/qx"
+      }
+    },
+
+
+    "test-source" :
+    {
+      "let" :
+      {
+        "LOCALES" : ["de", "de_DE", "en", "en_GB", "en_US"]
+      }
+    },
+
+    "images" :
+    {
+      "run" : [ "image-clipping", "image-combine" ]
+    },
+
+    "lint" :
+    {
+      "exclude": ["=qx.test.*"]
+    },
+
+    "lint-test" :
+    {
+      "include": ["=qx.test.*"]
+    },
+
+    "translation" :
+    {
+      "=include": ["qx.*"]
+    }
+  }
+}
