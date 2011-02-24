@@ -1,0 +1,350 @@
+{
+	"sitemap":
+	[
+		{
+			"name": "Home",
+			"children": [
+			]
+		},
+		{
+			"name": "Corporate",
+			"children": [
+				{
+					"name": "Corporate Overview",
+					"children": [
+					]
+				},
+				{
+					"name": "Management & Board",
+					"children": [
+					]
+				},
+				{
+					"name": "Environmental Responsibility",
+					"children": [
+					]
+				},
+				{
+					"name": "Culture",
+					"children": [
+					]
+				},
+				{
+					"name": "Milestones",
+					"children": [
+					]
+				},
+				{
+					"name": "Awards",
+					"children": [
+					]
+				},
+				{
+					"name": "Careers",
+					"children": [
+					]
+				}
+			]
+		},
+		{
+			"name": "News",
+			"children": [
+				{
+					"name": "Ad Hoc Releases",
+					"children": [
+					]
+				},
+				{
+					"name": "Press Releases",
+					"children": [
+					]
+				},
+				{
+					"name": "Company News",
+					"children": [
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"children": [
+			]
+		},
+		{
+			"name": "Investor Relations",
+			"children": [
+				{
+					"name": "The Company",
+					"children": [
+						{
+							"name": "Management Board",
+							"children": [
+							]
+						},
+						{
+							"name": "Profile",
+							"children": [
+							]
+						},
+						{
+							"name": "Group Key Figures",
+							"children": [
+							]
+						},
+						{
+							"name": "Outlook",
+							"children": [
+							]
+						},
+						{
+							"name": "FAQ",
+							"children": [
+								{
+									"name": "Listing & Shares",
+									"children": [
+									]
+								},
+								{
+									"name": "Financial",
+									"children": [
+									]
+								},
+								{
+									"name": "Disclosure",
+									"children": [
+									]
+								},
+								{
+									"name": "Management",
+									"children": [
+									]
+								},
+								{
+									"name": "Sales and Distribution",
+									"children": [
+									]
+								},
+								{
+									"name": "Brand",
+									"children": [
+									]
+								}
+							]
+						},
+						{
+							"name": "Company Tour",
+							"children": [
+							]
+						}
+					]
+				},
+				{
+					"name": "Equity Story",
+					"children": [
+						{
+							"name": "Market",
+							"children": [
+								{
+									"name": "Market",
+									"children": [
+									]
+								},
+								{
+									"name": "Market Driver: Strong Underlying Market Growth",
+									"children": [
+									]
+								},
+								{
+									"name": "Market Driver: Consumer Lead Growth Dynamics",
+									"children": [
+									]
+								}
+							]
+						},
+						{
+							"name": "Strategy for Growth",
+							"children": [
+								{
+									"name": "Distribution Network Expansion",
+									"children": [
+									]
+								},
+								{
+									"name": "Strategic Cooperation with Grohe",
+									"children": [
+									]
+								},
+								{
+									"name": "Greater Recognition of Joyou Brand Name",
+									"children": [
+									]
+								},
+								{
+									"name": "Product Portfolio Expansion",
+									"children": [
+									]
+								},
+								{
+									"name": "Expansion of Project Business",
+									"children": [
+									]
+								}
+							]
+						},
+						{
+							"name": "Strengths",
+							"children": [
+								{
+									"name": "Distribution Network",
+									"children": [
+										{
+											"name": "Joyou Brand Local",
+											"children": [
+											]
+										},
+										{
+											"name": "Project Business",
+											"children": [
+											]
+										},
+										{
+											"name": "OEM/ ODM International",
+											"children": [
+											]
+										}
+									]
+								},
+								{
+									"name": "Market Position",
+									"children": [
+									]
+								},
+								{
+									"name": "Established Brand",
+									"children": [
+									]
+								},
+								{
+									"name": "Extensive Manufacturing Experience",
+									"children": [
+									]
+								},
+								{
+									"name": "Management and Board",
+									"children": [
+									]
+								},
+								{
+									"name": "Cooperation with Grohe AG",
+									"children": [
+									]
+								}
+							]
+						},
+						{
+							"name": "Investment Highlights",
+							"children": [
+							]
+						}
+					]
+				},
+				{
+					"name": "The Share",
+					"children": [
+						{
+							"name": "Share Price",
+							"children": [
+							]
+						},
+						{
+							"name": "Analyst Coverage",
+							"children": [
+							]
+						},
+						{
+							"name": "Shareholder Structure",
+							"children": [
+							]
+						}
+					]
+				},
+				{
+					"name": "Financial Publications",
+					"children": [
+					]
+				},
+				{
+					"name": "News from Joyou",
+					"children": [
+						{
+							"name": "Ad Hoc Releases",
+							"children": [
+							]
+						},
+						{
+							"name": "Press Releases",
+							"children": [
+							]
+						},
+						{
+							"name": "Company News",
+							"children": [
+							]
+						}
+					]
+				},
+				{
+					"name": "Financial Calendar",
+					"children": [
+					]
+				},
+				{
+					"name": "Corporate Governance",
+					"children": [
+						{
+							"name": "Management and Supervisory Board",
+							"children": [
+							]
+						},
+						{
+							"name": "Declaration of Compliance",
+							"children": [
+							]
+						},
+						{
+							"name": "Directors’ Dealings",
+							"children": [
+							]
+						},
+						{
+							"name": "Articles of Association",
+							"children": [
+							]
+						},
+						{
+							"name": "Annual Shareholders’ Meeting",
+							"children": [
+							]
+						},
+						{
+							"name": "Voting Rights Notifications",
+							"children": [
+							]
+						}
+					]
+				},
+				{
+					"name": "IR & Press Contact ",
+					"children": [
+					]
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"children": [
+			]
+		}
+	]
+}
