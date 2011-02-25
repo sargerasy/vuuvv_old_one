@@ -17,7 +17,7 @@ def _recursion_menu(parent):
 	output = StringIO()
 	children = parent["children"]
 	if children:
-		output.write('<ul>')
+		output.write('<ul style="display:none;">')
 		for child in children:
 			output.write('<li><a href="#">%s</a>%s</li>' % (
 				child["name"],

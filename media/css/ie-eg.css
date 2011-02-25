@@ -1,0 +1,318 @@
+.UperTier{
+	height:52px;
+	margin:0px;
+	background-color:Transparent;
+	cursor:pointer;
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	position:absolute;
+	z-index:3}
+.LowerTier{
+	position:relative;
+	height:52px;
+	background-image:url(http://i3.microsoft.com/investor/shared/templates/components/IRMainMenuBar/Up_LIne.png);
+	background-repeat:no-repeat;
+	z-index:2}
+.SubTierCon{
+	position:relative;
+	width:970px;
+	height:26px;
+	margin-top:-14px;
+	cursor:pointer;
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	background-image:url(http://i3.microsoft.com/investor/shared/templates/components/IRMainMenuBar/Down_Line.png);
+	z-index:0}
+.SubTier{
+	height:26px;
+	width:970px;
+	cursor:pointer;
+	background-image:url(http://i3.microsoft.com/investor/shared/templates/components/IRMainMenuBar/Down_Line.png);
+	background-repeat:no-repeat}
+.SubTierInner{
+	height:100%}
+.SubTierHover{
+	height:26px;
+	width:970px;
+	cursor:pointer}
+.ZIndex1{
+	z-index:3}
+.Absolute{
+	position:absolute}
+.Relative{
+	position:relative}
+.Hide{
+	display:none}
+.InnerTab{
+	margin:0px;
+	padding:0px;
+	height:50px;
+	width:100%;
+	vertical-align:middle;
+	text-align:center}
+.ItemStatic{
+	font-family:Verdana;
+	color:Black;
+	height:52px;
+	float:left;
+	text-align:center;
+	display:block;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/Menu_UP.png)}
+.ItemHover{
+	color:#41a0e8;
+	height:52px;
+	float:left;
+	text-align:center;
+	display:block;
+	z-index:2;
+	background-image:url(http://i.microsoft.com/investor/shared/templates/components/IRMainMenuBar/Menu_UP.png)}
+.ItemSelected{
+	height:52px;
+	float:left;
+	color:White;
+	text-align:center;
+	display:block;
+	background-image:none}
+.SubStatic{
+	padding-left:30px;
+	padding-right:0px;
+	padding-top:1px;
+	height:23px;
+	text-align:center;
+	color:White;
+	float:left;
+	overflow:hidden}
+.SubStatic .ima{
+	display:none}
+.SubHover{
+	padding-left:30px;
+	padding-right:0px;
+	padding-top:1px;
+	height:23px;
+	text-align:center;
+	color:#e0e0e0;
+	float:left;
+	overflow:hidden}
+.SubHover .ima{
+	display:none}
+.SubSelected{
+	padding-left:30px;
+	padding-right:0px;
+	padding-top:1px;
+	height:23px;
+	text-align:center;
+	color:White;
+	float:left;
+	overflow:hidden}
+.SubSelected .ima{
+	position:relative;
+	width:10px;
+	height:100%;
+	margin-top:-18px}
+.m8f67c643-b21b-4d71-ac6a-043265b67b49_static{
+	width:89px;
+	background-position:-309px 0px}
+.m8f67c643-b21b-4d71-ac6a-043265b67b49_hover{
+	width:89px;
+	background-position:-309px -52px}
+.m8f67c643-b21b-4d71-ac6a-043265b67b49_selected{
+	width:89px}
+.m255d8e66-c23c-4996-be89-00f817606ad7_static{
+	width:108px;
+	background-position:-73px 0px}
+.m255d8e66-c23c-4996-be89-00f817606ad7_hover{
+	width:108px;
+	background-position:-73px -52px}
+.m255d8e66-c23c-4996-be89-00f817606ad7_selected{
+	width:108px}
+.mf7d565f5-50db-4617-8ae5-dfd924c8cbe7_static{
+	width:95px;
+	background-position:-875px -0px}
+.mf7d565f5-50db-4617-8ae5-dfd924c8cbe7_hover{
+	width:95px;
+	background-position:-875px -52px}
+.mf7d565f5-50db-4617-8ae5-dfd924c8cbe7_selected{
+	width:95px}
+.m78bab44e-7ccc-469b-867d-378b9b26cbf3_static{
+	width:89px;
+	background-position:-786px -0px}
+.m78bab44e-7ccc-469b-867d-378b9b26cbf3_hover{
+	width:89px;
+	background-position:-786px -52px}
+.m78bab44e-7ccc-469b-867d-378b9b26cbf3_selected{
+	width:89px}
+.md1ca94f3-d152-44fb-afe0-85f8fe9d9c24_static{
+	width:128px;
+	background-position:-181px -0px}
+.md1ca94f3-d152-44fb-afe0-85f8fe9d9c24_hover{
+	width:128px;
+	background-position:-181px -52px}
+.md1ca94f3-d152-44fb-afe0-85f8fe9d9c24_selected{
+	width:128px}
+.mf3cdb094-92dc-4c58-86a7-7d5e2dfc2b9c_static{
+	width:79px;
+	background-position:-504px -0px}
+.mf3cdb094-92dc-4c58-86a7-7d5e2dfc2b9c_hover{
+	width:79px;
+	background-position:-504px -52px}
+.mf3cdb094-92dc-4c58-86a7-7d5e2dfc2b9c_selected{
+	width:79px}
+.m272bdb1d-703a-48d5-8cf4-ab1ce070fc3f_static{
+	width:73px;
+	background-position:0px 0px}
+.m272bdb1d-703a-48d5-8cf4-ab1ce070fc3f_hover{
+	width:73px;
+	background-position:0px -52px}
+.m272bdb1d-703a-48d5-8cf4-ab1ce070fc3f_selected{
+	width:73px}
+.m726c48fd-1b71-4f5c-82a2-73fdd04f4702_static{
+	width:91px;
+	background-position:-695px 0px}
+.m726c48fd-1b71-4f5c-82a2-73fdd04f4702_hover{
+	width:91px;
+	background-position:-695px -52px}
+.m726c48fd-1b71-4f5c-82a2-73fdd04f4702_selected{
+	width:91px}
+.m720ae3a9-1202-494c-81ca-61c2f839be4d_static{
+	width:106px;
+	background-position:-398px 0px}
+.m720ae3a9-1202-494c-81ca-61c2f839be4d_hover{
+	width:106px;
+	background-position:-398px -52px}
+.m720ae3a9-1202-494c-81ca-61c2f839be4d_selected{
+	width:106px}
+.m4c6b84c5-2e3a-40a7-b281-136df70f20dc_static{
+	width:112px;
+	background-position:-583px 0px}
+.m4c6b84c5-2e3a-40a7-b281-136df70f20dc_hover{
+	width:112px;
+	background-position:-583px -52px}
+.m4c6b84c5-2e3a-40a7-b281-136df70f20dc_selected{
+	width:112px}
+.PageUperTier{
+	height:38px;
+	width:946px;
+	margin:0px;
+	background-color:transparent;
+	font-family:Verdana;
+	font-size:10px;
+	text-align:center;
+	position:absolute;
+	z-index:2;
+	color:#010101}
+.PageItemStatic{
+	height:37px;
+	float:left;
+	float:right;
+	margin-left:1px;
+	cursor:pointer}
+.PageItemStatic .Left{
+	height:37px;
+	width:4px;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticLeft.png);
+	background-repeat:no-repeat;
+	float:left}
+.PageItemStatic .Middle{
+	height:37px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:13px;
+	background-image:url(http://i3.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticCenter.png);
+	background-repeat:repeat-x;
+	float:left}
+.PageItemStatic .Right{
+	height:37px;
+	width:4px;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticRight.png);
+	background-repeat:no-repeat;
+	float:left}
+.PageItemHover{
+	height:37px;
+	color:#fe9515;
+	float:right;
+	margin-left:1px;
+	cursor:pointer}
+.PageItemHover .Left{
+	height:37px;
+	width:4px;
+	background-image:url(http://i3.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticLeft.png);
+	background-repeat:no-repeat;
+	float:left}
+.PageItemHover .Middle{
+	height:37px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:13px;
+	background-image:url(http://i.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticCenter.png);
+	background-repeat:repeat-x;
+	float:left}
+.PageItemHover .Right{
+	height:37px;
+	width:4px;
+	background-image:url(http://i.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_StaticRight.png);
+	background-repeat:no-repeat;
+	float:left}
+.PageItemSelected{
+	height:38px;
+	font-weight:bold;
+	color:#fe9515;
+	float:right;
+	margin-left:1px;
+	cursor:pointer}
+.PageItemSelected .Left{
+	height:38px;
+	width:4px;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_PressLeft.png);
+	background-repeat:no-repeat;
+	float:left}
+.PageItemSelected .Middle{
+	height:38px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:13px;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_PressCenter.png);
+	background-repeat:repeat-x;
+	float:left}
+.PageItemSelected .Right{
+	height:38px;
+	width:4px;
+	background-image:url(http://i2.microsoft.com/investor/shared/templates/components/IRMainMenuBar/3rdButton_PressRight.png);
+	background-repeat:no-repeat;
+	float:left}
+.FourthTier{
+	height:28px;
+	width:766px;
+	margin:0px;
+	background-color:transparent;
+	cursor:pointer;
+	font-family:Verdana;
+	font-size:9px;
+	text-align:center;
+	position:absolute;
+	z-index:2;
+	color:#010101}
+.FourthStatic{
+	height:15px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	float:left;
+	border:solid 1px transparent}
+.FourthHover{
+	height:15px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	float:left;
+	border:solid 1px transparent}
+.FourthSelected{
+	height:15px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	float:left;
+	border:solid 1px #226BD7}
+

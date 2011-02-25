@@ -12,6 +12,6 @@ def index(request):
 	obj = json.loads(js)
 	return render_to_response("main/index.html", {
 		"sitemap": obj["sitemap"],
-		"nav_menu": utils.generate_nav_menu(obj["sitemap"], "sf-menu"),
+		"nav_menu": utils.generate_nav_menu(obj["sitemap"], "nav-menu"),
 	})
 
