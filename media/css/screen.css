@@ -86,6 +86,17 @@ body {
 	text-align: center;
 }
 
+.item-last {
+	background-image: url("../images/menu-bg-last.png");
+	color: black;
+	display: block;
+	float: left;
+	height: 52px;
+	text-align: center;
+	width: 420px;
+}
+
+
 .item-selected {
 	background-image: none;
 	color: white;
@@ -100,24 +111,24 @@ body {
 	width: 73px;
 }
 .item-1 {
-	background-position: -73px 0;
-	width: 108px;
-}
-.item-2 {
-	background-position: -181px 0;
-	width: 128px;
-}
-.item-3 {
-	background-position: -309px 0;
+	background-position: -786px 0;
 	width: 89px;
 }
-.item-4 {
-	background-position: -398px 0;
-	width: 106px;
-}
-.item-5 {
+.item-2 {
 	background-position: -504px 0;
 	width: 79px;
+}
+.item-3 {
+	background-position: -695px 0;
+	width: 91px;
+}
+.item-4 {
+	background-position: -695px 0;
+	width: 91px;
+}
+.item-5 {
+	background-position: -786px 0;
+	width: 89px;
 }
 .item-6 {
 	background-position: -583px 0;
@@ -143,6 +154,12 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	width: 100%;
+}
+
+.menu-bar a {
+	color: black;
+	text-decoration: none;
+	outline: none;
 }
 
 /*---------------------------- End Menu ----------------------*/
