@@ -1,44 +1,74 @@
 (function($) {
-	var ie_menu = function() {
-		var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
-		var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
-		if (jQuery.browser.msie && (ie55 || ie6)) {
-			$(".item-hover, .item-normal, .item-last").each(function() {
-				var t = $(this);
-				var bgIMG = t.css('background-image');
-				if(bgIMG.indexOf(".png") != -1) {
-					var width = t.css("width");
-					var iebg = "/media/images/static_" + parseInt(width) + ".png";
-					t.css('background-image', 'none');
-					t.get(0).runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + iebg + "',sizingMethod='crop')";
-				}
-			});
+	window.flash = function(url,width,height,var1) {
+		document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,24,0" width="'+width+'" height="'+height+'">');
+		document.write('<param name="movie" value="'+url+'" />');
+		document.write('<param name="quality" value="high" />');
+		document.write('<param name="flashVars" value="'+var1+'" />');
+		document.write('<param name="wmode" value="transparent" />');
+		document.write('<param name="menu" value="false" />');
+		document.write('<embed flashvars="'+var1+'" src="'+url+'" wmode="transparent" quality="high" menu="false" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+width+'" height="'+height+'"></embed>');
+		document.write('</object>');
+	}
+
+	var hovered_menu = null;
+	var hoverin_top_menu = function(item) {
+		var sn = item.attr("sn");
+		if (!item.hasClass("item-selected")) {
+			item.removeClass("item-normal");
+			item.removeClass("item-normal-" + sn);
+			item.addClass("item-hover-" + sn).addClass("item-hover");
 		}
+		var sub = $("#sub-container-" + sn);
+		sub.css("display", "block")
+			.css("position", "absolute");
+		hovered_menu = item;
 	};
 
-	$(document).ready(function() {
-		ie_menu();
+	var hoverout_top_menu = function(item) {
+		var sn = item.attr("sn");
+		if (!item.hasClass("item-selected")) {
+			item.removeClass("item-hover");
+			item.removeClass("item-hover-" + sn);
+			item.addClass("item-normal-" + sn).addClass("item-normal");
+		}
+		var sub = $("#sub-container-" + sn);
+		sub.css("display", "none")
+			.css("position", "relative");
+		hovered_menu = null;
+	};
+
+	var set_top_menu_behavior = function() {
+		var menutimer = null;
 		var mouseIn = function(){
 			var t = $(this);
-			t.removeClass("item-normal");
-			var sn = t.attr("sn");
-			t.removeClass("item-normal-" + sn);
-			t.addClass("item-hover-" + sn).addClass("item-hover");
-			var sub = $(".sub-item-" + sn);
-			sub.css("display", "block")
-				.css("position", "absolute");
+			if (menutimer) {
+				clearTimeout(menutimer);
+				if (hovered_menu) hoverout_top_menu(hovered_menu);
+				hoverin_top_menu(t);
+			}
+			hoverin_top_menu(t);
 		};
 		var mouseOut = function() {
 			var t = $(this);
-			t.removeClass("item-hover");
-			var sn = t.attr("sn");
-			t.removeClass("item-hover-" + sn);
-			t.addClass("item-normal-" + sn).addClass("item-normal");
-			var sub = $(".sub-item-" + sn);
-			sub.css("display", "none")
-				.css("position", "relative");
+			menutimer = setTimeout(function() {
+				hoverout_top_menu(t);
+			}, 800);
 		};
-		$(".item-normal").mouseover(mouseIn);
-		$(".item-normal").mouseout(mouseOut);
+		$(".item-normal, .item-selected").mouseover(mouseIn).mouseout(mouseOut);
+
+		var sub_mouseIn = function() {
+			if (menutimer) clearTimeout(menutimer);
+		};
+		var sub_mouseOut = function() {
+			menutimer = setTimeout(function() {
+				hoverout_top_menu(hovered_menu);
+			}, 800);
+		};
+		$(".sub-container").mouseover(sub_mouseIn).mouseout(sub_mouseOut);
+	};
+
+	$(document).ready(function() {
+		//ie_menu();
+		set_top_menu_behavior();
 	});
 })(jQuery);

@@ -8,16 +8,18 @@ html, body {
 }
 
 body {
-	background-color: transparent;
+	background: url("../images/top_bg.jpg") repeat-x center top;
 	color: #404040;
 	font: 12px Verdana,Segoe,Tahoma,Verdana,sans-serif;
 	line-height: 16px;
 }
 
 .container {
+	background: url("../images/bottom_bg.jpg") no-repeat scroll center bottom transparent;
 	clear: both;
 	color: #76797C;
-	margin: 0 0 10px;
+	margin: 0 auto;
+	padding-bottom: 110px;
 	min-width: 960px;
 	overflow: hidden;
 	width: 100%;
@@ -30,15 +32,65 @@ body {
 	color: #333333;
 }
 
+.main-body {
+	padding: 15px 0 0 0;
+	width: 960px;
+}
+
+/*------------------- bottom and footer --------------*/
+.footer{
+	background: none repeat scroll 0 0 #f5f5f5;
+	clear: both;
+	color: #666;
+	height: 45px;
+	margin-top: 100px;
+	padding: 15px 40px 0 60px;
+	text-align: left;
+}
+
+.footer span {
+	float: right;
+	margin-top: 20px;
+}
+
+.content_bottom {
+	background: url("../images/content_bottom_bg.png") no-repeat scroll 0 0 transparent;
+	height: 27px;
+}
+
+/*------------------- end bottom and footer ----------*/
 /*-------------------- Heading -----------------------*/
 .header {
-	padding: 0 0 0 31px;
+	padding: 0;
+}
+
+.logo{
+	background: url("../images/header_bg.gif") no-repeat center top;
+	height: 50px;
+	padding: 15px 45px 0;
+	text-align: left;
+}
+
+.logo span {
+	color: #fff;
+	float: right;
+}
+
+.logo span a {
+	color: #c6c6c6;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+}
+
+.logo span a:hover {
+	color: #fff
 }
 
 /*-------------------- Menu --------------------------*/
 .nav-menu {
 	height: 62px;
-	margin: 20px 0 0 -3px;
+	margin: 20px 0 0 0;
 }
 
 .menu-bar {
@@ -56,12 +108,12 @@ body {
 .menu-sub {
 	background-image: url("../images/down-line.png");
 	cursor: pointer;
-	font-size: 11px;
+	font-size: 10px;
 	font-weight: bold;
 	height: 26px;
 	margin-top: -14px;
 	position: relative;
-	width: 932px;
+	width: 960px;
 	z-index: 0;
 }
 
@@ -103,7 +155,7 @@ body {
 	float: left;
 	height: 52px;
 	text-align: center;
-	width: 420px;
+	width: 448px;
 }
 
 
@@ -114,6 +166,25 @@ body {
 	float: left;
 	height: 52px;
 	text-align: center;
+}
+
+.item-selected-0 {
+	width: 73px;
+}
+.item-selected-1 {
+	width: 89px;
+}
+.item-selected-2 {
+	width: 79px;
+}
+.item-selected-3 {
+	width: 91px;
+}
+.item-selected-4 {
+	width: 91px;
+}
+.item-selected-5 {
+	width: 89px;
 }
 
 .item-hover-0 {
@@ -175,18 +246,42 @@ body {
 	width: 100%;
 }
 
-.menu-bar a {
+.menu-link {
 	color: black;
 	text-decoration: none;
 	outline: none;
 }
 
-.sub-item {
+.sub-container {
 	background: url("../images/down-line.png") no-repeat;
 	cursor: pointer;
 	height: 26px;
-	width: 932px;
+	width: 960px;
+}
+
+.sub-item {
+	color: white;
+	float: left;
+	height: 23px;
+	overflow: hidden;
+	padding: 1px 0 0 18px;
+	text-align: center;
+}
+
+.sub-link {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
+.sub-item img {
+	height: 100%;
+	margin-top: -18px;
+	position: relative;
 }
 
 /*---------------------------- End Menu ----------------------*/
 /*---------------------------- End Header --------------------*/
+/*---------------------------- tab ---------------------------*/
+/*------------------------ end tab ---------------------------*/
+

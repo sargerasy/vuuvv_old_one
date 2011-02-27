@@ -1,91 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>joyou</title>
-		<link rel="stylesheet" media="screen" href="/media/css/screen.css"/>
-		<style>
-		</style>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script src="/media/js/site.js"></script>
-	</head>
+{% extends "main/frame.html" %}
+{% block css %}
+	<link rel="stylesheet" media="screen" href="/media/css/home.css"/>
+{% endblock %}
 
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="header">
-					<div class="nav-menu">
-						<div class="menu-bar">
-							<div class="menu-main">
-								<div class="menu-upper">
-									<div class="item-selected item-normal-0" sn="0">
-										<a href="#">
-										<table class="inner"><tr><td>
-											Home
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-normal item-normal-1" sn="1">
-										<a href="#">
-										<table class="inner"><tr><td>
-											Corporate
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-normal item-normal-2" sn="2">
-										<a href="#">
-										<table class="inner"><tr><td>
-											News</a>
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-normal item-normal-3" sn="3">
-										<a href="#">
-										<table class="inner"><tr><td>
-											Products</a>
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-normal item-normal-4" sn="4">
-										<a href="#">
-										<table class="inner"><tr><td>
-											Investor Relations</a>
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-normal item-normal-5" sn="5">
-										<a href="#">
-										<table class="inner"><tr><td>
-											Contact</a>
-										</tr></td></table>
-										</a>
-									</div>
-									<div class="item-last">
-									</div>
-								</div>
-							</div>
-							<div class="menu-sub">
-								<div class="sub-item sub-item-0" style="top:2px; position: relative; display: none">
-								</div>
-								<div class="sub-item sub-item-1" style="top:14px; position: relative; display: none">
-								</div>
-								<div class="sub-item sub-item-2" style="top:14px; position: relative; display: none">
-								</div>
-								<div class="sub-item sub-item-3" style="top:2px; position: relative; display: none">
-								</div>
-								<div class="sub-item sub-item-4" style="top:14px; position: relative; display: none">
-								</div>
-								<div class="sub-item sub-item-5" style="top:2px; position: relative; display: none">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="body">
-				</div>
-				<div class="footer">
-				</div>
+{% block content %}
+<div><script type="text/javascript">flash("/flash/bcastr4.swf","960","330","");</script></div>
+<div class="homecontent">
+	<div class="homeinnercontent">
+		<div class="homeleftbox">
+			<div class="latestnews"  onclick="window.location.href='http://charts25.equitystory.com/index.php?id=841';">
+				<iframe src="http://charts25.equitystory.com/index.php?id=841" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" name="tongji" width="318" height="175"></iframe>
 			</div>
 		</div>
-	</body>
-</html>
+		<div class="homerightbox">
+			<div class="box-inside">
+				<p><font style="font-weight: bold; font-size: 15px">Company Profile</font></p>
+				<div align=left style=line-height:20px;padding-top:15px;>
+					<p>
+					&nbsp;&nbsp;&nbsp; Joyou AG is listed in the Prime Standard of the Frankfurt Stock Exchange,trading under the ticker symbol JY8.<br />
+					&nbsp;&nbsp;&nbsp; Joyou designs,produces and sells faucets and other sanitary ware products.The main product groups sold in its own brand business are bathroom faucets...
+					</p>
+				</div>
+			</div>
+			<a href="/about/">MORE>></a>
+		</div>
+	</div>
+</div>
+{% endblock %}

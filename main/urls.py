@@ -7,5 +7,6 @@ import views
 
 urlpatterns = patterns('',
     (r'^$', views.index),
+    (r'^ir/(\w+)', views.ir),
 )
 

@@ -1,0 +1,51 @@
+.homecontent {
+	background: url("../images/content_top_bg.png") no-repeat scroll center top transparent;
+	margin-top: 20px;
+}
+
+.homeinnercontent {
+	background: url("../images/scontent_bg.gif") repeat-x scroll 0 45px transparent;
+	height: auto !important;
+	min-height: 200px;
+	padding-top: 10px;
+}
+
+.homeleftbox {
+	display: inline;
+	float: left;
+	margin: 0 6px;
+	width: 307px;
+}
+
+.latestnews {
+	background: url("../images/latestnews_bg.gif") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 175px;
+	padding: 6px 5px;
+	text-align: left;
+	width: 318px;
+}
+
+.homerightbox {
+	background: url("../images/aboutus_pic.gif") no-repeat scroll 0 0 transparent;
+	display: inline;
+	float: right;
+	font-size: 9px;
+	height: 188px;
+	margin: 0 6px;
+	width: 594px
+}
+
+.homerightbox a {
+	color: #84110D;
+	display: inline;
+	float: right;
+	margin: 10px 20px 0 0;
+}
+
+.box-inside {
+	font-size: 12px;
+	line-height: 22px;
+	padding: 20px 20px 0;
+	text-align: left;
+}
