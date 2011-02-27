@@ -21,12 +21,22 @@
 		var mouseIn = function(){
 			var t = $(this);
 			t.removeClass("item-normal");
-			t.addClass("item-hover");
+			var sn = t.attr("sn");
+			t.removeClass("item-normal-" + sn);
+			t.addClass("item-hover-" + sn).addClass("item-hover");
+			var sub = $(".sub-item-" + sn);
+			sub.css("display", "block")
+				.css("position", "absolute");
 		};
 		var mouseOut = function() {
 			var t = $(this);
 			t.removeClass("item-hover");
-			t.addClass("item-normal");
+			var sn = t.attr("sn");
+			t.removeClass("item-hover-" + sn);
+			t.addClass("item-normal-" + sn).addClass("item-normal");
+			var sub = $(".sub-item-" + sn);
+			sub.css("display", "none")
+				.css("position", "relative");
 		};
 		$(".item-normal").mouseover(mouseIn);
 		$(".item-normal").mouseout(mouseOut);
