@@ -77,23 +77,21 @@
 	background: url("../images/leftdown-center.png") repeat-y;
 	vertical-align: top;
 	width: 164px;
-	height: 1000px;
 }
 
 .tc-split-bg {
 	padding: 0;
-	width: 22px;
+	width: 8px;
 }
 
 .tc-right-pane {
 	background: url("../images/right-center.png") repeat-y;
 	vertical-align: top;
-	width: 764px;
-	height: 1000px;
+	width: 788px;
 }
 
 .left-top {
-	height: 261px;
+	height: 100%;
 	margin: 0 -9px 0 0;
 	position: relative;
 	width: 173px;
@@ -123,7 +121,7 @@
 }
 
 .left-top-locator {
-	margin: 14px 0 15px;
+	padding: 14px 0 15px;
 }
 
 .left-top-links {
@@ -148,4 +146,101 @@
 	padding: 10px;
 }
 
+.lt-list-c {
+	margin: 0;
+	padding: 0 0 16px;
+}
 
+.lt-bottom {
+	background: white url("../images/leftup-down.png") no-repeat left -2px;
+	font-size: 0;
+	height: 4px;
+	line-height: 0;
+	margin-left: 0;
+	position: relative;
+	width: 173px;
+}
+
+.left-bottom-bg div {
+	background: url("../images/leftdown-up.png") no-repeat;
+	font-size: 0;
+	height: 3px;
+	line-height: 0;
+	width: 164px;
+}
+
+.lb-stock {
+	margin-bottom: 18px;
+	padding-top: 8px;
+}
+
+/* manage fixture test data */
+
+.right-content {
+	width: 670px;
+	margin: 20px auto;
+}
+
+.tit {
+	background: url("../images/tit.jpg") no-repeat scroll 0 0 transparent;
+	height: 60px;
+}
+
+.managelist {
+	margin: auto;
+	padding-bottom; 50px;
+	width: 100%px;
+}
+
+.managelist ul, .managelist li {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.managelist li {
+	float: left;
+	padding-left: 12px;
+	padding-top: 25px;
+}
+
+.managepic {
+	background: none repeat scroll 0 0 #e3e3e3;
+	float: left;
+	padding: 5px 0 5px 5px;
+	width: 120px;
+}
+
+.managepic h6 {
+	font-size: 14px;
+	font-weight: normal;
+	margin: -30px 0 0;
+	text-align: center;
+	width: 120px;
+	color: #00075b;
+	padding-top: 30px;
+}
+
+.managedetail {
+	float: left;
+	padding: 0 15px;
+	text-align: left;
+	width: 480px;
+}
+
+.managedetail h5{
+    border-bottom: 1px solid #CACACA;
+    color: #7F373B;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 24px;
+}
+
+.managedetail p {
+	font-size: 11px;
+	color: #666;
+	line-height: 24px;
+	text-indent: 1em;
+}
+/* end manage fixture test data */

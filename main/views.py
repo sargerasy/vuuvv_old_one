@@ -1,6 +1,8 @@
 # Create your views here.
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.conf import settings
+import django.views.static
 import logging
 import utils
 import json
@@ -35,4 +37,8 @@ def ir(request, sub):
 		"selected": "Investor Relations",
 		"sitemap": obj["sitemap"],
 	})
+
+def media(request, path):
+	root = getattr(settings, 'MEDIA_ROOT', None)
+	return django.views.static.serve(request, path, root)
 
