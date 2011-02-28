@@ -48,7 +48,7 @@
 
 
 .main-tab-content {
-	margin: 0 0 -100px;
+	margin: 0;
 	position: relative;
 	width: 960px;
 	z-index: 1;

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>joyou</title>
+		<link rel="stylesheet" media="screen" href="/media/css/screen.css"/>
+		{% block css %}
+		{% endblock %}
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+		(function() {
+			if (jQuery.browser.msie) {
+				var e = document.createElement("link");
+				e.setAttribute("href", "/media/css/screen-ie.css");
+				e.setAttribute("media", "screen");
+				e.setAttribute("rel", "stylesheet");
+				var head = document.getElementsByTagName("head");
+				head[0].appendChild(e);
+			}
+		}());
+		</script>
+		<script src="/media/js/site.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="header">
+					<div class="logo">
+						<span>
+							<a href="#">Chinese</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">Deutsch</a>
+						</span>
+						<img src="/media/images/logo.jpg/"/>
+					</div>
+					<div class="nav-menu">
+						<div class="menu-bar">
+							<div class="menu-main">
+								<div class="menu-upper">
+									{{ nav_menu.1.items }}
+									{% for key, item in nav_menu.1.sort_items %} 
+									<div class="{% if sub_menu.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
+										<a class="menu-link" href="#">
+										<table class="inner"><tr><td>
+											{{ item.name }}
+										</tr></td></table>
+										</a>
+									</div>
+									{% endfor %}
+									<div class="item-last">
+									</div>
+								</div>
+							</div>
+							<div class="menu-sub">
+								{% for topkey, top in sitemap.items %}
+								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if top.children %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
+									{% for subkey, sub in top.children.items %}
+									<div class="sub-item">
+										<a class="sub-link" href="{{sub.url}}">
+											<div style="position:relative; display: block;">{{ sub.name }}</div>
+										</a>
+									</div>
+									{% endfor %}
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="body">
+					<div class="main-body">
+					{% block content %}
+					{% endblock %}
+					</div>
+				</div>
+				<div class="footer">
+					<span>
+						JOYOU Copyright &copy; 2009&mdash;2011
+					</span>
+				</div>
+				<div class="content_bottom">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

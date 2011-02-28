@@ -1,419 +1,488 @@
 {
 	"sitemap":
-	[
-		{
+	{
+		"home": {
 			"name": "Home",
 			"url": "/",
-			"children": [
-			]
+			"order": 0,
+			"children": {
+			}
 		},
-		{
+		"corp": {
 			"name": "Corporate",
 			"url": "/",
-			"children": [
-				{
+			"order": 1,
+			"children": {
+				"overview": {
 					"name": "Corporate Overview",
 					"url": "/",
-					"children": [
-					]
+					"order": 0,
+					"children": {
+					}
 				},
-				{
+				"management": {
 					"name": "Management & Board",
 					"url": "/",
-					"children": [
-					]
+					"order": 1,
+					"children": {
+					}
 				},
-				{
+				"env_responsibility": {
 					"name": "Environmental Responsibility",
 					"url": "/",
-					"children": [
-					]
+					"order": 2,
+					"children": {
+					}
 				},
-				{
+				"culture": {
 					"name": "Culture",
 					"url": "/",
-					"children": [
-					]
+					"order": 3,
+					"children": {
+					}
 				},
-				{
+				"milestone": {
 					"name": "Milestones",
 					"url": "/",
-					"children": [
-					]
+					"order": 4,
+					"children": {
+					}
 				},
-				{
+				"awards": {
 					"name": "Awards",
 					"url": "/",
-					"children": [
-					]
+					"order": 5,
+					"children": {
+					}
 				},
-				{
+				"careers": {
 					"name": "Careers",
 					"url": "/",
-					"children": [
-					]
+					"order": 6,
+					"children": {
+					}
 				}
-			]
+			}
 		},
-		{
+		"news": {
 			"name": "News",
 			"url": "/",
-			"children": [
-				{
+			"order": 2,
+			"children": {
+				"ad_hoc": {
 					"name": "Ad Hoc Releases",
 					"url": "/",
-					"children": [
-					]
+					"order": 0,
+					"children": {
+					}
 				},
-				{
+				"press": {
 					"name": "Press Releases",
 					"url": "/",
-					"children": [
-					]
+					"order": 1,
+					"children": {
+					}
 				},
-				{
+				"company": {
 					"name": "Company News",
 					"url": "/",
-					"children": [
-					]
+					"order": 2,
+					"children": {
+					}
 				}
-			]
+			}
 		},
-		{
+		"products": {
 			"name": "Products",
 			"url": "/",
-			"children": [
-			]
+			"order": 3,
+			"children": {
+			}
 		},
-		{
+		"ir": {
 			"name": "Investor Relations",
 			"url": "/",
-			"children": [
-				{
+			"order": 4,
+			"children": {
+				"company": {
 					"name": "The Company",
 					"url": "/ir/the_company",
-					"children": [
-						{
+					"order": 0,
+					"children": {
+						"management": {
 							"name": "Management Board",
 							"url": "/",
-							"children": [
-							]
+							"order": 0,
+							"children": {
+							}
 						},
-						{
+						"profile": {
 							"name": "Profile",
 							"url": "/",
-							"children": [
-							]
+							"order": 1,
+							"children": {
+							}
 						},
-						{
+						"key_figures": {
 							"name": "Group Key Figures",
 							"url": "/",
-							"children": [
-							]
+							"order": 2,
+							"children": {
+							}
 						},
-						{
+						"outlook": {
 							"name": "Outlook",
 							"url": "/",
-							"children": [
-							]
+							"order": 3,
+							"children": {
+							}
 						},
-						{
+						"faq": {
 							"name": "FAQ",
 							"url": "/",
-							"children": [
-								{
+							"order": 4,
+							"children": {
+								"shares": {
 									"name": "Listing & Shares",
 									"url": "/",
-									"children": [
-									]
+									"order": 0,
+									"children": {
+									}
 								},
-								{
+								"financial": {
 									"name": "Financial",
 									"url": "/",
-									"children": [
-									]
+									"order": 1,
+									"children": {
+									}
 								},
-								{
+								"disclosure": {
 									"name": "Disclosure",
 									"url": "/",
-									"children": [
-									]
+									"order": 2,
+									"children": {
+									}
 								},
-								{
+								"management": {
 									"name": "Management",
 									"url": "/",
-									"children": [
-									]
+									"order": 3,
+									"children": {
+									}
 								},
-								{
+								"sale_distribution": {
 									"name": "Sales and Distribution",
 									"url": "/",
-									"children": [
-									]
+									"order": 4,
+									"children": {
+									}
 								},
-								{
+								"brand": {
 									"name": "Brand",
 									"url": "/",
-									"children": [
-									]
+									"order": 5,
+									"children": {
+									}
 								}
-							]
+							}
 						},
-						{
+						"company_tour": {
 							"name": "Company Tour",
 							"url": "/",
-							"children": [
-							]
+							"order": 5,
+							"children": {
+							}
 						}
-					]
+					}
 				},
-				{
+				"equity_story": {
 					"name": "Equity Story",
 					"url": "/",
-					"children": [
-						{
+					"order": 1,
+					"children": {
+						"market": {
 							"name": "Market",
 							"url": "/",
-							"children": [
-								{
+							"order": 0,
+							"children": {
+								"market": {
 									"name": "Market",
 									"url": "/",
-									"children": [
-									]
+									"order": 0,
+									"children": {
+									}
 								},
-								{
+								"driver_1": {
 									"name": "Market Driver: Strong Underlying Market Growth",
 									"url": "/",
-									"children": [
-									]
+									"order": 1,
+									"children": {
+									}
 								},
-								{
+								"driver_2": {
 									"name": "Market Driver: Consumer Lead Growth Dynamics",
 									"url": "/",
-									"children": [
-									]
+									"order": 2,
+									"children": {
+									}
 								}
-							]
+							}
 						},
-						{
+						"strategy": {
 							"name": "Strategy for Growth",
 							"url": "/",
-							"children": [
-								{
+							"order": 1,
+							"children": {
+								"strategy_1": {
 									"name": "Distribution Network Expansion",
 									"url": "/",
-									"children": [
-									]
+									"order": 0,
+									"children": {
+									}
 								},
-								{
+								"strategy_2": {
 									"name": "Strategic Cooperation with Grohe",
 									"url": "/",
-									"children": [
-									]
+									"order": 1,
+									"children": {
+									}
 								},
-								{
+								"strategy_3": {
 									"name": "Greater Recognition of Joyou Brand Name",
 									"url": "/",
-									"children": [
-									]
+									"order": 2,
+									"children": {
+									}
 								},
-								{
+								"strategy_4": {
 									"name": "Product Portfolio Expansion",
 									"url": "/",
-									"children": [
-									]
+									"order": 3,
+									"children": {
+									}
 								},
-								{
+								"strategy_5": {
 									"name": "Expansion of Project Business",
 									"url": "/",
-									"children": [
-									]
+									"order": 4,
+									"children": {
+									}
 								}
-							]
+							}
 						},
-						{
+						"strengths": {
 							"name": "Strengths",
 							"url": "/",
-							"children": [
-								{
+							"order": 2,
+							"children": {
+								"dist_network": {
 									"name": "Distribution Network",
 									"url": "/",
-									"children": [
-										{
+									"order": 0,
+									"children": {
+										"network_1": {
 											"name": "Joyou Brand Local",
 											"url": "/",
-											"children": [
-											]
+											"order": 0,
+											"children": {
+											}
 										},
-										{
+										"network_2": {
 											"name": "Project Business",
 											"url": "/",
-											"children": [
-											]
+											"order": 1,
+											"children": {
+											}
 										},
-										{
+										"network_3": {
 											"name": "OEM/ ODM International",
 											"url": "/",
-											"children": [
-											]
+											"order": 2,
+											"children": {
+											}
 										}
-									]
+									}
 								},
-								{
+								"market_position": {
 									"name": "Market Position",
 									"url": "/",
-									"children": [
-									]
+									"order": 1,
+									"children": {
+									}
 								},
-								{
+								"brand": {
 									"name": "Established Brand",
 									"url": "/",
-									"children": [
-									]
+									"order": 2,
+									"children": {
+									}
 								},
-								{
+								"experience": {
 									"name": "Extensive Manufacturing Experience",
 									"url": "/",
-									"children": [
-									]
+									"order": 3,
+									"children": {
+									}
 								},
-								{
+								"management": {
 									"name": "Management and Board",
 									"url": "/",
-									"children": [
-									]
+									"order": 4,
+									"children": {
+									}
 								},
-								{
+								"grohe": {
 									"name": "Cooperation with Grohe AG",
 									"url": "/",
-									"children": [
-									]
+									"order": 5,
+									"children": {
+									}
 								}
-							]
+							}
 						},
-						{
+						"highlights": {
 							"name": "Investment Highlights",
 							"url": "/",
-							"children": [
-							]
+							"order": 3,
+							"children": {
+							}
 						}
-					]
+					}
 				},
-				{
+				"share": {
 					"name": "The Share",
 					"url": "/",
-					"children": [
-						{
+					"order": 2,
+					"children": {
+						"share_1": {
 							"name": "Share Price",
 							"url": "/",
-							"children": [
-							]
+							"order": 0,
+							"children": {
+							}
 						},
-						{
+						"share_2": {
 							"name": "Analyst Coverage",
 							"url": "/",
-							"children": [
-							]
+							"order": 1,
+							"children": {
+							}
 						},
-						{
+						"share_3": {
 							"name": "Shareholder Structure",
 							"url": "/",
-							"children": [
-							]
+							"order": 2,
+							"children": {
+							}
 						}
-					]
+					}
 				},
-				{
+				"publications": {
 					"name": "Financial Publications",
 					"url": "/",
-					"children": [
-					]
+					"order": 3,
+					"children": {
+					}
 				},
-				{
+				"news": {
 					"name": "News from Joyou",
 					"url": "/",
-					"children": [
-						{
+					"order": 4,
+					"children": {
+						"ad_hoc": {
 							"name": "Ad Hoc Releases",
 							"url": "/",
-							"children": [
-							]
+							"order": 0,
+							"children": {
+							}
 						},
-						{
+						"press": {
 							"name": "Press Releases",
 							"url": "/",
-							"children": [
-							]
+							"order": 1,
+							"children": {
+							}
 						},
-						{
+						"company": {
 							"name": "Company News",
 							"url": "/",
-							"children": [
-							]
+							"order": 2,
+							"children": {
+							}
 						}
-					]
+					}
 				},
-				{
+				"calendar": {
 					"name": "Financial Calendar",
 					"url": "/",
-					"children": [
-					]
+					"order": 5,
+					"children": {
+					}
 				},
-				{
+				"governance": {
 					"name": "Corporate Governance",
 					"url": "/",
-					"children": [
-						{
+					"order": 6,
+					"children": {
+						"governance_1": {
 							"name": "Management and Supervisory Board",
 							"url": "/",
-							"children": [
-							]
+							"order": 0,
+							"children": {
+							}
 						},
-						{
+						"governance_2": {
 							"name": "Declaration of Compliance",
 							"url": "/",
-							"children": [
-							]
+							"order": 1,
+							"children": {
+							}
 						},
-						{
-							"name": "Directors’ Dealings",
+						"governance_3": {
+							"name": "Directors' Dealings",
 							"url": "/",
-							"children": [
-							]
+							"order": 2,
+							"children": {
+							}
 						},
-						{
+						"governance_3": {
 							"name": "Articles of Association",
 							"url": "/",
-							"children": [
-							]
+							"order": 3,
+							"children": {
+							}
 						},
-						{
-							"name": "Annual Shareholders’ Meeting",
+						"governance_4": {
+							"name": "Annual Shareholders' Meeting",
 							"url": "/",
-							"children": [
-							]
+							"order": 4,
+							"children": {
+							}
 						},
-						{
+						"governance_5": {
 							"name": "Voting Rights Notifications",
 							"url": "/",
-							"children": [
-							]
+							"order": 5,
+							"children": {
+							}
 						}
-					]
+					}
 				},
-				{
+				"contact": {
 					"name": "IR & Press Contact ",
 					"url": "/",
-					"children": [
-					]
+					"order": 7,
+					"children": {
+					}
 				}
-			]
+			}
 		},
-		{
+		"contact": {
 			"name": "Contact",
 			"url": "/",
-			"children": [
-			]
+			"order": 5,
+			"children": {
+			}
 		}
-	]
+	}
 }

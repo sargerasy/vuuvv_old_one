@@ -8,7 +8,8 @@ import views
 
 urlpatterns = patterns('',
 	url(r'^media/(.*)$', views.media),
-    (r'^$', views.index),
-    (r'^ir/(\w+)', views.ir),
+	(r'^$', views.index),
+	(r'^ir/(\w+)', views.ir),
+	(r'^test/(.*)', views.test),
 )
 
