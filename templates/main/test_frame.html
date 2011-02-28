@@ -37,10 +37,9 @@
 						<div class="menu-bar">
 							<div class="menu-main">
 								<div class="menu-upper">
-									{{ nav_menu.1.items }}
-									{% for key, item in nav_menu.1.sort_items %} 
+									{% for key, item in nav_menu.1 %} 
 									<div class="{% if sub_menu.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
-										<a class="menu-link" href="#">
+										<a class="menu-link" href="{{root}}{{item.url}}">
 										<table class="inner"><tr><td>
 											{{ item.name }}
 										</tr></td></table>
@@ -52,11 +51,11 @@
 								</div>
 							</div>
 							<div class="menu-sub">
-								{% for topkey, top in sitemap.items %}
-								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if top.children %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
-									{% for subkey, sub in top.children.items %}
-									<div class="sub-item">
-										<a class="sub-link" href="{{sub.url}}">
+								{% for item in subs %}
+								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if item %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
+									{% for key, sub in item %}
+									<div class="sub-item {% if key == tabs.1 %} sub-item-selected {% endif %}">
+										<a class="sub-link" href="{{root}}{{sub.url}}">
 											<div style="position:relative; display: block;">{{ sub.name }}</div>
 										</a>
 									</div>

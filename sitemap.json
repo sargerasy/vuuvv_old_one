@@ -425,7 +425,7 @@
 					"order": 6,
 					"children": {
 						"governance_1": {
-							"name": "Management and Supervisory Board",
+							"name": "Management Board",
 							"url": "/",
 							"order": 0,
 							"children": {
@@ -445,21 +445,21 @@
 							"children": {
 							}
 						},
-						"governance_3": {
+						"governance_4": {
 							"name": "Articles of Association",
 							"url": "/",
 							"order": 3,
 							"children": {
 							}
 						},
-						"governance_4": {
+						"governance_5": {
 							"name": "Annual Shareholders' Meeting",
 							"url": "/",
 							"order": 4,
 							"children": {
 							}
 						},
-						"governance_5": {
+						"governance_6": {
 							"name": "Voting Rights Notifications",
 							"url": "/",
 							"order": 5,
