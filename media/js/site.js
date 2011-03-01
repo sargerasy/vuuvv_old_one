@@ -84,5 +84,6 @@
 		sel_menu = $(".item-selected");
 		disp_menu = sel_menu;
 		set_top_menu_behavior();
+		$(".menu-link").click(function(){document.location.href = $(this).attr("href");});
 	});
 })(jQuery);

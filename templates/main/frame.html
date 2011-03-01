@@ -43,7 +43,7 @@
 									{% for key, item in menus.0.1 %} 
 									<div class="{% if menus.1.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
 										<a class="menu-link" href="{{root}}{{item.url}}">
-										<table class="inner"><tr><td>
+										<table class="inner"><tr><td style="cursor: pointer;">
 											{{ item.name }}
 										</tr></td></table>
 										</a>
@@ -60,7 +60,7 @@
 									<div class="sub-item" {% if k2 == menus.2.0 %}id="sub-item-selected"{% endif %}>
 										<a class="sub-link" href="{{root}}{{sub.url}}">
 											<div style="position:relative; display: block;">{{ sub.name }}</div>
-											<img src="/media/images/light.png" style="width: 100%;">
+											<img src="/media/images/light.png" style="width: 80px; border: none;">
 										</a>
 									</div>
 									{% endfor %}
