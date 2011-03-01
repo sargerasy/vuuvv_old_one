@@ -8,7 +8,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 		# Example:
-		(r'', include(main.urls)),
 
 		(r'^media/(.*)$', main.views.media),
 
@@ -17,5 +16,6 @@ urlpatterns = patterns('',
 
 		# Uncomment the next line to enable the admin:
 		(r'^admin/', include(admin.site.urls)),
+		(r'', include(main.urls)),
 )
 
