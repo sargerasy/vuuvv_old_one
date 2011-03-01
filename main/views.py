@@ -7,20 +7,25 @@ import logging
 import utils
 import json
 
+__obj = None
+
 def sort_items(d):
 	ret = d.items()
 	s = sorted(ret, key=lambda x: x[1]["order"])
 	return s;
 
-def index(request, path):
-	f = open("sitemap.json")
-	js = f.read()
-	f.close()
-	obj = json.loads(js)
+def index(request):
+	obj = get_obj()
+	nav_menu, sub_menu, tabs, last_menu = parse_menus("", obj)
+
 	return render_to_response("main/index.html", {
-		"selected": "Home",
+		"nav_menu": nav_menu,
+		"sub_menu": sub_menu,
+		"tabs": tabs,
+		"last_menu": last_menu,
 		"sitemap": obj["sitemap"],
-		#"nav_menu": utils.generate_nav_menu(obj["sitemap"], "nav-menu"),
+		"subs": generate_all_subs(obj["sitemap"]),
+		"root": "/",
 	})
 
 def find_in_array(a, name):
@@ -30,24 +35,34 @@ def find_in_array(a, name):
 	return None
 
 def get_obj():
+	global __obj
+	if(__obj):
+		return __obj
+
+	logging.info("not cache")
 	f = open("sitemap-bak.json")
 	js = f.read()
 	f.close()
-	return json.loads(js)
+	__obj = json.loads(js)
+	return __obj
 
 def parse_menus(path, obj):
 	parts = [ i for i in path.split("/") if i]
+	logging.info(str(parts))
 	x = obj["sitemap"]
 	selects = [(0, sort_items(x))]
 	length = min(3, len(parts))
+	i = -1 
 	for i in range(length):
 		item = x.get(parts[i], None)
 		if item:
 			selects.append((parts[i], sort_items(item["children"])))
 			x = item["children"]
 		else:
+			i -= 1
 			break; #should raise error for 404 page not found
 
+	logging.info(i)
 	selects.extend([('', {}) for j in range(3 - i - 1)])
 	return selects
 
@@ -59,29 +74,18 @@ def generate_all_subs(sitemap):
 	
 	return ret
 
-def ir(request, sub):
-	name = " ".join([i.capitalize() for i in sub.split("_")])
-	obj = get_obj()
-	ir = find_in_array(obj["sitemap"], "Investor Relations")
-	tabs = find_in_array(ir["children"], name)["children"]
-	return render_to_response("main/ir.html", {
-		"tabs": tabs,
-		"selected": "Investor Relations",
-		"sitemap": obj["sitemap"],
-	})
-
-def test(request, path):
+def joyou(request, path):
 	obj = get_obj()
 	nav_menu, sub_menu, tabs, last_menu = parse_menus(path, obj)
 
-	return render_to_response("main/test.html", {
+	return render_to_response("main/ir.html", {
 		"nav_menu": nav_menu,
 		"sub_menu": sub_menu,
 		"tabs": tabs,
 		"last_menu": last_menu,
 		"sitemap": obj["sitemap"],
 		"subs": generate_all_subs(obj["sitemap"]),
-		"root": "/joyou/test/",
+		"root": "/",
 	})
 
 def media(request, path):

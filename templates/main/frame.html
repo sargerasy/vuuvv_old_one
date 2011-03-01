@@ -9,7 +9,10 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 		<script type="text/javascript">
 		(function() {
-			if (jQuery.browser.msie) {
+			var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+			var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+
+			if (jQuery.browser.msie && (ie55 || ie6)) {
 				var e = document.createElement("link");
 				e.setAttribute("href", "/media/css/screen-ie.css");
 				e.setAttribute("media", "screen");
@@ -37,9 +40,9 @@
 						<div class="menu-bar">
 							<div class="menu-main">
 								<div class="menu-upper">
-									{% for item in sitemap %} 
-									<div class="{% if selected == item.name %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
-										<a class="menu-link" href="#">
+									{% for key, item in nav_menu.1 %} 
+									<div class="{% if sub_menu.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
+										<a class="menu-link" href="{{root}}{{item.url}}">
 										<table class="inner"><tr><td>
 											{{ item.name }}
 										</tr></td></table>
@@ -51,11 +54,11 @@
 								</div>
 							</div>
 							<div class="menu-sub">
-								{% for top in sitemap %}
-								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if top.children %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
-									{% for sub in top.children %}
-									<div class="sub-item">
-										<a class="sub-link" href="{{sub.url}}">
+								{% for item in subs %}
+								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if item %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
+									{% for key, sub in item %}
+									<div class="sub-item {% if key == tabs.1 %} sub-item-selected {% endif %}">
+										<a class="sub-link" href="{{root}}{{sub.url}}">
 											<div style="position:relative; display: block;">{{ sub.name }}</div>
 										</a>
 									</div>

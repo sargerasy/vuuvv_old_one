@@ -4,17 +4,19 @@
 {% endblock %}
 
 {% block content %}
+{% if tabs.1 %}
 <div class="tab-header">
 	<div class="tab-container">
-		{% for tab in tabs %}
+		{% for tab in tabs.1 %}
 		<div class="tab-item">
 			<div class="tab-item-left"> </div>
-			<div class="tab-item-center">{{tab.name}}</div>
+			<div class="tab-item-center">{{tab.1.name}}</div>
 			<div class="tab-item-right"> </div>
 		</div>
 		{% endfor %}
 	</div>
 </div>
+{% endif %}
 <div class="main-tab-content">
 	<div class="tc-top-bg"></div>
 	<table class="tc" cellspacing="0" cellpadding="0">

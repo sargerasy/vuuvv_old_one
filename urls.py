@@ -8,7 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 		# Example:
-		(r'^joyou/', include(main.urls)),
+		(r'', include(main.urls)),
 
 		(r'^media/(.*)$', main.views.media),
 
