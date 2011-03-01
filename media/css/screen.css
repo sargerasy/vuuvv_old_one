@@ -277,6 +277,12 @@ body {
 	height: 100%;
 	margin-top: -18px;
 	position: relative;
+	top: -5px;
+	display: none;
+}
+
+#sub-item-selected img{
+	display: inline;
 }
 
 /*---------------------------- End Menu ----------------------*/

@@ -25,24 +25,62 @@
 	margin-left: 1px;
 }
 
+.tab-item-selected {
+	cursor: pointer;
+	float: right;
+	font-weight: bold;
+	height: 38px;
+}
+
+.tab-item a {
+	color: #000;
+	text-decoration: none;
+	outline: medium none;
+}
+
+.tab-item-selected a{
+	color: #0683d9;
+}
+
 .tab-item-left {
-	background: url("../images/tab-left.gif") no-repeat;
+	background: url("../images/tab-left.png") no-repeat;
 	float: left;
 	height: 37px;
 	width: 4px;
 }
 
+.tab-item-selected .tab-item-left {
+	background: url("../images/tab-sel-left.png") no-repeat;
+	float: left;
+	height: 38px;
+	width: 4px;
+}
+
 .tab-item-center {
-	background: url("../images/tab-center.gif") repeat-x;
+	background: url("../images/tab-center.png") repeat-x;
 	float: left;
 	height: 37px;
 	padding: 13px 8px 0;
 }
 
+.tab-item-selected .tab-item-center {
+	background: url("../images/tab-sel-center.png") repeat-x;
+	float: left;
+	height: 38px;
+	padding: 13px 8px 0;
+}
+
 .tab-item-right {
-	background: url("../images/tab-right.gif") no-repeat;
+	background: url("../images/tab-right.png") no-repeat;
 	float: left;
 	height: 37px;
+	width: 4px;
+}
+
+.tab-item-selected .tab-item-right {
+	background: url("../images/tab-sel-right.png") no-repeat;
+	float: left;
+	height: 38px;
 	width: 4px;
 }
 
@@ -143,7 +181,29 @@
 
 .left-top-list {
 	font-size: 10px;
-	padding: 10px;
+	padding: 5px;
+}
+
+.lt-menu-item {
+	clear: both;
+	line-height: 14px;
+	padding: 4px 0 0 10px;
+}
+
+.lt-menu-decor {
+	background: url("../images/list-decor.png") no-repeat scroll 0 0 transparent;
+	height: 15px;
+	width: 7px;
+}
+
+.lt-menu-link a {
+	color: #226BD7;
+	text-decoration: none;
+}
+
+.lt-menu-link a:hover {
+	color: #FE9515;
+	text-decoration: underline;
 }
 
 .lt-list-c {

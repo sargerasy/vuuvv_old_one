@@ -40,8 +40,8 @@
 						<div class="menu-bar">
 							<div class="menu-main">
 								<div class="menu-upper">
-									{% for key, item in nav_menu.1 %} 
-									<div class="{% if sub_menu.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
+									{% for key, item in menus.0.1 %} 
+									<div class="{% if menus.1.0 == key %} item-selected item-selected-{{forloop.counter0}} {% else %} item-normal item-normal-{{forloop.counter0}} {% endif %}" sn="{{forloop.counter0}}">
 										<a class="menu-link" href="{{root}}{{item.url}}">
 										<table class="inner"><tr><td>
 											{{ item.name }}
@@ -54,12 +54,13 @@
 								</div>
 							</div>
 							<div class="menu-sub">
-								{% for item in subs %}
-								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if item %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: none">
-									{% for key, sub in item %}
-									<div class="sub-item {% if key == tabs.1 %} sub-item-selected {% endif %}">
+								{% for k1, item in subs %}
+								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if item %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: {% if k1 == menus.1.0 %}block{% else %}none{% endif %}">
+									{% for k2, sub in item %}
+									<div class="sub-item" {% if k2 == menus.2.0 %}id="sub-item-selected"{% endif %}>
 										<a class="sub-link" href="{{root}}{{sub.url}}">
 											<div style="position:relative; display: block;">{{ sub.name }}</div>
+											<img src="/media/images/light.png" style="width: 100%;">
 										</a>
 									</div>
 									{% endfor %}

@@ -10,7 +10,8 @@
 		document.write('</object>');
 	}
 
-	var hovered_menu = null;
+	var sel_menu = null;
+	var disp_menu = null;
 	var hoverin_top_menu = function(item) {
 		var sn = item.attr("sn");
 		if (!item.hasClass("item-selected")) {
@@ -21,7 +22,7 @@
 		var sub = $("#sub-container-" + sn);
 		sub.css("display", "block")
 			.css("position", "absolute");
-		hovered_menu = item;
+		disp_menu = item;
 	};
 
 	var hoverout_top_menu = function(item) {
@@ -34,7 +35,16 @@
 		var sub = $("#sub-container-" + sn);
 		sub.css("display", "none")
 			.css("position", "relative");
-		hovered_menu = null;
+
+		disp_menu = null;
+	};
+
+	var show_origin_sub = function() {
+		var sn = sel_menu.attr("sn");
+		var sub = $("#sub-container-" + sn);
+		sub.css("display", "block")
+			.css("position", "relative");
+		disp_menu = sel_menu;
 	};
 
 	var set_top_menu_behavior = function() {
@@ -43,7 +53,7 @@
 			var t = $(this);
 			if (menutimer) {
 				clearTimeout(menutimer);
-				if (hovered_menu) hoverout_top_menu(hovered_menu);
+				if (disp_menu) hoverout_top_menu(disp_menu);
 				hoverin_top_menu(t);
 			}
 			hoverin_top_menu(t);
@@ -52,6 +62,7 @@
 			var t = $(this);
 			menutimer = setTimeout(function() {
 				hoverout_top_menu(t);
+				show_origin_sub();
 			}, 800);
 		};
 		$(".item-normal, .item-selected").mouseover(mouseIn).mouseout(mouseOut);
@@ -61,7 +72,8 @@
 		};
 		var sub_mouseOut = function() {
 			menutimer = setTimeout(function() {
-				hoverout_top_menu(hovered_menu);
+				hoverout_top_menu(disp_menu);
+				show_origin_sub();
 			}, 800);
 		};
 		$(".sub-container").mouseover(sub_mouseIn).mouseout(sub_mouseOut);
@@ -69,6 +81,8 @@
 
 	$(document).ready(function() {
 		//ie_menu();
+		sel_menu = $(".item-selected");
+		disp_menu = sel_menu;
 		set_top_menu_behavior();
 	});
 })(jQuery);

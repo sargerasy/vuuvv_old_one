@@ -4,14 +4,16 @@
 {% endblock %}
 
 {% block content %}
-{% if tabs.1 %}
+{% if menus.2.1 %}
 <div class="tab-header">
 	<div class="tab-container">
-		{% for tab in tabs.1 %}
-		<div class="tab-item">
-			<div class="tab-item-left"> </div>
-			<div class="tab-item-center">{{tab.1.name}}</div>
-			<div class="tab-item-right"> </div>
+		{% for key,tab in menus.2.1 %}
+		<div class="tab-item {% if key == menus.3.0 %} tab-item-selected {% endif %} ">
+			<a href="{{root}}{{tab.url}}">
+			<div class="tab-item-left"></div>
+			<div class="tab-item-center">{{tab.name}}</div>
+			<div class="tab-item-right"></div>
+			</a>
 		</div>
 		{% endfor %}
 	</div>
@@ -29,11 +31,20 @@
 								<div class="lt-list-c">
 									<div class="left-top-head">
 										<div class="lt-title">
-											Management Board
+											{{ title }}
 										</div>
 									</div>
-									<div class="left-top-list">
-									</div>
+									<table class="left-top-list">
+										{% for key, item in menus.3.1 %}
+										<tr class="lt-menu-item">
+											<td class="lt-menu-decor">
+											</td>
+											<td class="lt-menu-link">
+												<a href="{{root}}{{item.url}}">{{item.name}}</a>
+											</td>
+										</tr>
+										{% endfor %}
+									</table>
 								</div>
 							</div>
 						</div>
