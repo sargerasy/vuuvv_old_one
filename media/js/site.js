@@ -53,9 +53,8 @@
 			var t = $(this);
 			if (menutimer) {
 				clearTimeout(menutimer);
-				if (disp_menu) hoverout_top_menu(disp_menu);
-				hoverin_top_menu(t);
 			}
+			if (disp_menu) hoverout_top_menu(disp_menu);
 			hoverin_top_menu(t);
 		};
 		var mouseOut = function() {
