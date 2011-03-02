@@ -252,6 +252,14 @@ body {
 	outline: none;
 }
 
+a.menu-link:hover {
+	color: #226BD7;
+}
+
+.item-selected .menu-link, .item-selected a.menu-link:hover {
+	color: white;
+}
+
 .sub-container {
 	background: url("../images/down-line.png") no-repeat;
 	cursor: pointer;
@@ -272,6 +280,10 @@ body {
 	color: white;
 	text-decoration: none;
 	outline: none;
+}
+
+a.sub-link:hover {
+	color: #e0e0e0;
 }
 
 .sub-item img {

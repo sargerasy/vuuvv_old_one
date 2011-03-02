@@ -66,10 +66,12 @@ def parse_menus(path, obj):
 
 def get_title_from_menus(menus):
 	p = menus[1]
+	i = 0
 	for k, v in menus:
-		if not v:
+		if not v or i > 2:
 			break
 		p = v
+		i += 1
 	
 	return p[k]["name"]
 

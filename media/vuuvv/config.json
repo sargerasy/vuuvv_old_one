@@ -36,7 +36,7 @@
   "let" :
   {
     "APPLICATION"  : "vuuvv",
-    "QOOXDOO_PATH" : "F:/project/vuuvv/media/qooxdoo-1.3-sdk",
+    "QOOXDOO_PATH" : "../qooxdoo-1.3-sdk",
     "QXTHEME"      : "vuuvv.theme.Theme",
     "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.simulation.*"],
     "LOCALES"      : [ "en" ],

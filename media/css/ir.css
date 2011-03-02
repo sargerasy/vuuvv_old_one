@@ -20,14 +20,14 @@
 
 .tab-item {
 	cursor: pointer;
-	float: right;
+	float: left;
 	height: 37px;
 	margin-left: 1px;
 }
 
 .tab-item-selected {
 	cursor: pointer;
-	float: right;
+	float: left;
 	font-weight: bold;
 	height: 38px;
 }
@@ -36,6 +36,10 @@
 	color: #000;
 	text-decoration: none;
 	outline: medium none;
+}
+
+.tab-item a:hover {
+	color: #0683d9;
 }
 
 .tab-item-selected a{

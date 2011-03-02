@@ -1,0 +1,20 @@
+{
+	appData: 
+	{
+		menus: 
+		{
+			access: 
+			{
+			},
+			pages:
+			{
+			},
+			news:
+			{
+			},
+			awards:
+			{
+			}
+		}
+	}
+}
