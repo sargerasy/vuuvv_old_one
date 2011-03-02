@@ -91,6 +91,13 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			infosplit.setDecorator(null);
 
 			mainsplit.add(infosplit);
+			// create the model
+			var model = new qx.data.Array(["a", "b", "c", "d", "e"]);
+			// create a list widget
+			var list = new qx.ui.form.List();
+			// create the controller
+			var listController = new qx.data.controller.List(model, list);
+			infosplit.add(list);
 		}
 	}
 });
