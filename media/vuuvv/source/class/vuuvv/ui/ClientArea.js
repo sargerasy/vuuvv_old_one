@@ -9,7 +9,7 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 		this.base(arguments, new qx.ui.layout.VBox());
 		this.initReadyState();
 		this.addListener("changeState", function(){
-			console.log(this.getReadyState());
+			this.debug(this.getReadyState());
 		});
 	},
 
@@ -41,17 +41,35 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			var timer = qx.util.TimerManager.getInstance();
 
 			var url = "script/test.json";
-			var store = new qx.data.store.Json(url);
-			store.addListener("loaded", function(e) {
-				console.log(e.getData().getAppData().getMenus());
-				this._initializeContent();
+
+			var req = new qx.io.remote.Request(url);
+			req.setTimeout(180000);
+			req.setProhibitCaching(false);
+
+			req.addListener("completed", function(evt) {
+				var content = evt.getContent();
+				var treeData = eval("(" + content + ")");
+				this._initializeContent(treeData.appData);
 				this.setReadyState("complete");
 				callback.call(context);
 			}, this);
+
+			req.addListener("failed", function(evt) {
+				this.error("Couldn't load file: " + url);
+			}, this);
+
+			req.send();
+//			var store = new qx.data.store.Json(url);
+//			store.addListener("loaded", function(e) {
+//				this.debug(e.getData().getAppData().getMenus());
+//				this._initializeContent();
+//				this.setReadyState("complete");
+//				callback.call(context);
+//			}, this);
 		},
 
-		_initializeContent: function() {
-			this.__toolbar = new vuuvv.view.Toolbar();
+		_initializeContent: function(appData) {
+			this.__toolbar = new vuuvv.view.Toolbar(appData.menus);
 			this.add(this.__toolbar, {flex: 0});
 
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
@@ -91,13 +109,17 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			infosplit.setDecorator(null);
 
 			mainsplit.add(infosplit);
-			// create the model
-			var model = new qx.data.Array(["a", "b", "c", "d", "e"]);
-			// create a list widget
-			var list = new qx.ui.form.List();
-			// create the controller
-			var listController = new qx.data.controller.List(model, list);
-			infosplit.add(list);
+
+			var slider1 = new qx.ui.form.Slider();
+			var slider2 = new qx.ui.form.Slider();
+			slider1.setWidth(100);
+			slider2.setWidth(100);
+
+			var controller = new qx.data.controller.Object(slider1);
+			controller.addTarget(slider2, "value", "value");
+
+			infosplit.add(slider1);
+			infosplit.add(slider2);
 		}
 	}
 });

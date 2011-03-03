@@ -167,71 +167,71 @@ body {
 	text-align: center;
 }
 
-.item-selected-0 {
+#item-selected-0 {
 	width: 73px;
 }
-.item-selected-1 {
+#item-selected-1 {
 	width: 89px;
 }
-.item-selected-2 {
+#item-selected-2 {
 	width: 79px;
 }
-.item-selected-3 {
+#item-selected-3 {
 	width: 91px;
 }
-.item-selected-4 {
+#item-selected-4 {
 	width: 91px;
 }
-.item-selected-5 {
+#item-selected-5 {
 	width: 89px;
 }
 
-.item-hover-0 {
+#item-hover-0 {
 	background-position: 0 -52px;
 	width: 73px;
 }
-.item-hover-1 {
+#item-hover-1 {
 	background-position: -786px -52px;
 	width: 89px;
 }
-.item-hover-2 {
+#item-hover-2 {
 	background-position: -504px -52px;
 	width: 79px;
 }
-.item-hover-3 {
+#item-hover-3 {
 	background-position: -695px -52px;
 	width: 91px;
 }
-.item-hover-4 {
+#item-hover-4 {
 	background-position: -695px -52px;
 	width: 91px;
 }
-.item-hover-5 {
+#item-hover-5 {
 	background-position: -786px -52px;
 	width: 89px;
 }
 
-.item-normal-0 {
+#item-normal-0 {
 	background-position: 0 0;
 	width: 73px;
 }
-.item-normal-1 {
+#item-normal-1 {
 	background-position: -786px 0;
 	width: 89px;
 }
-.item-normal-2 {
+#item-normal-2 {
 	background-position: -504px 0;
 	width: 79px;
 }
-.item-normal-3 {
+#item-normal-3 {
 	background-position: -695px 0;
 	width: 91px;
 }
-.item-normal-4 {
+#item-normal-4 {
 	background-position: -695px 0;
 	width: 91px;
 }
-.item-normal-5 {
+#item-normal-5 {
 	background-position: -786px 0;
 	width: 89px;
 }

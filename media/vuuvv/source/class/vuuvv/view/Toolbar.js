@@ -33,65 +33,14 @@ qx.Class.define("vuuvv.view.Toolbar", {
  * @param sampleNames {Array} An array containing all names of the samples as
  *   String.
  */
-	construct : function(sampleNames)
+	construct : function(menuData)
 	{
 		this.base(arguments);
 
 		this.__menuItemStore = {};
 
-		// run button
-		var goodsButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Goods")
-		);
-		this.add(goodsButton);
-		goodsButton.setToolTipText(this.tr("Goods Manage"));
+		this._createMenus(menuData);
 
-		var promotionButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Promotion")
-		);
-		this.add(promotionButton);
-		promotionButton.setToolTipText(this.tr("Promotion Manage"));
-
-		var orderButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Order")
-		);
-		this.add(orderButton);
-		orderButton.setToolTipText(this.tr("Order Manage"));
-
-		var articleButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Article")
-		);
-		this.add(articleButton);
-		articleButton.setToolTipText(this.tr("Article Manage"));
-
-		var statisticsButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Statistics")
-		);
-		this.add(statisticsButton);
-		statisticsButton.setToolTipText(this.tr("Statistics Report"));
-
-		var memberButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Member")
-		);
-		this.add(memberButton);
-		memberButton.setToolTipText(this.tr("Member Manage"));
-
-		var accessButton = new qx.ui.toolbar.MenuButton(
-			this.tr("Access")
-		);
-		this.add(accessButton);
-		accessButton.setToolTipText(this.tr("Access Manage"));
-
-		this.addSpacer();
-		// help button
-		var helpButton = new qx.ui.toolbar.Button(
-				this.tr("About"), "icon/22/actions/help-about.png"
-				);
-		this.add(helpButton);
-		helpButton.setToolTipText(this.tr("admin About"));
-		helpButton.addListener("execute", function() {
-			this.fireEvent("openManual");
-		}, this);
 //		selectSampleButton.setMenu(this.__createSampleMenu(sampleNames));
 //
 //		// enable doverflow handling
@@ -144,61 +93,6 @@ qx.Class.define("vuuvv.view.Toolbar", {
 
 	events :
 	{
-		/**
-		 * Fired if the run button is pressed.
-		 */
-		"run" : "qx.event.type.Event",
-
-		/**
-		 * Fired if a new sample should be selected. The data contains the name of
-		 * the new sample.
-		 */
-		"changeSample" : "qx.event.type.Data",
-
-		/**
-		 * Data event if the code highlighting should be used.
-		 */
-		"changeHighlight" : "qx.event.type.Data",
-
-		/**
-		 * Data event if the log should be shown.
-		 */
-		"changeLog" : "qx.event.type.Data",
-
-		/**
-		 * Event which will indicate a url shortening action.
-		 */
-		"shortenUrl" : "qx.event.type.Event",
-
-		/**
-		 * Event which will be fired to open the api.
-		 */
-		"openApi" : "qx.event.type.Event",
-
-		/**
-		 * Event which will be fired to open the manual.
-		 */
-		"openManual" : "qx.event.type.Event",
-
-		/**
-		 * Event signaling that a new gist has been selected.
-		 */
-		"changeGist" : "qx.event.type.Data",
-
-		/**
-		 * Event which will be fireed if the gists should be reloaded.
-		 */
-		"reloadGists" : "qx.event.type.Data",
-
-		/**
-		 * Fired if a new gist should be created.
-		 */
-		"newGist" : "qx.event.type.Event",
-
-		/**
-		 * Fired if the gist should be edited.
-		 */
-		"editGist" : "qx.event.type.Event"
 	},
 
 
@@ -210,6 +104,57 @@ qx.Class.define("vuuvv.view.Toolbar", {
 		__logCheckButton : null,
 		__gistMenu : null,
 
+		_createMenus: function(menuData) {
+			var data = this._create_tree_data(menuData);
+			for(var i in data) {
+				var value = data[i];
+				if (value.children) {
+					var menu = this.__menuItemStore[i] = new qx.ui.toolbar.MenuButton(
+						this.tr(value.name)
+					);
+					this.add(menu);
+					var sub_menu = new qx.ui.menu.Menu();
+					this._create_sub_menu(sub_menu, value.children);
+					menu.setMenu(sub_menu);
+				} else {
+					this.__menuItemStore[i] = new qx.ui.toolbar.Button(
+						this.tr(value.name)
+					);
+					this.add(this.__menuItemStore[i]);
+				}
+			}
+		},
+
+		_create_sub_menu: function(widget, model) {
+			for(i in model) {
+				var value = model[i];
+				var menu = this.__menuItemStore[i] = new qx.ui.menu.Button(
+					this.tr(value.name)
+				);
+				widget.add(menu);
+				if(value.children) {
+					var sub_menu = new qx.ui.menu.Menu();
+					this._create_sub_menu(sub_menu, value.children);
+					menu.setMenu(sub_menu);
+				} else {
+				}
+			}
+		},
+
+		_create_tree_data: function(data) {
+			var root = {};
+			for(var i in data) {
+				var pid = data[i]["pid"];
+				if (pid == 0)
+					root[i] = data[i];
+				else {
+					if(!data[pid]["children"]) 
+						data[pid]["children"] = {};    
+					data[pid]["children"][i] = data[i];
+				}
+			}
+			return root;
+		},
 		/**
 		 * Controlls the presed state of the log button.
 		 * @param show {Boolean} True, if the button should be pressed.

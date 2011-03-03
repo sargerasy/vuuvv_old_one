@@ -3,18 +3,20 @@
 	{
 		menus: 
 		{
-			access: 
-			{
-			},
-			pages:
-			{
-			},
-			news:
-			{
-			},
-			awards:
-			{
-			}
+			1: {name: "item-1", pid: 0},
+			2: {name: "item-2", pid: 5},
+			3: {name: "item-3", pid: 1},
+			4: {name: "item-4", pid: 5},
+			5: {name: "item-5", pid: 0},
+			6: {name: "item-6", pid: 8},
+			7: {name: "item-7", pid: 10},
+			8: {name: "item-8", pid: 10},
+			9: {name: "item-9", pid: 10},
+			10: {name: "item-10", pid: 0},
+			11: {name: "item-11", pid: 12},
+			12: {name: "item-12", pid: 9},
+			13: {name: "item-13", pid: 9},
+			14: {name: "item-13", pid: 12}
 		}
 	}
 }
