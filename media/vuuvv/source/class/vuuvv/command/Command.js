@@ -5,9 +5,19 @@ qx.Class.define("vuuvv.command.Command", {
 	{
 		this.base(arguments);
 		this.__context = context;
+		this.__command = new qx.ui.core.Command();
+		this.__command.addListener("execute", this.handle, context);
 	},
 
-	member:
+	members:
 	{
+		handle: function() {
+			// in this function, this pointer to this.__context
+			this.debug("command run");
+		},
+
+		attach: function(widget) {
+			widget.setCommand(this.__command);
+		}
 	}
 });

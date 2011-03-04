@@ -59,13 +59,6 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			}, this);
 
 			req.send();
-//			var store = new qx.data.store.Json(url);
-//			store.addListener("loaded", function(e) {
-//				this.debug(e.getData().getAppData().getMenus());
-//				this._initializeContent();
-//				this.setReadyState("complete");
-//				callback.call(context);
-//			}, this);
 		},
 
 		_initializeContent: function(appData) {

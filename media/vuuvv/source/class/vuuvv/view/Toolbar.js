@@ -126,7 +126,7 @@ qx.Class.define("vuuvv.view.Toolbar", {
 		},
 
 		_create_sub_menu: function(widget, model) {
-			for(i in model) {
+			for(var i in model) {
 				var value = model[i];
 				var menu = this.__menuItemStore[i] = new qx.ui.menu.Button(
 					this.tr(value.name)
@@ -137,6 +137,8 @@ qx.Class.define("vuuvv.view.Toolbar", {
 					this._create_sub_menu(sub_menu, value.children);
 					menu.setMenu(sub_menu);
 				} else {
+					var comm = new vuuvv.command.Command(qx.core.Init.getApplication());
+					comm.attach(menu);
 				}
 			}
 		},
