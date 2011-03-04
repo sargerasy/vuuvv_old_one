@@ -40,7 +40,7 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			this.setReadyState("loading");
 			var timer = qx.util.TimerManager.getInstance();
 
-			var url = "script/test.json";
+			var url = "/admin/appdata";
 
 			var req = new qx.io.remote.Request(url);
 			req.setTimeout(180000);
@@ -49,7 +49,7 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			req.addListener("completed", function(evt) {
 				var content = evt.getContent();
 				var treeData = eval("(" + content + ")");
-				this._initializeContent(treeData.appData);
+				this._initializeContent(treeData.appdata);
 				this.setReadyState("complete");
 				callback.call(context);
 			}, this);
@@ -61,8 +61,8 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			req.send();
 		},
 
-		_initializeContent: function(appData) {
-			this.__toolbar = new vuuvv.view.Toolbar(appData.menus);
+		_initializeContent: function(appdata) {
+			this.__toolbar = new vuuvv.ui.view.Menubar(appdata.menus);
 			this.add(this.__toolbar, {flex: 0});
 
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
@@ -98,21 +98,14 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			this._status.setTextAlign("right");
 			searchComposlite.add(this._status);
 
-			var infosplit = new qx.ui.splitpane.Pane("vertical");
-			infosplit.setDecorator(null);
+			var tabView = new qx.ui.tabview.TabView();
+			mainsplit.add(tabView);
+			qx.core.Init.getApplication().setTabView(tabView);
 
-			mainsplit.add(infosplit);
-
-			var slider1 = new qx.ui.form.Slider();
-			var slider2 = new qx.ui.form.Slider();
-			slider1.setWidth(100);
-			slider2.setWidth(100);
-
-			var controller = new qx.data.controller.Object(slider1);
-			controller.addTarget(slider2, "value", "value");
-
-			infosplit.add(slider1);
-			infosplit.add(slider2);
+//			var page1 = new qx.ui.tabview.Page("Layout", "icon/16/apps/utilities-terminal.png");
+//			page1.setLayout(new qx.ui.layout.VBox());
+//			page1.add(new qx.ui.basic.Label("Layout-Settings"));
+//			tabView.add(page1);
 		}
 	}
 });

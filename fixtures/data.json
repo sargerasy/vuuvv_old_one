@@ -1,0 +1,112 @@
+[
+	{
+		"model": "admin.Menu",
+		"pk": 1,
+		"fields": {
+			"label": "System",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": null
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 2,
+		"fields": {
+			"label": "User",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 1
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 3,
+		"fields": {
+			"label": "Group",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 1
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 4,
+		"fields": {
+			"label": "Permission",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 1
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 5,
+		"fields": {
+			"label": "Pages",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": null
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 6,
+		"fields": {
+			"label": "Menu",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 5
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 7,
+		"fields": {
+			"label": "Page",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 5
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 8,
+		"fields": {
+			"label": "Help",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": null
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 9,
+		"fields": {
+			"label": "About",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 8
+		}
+	},
+	{
+		"model": "admin.Menu",
+		"pk": 10,
+		"fields": {
+			"label": "Admin Menu",
+			"tooltip": "",
+			"icon": "",
+			"command": "",
+			"parent": 1
+		}
+	}
+]

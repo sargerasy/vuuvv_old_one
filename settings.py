@@ -58,7 +58,7 @@ MEDIA_URL = '/media/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/admin/'
+ADMIN_MEDIA_PREFIX = '/media/_admin/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 's!v!=n1$b-u^c^h_$(la*pg!qdajbs)%(#@(n+isl@y_9csm5s'
@@ -100,6 +100,7 @@ INSTALLED_APPS = (
 		# Uncomment the next line to enable admin documentation:
 		'django.contrib.admindocs',
 		'main',
+		'admin',
 		'debug_toolbar',
 		)
 import logging

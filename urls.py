@@ -1,21 +1,18 @@
 from django.conf.urls.defaults import *
 import main.urls
 import main.views
+import admin.urls
 
 # Uncomment the next two lines to enable the admin:
-from django.contrib import admin
-admin.autodiscover()
+from django.contrib import admin as _admin
+_admin.autodiscover()
 
 urlpatterns = patterns('',
-		# Example:
-
 		(r'^media/(.*)$', main.views.media),
 
-		# Uncomment the admin/doc line below to enable admin documentation:
-		(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-		# Uncomment the next line to enable the admin:
-		(r'^admin/', include(admin.site.urls)),
-		(r'', include(main.urls)),
+		(r'^_admin/doc/', include('django.contrib.admindocs.urls')),
+		(r'^_admin/', include(_admin.site.urls)),
+		(r'^admin/', include(admin.urls)),
+		#(r'', include(main.urls)),
 )
 

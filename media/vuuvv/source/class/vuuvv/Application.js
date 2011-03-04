@@ -22,6 +22,12 @@ qx.Class.define("vuuvv.Application", {
 	extend : qx.application.Standalone,
 
 
+	properties:
+	{
+		tabView: {
+			check: "qx.ui.tabview.TabView"
+		}
+	},
 
 /*
  *****************************************************************************

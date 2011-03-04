@@ -9,7 +9,7 @@ qx.Class.define("vuuvv.ui.Frame", {
 	construct: function()
 	{
 		this.base(arguments, new qx.ui.layout.VBox());
-		this.add(new vuuvv.view.Header(), {flex: 0});
+		this.add(new vuuvv.ui.view.Header(), {flex: 0});
 
 		this.__stack = new qx.ui.container.Stack();
 		this.add(this.__stack, {flex: 1});
