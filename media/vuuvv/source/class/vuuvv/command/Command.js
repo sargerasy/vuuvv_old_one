@@ -18,7 +18,9 @@ qx.Class.define("vuuvv.command.Command", {
 			var page = new qx.ui.tabview.Page(this.getLabel(), this.getIcon());
 			page.setShowCloseButton(true);
 			this.debug(tabs.indexOf(page));
-			this.debug(page.getButton());
+			page.getButton().addListener("contextmenu", function(){
+				this.debug(page.getButton());
+			});
 			tabs.add(page);
 			this.debug(tabs.indexOf(page));
 			tabs.setSelection([page]);
