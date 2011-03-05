@@ -15,15 +15,7 @@ qx.Class.define("vuuvv.command.Command", {
 		handle: function() {
 			var app = qx.core.Init.getApplication();
 			var tabs = app.getTabView();
-			var page = new qx.ui.tabview.Page(this.getLabel(), this.getIcon());
-			page.setShowCloseButton(true);
-			this.debug(tabs.indexOf(page));
-			page.getButton().addListener("contextmenu", function(){
-				this.debug(page.getButton());
-			});
-			tabs.add(page);
-			this.debug(tabs.indexOf(page));
-			tabs.setSelection([page]);
+			tabs.add(this.getLabel(), this.getIcon());
 		}
 	}
 });

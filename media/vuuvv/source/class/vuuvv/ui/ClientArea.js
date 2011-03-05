@@ -98,14 +98,9 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			this._status.setTextAlign("right");
 			searchComposlite.add(this._status);
 
-			var tabView = new qx.ui.tabview.TabView();
+			var tabView = new vuuvv.ui.TabView();
 			mainsplit.add(tabView);
 			qx.core.Init.getApplication().setTabView(tabView);
-
-//			var page1 = new qx.ui.tabview.Page("Layout", "icon/16/apps/utilities-terminal.png");
-//			page1.setLayout(new qx.ui.layout.VBox());
-//			page1.add(new qx.ui.basic.Label("Layout-Settings"));
-//			tabView.add(page1);
 		}
 	}
 });
