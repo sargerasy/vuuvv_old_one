@@ -38,7 +38,6 @@ def get_obj():
 	if(__obj):
 		return __obj
 
-	logging.info("not cache")
 	f = open("sitemap-bak.json")
 	js = f.read()
 	f.close()
@@ -92,7 +91,6 @@ def _parse_menus(path, obj):
 				selects.append([parts[i], {}])
 				x = {}
 		else:
-			logging.info("out of range")
 			if x:
 				k, v = sort_items(x)[0]
 				selects.append([k, v["children"]])
