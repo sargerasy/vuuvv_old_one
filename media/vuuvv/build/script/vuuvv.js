@@ -25,7 +25,7 @@ qx.$$loader = {
   parts : {"boot":[0]},
   uris : [["__out__:vuuvv.js"]],
   urisBefore : [],
-  packageHashes : {"0":"548508087f9b"},
+  packageHashes : {"0":"d219041cd3d1"},
   boot : "boot",
   closureParts : {},
   bootIsInline : true,
@@ -165,7 +165,7 @@ qx.$$loader.initUris = function(){
 }
 })();
 
-qx.$$packageData['548508087f9b']={"locales":{"C":{"alternateQuotationEnd":"’","alternateQuotationStart":"‘","cldr_am":"AM","cldr_date_format_full":"EEEE, MMMM d, y","cldr_date_format_long":"MMMM d, y","cldr_date_format_medium":"MMM d, y","cldr_date_format_short":"M/d/yy","cldr_date_time_format_EEEd":"d EEE","cldr_date_time_format_Hm":"H:mm","cldr_date_time_format_Hms":"H:mm:ss","cldr_date_time_format_M":"L","cldr_date_time_format_MEd":"E, M/d","cldr_date_time_format_MMM":"LLL","cldr_date_time_format_MMMEd":"E, MMM d","cldr_date_time_format_MMMMEd":"E, MMMM d","cldr_date_time_format_MMMMd":"MMMM d","cldr_date_time_format_MMMd":"MMM d","cldr_date_time_format_Md":"M/d","cldr_date_time_format_d":"d","cldr_date_time_format_hm":"h:mm a","cldr_date_time_format_ms":"mm:ss","cldr_date_time_format_y":"y","cldr_date_time_format_yM":"M/yyyy","cldr_date_time_format_yMEd":"EEE, M/d/yyyy","cldr_date_time_format_yMMM":"MMM y","cldr_date_time_format_yMMMEd":"EEE, MMM d, y","cldr_date_time_format_yMMMM":"MMMM y","cldr_date_time_format_yQ":"Q yyyy","cldr_date_time_format_yQQQ":"QQQ y","cldr_day_format_abbreviated_fri":"Fri","cldr_day_format_abbreviated_mon":"Mon","cldr_day_format_abbreviated_sat":"Sat","cldr_day_format_abbreviated_sun":"Sun","cldr_day_format_abbreviated_thu":"Thu","cldr_day_format_abbreviated_tue":"Tue","cldr_day_format_abbreviated_wed":"Wed","cldr_day_format_narrow_fri":"F","cldr_day_format_narrow_mon":"M","cldr_day_format_narrow_sat":"S","cldr_day_format_narrow_sun":"S","cldr_day_format_narrow_thu":"T","cldr_day_format_narrow_tue":"T","cldr_day_format_narrow_wed":"W","cldr_day_format_wide_fri":"Friday","cldr_day_format_wide_mon":"Monday","cldr_day_format_wide_sat":"Saturday","cldr_day_format_wide_sun":"Sunday","cldr_day_format_wide_thu":"Thursday","cldr_day_format_wide_tue":"Tuesday","cldr_day_format_wide_wed":"Wednesday","cldr_day_stand-alone_abbreviated_fri":"Fri","cldr_day_stand-alone_abbreviated_mon":"Mon","cldr_day_stand-alone_abbreviated_sat":"Sat","cldr_day_stand-alone_abbreviated_sun":"Sun","cldr_day_stand-alone_abbreviated_thu":"Thu","cldr_day_stand-alone_abbreviated_tue":"Tue","cldr_day_stand-alone_abbreviated_wed":"Wed","cldr_day_stand-alone_narrow_fri":"F","cldr_day_stand-alone_narrow_mon":"M","cldr_day_stand-alone_narrow_sat":"S","cldr_day_stand-alone_narrow_sun":"S","cldr_day_stand-alone_narrow_thu":"T","cldr_day_stand-alone_narrow_tue":"T","cldr_day_stand-alone_narrow_wed":"W","cldr_day_stand-alone_wide_fri":"Friday","cldr_day_stand-alone_wide_mon":"Monday","cldr_day_stand-alone_wide_sat":"Saturday","cldr_day_stand-alone_wide_sun":"Sunday","cldr_day_stand-alone_wide_thu":"Thursday","cldr_day_stand-alone_wide_tue":"Tuesday","cldr_day_stand-alone_wide_wed":"Wednesday","cldr_month_format_abbreviated_1":"Jan","cldr_month_format_abbreviated_10":"Oct","cldr_month_format_abbreviated_11":"Nov","cldr_month_format_abbreviated_12":"Dec","cldr_month_format_abbreviated_2":"Feb","cldr_month_format_abbreviated_3":"Mar","cldr_month_format_abbreviated_4":"Apr","cldr_month_format_abbreviated_5":"May","cldr_month_format_abbreviated_6":"Jun","cldr_month_format_abbreviated_7":"Jul","cldr_month_format_abbreviated_8":"Aug","cldr_month_format_abbreviated_9":"Sep","cldr_month_format_wide_1":"January","cldr_month_format_wide_10":"October","cldr_month_format_wide_11":"November","cldr_month_format_wide_12":"December","cldr_month_format_wide_2":"February","cldr_month_format_wide_3":"March","cldr_month_format_wide_4":"April","cldr_month_format_wide_5":"May","cldr_month_format_wide_6":"June","cldr_month_format_wide_7":"July","cldr_month_format_wide_8":"August","cldr_month_format_wide_9":"September","cldr_month_stand-alone_narrow_1":"J","cldr_month_stand-alone_narrow_10":"O","cldr_month_stand-alone_narrow_11":"N","cldr_month_stand-alone_narrow_12":"D","cldr_month_stand-alone_narrow_2":"F","cldr_month_stand-alone_narrow_3":"M","cldr_month_stand-alone_narrow_4":"A","cldr_month_stand-alone_narrow_5":"M","cldr_month_stand-alone_narrow_6":"J","cldr_month_stand-alone_narrow_7":"J","cldr_month_stand-alone_narrow_8":"A","cldr_month_stand-alone_narrow_9":"S","cldr_number_decimal_separator":".","cldr_number_group_separator":",","cldr_number_percent_format":"#,##0%","cldr_pm":"PM","cldr_time_format_full":"h:mm:ss a zzzz","cldr_time_format_long":"h:mm:ss a z","cldr_time_format_medium":"h:mm:ss a","cldr_time_format_short":"h:mm a","quotationEnd":"”","quotationStart":"“"},"en":{"alternateQuotationEnd":"’","alternateQuotationStart":"‘","cldr_am":"AM","cldr_date_format_full":"EEEE, MMMM d, y","cldr_date_format_long":"MMMM d, y","cldr_date_format_medium":"MMM d, y","cldr_date_format_short":"M/d/yy","cldr_date_time_format_EEEd":"d EEE","cldr_date_time_format_Hm":"H:mm","cldr_date_time_format_Hms":"H:mm:ss","cldr_date_time_format_M":"L","cldr_date_time_format_MEd":"E, M/d","cldr_date_time_format_MMM":"LLL","cldr_date_time_format_MMMEd":"E, MMM d","cldr_date_time_format_MMMMEd":"E, MMMM d","cldr_date_time_format_MMMMd":"MMMM d","cldr_date_time_format_MMMd":"MMM d","cldr_date_time_format_Md":"M/d","cldr_date_time_format_d":"d","cldr_date_time_format_hm":"h:mm a","cldr_date_time_format_ms":"mm:ss","cldr_date_time_format_y":"y","cldr_date_time_format_yM":"M/yyyy","cldr_date_time_format_yMEd":"EEE, M/d/yyyy","cldr_date_time_format_yMMM":"MMM y","cldr_date_time_format_yMMMEd":"EEE, MMM d, y","cldr_date_time_format_yMMMM":"MMMM y","cldr_date_time_format_yQ":"Q yyyy","cldr_date_time_format_yQQQ":"QQQ y","cldr_day_format_abbreviated_fri":"Fri","cldr_day_format_abbreviated_mon":"Mon","cldr_day_format_abbreviated_sat":"Sat","cldr_day_format_abbreviated_sun":"Sun","cldr_day_format_abbreviated_thu":"Thu","cldr_day_format_abbreviated_tue":"Tue","cldr_day_format_abbreviated_wed":"Wed","cldr_day_format_narrow_fri":"F","cldr_day_format_narrow_mon":"M","cldr_day_format_narrow_sat":"S","cldr_day_format_narrow_sun":"S","cldr_day_format_narrow_thu":"T","cldr_day_format_narrow_tue":"T","cldr_day_format_narrow_wed":"W","cldr_day_format_wide_fri":"Friday","cldr_day_format_wide_mon":"Monday","cldr_day_format_wide_sat":"Saturday","cldr_day_format_wide_sun":"Sunday","cldr_day_format_wide_thu":"Thursday","cldr_day_format_wide_tue":"Tuesday","cldr_day_format_wide_wed":"Wednesday","cldr_day_stand-alone_abbreviated_fri":"Fri","cldr_day_stand-alone_abbreviated_mon":"Mon","cldr_day_stand-alone_abbreviated_sat":"Sat","cldr_day_stand-alone_abbreviated_sun":"Sun","cldr_day_stand-alone_abbreviated_thu":"Thu","cldr_day_stand-alone_abbreviated_tue":"Tue","cldr_day_stand-alone_abbreviated_wed":"Wed","cldr_day_stand-alone_narrow_fri":"F","cldr_day_stand-alone_narrow_mon":"M","cldr_day_stand-alone_narrow_sat":"S","cldr_day_stand-alone_narrow_sun":"S","cldr_day_stand-alone_narrow_thu":"T","cldr_day_stand-alone_narrow_tue":"T","cldr_day_stand-alone_narrow_wed":"W","cldr_day_stand-alone_wide_fri":"Friday","cldr_day_stand-alone_wide_mon":"Monday","cldr_day_stand-alone_wide_sat":"Saturday","cldr_day_stand-alone_wide_sun":"Sunday","cldr_day_stand-alone_wide_thu":"Thursday","cldr_day_stand-alone_wide_tue":"Tuesday","cldr_day_stand-alone_wide_wed":"Wednesday","cldr_month_format_abbreviated_1":"Jan","cldr_month_format_abbreviated_10":"Oct","cldr_month_format_abbreviated_11":"Nov","cldr_month_format_abbreviated_12":"Dec","cldr_month_format_abbreviated_2":"Feb","cldr_month_format_abbreviated_3":"Mar","cldr_month_format_abbreviated_4":"Apr","cldr_month_format_abbreviated_5":"May","cldr_month_format_abbreviated_6":"Jun","cldr_month_format_abbreviated_7":"Jul","cldr_month_format_abbreviated_8":"Aug","cldr_month_format_abbreviated_9":"Sep","cldr_month_format_wide_1":"January","cldr_month_format_wide_10":"October","cldr_month_format_wide_11":"November","cldr_month_format_wide_12":"December","cldr_month_format_wide_2":"February","cldr_month_format_wide_3":"March","cldr_month_format_wide_4":"April","cldr_month_format_wide_5":"May","cldr_month_format_wide_6":"June","cldr_month_format_wide_7":"July","cldr_month_format_wide_8":"August","cldr_month_format_wide_9":"September","cldr_month_stand-alone_narrow_1":"J","cldr_month_stand-alone_narrow_10":"O","cldr_month_stand-alone_narrow_11":"N","cldr_month_stand-alone_narrow_12":"D","cldr_month_stand-alone_narrow_2":"F","cldr_month_stand-alone_narrow_3":"M","cldr_month_stand-alone_narrow_4":"A","cldr_month_stand-alone_narrow_5":"M","cldr_month_stand-alone_narrow_6":"J","cldr_month_stand-alone_narrow_7":"J","cldr_month_stand-alone_narrow_8":"A","cldr_month_stand-alone_narrow_9":"S","cldr_number_decimal_separator":".","cldr_number_group_separator":",","cldr_number_percent_format":"#,##0%","cldr_pm":"PM","cldr_time_format_full":"h:mm:ss a zzzz","cldr_time_format_long":"h:mm:ss a z","cldr_time_format_medium":"h:mm:ss a","cldr_time_format_short":"h:mm a","quotationEnd":"”","quotationStart":"“"}},"resources":{"qx/decoration/Modern/app-header.png":[110,20,"png","qx"],"qx/decoration/Modern/arrows-combined.png":[87,8,"png","qx"],"qx/decoration/Modern/arrows/down-invert.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-74,0],"qx/decoration/Modern/arrows/down-small-invert.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-69,0],"qx/decoration/Modern/arrows/down-small.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-49,0],"qx/decoration/Modern/arrows/down.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-20,0],"qx/decoration/Modern/arrows/forward.png":[10,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-59,0],"qx/decoration/Modern/arrows/left-invert.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",0,0],"qx/decoration/Modern/arrows/left.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-44,0],"qx/decoration/Modern/arrows/rewind.png":[10,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-10,0],"qx/decoration/Modern/arrows/right-invert.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-5,0],"qx/decoration/Modern/arrows/right.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-54,0],"qx/decoration/Modern/arrows/up-invert.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-28,0],"qx/decoration/Modern/arrows/up-small.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-82,0],"qx/decoration/Modern/arrows/up.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-36,0],"qx/decoration/Modern/button-lr-combined.png":[72,52,"png","qx"],"qx/decoration/Modern/button-tb-combined.png":[4,216,"png","qx"],"qx/decoration/Modern/checkradio-combined.png":[504,14,"png","qx"],"qx/decoration/Modern/colorselector-combined.gif":[46,11,"gif","qx"],"qx/decoration/Modern/colorselector/brightness-field.png":[19,256,"png","qx"],"qx/decoration/Modern/colorselector/brightness-handle.gif":[35,11,"gif","qx","qx/decoration/Modern/colorselector-combined.gif",0,0],"qx/decoration/Modern/colorselector/huesaturation-field.jpg":[256,256,"jpeg","qx"],"qx/decoration/Modern/colorselector/huesaturation-handle.gif":[11,11,"gif","qx","qx/decoration/Modern/colorselector-combined.gif",-35,0],"qx/decoration/Modern/cursors-combined.gif":[71,20,"gif","qx"],"qx/decoration/Modern/cursors/alias.gif":[19,15,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-52,0],"qx/decoration/Modern/cursors/copy.gif":[19,15,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-33,0],"qx/decoration/Modern/cursors/move.gif":[13,9,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-20,0],"qx/decoration/Modern/cursors/nodrop.gif":[20,20,"gif","qx","qx/decoration/Modern/cursors-combined.gif",0,0],"qx/decoration/Modern/form/button-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-72],"qx/decoration/Modern/form/button-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-204],"qx/decoration/Modern/form/button-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-188],"qx/decoration/Modern/form/button-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-36],"qx/decoration/Modern/form/button-checked-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-84],"qx/decoration/Modern/form/button-checked-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-184],"qx/decoration/Modern/form/button-checked-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-156],"qx/decoration/Modern/form/button-checked-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-208],"qx/decoration/Modern/form/button-checked-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-160],"qx/decoration/Modern/form/button-checked-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-40,0],"qx/decoration/Modern/form/button-checked-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-32,0],"qx/decoration/Modern/form/button-checked-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-28],"qx/decoration/Modern/form/button-checked-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-24],"qx/decoration/Modern/form/button-checked-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-48],"qx/decoration/Modern/form/button-checked-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-checked-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-16,0],"qx/decoration/Modern/form/button-checked-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-60,0],"qx/decoration/Modern/form/button-checked-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-140],"qx/decoration/Modern/form/button-checked-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-56],"qx/decoration/Modern/form/button-checked-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-112],"qx/decoration/Modern/form/button-checked.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-disabled-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-40],"qx/decoration/Modern/form/button-disabled-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-136],"qx/decoration/Modern/form/button-disabled-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-16],"qx/decoration/Modern/form/button-disabled-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-disabled-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-68,0],"qx/decoration/Modern/form/button-disabled-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-4,0],"qx/decoration/Modern/form/button-disabled-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-116],"qx/decoration/Modern/form/button-disabled-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-168],"qx/decoration/Modern/form/button-disabled-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-60],"qx/decoration/Modern/form/button-disabled.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-68],"qx/decoration/Modern/form/button-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-144],"qx/decoration/Modern/form/button-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-8],"qx/decoration/Modern/form/button-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-24,0],"qx/decoration/Modern/form/button-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-44,0],"qx/decoration/Modern/form/button-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-192],"qx/decoration/Modern/form/button-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-148],"qx/decoration/Modern/form/button-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-104],"qx/decoration/Modern/form/button-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-hovered-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-108],"qx/decoration/Modern/form/button-hovered-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-32],"qx/decoration/Modern/form/button-hovered-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-128],"qx/decoration/Modern/form/button-hovered-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-hovered-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-20,0],"qx/decoration/Modern/form/button-hovered-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-48,0],"qx/decoration/Modern/form/button-hovered-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-44],"qx/decoration/Modern/form/button-hovered-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-76],"qx/decoration/Modern/form/button-hovered-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-88],"qx/decoration/Modern/form/button-hovered.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-56,0],"qx/decoration/Modern/form/button-preselected-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-124],"qx/decoration/Modern/form/button-preselected-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-176],"qx/decoration/Modern/form/button-preselected-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-200],"qx/decoration/Modern/form/button-preselected-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-preselected-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,0],"qx/decoration/Modern/form/button-preselected-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-4],"qx/decoration/Modern/form/button-preselected-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-152],"qx/decoration/Modern/form/button-preselected-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-preselected-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-28,0],"qx/decoration/Modern/form/button-preselected-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-36,0],"qx/decoration/Modern/form/button-preselected-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-196],"qx/decoration/Modern/form/button-preselected-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-164],"qx/decoration/Modern/form/button-preselected-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-212],"qx/decoration/Modern/form/button-preselected-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-preselected-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-8,0],"qx/decoration/Modern/form/button-preselected-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-64,0],"qx/decoration/Modern/form/button-preselected-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-96],"qx/decoration/Modern/form/button-preselected-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-80],"qx/decoration/Modern/form/button-preselected-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-132],"qx/decoration/Modern/form/button-preselected.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-pressed-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-12],"qx/decoration/Modern/form/button-pressed-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-52],"qx/decoration/Modern/form/button-pressed-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-20],"qx/decoration/Modern/form/button-pressed-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-pressed-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-52,0],"qx/decoration/Modern/form/button-pressed-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-12,0],"qx/decoration/Modern/form/button-pressed-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-100],"qx/decoration/Modern/form/button-pressed-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-172],"qx/decoration/Modern/form/button-pressed-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-64],"qx/decoration/Modern/form/button-pressed.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",0,0],"qx/decoration/Modern/form/button-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-92],"qx/decoration/Modern/form/button-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-120],"qx/decoration/Modern/form/button-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-180],"qx/decoration/Modern/form/button.png":[80,60,"png","qx"],"qx/decoration/Modern/form/checkbox-checked-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-126,0],"qx/decoration/Modern/form/checkbox-checked-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-322,0],"qx/decoration/Modern/form/checkbox-checked-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-294,0],"qx/decoration/Modern/form/checkbox-checked-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-364,0],"qx/decoration/Modern/form/checkbox-checked-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-490,0],"qx/decoration/Modern/form/checkbox-checked-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-224,0],"qx/decoration/Modern/form/checkbox-checked-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-378,0],"qx/decoration/Modern/form/checkbox-checked-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-84,0],"qx/decoration/Modern/form/checkbox-checked.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-182,0],"qx/decoration/Modern/form/checkbox-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-42,0],"qx/decoration/Modern/form/checkbox-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-392,0],"qx/decoration/Modern/form/checkbox-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-210,0],"qx/decoration/Modern/form/checkbox-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-14,0],"qx/decoration/Modern/form/checkbox-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-238,0],"qx/decoration/Modern/form/checkbox-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-462,0],"qx/decoration/Modern/form/checkbox-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-112,0],"qx/decoration/Modern/form/checkbox-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-448,0],"qx/decoration/Modern/form/checkbox-undetermined-disabled.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-focused-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-focused.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-hovered-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-hovered.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-140,0],"qx/decoration/Modern/form/input-focused.png":[40,12,"png","qx"],"qx/decoration/Modern/form/input.png":[84,12,"png","qx"],"qx/decoration/Modern/form/radiobutton-checked-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-196,0],"qx/decoration/Modern/form/radiobutton-checked-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-168,0],"qx/decoration/Modern/form/radiobutton-checked-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-98,0],"qx/decoration/Modern/form/radiobutton-checked-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-308,0],"qx/decoration/Modern/form/radiobutton-checked-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-406,0],"qx/decoration/Modern/form/radiobutton-checked-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-28,0],"qx/decoration/Modern/form/radiobutton-checked-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-350,0],"qx/decoration/Modern/form/radiobutton-checked-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-266,0],"qx/decoration/Modern/form/radiobutton-checked.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-252,0],"qx/decoration/Modern/form/radiobutton-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-336,0],"qx/decoration/Modern/form/radiobutton-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-476,0],"qx/decoration/Modern/form/radiobutton-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-420,0],"qx/decoration/Modern/form/radiobutton-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-56,0],"qx/decoration/Modern/form/radiobutton-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",0,0],"qx/decoration/Modern/form/radiobutton-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-154,0],"qx/decoration/Modern/form/radiobutton-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-434,0],"qx/decoration/Modern/form/radiobutton-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-280,0],"qx/decoration/Modern/form/radiobutton.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-70,0],"qx/decoration/Modern/form/tooltip-error-arrow.png":[11,14,"png","qx"],"qx/decoration/Modern/form/tooltip-error-b.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-30],"qx/decoration/Modern/form/tooltip-error-bl.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-24],"qx/decoration/Modern/form/tooltip-error-br.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,0],"qx/decoration/Modern/form/tooltip-error-c.png":[40,18,"png","qx"],"qx/decoration/Modern/form/tooltip-error-l.png":[6,18,"png","qx","qx/decoration/Modern/tooltip-error-lr-combined.png",-6,0],"qx/decoration/Modern/form/tooltip-error-r.png":[6,18,"png","qx","qx/decoration/Modern/tooltip-error-lr-combined.png",0,0],"qx/decoration/Modern/form/tooltip-error-t.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-6],"qx/decoration/Modern/form/tooltip-error-tl.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-18],"qx/decoration/Modern/form/tooltip-error-tr.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-12],"qx/decoration/Modern/form/tooltip-error.png":[127,30,"png","qx"],"qx/decoration/Modern/group-item.png":[110,20,"png","qx"],"qx/decoration/Modern/groupbox-lr-combined.png":[8,51,"png","qx"],"qx/decoration/Modern/groupbox-tb-combined.png":[4,24,"png","qx"],"qx/decoration/Modern/groupbox/groupbox-b.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-12],"qx/decoration/Modern/groupbox/groupbox-bl.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-16],"qx/decoration/Modern/groupbox/groupbox-br.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-8],"qx/decoration/Modern/groupbox/groupbox-c.png":[40,51,"png","qx"],"qx/decoration/Modern/groupbox/groupbox-l.png":[4,51,"png","qx","qx/decoration/Modern/groupbox-lr-combined.png",-4,0],"qx/decoration/Modern/groupbox/groupbox-r.png":[4,51,"png","qx","qx/decoration/Modern/groupbox-lr-combined.png",0,0],"qx/decoration/Modern/groupbox/groupbox-t.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-4],"qx/decoration/Modern/groupbox/groupbox-tl.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,0],"qx/decoration/Modern/groupbox/groupbox-tr.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-20],"qx/decoration/Modern/groupbox/groupbox.png":[255,59,"png","qx"],"qx/decoration/Modern/menu-background-combined.png":[80,49,"png","qx"],"qx/decoration/Modern/menu-checkradio-combined.gif":[64,7,"gif","qx"],"qx/decoration/Modern/menu/background.png":[40,49,"png","qx","qx/decoration/Modern/menu-background-combined.png",-40,0],"qx/decoration/Modern/menu/bar-background.png":[40,20,"png","qx","qx/decoration/Modern/menu-background-combined.png",0,0],"qx/decoration/Modern/menu/checkbox-invert.gif":[16,7,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-16,0],"qx/decoration/Modern/menu/checkbox.gif":[16,7,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-48,0],"qx/decoration/Modern/menu/radiobutton-invert.gif":[16,5,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-32,0],"qx/decoration/Modern/menu/radiobutton.gif":[16,5,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",0,0],"qx/decoration/Modern/pane-lr-combined.png":[12,238,"png","qx"],"qx/decoration/Modern/pane-tb-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/pane/pane-b.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-30],"qx/decoration/Modern/pane/pane-bl.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-18],"qx/decoration/Modern/pane/pane-br.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-12],"qx/decoration/Modern/pane/pane-c.png":[40,238,"png","qx"],"qx/decoration/Modern/pane/pane-l.png":[6,238,"png","qx","qx/decoration/Modern/pane-lr-combined.png",0,0],"qx/decoration/Modern/pane/pane-r.png":[6,238,"png","qx","qx/decoration/Modern/pane-lr-combined.png",-6,0],"qx/decoration/Modern/pane/pane-t.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,0],"qx/decoration/Modern/pane/pane-tl.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-24],"qx/decoration/Modern/pane/pane-tr.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-6],"qx/decoration/Modern/pane/pane.png":[185,250,"png","qx"],"qx/decoration/Modern/scrollbar-combined.png":[54,12,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-horizontal.png":[76,15,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-pressed-horizontal.png":[19,10,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-pressed-vertical.png":[10,19,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-vertical.png":[15,76,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-button-bg-horizontal.png":[12,10,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-34,0],"qx/decoration/Modern/scrollbar/scrollbar-button-bg-vertical.png":[10,12,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-6,0],"qx/decoration/Modern/scrollbar/scrollbar-down.png":[6,4,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-28,0],"qx/decoration/Modern/scrollbar/scrollbar-left.png":[4,6,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-50,0],"qx/decoration/Modern/scrollbar/scrollbar-right.png":[4,6,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-46,0],"qx/decoration/Modern/scrollbar/scrollbar-up.png":[6,4,"png","qx","qx/decoration/Modern/scrollbar-combined.png",0,0],"qx/decoration/Modern/scrollbar/slider-knob-background.png":[12,10,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-16,0],"qx/decoration/Modern/selection.png":[110,20,"png","qx"],"qx/decoration/Modern/shadow-lr-combined.png":[30,382,"png","qx"],"qx/decoration/Modern/shadow-small-lr-combined.png":[10,136,"png","qx"],"qx/decoration/Modern/shadow-small-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/shadow-tb-combined.png":[15,90,"png","qx"],"qx/decoration/Modern/shadow/shadow-b.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-30],"qx/decoration/Modern/shadow/shadow-bl.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-15],"qx/decoration/Modern/shadow/shadow-br.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-45],"qx/decoration/Modern/shadow/shadow-c.png":[40,382,"png","qx"],"qx/decoration/Modern/shadow/shadow-l.png":[15,382,"png","qx","qx/decoration/Modern/shadow-lr-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-r.png":[15,382,"png","qx","qx/decoration/Modern/shadow-lr-combined.png",-15,0],"qx/decoration/Modern/shadow/shadow-small-b.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-20],"qx/decoration/Modern/shadow/shadow-small-bl.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-15],"qx/decoration/Modern/shadow/shadow-small-br.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-10],"qx/decoration/Modern/shadow/shadow-small-c.png":[40,136,"png","qx"],"qx/decoration/Modern/shadow/shadow-small-l.png":[5,136,"png","qx","qx/decoration/Modern/shadow-small-lr-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-small-r.png":[5,136,"png","qx","qx/decoration/Modern/shadow-small-lr-combined.png",-5,0],"qx/decoration/Modern/shadow/shadow-small-t.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-5],"qx/decoration/Modern/shadow/shadow-small-tl.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-small-tr.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-25],"qx/decoration/Modern/shadow/shadow-small.png":[114,146,"png","qx"],"qx/decoration/Modern/shadow/shadow-t.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-60],"qx/decoration/Modern/shadow/shadow-tl.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-75],"qx/decoration/Modern/shadow/shadow-tr.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,0],"qx/decoration/Modern/shadow/shadow.png":[381,412,"png","qx"],"qx/decoration/Modern/splitpane-knobs-combined.png":[8,9,"png","qx"],"qx/decoration/Modern/splitpane/knob-horizontal.png":[1,8,"png","qx","qx/decoration/Modern/splitpane-knobs-combined.png",0,-1],"qx/decoration/Modern/splitpane/knob-vertical.png":[8,1,"png","qx","qx/decoration/Modern/splitpane-knobs-combined.png",0,0],"qx/decoration/Modern/table-combined.png":[94,18,"png","qx"],"qx/decoration/Modern/table/ascending.png":[8,5,"png","qx","qx/decoration/Modern/table-combined.png",0,0],"qx/decoration/Modern/table/boolean-false.png":[14,14,"png","qx","qx/decoration/Modern/table-combined.png",-80,0],"qx/decoration/Modern/table/boolean-true.png":[14,14,"png","qx","qx/decoration/Modern/table-combined.png",-26,0],"qx/decoration/Modern/table/descending.png":[8,5,"png","qx","qx/decoration/Modern/table-combined.png",-18,0],"qx/decoration/Modern/table/header-cell.png":[40,18,"png","qx","qx/decoration/Modern/table-combined.png",-40,0],"qx/decoration/Modern/table/select-column-order.png":[10,9,"png","qx","qx/decoration/Modern/table-combined.png",-8,0],"qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png":[10,14,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png":[6,15,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-left-active-lr-combined.png":[10,37,"png","qx"],"qx/decoration/Modern/tabview-button-left-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png":[6,39,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-right-active-lr-combined.png":[10,37,"png","qx"],"qx/decoration/Modern/tabview-button-right-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png":[6,39,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-top-active-lr-combined.png":[10,12,"png","qx"],"qx/decoration/Modern/tabview-button-top-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png":[6,15,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-pane-lr-combined.png":[60,2,"png","qx"],"qx/decoration/Modern/tabview-pane-tb-combined.png":[30,180,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-bottom-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-bottom-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-bottom-active-c.png":[40,14,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-active-l.png":[5,14,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-active-r.png":[5,14,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-bottom-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-bottom-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-bottom-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-active.png":[49,24,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-c.png":[40,15,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-l.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-r.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-bottom-inactive.png":[45,21,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-left-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-left-active-c.png":[40,37,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-active-l.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-left-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-active-r.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-left-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-left-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-left-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-left-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-left-active.png":[22,47,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-left-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-left-inactive-c.png":[40,39,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-inactive-l.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-r.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-left-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-left-inactive.png":[20,45,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-right-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-right-active-c.png":[40,37,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-active-l.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-right-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-active-r.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-right-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-right-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-right-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-right-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-right-active.png":[22,47,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-right-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-right-inactive-c.png":[40,39,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-inactive-l.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-r.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-right-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-right-inactive.png":[20,45,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-top-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-top-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-top-active-c.png":[40,14,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-active-l.png":[5,12,"png","qx","qx/decoration/Modern/tabview-button-top-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-active-r.png":[5,12,"png","qx","qx/decoration/Modern/tabview-button-top-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-top-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-top-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-top-active.png":[48,22,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-top-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-top-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-c.png":[40,15,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-inactive-l.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-r.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-top-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-top-inactive.png":[45,21,"png","qx"],"qx/decoration/Modern/tabview/tabview-pane-b.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-60],"qx/decoration/Modern/tabview/tabview-pane-bl.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tabview-pane-br.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-120],"qx/decoration/Modern/tabview/tabview-pane-c.png":[40,120,"png","qx"],"qx/decoration/Modern/tabview/tabview-pane-l.png":[30,2,"png","qx","qx/decoration/Modern/tabview-pane-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tabview-pane-r.png":[30,2,"png","qx","qx/decoration/Modern/tabview-pane-lr-combined.png",-30,0],"qx/decoration/Modern/tabview/tabview-pane-t.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-150],"qx/decoration/Modern/tabview/tabview-pane-tl.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-30],"qx/decoration/Modern/tabview/tabview-pane-tr.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-90],"qx/decoration/Modern/tabview/tabview-pane.png":[185,250,"png","qx"],"qx/decoration/Modern/toolbar-combined.png":[80,130,"png","qx"],"qx/decoration/Modern/toolbar/toolbar-gradient-blue.png":[40,130,"png","qx","qx/decoration/Modern/toolbar-combined.png",-40,0],"qx/decoration/Modern/toolbar/toolbar-gradient.png":[40,130,"png","qx","qx/decoration/Modern/toolbar-combined.png",0,0],"qx/decoration/Modern/toolbar/toolbar-handle-knob.gif":[1,8,"gif","qx"],"qx/decoration/Modern/toolbar/toolbar-part.gif":[7,1,"gif","qx"],"qx/decoration/Modern/tooltip-error-lr-combined.png":[12,18,"png","qx"],"qx/decoration/Modern/tooltip-error-tb-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/tree-combined.png":[32,8,"png","qx"],"qx/decoration/Modern/tree/closed-selected.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-24,0],"qx/decoration/Modern/tree/closed.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-16,0],"qx/decoration/Modern/tree/open-selected.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-8,0],"qx/decoration/Modern/tree/open.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",0,0],"qx/decoration/Modern/window-captionbar-buttons-combined.png":[108,9,"png","qx"],"qx/decoration/Modern/window-captionbar-lr-active-combined.png":[12,9,"png","qx"],"qx/decoration/Modern/window-captionbar-lr-inactive-combined.png":[12,9,"png","qx"],"qx/decoration/Modern/window-captionbar-tb-active-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/window-captionbar-tb-inactive-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/window-statusbar-lr-combined.png":[8,7,"png","qx"],"qx/decoration/Modern/window-statusbar-tb-combined.png":[4,24,"png","qx"],"qx/decoration/Modern/window/captionbar-active-b.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-18],"qx/decoration/Modern/window/captionbar-active-bl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-24],"qx/decoration/Modern/window/captionbar-active-br.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-12],"qx/decoration/Modern/window/captionbar-active-c.png":[40,9,"png","qx"],"qx/decoration/Modern/window/captionbar-active-l.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-active-combined.png",-6,0],"qx/decoration/Modern/window/captionbar-active-r.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-active-combined.png",0,0],"qx/decoration/Modern/window/captionbar-active-t.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-6],"qx/decoration/Modern/window/captionbar-active-tl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,0],"qx/decoration/Modern/window/captionbar-active-tr.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-30],"qx/decoration/Modern/window/captionbar-active.png":[69,21,"png","qx"],"qx/decoration/Modern/window/captionbar-inactive-b.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-24],"qx/decoration/Modern/window/captionbar-inactive-bl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-6],"qx/decoration/Modern/window/captionbar-inactive-br.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-30],"qx/decoration/Modern/window/captionbar-inactive-c.png":[40,9,"png","qx"],"qx/decoration/Modern/window/captionbar-inactive-l.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-inactive-combined.png",0,0],"qx/decoration/Modern/window/captionbar-inactive-r.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-inactive-combined.png",-6,0],"qx/decoration/Modern/window/captionbar-inactive-t.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,0],"qx/decoration/Modern/window/captionbar-inactive-tl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-12],"qx/decoration/Modern/window/captionbar-inactive-tr.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-18],"qx/decoration/Modern/window/captionbar-inactive.png":[69,21,"png","qx"],"qx/decoration/Modern/window/close-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-27,0],"qx/decoration/Modern/window/close-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-9,0],"qx/decoration/Modern/window/close-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-90,0],"qx/decoration/Modern/window/maximize-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-18,0],"qx/decoration/Modern/window/maximize-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-81,0],"qx/decoration/Modern/window/maximize-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-54,0],"qx/decoration/Modern/window/minimize-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-63,0],"qx/decoration/Modern/window/minimize-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-72,0],"qx/decoration/Modern/window/minimize-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-36,0],"qx/decoration/Modern/window/restore-active-hovered.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",0,0],"qx/decoration/Modern/window/restore-active.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-99,0],"qx/decoration/Modern/window/restore-inactive.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-45,0],"qx/decoration/Modern/window/statusbar-b.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-16],"qx/decoration/Modern/window/statusbar-bl.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-20],"qx/decoration/Modern/window/statusbar-br.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-4],"qx/decoration/Modern/window/statusbar-c.png":[40,7,"png","qx"],"qx/decoration/Modern/window/statusbar-l.png":[4,7,"png","qx","qx/decoration/Modern/window-statusbar-lr-combined.png",-4,0],"qx/decoration/Modern/window/statusbar-r.png":[4,7,"png","qx","qx/decoration/Modern/window-statusbar-lr-combined.png",0,0],"qx/decoration/Modern/window/statusbar-t.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,0],"qx/decoration/Modern/window/statusbar-tl.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-8],"qx/decoration/Modern/window/statusbar-tr.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-12],"qx/decoration/Modern/window/statusbar.png":[369,15,"png","qx"],"qx/icon/Tango/128/actions/address-book-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/application-exit.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/appointment-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/bookmark-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/check-spelling.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/contact-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-apply.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-cancel.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-close.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-ok.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-open-recent.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-open.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-print-preview.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-print.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-properties.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-revert.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-save-as.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-save.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-send.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-clear.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-copy.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-cut.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-delete.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-find.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-paste.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-redo.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-select-all.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-undo.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/folder-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-indent-less.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-indent-more.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-center.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-fill.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-left.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-right.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-bold.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-direction-ltr.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-direction-rtl.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-italic.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-strikethrough.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-underline.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-bottom.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-down.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-first.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-home.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-last.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-next.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-previous.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-top.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-up.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-about.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-contents.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-faq.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-image.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-link.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-text.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/list-add.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/list-remove.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-important.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-junk.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-read.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-unread.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-message-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-receive.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-reply-all.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-reply-sender.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-send.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-eject.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-pause.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-start.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-stop.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-record.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-seek-backward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-seek-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-skip-backward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-skip-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-flip-horizontal.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-flip-vertical.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-rotate-left.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-rotate-right.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/process-stop.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-log-out.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-run.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-search.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-shutdown.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-fullscreen.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-refresh.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-restore.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-sort-ascending.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-sort-descending.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/window-close.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/window-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-fit-best.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-in.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-original.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-out.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-blog.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-download-manager.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-feed-reader.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-mail.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-messenger.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-telephony.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-transfer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-web-browser.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-audio-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-photo-album.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-video-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-address-book.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-calendar.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-chart.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-database.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-draw.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-graphics.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-layout.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-presentation.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-project.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-spreadsheet.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-web.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-writer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-accessibility.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-clock.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-display.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-font.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-keyboard.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-locale.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-network.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-security.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-sound.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-theme.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-users.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-wallpaper.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-archiver.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-calculator.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-character-map.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-color-chooser.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-dictionary.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-graphics-viewer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-help.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-keyring.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-log-viewer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-network-manager.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-notes.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-statistics.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-system-monitor.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-terminal.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-text-editor.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/accessories.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/development.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/engineering.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/games.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/graphics.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/internet.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/multimedia.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/office.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/science.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/system.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/utilities.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/audio-card.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/audio-input-microphone.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/battery.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/camera-photo.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/camera-web.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/computer.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/display.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/drive-harddisk.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/drive-optical.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/input-keyboard.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/input-mouse.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/media-flash.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/media-optical.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/multimedia-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/network-wired.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/network-wireless.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/pda.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/phone.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/printer.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/scanner.png":[128,128,"png","qx"],"qx/icon/Tango/128/emblems/emblem-favorite.png":[128,128,"png","qx"],"qx/icon/Tango/128/emblems/emblem-important.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-angel.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-embarrassed.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-kiss.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-laugh.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-plain.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-raspberry.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-sad.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-smile-big.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-smile.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-surprise.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/archive.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/executable.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-audio.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-image.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-video.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-calendar.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-contact.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-document.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-illustration.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-presentation.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-spreadsheet.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/text-html.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/text-plain.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder-open.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder-remote.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/network-server.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/network-workgroup.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-desktop.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-home.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-trash-full.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-trash.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-error.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-information.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-password.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-warning.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/image-loading.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/image-missing.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-read.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-replied.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-unread.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-high.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-low.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-medium.png":[128,128,"png","qx"],"qx/icon/Tango/16/actions/address-book-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/application-exit.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/appointment-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/bookmark-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/check-spelling.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/contact-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-apply.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-cancel.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-close.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-ok.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-open-recent.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-open.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-print-preview.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-print.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-properties.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-revert.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-save-as.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-save.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-send.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-clear.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-copy.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-cut.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-delete.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-find.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-paste.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-redo.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-select-all.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-undo.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/folder-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-indent-less.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-indent-more.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-center.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-fill.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-left.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-right.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-bold.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-direction-ltr.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-direction-rtl.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-italic.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-strikethrough.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-underline.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-bottom.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-down.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-first.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-home.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-last.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-next.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-previous.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-top.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-up.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-about.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-contents.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-faq.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-image.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-link.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-text.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/list-add.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/list-remove.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-important.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-junk.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-read.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-unread.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-message-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-receive.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-reply-all.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-reply-sender.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-send.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-eject.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-pause.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-start.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-stop.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-record.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-seek-backward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-seek-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-skip-backward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-skip-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-flip-horizontal.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-flip-vertical.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-rotate-left.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-rotate-right.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/process-stop.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-log-out.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-run.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-search.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-shutdown.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-fullscreen.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-refresh.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-restore.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-sort-ascending.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-sort-descending.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/window-close.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/window-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-fit-best.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-in.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-original.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-out.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-blog.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-download-manager.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-feed-reader.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-mail.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-messenger.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-telephony.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-transfer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-web-browser.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-audio-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-photo-album.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-video-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-address-book.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-calendar.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-chart.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-database.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-draw.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-graphics.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-layout.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-presentation.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-project.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-spreadsheet.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-web.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-writer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-accessibility.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-clock.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-display.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-font.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-keyboard.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-locale.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-network.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-security.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-sound.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-theme.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-users.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-wallpaper.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-archiver.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-calculator.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-character-map.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-color-chooser.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-dictionary.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-graphics-viewer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-help.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-keyring.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-log-viewer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-network-manager.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-notes.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-statistics.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-system-monitor.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-terminal.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-text-editor.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/accessories.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/development.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/engineering.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/games.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/graphics.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/internet.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/multimedia.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/office.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/science.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/system.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/utilities.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/audio-card.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/audio-input-microphone.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/battery.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/camera-photo.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/camera-web.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/computer.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/display.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/drive-harddisk.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/drive-optical.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/input-keyboard.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/input-mouse.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/media-flash.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/media-optical.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/multimedia-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/network-wired.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/network-wireless.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/pda.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/phone.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/printer.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/scanner.png":[16,16,"png","qx"],"qx/icon/Tango/16/emblems/emblem-favorite.png":[16,16,"png","qx"],"qx/icon/Tango/16/emblems/emblem-important.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-angel.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-embarrassed.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-kiss.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-laugh.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-plain.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-raspberry.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-sad.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-smile-big.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-smile.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-surprise.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/archive.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/executable.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-audio.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-image.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-video.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-calendar.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-contact.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-document.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-illustration.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-presentation.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-spreadsheet.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/text-html.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/text-plain.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder-open.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder-remote.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/network-server.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/network-workgroup.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-desktop.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-home.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-trash-full.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-trash.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-error.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-information.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-password.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-warning.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/image-loading.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/image-missing.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-read.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-replied.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-unread.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-high.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-low.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-medium.png":[16,16,"png","qx"],"qx/icon/Tango/22/actions/address-book-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/application-exit.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/appointment-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/bookmark-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/check-spelling.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/contact-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-apply.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-cancel.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-close.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-ok.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-open-recent.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-open.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-print-preview.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-print.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-properties.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-revert.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-save-as.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-save.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-send.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-clear.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-copy.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-cut.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-delete.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-find.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-paste.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-redo.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-select-all.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-undo.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/folder-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-indent-less.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-indent-more.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-center.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-fill.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-left.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-right.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-bold.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-direction-ltr.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-direction-rtl.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-italic.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-strikethrough.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-underline.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-bottom.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-down.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-first.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-home.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-last.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-next.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-previous.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-top.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-up.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-about.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-contents.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-faq.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-image.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-link.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-text.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/list-add.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/list-remove.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-important.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-junk.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-read.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-unread.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-message-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-receive.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-reply-all.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-reply-sender.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-send.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-eject.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-pause.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-start.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-stop.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-record.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-seek-backward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-seek-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-skip-backward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-skip-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-flip-horizontal.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-flip-vertical.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-rotate-left.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-rotate-right.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/process-stop.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-log-out.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-run.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-search.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-shutdown.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-fullscreen.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-refresh.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-restore.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-sort-ascending.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-sort-descending.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/window-close.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/window-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-fit-best.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-in.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-original.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-out.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-blog.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-download-manager.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-feed-reader.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-mail.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-messenger.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-telephony.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-transfer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-web-browser.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-audio-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-photo-album.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-video-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-address-book.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-calendar.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-chart.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-database.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-draw.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-graphics.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-layout.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-presentation.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-project.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-spreadsheet.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-web.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-writer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-accessibility.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-clock.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-display.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-font.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-keyboard.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-locale.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-network.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-security.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-sound.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-theme.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-users.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-wallpaper.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-archiver.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-calculator.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-character-map.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-color-chooser.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-dictionary.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-graphics-viewer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-help.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-keyring.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-log-viewer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-network-manager.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-notes.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-statistics.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-system-monitor.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-terminal.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-text-editor.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/accessories.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/development.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/engineering.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/games.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/graphics.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/internet.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/multimedia.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/office.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/science.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/system.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/utilities.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/audio-card.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/audio-input-microphone.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/battery.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/camera-photo.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/camera-web.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/computer.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/display.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/drive-harddisk.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/drive-optical.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/input-keyboard.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/input-mouse.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/media-flash.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/media-optical.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/multimedia-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/network-wired.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/network-wireless.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/pda.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/phone.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/printer.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/scanner.png":[22,22,"png","qx"],"qx/icon/Tango/22/emblems/emblem-favorite.png":[22,22,"png","qx"],"qx/icon/Tango/22/emblems/emblem-important.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-angel.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-embarrassed.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-kiss.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-laugh.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-plain.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-raspberry.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-sad.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-smile-big.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-smile.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-surprise.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/archive.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/executable.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-audio.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-image.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-video.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-calendar.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-contact.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-document.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-illustration.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-presentation.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-spreadsheet.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/text-html.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/text-plain.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder-open.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder-remote.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/network-server.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/network-workgroup.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-desktop.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-home.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-trash-full.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-trash.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-error.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-information.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-password.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-warning.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/image-loading.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/image-missing.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-read.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-replied.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-unread.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-high.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-low.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-medium.png":[22,22,"png","qx"],"qx/icon/Tango/32/actions/address-book-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/application-exit.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/appointment-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/bookmark-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/check-spelling.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/contact-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-apply.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-cancel.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-close.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-ok.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-open-recent.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-open.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-print-preview.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-print.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-properties.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-revert.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-save-as.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-save.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-send.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-clear.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-copy.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-cut.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-delete.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-find.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-paste.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-redo.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-select-all.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-undo.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/folder-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-indent-less.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-indent-more.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-center.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-fill.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-left.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-right.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-bold.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-direction-ltr.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-direction-rtl.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-italic.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-strikethrough.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-underline.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-bottom.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-down.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-first.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-home.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-last.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-next.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-previous.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-top.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-up.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-about.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-contents.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-faq.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-image.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-link.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-text.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/list-add.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/list-remove.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-important.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-junk.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-read.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-unread.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-message-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-receive.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-reply-all.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-reply-sender.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-send.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-eject.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-pause.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-start.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-stop.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-record.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-seek-backward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-seek-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-skip-backward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-skip-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-flip-horizontal.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-flip-vertical.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-rotate-left.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-rotate-right.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/process-stop.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-log-out.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-run.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-search.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-shutdown.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-fullscreen.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-refresh.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-restore.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-sort-ascending.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-sort-descending.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/window-close.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/window-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-fit-best.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-in.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-original.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-out.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-blog.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-download-manager.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-feed-reader.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-mail.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-messenger.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-telephony.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-transfer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-web-browser.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-audio-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-photo-album.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-video-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-address-book.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-calendar.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-chart.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-database.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-draw.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-graphics.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-layout.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-presentation.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-project.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-spreadsheet.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-web.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-writer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-accessibility.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-clock.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-display.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-font.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-keyboard.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-locale.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-network.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-security.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-sound.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-theme.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-users.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-wallpaper.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-archiver.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-calculator.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-character-map.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-color-chooser.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-dictionary.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-graphics-viewer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-help.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-keyring.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-log-viewer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-network-manager.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-notes.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-statistics.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-system-monitor.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-terminal.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-text-editor.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/accessories.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/development.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/engineering.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/games.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/graphics.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/internet.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/multimedia.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/office.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/science.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/system.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/utilities.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/audio-card.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/audio-input-microphone.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/battery.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/camera-photo.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/camera-web.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/computer.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/display.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/drive-harddisk.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/drive-optical.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/input-keyboard.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/input-mouse.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/media-flash.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/media-optical.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/multimedia-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/network-wired.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/network-wireless.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/pda.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/phone.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/printer.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/scanner.png":[32,32,"png","qx"],"qx/icon/Tango/32/emblems/emblem-favorite.png":[32,32,"png","qx"],"qx/icon/Tango/32/emblems/emblem-important.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-angel.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-embarrassed.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-kiss.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-laugh.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-plain.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-raspberry.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-sad.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-smile-big.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-smile.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-surprise.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/archive.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/executable.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-audio.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-image.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-video.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-calendar.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-contact.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-document.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-illustration.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-presentation.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-spreadsheet.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/text-html.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/text-plain.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder-open.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder-remote.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/network-server.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/network-workgroup.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-desktop.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-home.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-trash-full.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-trash.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-error.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-information.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-password.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-warning.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/image-loading.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/image-missing.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-read.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-replied.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-unread.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-high.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-low.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-medium.png":[32,32,"png","qx"],"qx/icon/Tango/48/actions/address-book-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/application-exit.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/appointment-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/bookmark-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/check-spelling.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/contact-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-apply.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-cancel.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-close.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-ok.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-open-recent.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-open.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-print-preview.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-print.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-properties.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-revert.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-save-as.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-save.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-send.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-clear.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-copy.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-cut.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-delete.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-find.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-paste.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-redo.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-select-all.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-undo.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/folder-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-indent-less.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-indent-more.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-center.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-fill.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-left.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-right.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-bold.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-direction-ltr.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-direction-rtl.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-italic.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-strikethrough.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-underline.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-bottom.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-down.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-first.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-home.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-last.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-next.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-previous.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-top.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-up.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-about.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-contents.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-faq.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-image.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-link.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-text.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/list-add.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/list-remove.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-important.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-junk.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-read.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-unread.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-message-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-receive.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-reply-all.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-reply-sender.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-send.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-eject.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-pause.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-start.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-stop.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-record.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-seek-backward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-seek-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-skip-backward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-skip-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-flip-horizontal.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-flip-vertical.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-rotate-left.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-rotate-right.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/process-stop.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-log-out.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-run.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-search.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-shutdown.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-fullscreen.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-refresh.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-restore.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-sort-ascending.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-sort-descending.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/window-close.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/window-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-fit-best.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-in.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-original.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-out.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-blog.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-download-manager.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-feed-reader.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-mail.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-messenger.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-telephony.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-transfer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-web-browser.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-audio-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-photo-album.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-video-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-address-book.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-calendar.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-chart.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-database.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-draw.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-graphics.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-layout.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-presentation.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-project.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-spreadsheet.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-web.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-writer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-accessibility.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-clock.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-display.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-font.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-keyboard.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-locale.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-network.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-security.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-sound.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-theme.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-users.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-wallpaper.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-archiver.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-calculator.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-character-map.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-color-chooser.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-dictionary.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-graphics-viewer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-help.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-keyring.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-log-viewer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-network-manager.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-notes.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-statistics.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-system-monitor.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-terminal.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-text-editor.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/accessories.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/development.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/engineering.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/games.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/graphics.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/internet.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/multimedia.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/office.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/science.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/system.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/utilities.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/audio-card.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/audio-input-microphone.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/battery.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/camera-photo.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/camera-web.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/computer.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/display.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/drive-harddisk.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/drive-optical.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/input-keyboard.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/input-mouse.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/media-flash.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/media-optical.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/multimedia-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/network-wired.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/network-wireless.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/pda.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/phone.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/printer.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/scanner.png":[48,48,"png","qx"],"qx/icon/Tango/48/emblems/emblem-favorite.png":[48,48,"png","qx"],"qx/icon/Tango/48/emblems/emblem-important.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-angel.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-embarrassed.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-kiss.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-laugh.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-plain.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-raspberry.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-sad.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-smile-big.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-smile.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-surprise.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/archive.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/executable.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-audio.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-image.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-video.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-calendar.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-contact.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-document.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-illustration.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-presentation.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-spreadsheet.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/text-html.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/text-plain.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder-open.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder-remote.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/network-server.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/network-workgroup.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-desktop.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-home.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-trash-full.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-trash.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-error.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-information.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-password.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-warning.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/image-loading.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/image-missing.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-read.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-replied.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-unread.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-high.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-low.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-medium.png":[48,48,"png","qx"],"qx/icon/Tango/64/actions/address-book-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/application-exit.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/appointment-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/bookmark-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/check-spelling.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/contact-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-apply.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-cancel.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-close.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-ok.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-open-recent.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-open.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-print-preview.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-print.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-properties.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-revert.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-save-as.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-save.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-send.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-clear.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-copy.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-cut.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-delete.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-find.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-paste.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-redo.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-select-all.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-undo.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/folder-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-indent-less.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-indent-more.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-center.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-fill.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-left.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-right.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-bold.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-direction-ltr.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-direction-rtl.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-italic.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-strikethrough.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-underline.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-bottom.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-down.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-first.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-home.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-last.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-next.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-previous.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-top.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-up.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-about.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-contents.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-faq.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-image.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-link.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-text.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/list-add.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/list-remove.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-important.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-junk.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-read.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-unread.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-message-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-receive.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-reply-all.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-reply-sender.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-send.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-eject.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-pause.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-start.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-stop.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-record.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-seek-backward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-seek-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-skip-backward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-skip-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-flip-horizontal.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-flip-vertical.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-rotate-left.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-rotate-right.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/process-stop.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-log-out.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-run.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-search.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-shutdown.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-fullscreen.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-refresh.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-restore.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-sort-ascending.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-sort-descending.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/window-close.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/window-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-fit-best.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-in.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-original.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-out.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-blog.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-download-manager.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-feed-reader.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-mail.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-messenger.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-telephony.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-transfer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-web-browser.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-audio-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-photo-album.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-video-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-address-book.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-calendar.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-chart.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-database.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-draw.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-graphics.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-layout.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-presentation.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-project.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-spreadsheet.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-web.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-writer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-accessibility.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-clock.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-display.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-font.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-keyboard.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-locale.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-network.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-security.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-sound.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-theme.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-users.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-wallpaper.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-archiver.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-calculator.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-character-map.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-color-chooser.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-dictionary.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-graphics-viewer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-help.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-keyring.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-log-viewer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-network-manager.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-notes.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-statistics.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-system-monitor.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-terminal.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-text-editor.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/accessories.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/development.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/engineering.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/games.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/graphics.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/internet.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/multimedia.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/office.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/science.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/system.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/utilities.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/audio-card.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/audio-input-microphone.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/battery.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/camera-photo.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/camera-web.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/computer.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/display.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/drive-harddisk.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/drive-optical.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/input-keyboard.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/input-mouse.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/media-flash.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/media-optical.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/multimedia-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/network-wired.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/network-wireless.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/pda.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/phone.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/printer.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/scanner.png":[64,64,"png","qx"],"qx/icon/Tango/64/emblems/emblem-favorite.png":[64,64,"png","qx"],"qx/icon/Tango/64/emblems/emblem-important.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-angel.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-embarrassed.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-kiss.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-laugh.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-plain.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-raspberry.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-sad.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-smile-big.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-smile.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-surprise.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/archive.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/executable.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-audio.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-image.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-video.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-calendar.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-contact.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-document.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-illustration.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-presentation.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-spreadsheet.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/text-html.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/text-plain.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder-open.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder-remote.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/network-server.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/network-workgroup.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-desktop.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-home.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-trash-full.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-trash.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-error.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-information.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-password.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-warning.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/image-loading.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/image-missing.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-read.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-replied.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-unread.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-high.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-low.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-medium.png":[64,64,"png","qx"],"qx/icon/Tango/AUTHORS":"qx","qx/icon/Tango/LICENSE":"qx","qx/static/blank.gif":[1,1,"gif","qx"],"vuuvv/loading66.gif":[66,66,"gif","vuuvv"],"vuuvv/test.png":[32,32,"png","vuuvv"]},"translations":{"C":{},"en":{}}};
+qx.$$packageData['d219041cd3d1']={"locales":{"C":{"alternateQuotationEnd":"’","alternateQuotationStart":"‘","cldr_am":"AM","cldr_date_format_full":"EEEE, MMMM d, y","cldr_date_format_long":"MMMM d, y","cldr_date_format_medium":"MMM d, y","cldr_date_format_short":"M/d/yy","cldr_date_time_format_EEEd":"d EEE","cldr_date_time_format_Hm":"H:mm","cldr_date_time_format_Hms":"H:mm:ss","cldr_date_time_format_M":"L","cldr_date_time_format_MEd":"E, M/d","cldr_date_time_format_MMM":"LLL","cldr_date_time_format_MMMEd":"E, MMM d","cldr_date_time_format_MMMMEd":"E, MMMM d","cldr_date_time_format_MMMMd":"MMMM d","cldr_date_time_format_MMMd":"MMM d","cldr_date_time_format_Md":"M/d","cldr_date_time_format_d":"d","cldr_date_time_format_hm":"h:mm a","cldr_date_time_format_ms":"mm:ss","cldr_date_time_format_y":"y","cldr_date_time_format_yM":"M/yyyy","cldr_date_time_format_yMEd":"EEE, M/d/yyyy","cldr_date_time_format_yMMM":"MMM y","cldr_date_time_format_yMMMEd":"EEE, MMM d, y","cldr_date_time_format_yMMMM":"MMMM y","cldr_date_time_format_yQ":"Q yyyy","cldr_date_time_format_yQQQ":"QQQ y","cldr_day_format_abbreviated_fri":"Fri","cldr_day_format_abbreviated_mon":"Mon","cldr_day_format_abbreviated_sat":"Sat","cldr_day_format_abbreviated_sun":"Sun","cldr_day_format_abbreviated_thu":"Thu","cldr_day_format_abbreviated_tue":"Tue","cldr_day_format_abbreviated_wed":"Wed","cldr_day_format_narrow_fri":"F","cldr_day_format_narrow_mon":"M","cldr_day_format_narrow_sat":"S","cldr_day_format_narrow_sun":"S","cldr_day_format_narrow_thu":"T","cldr_day_format_narrow_tue":"T","cldr_day_format_narrow_wed":"W","cldr_day_format_wide_fri":"Friday","cldr_day_format_wide_mon":"Monday","cldr_day_format_wide_sat":"Saturday","cldr_day_format_wide_sun":"Sunday","cldr_day_format_wide_thu":"Thursday","cldr_day_format_wide_tue":"Tuesday","cldr_day_format_wide_wed":"Wednesday","cldr_day_stand-alone_abbreviated_fri":"Fri","cldr_day_stand-alone_abbreviated_mon":"Mon","cldr_day_stand-alone_abbreviated_sat":"Sat","cldr_day_stand-alone_abbreviated_sun":"Sun","cldr_day_stand-alone_abbreviated_thu":"Thu","cldr_day_stand-alone_abbreviated_tue":"Tue","cldr_day_stand-alone_abbreviated_wed":"Wed","cldr_day_stand-alone_narrow_fri":"F","cldr_day_stand-alone_narrow_mon":"M","cldr_day_stand-alone_narrow_sat":"S","cldr_day_stand-alone_narrow_sun":"S","cldr_day_stand-alone_narrow_thu":"T","cldr_day_stand-alone_narrow_tue":"T","cldr_day_stand-alone_narrow_wed":"W","cldr_day_stand-alone_wide_fri":"Friday","cldr_day_stand-alone_wide_mon":"Monday","cldr_day_stand-alone_wide_sat":"Saturday","cldr_day_stand-alone_wide_sun":"Sunday","cldr_day_stand-alone_wide_thu":"Thursday","cldr_day_stand-alone_wide_tue":"Tuesday","cldr_day_stand-alone_wide_wed":"Wednesday","cldr_month_format_abbreviated_1":"Jan","cldr_month_format_abbreviated_10":"Oct","cldr_month_format_abbreviated_11":"Nov","cldr_month_format_abbreviated_12":"Dec","cldr_month_format_abbreviated_2":"Feb","cldr_month_format_abbreviated_3":"Mar","cldr_month_format_abbreviated_4":"Apr","cldr_month_format_abbreviated_5":"May","cldr_month_format_abbreviated_6":"Jun","cldr_month_format_abbreviated_7":"Jul","cldr_month_format_abbreviated_8":"Aug","cldr_month_format_abbreviated_9":"Sep","cldr_month_format_wide_1":"January","cldr_month_format_wide_10":"October","cldr_month_format_wide_11":"November","cldr_month_format_wide_12":"December","cldr_month_format_wide_2":"February","cldr_month_format_wide_3":"March","cldr_month_format_wide_4":"April","cldr_month_format_wide_5":"May","cldr_month_format_wide_6":"June","cldr_month_format_wide_7":"July","cldr_month_format_wide_8":"August","cldr_month_format_wide_9":"September","cldr_month_stand-alone_narrow_1":"J","cldr_month_stand-alone_narrow_10":"O","cldr_month_stand-alone_narrow_11":"N","cldr_month_stand-alone_narrow_12":"D","cldr_month_stand-alone_narrow_2":"F","cldr_month_stand-alone_narrow_3":"M","cldr_month_stand-alone_narrow_4":"A","cldr_month_stand-alone_narrow_5":"M","cldr_month_stand-alone_narrow_6":"J","cldr_month_stand-alone_narrow_7":"J","cldr_month_stand-alone_narrow_8":"A","cldr_month_stand-alone_narrow_9":"S","cldr_number_decimal_separator":".","cldr_number_group_separator":",","cldr_number_percent_format":"#,##0%","cldr_pm":"PM","cldr_time_format_full":"h:mm:ss a zzzz","cldr_time_format_long":"h:mm:ss a z","cldr_time_format_medium":"h:mm:ss a","cldr_time_format_short":"h:mm a","quotationEnd":"”","quotationStart":"“"},"en":{"alternateQuotationEnd":"’","alternateQuotationStart":"‘","cldr_am":"AM","cldr_date_format_full":"EEEE, MMMM d, y","cldr_date_format_long":"MMMM d, y","cldr_date_format_medium":"MMM d, y","cldr_date_format_short":"M/d/yy","cldr_date_time_format_EEEd":"d EEE","cldr_date_time_format_Hm":"H:mm","cldr_date_time_format_Hms":"H:mm:ss","cldr_date_time_format_M":"L","cldr_date_time_format_MEd":"E, M/d","cldr_date_time_format_MMM":"LLL","cldr_date_time_format_MMMEd":"E, MMM d","cldr_date_time_format_MMMMEd":"E, MMMM d","cldr_date_time_format_MMMMd":"MMMM d","cldr_date_time_format_MMMd":"MMM d","cldr_date_time_format_Md":"M/d","cldr_date_time_format_d":"d","cldr_date_time_format_hm":"h:mm a","cldr_date_time_format_ms":"mm:ss","cldr_date_time_format_y":"y","cldr_date_time_format_yM":"M/yyyy","cldr_date_time_format_yMEd":"EEE, M/d/yyyy","cldr_date_time_format_yMMM":"MMM y","cldr_date_time_format_yMMMEd":"EEE, MMM d, y","cldr_date_time_format_yMMMM":"MMMM y","cldr_date_time_format_yQ":"Q yyyy","cldr_date_time_format_yQQQ":"QQQ y","cldr_day_format_abbreviated_fri":"Fri","cldr_day_format_abbreviated_mon":"Mon","cldr_day_format_abbreviated_sat":"Sat","cldr_day_format_abbreviated_sun":"Sun","cldr_day_format_abbreviated_thu":"Thu","cldr_day_format_abbreviated_tue":"Tue","cldr_day_format_abbreviated_wed":"Wed","cldr_day_format_narrow_fri":"F","cldr_day_format_narrow_mon":"M","cldr_day_format_narrow_sat":"S","cldr_day_format_narrow_sun":"S","cldr_day_format_narrow_thu":"T","cldr_day_format_narrow_tue":"T","cldr_day_format_narrow_wed":"W","cldr_day_format_wide_fri":"Friday","cldr_day_format_wide_mon":"Monday","cldr_day_format_wide_sat":"Saturday","cldr_day_format_wide_sun":"Sunday","cldr_day_format_wide_thu":"Thursday","cldr_day_format_wide_tue":"Tuesday","cldr_day_format_wide_wed":"Wednesday","cldr_day_stand-alone_abbreviated_fri":"Fri","cldr_day_stand-alone_abbreviated_mon":"Mon","cldr_day_stand-alone_abbreviated_sat":"Sat","cldr_day_stand-alone_abbreviated_sun":"Sun","cldr_day_stand-alone_abbreviated_thu":"Thu","cldr_day_stand-alone_abbreviated_tue":"Tue","cldr_day_stand-alone_abbreviated_wed":"Wed","cldr_day_stand-alone_narrow_fri":"F","cldr_day_stand-alone_narrow_mon":"M","cldr_day_stand-alone_narrow_sat":"S","cldr_day_stand-alone_narrow_sun":"S","cldr_day_stand-alone_narrow_thu":"T","cldr_day_stand-alone_narrow_tue":"T","cldr_day_stand-alone_narrow_wed":"W","cldr_day_stand-alone_wide_fri":"Friday","cldr_day_stand-alone_wide_mon":"Monday","cldr_day_stand-alone_wide_sat":"Saturday","cldr_day_stand-alone_wide_sun":"Sunday","cldr_day_stand-alone_wide_thu":"Thursday","cldr_day_stand-alone_wide_tue":"Tuesday","cldr_day_stand-alone_wide_wed":"Wednesday","cldr_month_format_abbreviated_1":"Jan","cldr_month_format_abbreviated_10":"Oct","cldr_month_format_abbreviated_11":"Nov","cldr_month_format_abbreviated_12":"Dec","cldr_month_format_abbreviated_2":"Feb","cldr_month_format_abbreviated_3":"Mar","cldr_month_format_abbreviated_4":"Apr","cldr_month_format_abbreviated_5":"May","cldr_month_format_abbreviated_6":"Jun","cldr_month_format_abbreviated_7":"Jul","cldr_month_format_abbreviated_8":"Aug","cldr_month_format_abbreviated_9":"Sep","cldr_month_format_wide_1":"January","cldr_month_format_wide_10":"October","cldr_month_format_wide_11":"November","cldr_month_format_wide_12":"December","cldr_month_format_wide_2":"February","cldr_month_format_wide_3":"March","cldr_month_format_wide_4":"April","cldr_month_format_wide_5":"May","cldr_month_format_wide_6":"June","cldr_month_format_wide_7":"July","cldr_month_format_wide_8":"August","cldr_month_format_wide_9":"September","cldr_month_stand-alone_narrow_1":"J","cldr_month_stand-alone_narrow_10":"O","cldr_month_stand-alone_narrow_11":"N","cldr_month_stand-alone_narrow_12":"D","cldr_month_stand-alone_narrow_2":"F","cldr_month_stand-alone_narrow_3":"M","cldr_month_stand-alone_narrow_4":"A","cldr_month_stand-alone_narrow_5":"M","cldr_month_stand-alone_narrow_6":"J","cldr_month_stand-alone_narrow_7":"J","cldr_month_stand-alone_narrow_8":"A","cldr_month_stand-alone_narrow_9":"S","cldr_number_decimal_separator":".","cldr_number_group_separator":",","cldr_number_percent_format":"#,##0%","cldr_pm":"PM","cldr_time_format_full":"h:mm:ss a zzzz","cldr_time_format_long":"h:mm:ss a z","cldr_time_format_medium":"h:mm:ss a","cldr_time_format_short":"h:mm a","quotationEnd":"”","quotationStart":"“"}},"resources":{"qx/decoration/Modern/app-header.png":[110,20,"png","qx"],"qx/decoration/Modern/arrows-combined.png":[87,8,"png","qx"],"qx/decoration/Modern/arrows/down-invert.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-74,0],"qx/decoration/Modern/arrows/down-small-invert.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-69,0],"qx/decoration/Modern/arrows/down-small.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-49,0],"qx/decoration/Modern/arrows/down.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-20,0],"qx/decoration/Modern/arrows/forward.png":[10,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-59,0],"qx/decoration/Modern/arrows/left-invert.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",0,0],"qx/decoration/Modern/arrows/left.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-44,0],"qx/decoration/Modern/arrows/rewind.png":[10,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-10,0],"qx/decoration/Modern/arrows/right-invert.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-5,0],"qx/decoration/Modern/arrows/right.png":[5,8,"png","qx","qx/decoration/Modern/arrows-combined.png",-54,0],"qx/decoration/Modern/arrows/up-invert.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-28,0],"qx/decoration/Modern/arrows/up-small.png":[5,3,"png","qx","qx/decoration/Modern/arrows-combined.png",-82,0],"qx/decoration/Modern/arrows/up.png":[8,5,"png","qx","qx/decoration/Modern/arrows-combined.png",-36,0],"qx/decoration/Modern/button-lr-combined.png":[72,52,"png","qx"],"qx/decoration/Modern/button-tb-combined.png":[4,216,"png","qx"],"qx/decoration/Modern/checkradio-combined.png":[504,14,"png","qx"],"qx/decoration/Modern/colorselector-combined.gif":[46,11,"gif","qx"],"qx/decoration/Modern/colorselector/brightness-field.png":[19,256,"png","qx"],"qx/decoration/Modern/colorselector/brightness-handle.gif":[35,11,"gif","qx","qx/decoration/Modern/colorselector-combined.gif",0,0],"qx/decoration/Modern/colorselector/huesaturation-field.jpg":[256,256,"jpeg","qx"],"qx/decoration/Modern/colorselector/huesaturation-handle.gif":[11,11,"gif","qx","qx/decoration/Modern/colorselector-combined.gif",-35,0],"qx/decoration/Modern/cursors-combined.gif":[71,20,"gif","qx"],"qx/decoration/Modern/cursors/alias.gif":[19,15,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-52,0],"qx/decoration/Modern/cursors/copy.gif":[19,15,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-33,0],"qx/decoration/Modern/cursors/move.gif":[13,9,"gif","qx","qx/decoration/Modern/cursors-combined.gif",-20,0],"qx/decoration/Modern/cursors/nodrop.gif":[20,20,"gif","qx","qx/decoration/Modern/cursors-combined.gif",0,0],"qx/decoration/Modern/form/button-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-72],"qx/decoration/Modern/form/button-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-204],"qx/decoration/Modern/form/button-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-188],"qx/decoration/Modern/form/button-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-36],"qx/decoration/Modern/form/button-checked-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-84],"qx/decoration/Modern/form/button-checked-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-184],"qx/decoration/Modern/form/button-checked-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-156],"qx/decoration/Modern/form/button-checked-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-208],"qx/decoration/Modern/form/button-checked-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-160],"qx/decoration/Modern/form/button-checked-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-checked-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-40,0],"qx/decoration/Modern/form/button-checked-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-32,0],"qx/decoration/Modern/form/button-checked-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-28],"qx/decoration/Modern/form/button-checked-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-24],"qx/decoration/Modern/form/button-checked-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-48],"qx/decoration/Modern/form/button-checked-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-checked-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-16,0],"qx/decoration/Modern/form/button-checked-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-60,0],"qx/decoration/Modern/form/button-checked-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-140],"qx/decoration/Modern/form/button-checked-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-56],"qx/decoration/Modern/form/button-checked-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-112],"qx/decoration/Modern/form/button-checked.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-disabled-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-40],"qx/decoration/Modern/form/button-disabled-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-136],"qx/decoration/Modern/form/button-disabled-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-16],"qx/decoration/Modern/form/button-disabled-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-disabled-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-68,0],"qx/decoration/Modern/form/button-disabled-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-4,0],"qx/decoration/Modern/form/button-disabled-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-116],"qx/decoration/Modern/form/button-disabled-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-168],"qx/decoration/Modern/form/button-disabled-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-60],"qx/decoration/Modern/form/button-disabled.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-68],"qx/decoration/Modern/form/button-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-144],"qx/decoration/Modern/form/button-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-8],"qx/decoration/Modern/form/button-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-24,0],"qx/decoration/Modern/form/button-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-44,0],"qx/decoration/Modern/form/button-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-192],"qx/decoration/Modern/form/button-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-148],"qx/decoration/Modern/form/button-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-104],"qx/decoration/Modern/form/button-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-hovered-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-108],"qx/decoration/Modern/form/button-hovered-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-32],"qx/decoration/Modern/form/button-hovered-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-128],"qx/decoration/Modern/form/button-hovered-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-hovered-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-20,0],"qx/decoration/Modern/form/button-hovered-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-48,0],"qx/decoration/Modern/form/button-hovered-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-44],"qx/decoration/Modern/form/button-hovered-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-76],"qx/decoration/Modern/form/button-hovered-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-88],"qx/decoration/Modern/form/button-hovered.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-56,0],"qx/decoration/Modern/form/button-preselected-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-124],"qx/decoration/Modern/form/button-preselected-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-176],"qx/decoration/Modern/form/button-preselected-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-200],"qx/decoration/Modern/form/button-preselected-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-preselected-focused-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,0],"qx/decoration/Modern/form/button-preselected-focused-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-4],"qx/decoration/Modern/form/button-preselected-focused-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-152],"qx/decoration/Modern/form/button-preselected-focused-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-preselected-focused-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-28,0],"qx/decoration/Modern/form/button-preselected-focused-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-36,0],"qx/decoration/Modern/form/button-preselected-focused-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-196],"qx/decoration/Modern/form/button-preselected-focused-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-164],"qx/decoration/Modern/form/button-preselected-focused-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-212],"qx/decoration/Modern/form/button-preselected-focused.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-preselected-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-8,0],"qx/decoration/Modern/form/button-preselected-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-64,0],"qx/decoration/Modern/form/button-preselected-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-96],"qx/decoration/Modern/form/button-preselected-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-80],"qx/decoration/Modern/form/button-preselected-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-132],"qx/decoration/Modern/form/button-preselected.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-pressed-b.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-12],"qx/decoration/Modern/form/button-pressed-bl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-52],"qx/decoration/Modern/form/button-pressed-br.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-20],"qx/decoration/Modern/form/button-pressed-c.png":[40,52,"png","qx"],"qx/decoration/Modern/form/button-pressed-l.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-52,0],"qx/decoration/Modern/form/button-pressed-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",-12,0],"qx/decoration/Modern/form/button-pressed-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-100],"qx/decoration/Modern/form/button-pressed-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-172],"qx/decoration/Modern/form/button-pressed-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-64],"qx/decoration/Modern/form/button-pressed.png":[80,60,"png","qx"],"qx/decoration/Modern/form/button-r.png":[4,52,"png","qx","qx/decoration/Modern/button-lr-combined.png",0,0],"qx/decoration/Modern/form/button-t.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-92],"qx/decoration/Modern/form/button-tl.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-120],"qx/decoration/Modern/form/button-tr.png":[4,4,"png","qx","qx/decoration/Modern/button-tb-combined.png",0,-180],"qx/decoration/Modern/form/button.png":[80,60,"png","qx"],"qx/decoration/Modern/form/checkbox-checked-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-126,0],"qx/decoration/Modern/form/checkbox-checked-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-322,0],"qx/decoration/Modern/form/checkbox-checked-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-294,0],"qx/decoration/Modern/form/checkbox-checked-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-364,0],"qx/decoration/Modern/form/checkbox-checked-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-490,0],"qx/decoration/Modern/form/checkbox-checked-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-224,0],"qx/decoration/Modern/form/checkbox-checked-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-378,0],"qx/decoration/Modern/form/checkbox-checked-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-84,0],"qx/decoration/Modern/form/checkbox-checked.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-182,0],"qx/decoration/Modern/form/checkbox-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-42,0],"qx/decoration/Modern/form/checkbox-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-392,0],"qx/decoration/Modern/form/checkbox-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-210,0],"qx/decoration/Modern/form/checkbox-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-14,0],"qx/decoration/Modern/form/checkbox-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-238,0],"qx/decoration/Modern/form/checkbox-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-462,0],"qx/decoration/Modern/form/checkbox-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-112,0],"qx/decoration/Modern/form/checkbox-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-448,0],"qx/decoration/Modern/form/checkbox-undetermined-disabled.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-focused-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-focused.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-hovered-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-hovered.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined-invalid.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox-undetermined.png":[14,14,"png","qx"],"qx/decoration/Modern/form/checkbox.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-140,0],"qx/decoration/Modern/form/input-focused.png":[40,12,"png","qx"],"qx/decoration/Modern/form/input.png":[84,12,"png","qx"],"qx/decoration/Modern/form/radiobutton-checked-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-196,0],"qx/decoration/Modern/form/radiobutton-checked-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-168,0],"qx/decoration/Modern/form/radiobutton-checked-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-98,0],"qx/decoration/Modern/form/radiobutton-checked-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-308,0],"qx/decoration/Modern/form/radiobutton-checked-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-406,0],"qx/decoration/Modern/form/radiobutton-checked-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-28,0],"qx/decoration/Modern/form/radiobutton-checked-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-350,0],"qx/decoration/Modern/form/radiobutton-checked-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-266,0],"qx/decoration/Modern/form/radiobutton-checked.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-252,0],"qx/decoration/Modern/form/radiobutton-disabled.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-336,0],"qx/decoration/Modern/form/radiobutton-focused-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-476,0],"qx/decoration/Modern/form/radiobutton-focused.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-420,0],"qx/decoration/Modern/form/radiobutton-hovered-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-56,0],"qx/decoration/Modern/form/radiobutton-hovered.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",0,0],"qx/decoration/Modern/form/radiobutton-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-154,0],"qx/decoration/Modern/form/radiobutton-pressed-invalid.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-434,0],"qx/decoration/Modern/form/radiobutton-pressed.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-280,0],"qx/decoration/Modern/form/radiobutton.png":[14,14,"png","qx","qx/decoration/Modern/checkradio-combined.png",-70,0],"qx/decoration/Modern/form/tooltip-error-arrow.png":[11,14,"png","qx"],"qx/decoration/Modern/form/tooltip-error-b.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-30],"qx/decoration/Modern/form/tooltip-error-bl.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-24],"qx/decoration/Modern/form/tooltip-error-br.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,0],"qx/decoration/Modern/form/tooltip-error-c.png":[40,18,"png","qx"],"qx/decoration/Modern/form/tooltip-error-l.png":[6,18,"png","qx","qx/decoration/Modern/tooltip-error-lr-combined.png",-6,0],"qx/decoration/Modern/form/tooltip-error-r.png":[6,18,"png","qx","qx/decoration/Modern/tooltip-error-lr-combined.png",0,0],"qx/decoration/Modern/form/tooltip-error-t.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-6],"qx/decoration/Modern/form/tooltip-error-tl.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-18],"qx/decoration/Modern/form/tooltip-error-tr.png":[6,6,"png","qx","qx/decoration/Modern/tooltip-error-tb-combined.png",0,-12],"qx/decoration/Modern/form/tooltip-error.png":[127,30,"png","qx"],"qx/decoration/Modern/group-item.png":[110,20,"png","qx"],"qx/decoration/Modern/groupbox-lr-combined.png":[8,51,"png","qx"],"qx/decoration/Modern/groupbox-tb-combined.png":[4,24,"png","qx"],"qx/decoration/Modern/groupbox/groupbox-b.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-12],"qx/decoration/Modern/groupbox/groupbox-bl.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-16],"qx/decoration/Modern/groupbox/groupbox-br.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-8],"qx/decoration/Modern/groupbox/groupbox-c.png":[40,51,"png","qx"],"qx/decoration/Modern/groupbox/groupbox-l.png":[4,51,"png","qx","qx/decoration/Modern/groupbox-lr-combined.png",-4,0],"qx/decoration/Modern/groupbox/groupbox-r.png":[4,51,"png","qx","qx/decoration/Modern/groupbox-lr-combined.png",0,0],"qx/decoration/Modern/groupbox/groupbox-t.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-4],"qx/decoration/Modern/groupbox/groupbox-tl.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,0],"qx/decoration/Modern/groupbox/groupbox-tr.png":[4,4,"png","qx","qx/decoration/Modern/groupbox-tb-combined.png",0,-20],"qx/decoration/Modern/groupbox/groupbox.png":[255,59,"png","qx"],"qx/decoration/Modern/menu-background-combined.png":[80,49,"png","qx"],"qx/decoration/Modern/menu-checkradio-combined.gif":[64,7,"gif","qx"],"qx/decoration/Modern/menu/background.png":[40,49,"png","qx","qx/decoration/Modern/menu-background-combined.png",-40,0],"qx/decoration/Modern/menu/bar-background.png":[40,20,"png","qx","qx/decoration/Modern/menu-background-combined.png",0,0],"qx/decoration/Modern/menu/checkbox-invert.gif":[16,7,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-16,0],"qx/decoration/Modern/menu/checkbox.gif":[16,7,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-48,0],"qx/decoration/Modern/menu/radiobutton-invert.gif":[16,5,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",-32,0],"qx/decoration/Modern/menu/radiobutton.gif":[16,5,"gif","qx","qx/decoration/Modern/menu-checkradio-combined.gif",0,0],"qx/decoration/Modern/pane-lr-combined.png":[12,238,"png","qx"],"qx/decoration/Modern/pane-tb-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/pane/pane-b.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-30],"qx/decoration/Modern/pane/pane-bl.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-18],"qx/decoration/Modern/pane/pane-br.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-12],"qx/decoration/Modern/pane/pane-c.png":[40,238,"png","qx"],"qx/decoration/Modern/pane/pane-l.png":[6,238,"png","qx","qx/decoration/Modern/pane-lr-combined.png",0,0],"qx/decoration/Modern/pane/pane-r.png":[6,238,"png","qx","qx/decoration/Modern/pane-lr-combined.png",-6,0],"qx/decoration/Modern/pane/pane-t.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,0],"qx/decoration/Modern/pane/pane-tl.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-24],"qx/decoration/Modern/pane/pane-tr.png":[6,6,"png","qx","qx/decoration/Modern/pane-tb-combined.png",0,-6],"qx/decoration/Modern/pane/pane.png":[185,250,"png","qx"],"qx/decoration/Modern/scrollbar-combined.png":[54,12,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-horizontal.png":[76,15,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-pressed-horizontal.png":[19,10,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-pressed-vertical.png":[10,19,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-bg-vertical.png":[15,76,"png","qx"],"qx/decoration/Modern/scrollbar/scrollbar-button-bg-horizontal.png":[12,10,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-34,0],"qx/decoration/Modern/scrollbar/scrollbar-button-bg-vertical.png":[10,12,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-6,0],"qx/decoration/Modern/scrollbar/scrollbar-down.png":[6,4,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-28,0],"qx/decoration/Modern/scrollbar/scrollbar-left.png":[4,6,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-50,0],"qx/decoration/Modern/scrollbar/scrollbar-right.png":[4,6,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-46,0],"qx/decoration/Modern/scrollbar/scrollbar-up.png":[6,4,"png","qx","qx/decoration/Modern/scrollbar-combined.png",0,0],"qx/decoration/Modern/scrollbar/slider-knob-background.png":[12,10,"png","qx","qx/decoration/Modern/scrollbar-combined.png",-16,0],"qx/decoration/Modern/selection.png":[110,20,"png","qx"],"qx/decoration/Modern/shadow-lr-combined.png":[30,382,"png","qx"],"qx/decoration/Modern/shadow-small-lr-combined.png":[10,136,"png","qx"],"qx/decoration/Modern/shadow-small-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/shadow-tb-combined.png":[15,90,"png","qx"],"qx/decoration/Modern/shadow/shadow-b.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-30],"qx/decoration/Modern/shadow/shadow-bl.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-15],"qx/decoration/Modern/shadow/shadow-br.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-45],"qx/decoration/Modern/shadow/shadow-c.png":[40,382,"png","qx"],"qx/decoration/Modern/shadow/shadow-l.png":[15,382,"png","qx","qx/decoration/Modern/shadow-lr-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-r.png":[15,382,"png","qx","qx/decoration/Modern/shadow-lr-combined.png",-15,0],"qx/decoration/Modern/shadow/shadow-small-b.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-20],"qx/decoration/Modern/shadow/shadow-small-bl.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-15],"qx/decoration/Modern/shadow/shadow-small-br.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-10],"qx/decoration/Modern/shadow/shadow-small-c.png":[40,136,"png","qx"],"qx/decoration/Modern/shadow/shadow-small-l.png":[5,136,"png","qx","qx/decoration/Modern/shadow-small-lr-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-small-r.png":[5,136,"png","qx","qx/decoration/Modern/shadow-small-lr-combined.png",-5,0],"qx/decoration/Modern/shadow/shadow-small-t.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-5],"qx/decoration/Modern/shadow/shadow-small-tl.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,0],"qx/decoration/Modern/shadow/shadow-small-tr.png":[5,5,"png","qx","qx/decoration/Modern/shadow-small-tb-combined.png",0,-25],"qx/decoration/Modern/shadow/shadow-small.png":[114,146,"png","qx"],"qx/decoration/Modern/shadow/shadow-t.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-60],"qx/decoration/Modern/shadow/shadow-tl.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,-75],"qx/decoration/Modern/shadow/shadow-tr.png":[15,15,"png","qx","qx/decoration/Modern/shadow-tb-combined.png",0,0],"qx/decoration/Modern/shadow/shadow.png":[381,412,"png","qx"],"qx/decoration/Modern/splitpane-knobs-combined.png":[8,9,"png","qx"],"qx/decoration/Modern/splitpane/knob-horizontal.png":[1,8,"png","qx","qx/decoration/Modern/splitpane-knobs-combined.png",0,-1],"qx/decoration/Modern/splitpane/knob-vertical.png":[8,1,"png","qx","qx/decoration/Modern/splitpane-knobs-combined.png",0,0],"qx/decoration/Modern/table-combined.png":[94,18,"png","qx"],"qx/decoration/Modern/table/ascending.png":[8,5,"png","qx","qx/decoration/Modern/table-combined.png",0,0],"qx/decoration/Modern/table/boolean-false.png":[14,14,"png","qx","qx/decoration/Modern/table-combined.png",-80,0],"qx/decoration/Modern/table/boolean-true.png":[14,14,"png","qx","qx/decoration/Modern/table-combined.png",-26,0],"qx/decoration/Modern/table/descending.png":[8,5,"png","qx","qx/decoration/Modern/table-combined.png",-18,0],"qx/decoration/Modern/table/header-cell.png":[40,18,"png","qx","qx/decoration/Modern/table-combined.png",-40,0],"qx/decoration/Modern/table/select-column-order.png":[10,9,"png","qx","qx/decoration/Modern/table-combined.png",-8,0],"qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png":[10,14,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png":[6,15,"png","qx"],"qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-left-active-lr-combined.png":[10,37,"png","qx"],"qx/decoration/Modern/tabview-button-left-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png":[6,39,"png","qx"],"qx/decoration/Modern/tabview-button-left-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-right-active-lr-combined.png":[10,37,"png","qx"],"qx/decoration/Modern/tabview-button-right-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png":[6,39,"png","qx"],"qx/decoration/Modern/tabview-button-right-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-top-active-lr-combined.png":[10,12,"png","qx"],"qx/decoration/Modern/tabview-button-top-active-tb-combined.png":[5,30,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-b-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png":[6,15,"png","qx"],"qx/decoration/Modern/tabview-button-top-inactive-t-combined.png":[3,9,"png","qx"],"qx/decoration/Modern/tabview-pane-lr-combined.png":[60,2,"png","qx"],"qx/decoration/Modern/tabview-pane-tb-combined.png":[30,180,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-bottom-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-bottom-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-bottom-active-c.png":[40,14,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-active-l.png":[5,14,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-active-r.png":[5,14,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-bottom-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-bottom-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-bottom-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-bottom-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-active.png":[49,24,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-c.png":[40,15,"png","qx"],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-l.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-r.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-bottom-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-bottom-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-bottom-inactive.png":[45,21,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-left-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-left-active-c.png":[40,37,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-active-l.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-left-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-active-r.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-left-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-left-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-left-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-left-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-left-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-left-active.png":[22,47,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-left-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-left-inactive-c.png":[40,39,"png","qx"],"qx/decoration/Modern/tabview/tab-button-left-inactive-l.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-r.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-left-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-left-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-left-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-left-inactive.png":[20,45,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-right-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-right-active-c.png":[40,37,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-active-l.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-right-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-active-r.png":[5,37,"png","qx","qx/decoration/Modern/tabview-button-right-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-right-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-right-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-right-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-right-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-right-active.png":[22,47,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-right-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-right-inactive-c.png":[40,39,"png","qx"],"qx/decoration/Modern/tabview/tab-button-right-inactive-l.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-r.png":[3,39,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-right-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-right-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-right-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-right-inactive.png":[20,45,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-active-b.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-20],"qx/decoration/Modern/tabview/tab-button-top-active-bl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-15],"qx/decoration/Modern/tabview/tab-button-top-active-br.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-10],"qx/decoration/Modern/tabview/tab-button-top-active-c.png":[40,14,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-active-l.png":[5,12,"png","qx","qx/decoration/Modern/tabview-button-top-active-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-active-r.png":[5,12,"png","qx","qx/decoration/Modern/tabview-button-top-active-lr-combined.png",-5,0],"qx/decoration/Modern/tabview/tab-button-top-active-t.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-active-tl.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-25],"qx/decoration/Modern/tabview/tab-button-top-active-tr.png":[5,5,"png","qx","qx/decoration/Modern/tabview-button-top-active-tb-combined.png",0,-5],"qx/decoration/Modern/tabview/tab-button-top-active.png":[48,22,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-inactive-b.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-top-inactive-bl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-top-inactive-br.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-b-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-c.png":[40,15,"png","qx"],"qx/decoration/Modern/tabview/tab-button-top-inactive-l.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-r.png":[3,15,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-lr-combined.png",-3,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-t.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,-3],"qx/decoration/Modern/tabview/tab-button-top-inactive-tl.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,0],"qx/decoration/Modern/tabview/tab-button-top-inactive-tr.png":[3,3,"png","qx","qx/decoration/Modern/tabview-button-top-inactive-t-combined.png",0,-6],"qx/decoration/Modern/tabview/tab-button-top-inactive.png":[45,21,"png","qx"],"qx/decoration/Modern/tabview/tabview-pane-b.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-60],"qx/decoration/Modern/tabview/tabview-pane-bl.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,0],"qx/decoration/Modern/tabview/tabview-pane-br.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-120],"qx/decoration/Modern/tabview/tabview-pane-c.png":[40,120,"png","qx"],"qx/decoration/Modern/tabview/tabview-pane-l.png":[30,2,"png","qx","qx/decoration/Modern/tabview-pane-lr-combined.png",0,0],"qx/decoration/Modern/tabview/tabview-pane-r.png":[30,2,"png","qx","qx/decoration/Modern/tabview-pane-lr-combined.png",-30,0],"qx/decoration/Modern/tabview/tabview-pane-t.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-150],"qx/decoration/Modern/tabview/tabview-pane-tl.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-30],"qx/decoration/Modern/tabview/tabview-pane-tr.png":[30,30,"png","qx","qx/decoration/Modern/tabview-pane-tb-combined.png",0,-90],"qx/decoration/Modern/tabview/tabview-pane.png":[185,250,"png","qx"],"qx/decoration/Modern/toolbar-combined.png":[80,130,"png","qx"],"qx/decoration/Modern/toolbar/toolbar-gradient-blue.png":[40,130,"png","qx","qx/decoration/Modern/toolbar-combined.png",-40,0],"qx/decoration/Modern/toolbar/toolbar-gradient.png":[40,130,"png","qx","qx/decoration/Modern/toolbar-combined.png",0,0],"qx/decoration/Modern/toolbar/toolbar-handle-knob.gif":[1,8,"gif","qx"],"qx/decoration/Modern/toolbar/toolbar-part.gif":[7,1,"gif","qx"],"qx/decoration/Modern/tooltip-error-lr-combined.png":[12,18,"png","qx"],"qx/decoration/Modern/tooltip-error-tb-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/tree-combined.png":[32,8,"png","qx"],"qx/decoration/Modern/tree/closed-selected.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-24,0],"qx/decoration/Modern/tree/closed.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-16,0],"qx/decoration/Modern/tree/open-selected.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",-8,0],"qx/decoration/Modern/tree/open.png":[8,8,"png","qx","qx/decoration/Modern/tree-combined.png",0,0],"qx/decoration/Modern/window-captionbar-buttons-combined.png":[108,9,"png","qx"],"qx/decoration/Modern/window-captionbar-lr-active-combined.png":[12,9,"png","qx"],"qx/decoration/Modern/window-captionbar-lr-inactive-combined.png":[12,9,"png","qx"],"qx/decoration/Modern/window-captionbar-tb-active-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/window-captionbar-tb-inactive-combined.png":[6,36,"png","qx"],"qx/decoration/Modern/window-statusbar-lr-combined.png":[8,7,"png","qx"],"qx/decoration/Modern/window-statusbar-tb-combined.png":[4,24,"png","qx"],"qx/decoration/Modern/window/captionbar-active-b.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-18],"qx/decoration/Modern/window/captionbar-active-bl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-24],"qx/decoration/Modern/window/captionbar-active-br.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-12],"qx/decoration/Modern/window/captionbar-active-c.png":[40,9,"png","qx"],"qx/decoration/Modern/window/captionbar-active-l.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-active-combined.png",-6,0],"qx/decoration/Modern/window/captionbar-active-r.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-active-combined.png",0,0],"qx/decoration/Modern/window/captionbar-active-t.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-6],"qx/decoration/Modern/window/captionbar-active-tl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,0],"qx/decoration/Modern/window/captionbar-active-tr.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-active-combined.png",0,-30],"qx/decoration/Modern/window/captionbar-active.png":[69,21,"png","qx"],"qx/decoration/Modern/window/captionbar-inactive-b.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-24],"qx/decoration/Modern/window/captionbar-inactive-bl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-6],"qx/decoration/Modern/window/captionbar-inactive-br.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-30],"qx/decoration/Modern/window/captionbar-inactive-c.png":[40,9,"png","qx"],"qx/decoration/Modern/window/captionbar-inactive-l.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-inactive-combined.png",0,0],"qx/decoration/Modern/window/captionbar-inactive-r.png":[6,9,"png","qx","qx/decoration/Modern/window-captionbar-lr-inactive-combined.png",-6,0],"qx/decoration/Modern/window/captionbar-inactive-t.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,0],"qx/decoration/Modern/window/captionbar-inactive-tl.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-12],"qx/decoration/Modern/window/captionbar-inactive-tr.png":[6,6,"png","qx","qx/decoration/Modern/window-captionbar-tb-inactive-combined.png",0,-18],"qx/decoration/Modern/window/captionbar-inactive.png":[69,21,"png","qx"],"qx/decoration/Modern/window/close-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-27,0],"qx/decoration/Modern/window/close-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-9,0],"qx/decoration/Modern/window/close-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-90,0],"qx/decoration/Modern/window/maximize-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-18,0],"qx/decoration/Modern/window/maximize-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-81,0],"qx/decoration/Modern/window/maximize-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-54,0],"qx/decoration/Modern/window/minimize-active-hovered.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-63,0],"qx/decoration/Modern/window/minimize-active.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-72,0],"qx/decoration/Modern/window/minimize-inactive.png":[9,9,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-36,0],"qx/decoration/Modern/window/restore-active-hovered.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",0,0],"qx/decoration/Modern/window/restore-active.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-99,0],"qx/decoration/Modern/window/restore-inactive.png":[9,8,"png","qx","qx/decoration/Modern/window-captionbar-buttons-combined.png",-45,0],"qx/decoration/Modern/window/statusbar-b.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-16],"qx/decoration/Modern/window/statusbar-bl.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-20],"qx/decoration/Modern/window/statusbar-br.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-4],"qx/decoration/Modern/window/statusbar-c.png":[40,7,"png","qx"],"qx/decoration/Modern/window/statusbar-l.png":[4,7,"png","qx","qx/decoration/Modern/window-statusbar-lr-combined.png",-4,0],"qx/decoration/Modern/window/statusbar-r.png":[4,7,"png","qx","qx/decoration/Modern/window-statusbar-lr-combined.png",0,0],"qx/decoration/Modern/window/statusbar-t.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,0],"qx/decoration/Modern/window/statusbar-tl.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-8],"qx/decoration/Modern/window/statusbar-tr.png":[4,4,"png","qx","qx/decoration/Modern/window-statusbar-tb-combined.png",0,-12],"qx/decoration/Modern/window/statusbar.png":[369,15,"png","qx"],"qx/icon/Tango/128/actions/address-book-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/application-exit.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/appointment-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/bookmark-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/check-spelling.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/contact-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-apply.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-cancel.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-close.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/dialog-ok.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-open-recent.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-open.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-print-preview.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-print.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-properties.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-revert.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-save-as.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-save.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/document-send.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-clear.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-copy.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-cut.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-delete.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-find.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-paste.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-redo.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-select-all.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/edit-undo.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/folder-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-indent-less.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-indent-more.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-center.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-fill.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-left.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-justify-right.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-bold.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-direction-ltr.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-direction-rtl.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-italic.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-strikethrough.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/format-text-underline.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-bottom.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-down.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-first.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-home.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-last.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-next.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-previous.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-top.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/go-up.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-about.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-contents.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/help-faq.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-image.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-link.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/insert-text.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/list-add.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/list-remove.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-important.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-junk.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-read.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-mark-unread.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-message-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-receive.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-reply-all.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-reply-sender.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/mail-send.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-eject.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-pause.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-start.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-playback-stop.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-record.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-seek-backward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-seek-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-skip-backward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/media-skip-forward.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-flip-horizontal.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-flip-vertical.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-rotate-left.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/object-rotate-right.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/process-stop.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-log-out.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-run.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-search.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/system-shutdown.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-fullscreen.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-refresh.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-restore.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-sort-ascending.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/view-sort-descending.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/window-close.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/window-new.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-fit-best.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-in.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-original.png":[128,128,"png","qx"],"qx/icon/Tango/128/actions/zoom-out.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-blog.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-download-manager.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-feed-reader.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-mail.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-messenger.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-telephony.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-transfer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/internet-web-browser.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-audio-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-photo-album.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/media-video-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-address-book.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-calendar.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-chart.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-database.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-draw.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-graphics.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-layout.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-presentation.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-project.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-spreadsheet.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-web.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/office-writer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-accessibility.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-clock.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-display.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-font.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-keyboard.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-locale.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-network.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-security.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-sound.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-theme.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-users.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/preferences-wallpaper.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-archiver.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-calculator.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-character-map.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-color-chooser.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-dictionary.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-graphics-viewer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-help.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-keyring.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-log-viewer.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-network-manager.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-notes.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-statistics.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-system-monitor.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-terminal.png":[128,128,"png","qx"],"qx/icon/Tango/128/apps/utilities-text-editor.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/accessories.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/development.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/engineering.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/games.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/graphics.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/internet.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/multimedia.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/office.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/science.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/system.png":[128,128,"png","qx"],"qx/icon/Tango/128/categories/utilities.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/audio-card.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/audio-input-microphone.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/battery.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/camera-photo.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/camera-web.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/computer.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/display.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/drive-harddisk.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/drive-optical.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/input-keyboard.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/input-mouse.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/media-flash.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/media-optical.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/multimedia-player.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/network-wired.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/network-wireless.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/pda.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/phone.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/printer.png":[128,128,"png","qx"],"qx/icon/Tango/128/devices/scanner.png":[128,128,"png","qx"],"qx/icon/Tango/128/emblems/emblem-favorite.png":[128,128,"png","qx"],"qx/icon/Tango/128/emblems/emblem-important.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-angel.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-embarrassed.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-kiss.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-laugh.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-plain.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-raspberry.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-sad.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-smile-big.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-smile.png":[128,128,"png","qx"],"qx/icon/Tango/128/emotes/face-surprise.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/archive.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/executable.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-audio.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-image.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/media-video.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-calendar.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-contact.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-document.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-illustration.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-presentation.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/office-spreadsheet.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/text-html.png":[128,128,"png","qx"],"qx/icon/Tango/128/mimetypes/text-plain.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder-open.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder-remote.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/folder.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/network-server.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/network-workgroup.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-desktop.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-home.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-trash-full.png":[128,128,"png","qx"],"qx/icon/Tango/128/places/user-trash.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-error.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-information.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-password.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/dialog-warning.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/image-loading.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/image-missing.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-read.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-replied.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/mail-unread.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-high.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-low.png":[128,128,"png","qx"],"qx/icon/Tango/128/status/security-medium.png":[128,128,"png","qx"],"qx/icon/Tango/16/actions/address-book-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/application-exit.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/appointment-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/bookmark-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/check-spelling.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/contact-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-apply.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-cancel.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-close.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/dialog-ok.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-open-recent.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-open.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-print-preview.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-print.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-properties.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-revert.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-save-as.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-save.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/document-send.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-clear.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-copy.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-cut.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-delete.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-find.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-paste.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-redo.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-select-all.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/edit-undo.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/folder-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-indent-less.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-indent-more.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-center.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-fill.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-left.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-justify-right.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-bold.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-direction-ltr.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-direction-rtl.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-italic.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-strikethrough.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/format-text-underline.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-bottom.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-down.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-first.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-home.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-last.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-next.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-previous.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-top.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/go-up.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-about.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-contents.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/help-faq.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-image.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-link.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/insert-text.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/list-add.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/list-remove.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-important.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-junk.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-read.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-mark-unread.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-message-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-receive.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-reply-all.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-reply-sender.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/mail-send.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-eject.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-pause.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-start.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-playback-stop.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-record.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-seek-backward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-seek-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-skip-backward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/media-skip-forward.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-flip-horizontal.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-flip-vertical.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-rotate-left.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/object-rotate-right.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/process-stop.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-log-out.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-run.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-search.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/system-shutdown.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-fullscreen.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-refresh.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-restore.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-sort-ascending.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/view-sort-descending.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/window-close.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/window-new.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-fit-best.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-in.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-original.png":[16,16,"png","qx"],"qx/icon/Tango/16/actions/zoom-out.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-blog.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-download-manager.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-feed-reader.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-mail.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-messenger.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-telephony.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-transfer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/internet-web-browser.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-audio-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-photo-album.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/media-video-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-address-book.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-calendar.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-chart.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-database.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-draw.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-graphics.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-layout.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-presentation.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-project.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-spreadsheet.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-web.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/office-writer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-accessibility.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-clock.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-display.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-font.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-keyboard.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-locale.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-network.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-security.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-sound.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-theme.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-users.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/preferences-wallpaper.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-archiver.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-calculator.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-character-map.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-color-chooser.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-dictionary.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-graphics-viewer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-help.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-keyring.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-log-viewer.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-network-manager.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-notes.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-statistics.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-system-monitor.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-terminal.png":[16,16,"png","qx"],"qx/icon/Tango/16/apps/utilities-text-editor.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/accessories.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/development.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/engineering.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/games.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/graphics.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/internet.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/multimedia.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/office.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/science.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/system.png":[16,16,"png","qx"],"qx/icon/Tango/16/categories/utilities.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/audio-card.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/audio-input-microphone.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/battery.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/camera-photo.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/camera-web.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/computer.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/display.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/drive-harddisk.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/drive-optical.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/input-keyboard.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/input-mouse.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/media-flash.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/media-optical.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/multimedia-player.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/network-wired.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/network-wireless.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/pda.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/phone.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/printer.png":[16,16,"png","qx"],"qx/icon/Tango/16/devices/scanner.png":[16,16,"png","qx"],"qx/icon/Tango/16/emblems/emblem-favorite.png":[16,16,"png","qx"],"qx/icon/Tango/16/emblems/emblem-important.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-angel.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-embarrassed.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-kiss.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-laugh.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-plain.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-raspberry.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-sad.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-smile-big.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-smile.png":[16,16,"png","qx"],"qx/icon/Tango/16/emotes/face-surprise.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/archive.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/executable.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-audio.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-image.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/media-video.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-calendar.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-contact.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-document.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-illustration.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-presentation.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/office-spreadsheet.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/text-html.png":[16,16,"png","qx"],"qx/icon/Tango/16/mimetypes/text-plain.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder-open.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder-remote.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/folder.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/network-server.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/network-workgroup.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-desktop.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-home.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-trash-full.png":[16,16,"png","qx"],"qx/icon/Tango/16/places/user-trash.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-error.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-information.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-password.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/dialog-warning.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/image-loading.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/image-missing.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-read.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-replied.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/mail-unread.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-high.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-low.png":[16,16,"png","qx"],"qx/icon/Tango/16/status/security-medium.png":[16,16,"png","qx"],"qx/icon/Tango/22/actions/address-book-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/application-exit.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/appointment-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/bookmark-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/check-spelling.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/contact-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-apply.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-cancel.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-close.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/dialog-ok.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-open-recent.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-open.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-print-preview.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-print.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-properties.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-revert.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-save-as.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-save.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/document-send.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-clear.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-copy.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-cut.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-delete.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-find.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-paste.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-redo.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-select-all.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/edit-undo.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/folder-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-indent-less.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-indent-more.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-center.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-fill.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-left.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-justify-right.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-bold.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-direction-ltr.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-direction-rtl.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-italic.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-strikethrough.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/format-text-underline.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-bottom.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-down.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-first.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-home.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-last.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-next.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-previous.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-top.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/go-up.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-about.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-contents.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/help-faq.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-image.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-link.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/insert-text.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/list-add.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/list-remove.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-important.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-junk.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-read.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-mark-unread.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-message-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-receive.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-reply-all.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-reply-sender.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/mail-send.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-eject.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-pause.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-start.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-playback-stop.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-record.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-seek-backward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-seek-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-skip-backward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/media-skip-forward.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-flip-horizontal.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-flip-vertical.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-rotate-left.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/object-rotate-right.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/process-stop.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-log-out.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-run.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-search.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/system-shutdown.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-fullscreen.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-refresh.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-restore.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-sort-ascending.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/view-sort-descending.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/window-close.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/window-new.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-fit-best.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-in.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-original.png":[22,22,"png","qx"],"qx/icon/Tango/22/actions/zoom-out.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-blog.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-download-manager.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-feed-reader.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-mail.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-messenger.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-telephony.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-transfer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/internet-web-browser.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-audio-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-photo-album.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/media-video-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-address-book.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-calendar.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-chart.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-database.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-draw.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-graphics.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-layout.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-presentation.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-project.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-spreadsheet.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-web.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/office-writer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-accessibility.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-clock.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-display.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-font.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-keyboard.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-locale.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-network.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-security.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-sound.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-theme.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-users.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/preferences-wallpaper.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-archiver.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-calculator.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-character-map.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-color-chooser.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-dictionary.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-graphics-viewer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-help.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-keyring.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-log-viewer.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-network-manager.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-notes.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-statistics.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-system-monitor.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-terminal.png":[22,22,"png","qx"],"qx/icon/Tango/22/apps/utilities-text-editor.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/accessories.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/development.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/engineering.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/games.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/graphics.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/internet.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/multimedia.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/office.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/science.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/system.png":[22,22,"png","qx"],"qx/icon/Tango/22/categories/utilities.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/audio-card.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/audio-input-microphone.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/battery.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/camera-photo.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/camera-web.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/computer.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/display.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/drive-harddisk.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/drive-optical.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/input-keyboard.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/input-mouse.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/media-flash.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/media-optical.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/multimedia-player.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/network-wired.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/network-wireless.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/pda.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/phone.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/printer.png":[22,22,"png","qx"],"qx/icon/Tango/22/devices/scanner.png":[22,22,"png","qx"],"qx/icon/Tango/22/emblems/emblem-favorite.png":[22,22,"png","qx"],"qx/icon/Tango/22/emblems/emblem-important.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-angel.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-embarrassed.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-kiss.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-laugh.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-plain.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-raspberry.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-sad.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-smile-big.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-smile.png":[22,22,"png","qx"],"qx/icon/Tango/22/emotes/face-surprise.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/archive.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/executable.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-audio.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-image.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/media-video.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-calendar.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-contact.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-document.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-illustration.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-presentation.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/office-spreadsheet.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/text-html.png":[22,22,"png","qx"],"qx/icon/Tango/22/mimetypes/text-plain.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder-open.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder-remote.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/folder.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/network-server.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/network-workgroup.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-desktop.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-home.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-trash-full.png":[22,22,"png","qx"],"qx/icon/Tango/22/places/user-trash.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-error.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-information.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-password.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/dialog-warning.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/image-loading.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/image-missing.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-read.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-replied.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/mail-unread.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-high.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-low.png":[22,22,"png","qx"],"qx/icon/Tango/22/status/security-medium.png":[22,22,"png","qx"],"qx/icon/Tango/32/actions/address-book-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/application-exit.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/appointment-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/bookmark-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/check-spelling.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/contact-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-apply.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-cancel.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-close.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/dialog-ok.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-open-recent.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-open.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-print-preview.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-print.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-properties.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-revert.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-save-as.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-save.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/document-send.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-clear.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-copy.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-cut.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-delete.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-find.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-paste.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-redo.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-select-all.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/edit-undo.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/folder-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-indent-less.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-indent-more.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-center.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-fill.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-left.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-justify-right.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-bold.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-direction-ltr.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-direction-rtl.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-italic.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-strikethrough.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/format-text-underline.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-bottom.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-down.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-first.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-home.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-last.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-next.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-previous.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-top.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/go-up.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-about.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-contents.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/help-faq.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-image.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-link.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/insert-text.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/list-add.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/list-remove.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-important.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-junk.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-read.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-mark-unread.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-message-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-receive.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-reply-all.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-reply-sender.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/mail-send.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-eject.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-pause.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-start.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-playback-stop.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-record.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-seek-backward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-seek-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-skip-backward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/media-skip-forward.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-flip-horizontal.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-flip-vertical.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-rotate-left.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/object-rotate-right.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/process-stop.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-log-out.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-run.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-search.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/system-shutdown.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-fullscreen.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-refresh.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-restore.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-sort-ascending.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/view-sort-descending.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/window-close.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/window-new.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-fit-best.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-in.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-original.png":[32,32,"png","qx"],"qx/icon/Tango/32/actions/zoom-out.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-blog.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-download-manager.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-feed-reader.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-mail.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-messenger.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-telephony.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-transfer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/internet-web-browser.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-audio-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-photo-album.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/media-video-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-address-book.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-calendar.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-chart.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-database.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-draw.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-graphics.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-layout.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-presentation.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-project.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-spreadsheet.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-web.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/office-writer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-accessibility.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-clock.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-display.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-font.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-keyboard.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-locale.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-network.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-security.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-sound.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-theme.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-users.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/preferences-wallpaper.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-archiver.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-calculator.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-character-map.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-color-chooser.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-dictionary.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-graphics-viewer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-help.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-keyring.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-log-viewer.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-network-manager.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-notes.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-statistics.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-system-monitor.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-terminal.png":[32,32,"png","qx"],"qx/icon/Tango/32/apps/utilities-text-editor.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/accessories.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/development.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/engineering.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/games.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/graphics.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/internet.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/multimedia.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/office.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/science.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/system.png":[32,32,"png","qx"],"qx/icon/Tango/32/categories/utilities.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/audio-card.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/audio-input-microphone.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/battery.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/camera-photo.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/camera-web.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/computer.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/display.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/drive-harddisk.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/drive-optical.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/input-keyboard.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/input-mouse.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/media-flash.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/media-optical.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/multimedia-player.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/network-wired.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/network-wireless.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/pda.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/phone.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/printer.png":[32,32,"png","qx"],"qx/icon/Tango/32/devices/scanner.png":[32,32,"png","qx"],"qx/icon/Tango/32/emblems/emblem-favorite.png":[32,32,"png","qx"],"qx/icon/Tango/32/emblems/emblem-important.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-angel.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-embarrassed.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-kiss.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-laugh.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-plain.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-raspberry.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-sad.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-smile-big.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-smile.png":[32,32,"png","qx"],"qx/icon/Tango/32/emotes/face-surprise.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/archive.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/executable.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-audio.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-image.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/media-video.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-calendar.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-contact.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-document.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-illustration.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-presentation.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/office-spreadsheet.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/text-html.png":[32,32,"png","qx"],"qx/icon/Tango/32/mimetypes/text-plain.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder-open.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder-remote.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/folder.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/network-server.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/network-workgroup.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-desktop.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-home.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-trash-full.png":[32,32,"png","qx"],"qx/icon/Tango/32/places/user-trash.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-error.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-information.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-password.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/dialog-warning.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/image-loading.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/image-missing.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-read.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-replied.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/mail-unread.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-high.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-low.png":[32,32,"png","qx"],"qx/icon/Tango/32/status/security-medium.png":[32,32,"png","qx"],"qx/icon/Tango/48/actions/address-book-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/application-exit.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/appointment-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/bookmark-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/check-spelling.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/contact-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-apply.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-cancel.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-close.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/dialog-ok.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-open-recent.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-open.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-print-preview.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-print.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-properties.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-revert.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-save-as.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-save.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/document-send.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-clear.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-copy.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-cut.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-delete.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-find.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-paste.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-redo.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-select-all.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/edit-undo.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/folder-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-indent-less.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-indent-more.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-center.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-fill.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-left.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-justify-right.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-bold.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-direction-ltr.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-direction-rtl.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-italic.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-strikethrough.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/format-text-underline.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-bottom.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-down.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-first.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-home.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-last.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-next.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-previous.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-top.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/go-up.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-about.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-contents.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/help-faq.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-image.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-link.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/insert-text.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/list-add.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/list-remove.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-important.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-junk.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-read.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-mark-unread.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-message-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-receive.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-reply-all.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-reply-sender.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/mail-send.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-eject.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-pause.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-start.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-playback-stop.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-record.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-seek-backward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-seek-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-skip-backward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/media-skip-forward.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-flip-horizontal.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-flip-vertical.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-rotate-left.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/object-rotate-right.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/process-stop.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-log-out.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-run.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-search.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/system-shutdown.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-fullscreen.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-refresh.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-restore.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-sort-ascending.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/view-sort-descending.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/window-close.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/window-new.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-fit-best.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-in.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-original.png":[48,48,"png","qx"],"qx/icon/Tango/48/actions/zoom-out.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-blog.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-download-manager.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-feed-reader.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-mail.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-messenger.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-telephony.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-transfer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/internet-web-browser.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-audio-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-photo-album.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/media-video-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-address-book.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-calendar.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-chart.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-database.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-draw.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-graphics.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-layout.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-presentation.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-project.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-spreadsheet.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-web.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/office-writer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-accessibility.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-clock.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-display.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-font.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-keyboard.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-locale.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-network.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-security.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-sound.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-theme.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-users.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/preferences-wallpaper.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-archiver.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-calculator.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-character-map.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-color-chooser.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-dictionary.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-graphics-viewer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-help.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-keyring.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-log-viewer.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-network-manager.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-notes.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-statistics.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-system-monitor.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-terminal.png":[48,48,"png","qx"],"qx/icon/Tango/48/apps/utilities-text-editor.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/accessories.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/development.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/engineering.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/games.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/graphics.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/internet.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/multimedia.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/office.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/science.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/system.png":[48,48,"png","qx"],"qx/icon/Tango/48/categories/utilities.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/audio-card.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/audio-input-microphone.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/battery.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/camera-photo.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/camera-web.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/computer.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/display.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/drive-harddisk.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/drive-optical.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/input-keyboard.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/input-mouse.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/media-flash.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/media-optical.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/multimedia-player.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/network-wired.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/network-wireless.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/pda.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/phone.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/printer.png":[48,48,"png","qx"],"qx/icon/Tango/48/devices/scanner.png":[48,48,"png","qx"],"qx/icon/Tango/48/emblems/emblem-favorite.png":[48,48,"png","qx"],"qx/icon/Tango/48/emblems/emblem-important.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-angel.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-embarrassed.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-kiss.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-laugh.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-plain.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-raspberry.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-sad.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-smile-big.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-smile.png":[48,48,"png","qx"],"qx/icon/Tango/48/emotes/face-surprise.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/archive.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/executable.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-audio.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-image.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/media-video.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-calendar.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-contact.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-document.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-illustration.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-presentation.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/office-spreadsheet.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/text-html.png":[48,48,"png","qx"],"qx/icon/Tango/48/mimetypes/text-plain.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder-open.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder-remote.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/folder.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/network-server.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/network-workgroup.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-desktop.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-home.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-trash-full.png":[48,48,"png","qx"],"qx/icon/Tango/48/places/user-trash.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-error.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-information.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-password.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/dialog-warning.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/image-loading.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/image-missing.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-read.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-replied.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/mail-unread.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-high.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-low.png":[48,48,"png","qx"],"qx/icon/Tango/48/status/security-medium.png":[48,48,"png","qx"],"qx/icon/Tango/64/actions/address-book-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/application-exit.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/appointment-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/bookmark-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/check-spelling.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/contact-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-apply.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-cancel.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-close.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/dialog-ok.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-open-recent.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-open.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-print-preview.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-print.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-properties.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-revert.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-save-as.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-save.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/document-send.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-clear.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-copy.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-cut.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-delete.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-find.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-paste.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-redo.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-select-all.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/edit-undo.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/folder-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-indent-less.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-indent-more.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-center.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-fill.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-left.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-justify-right.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-bold.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-direction-ltr.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-direction-rtl.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-italic.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-strikethrough.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/format-text-underline.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-bottom.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-down.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-first.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-home.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-last.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-next.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-previous.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-top.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/go-up.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-about.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-contents.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/help-faq.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-image.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-link.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/insert-text.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/list-add.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/list-remove.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-important.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-junk.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-read.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-mark-unread.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-message-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-receive.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-reply-all.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-reply-sender.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/mail-send.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-eject.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-pause.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-start.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-playback-stop.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-record.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-seek-backward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-seek-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-skip-backward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/media-skip-forward.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-flip-horizontal.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-flip-vertical.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-rotate-left.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/object-rotate-right.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/process-stop.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-log-out.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-run.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-search.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/system-shutdown.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-fullscreen.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-refresh.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-restore.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-sort-ascending.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/view-sort-descending.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/window-close.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/window-new.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-fit-best.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-in.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-original.png":[64,64,"png","qx"],"qx/icon/Tango/64/actions/zoom-out.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-blog.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-download-manager.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-feed-reader.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-mail.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-messenger.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-telephony.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-transfer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/internet-web-browser.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-audio-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-photo-album.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/media-video-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-address-book.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-calendar.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-chart.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-database.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-draw.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-graphics.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-layout.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-presentation.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-project.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-spreadsheet.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-web.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/office-writer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-accessibility.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-clock.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-display.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-font.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-keyboard.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-locale.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-network.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-security.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-sound.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-theme.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-users.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/preferences-wallpaper.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-archiver.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-calculator.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-character-map.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-color-chooser.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-dictionary.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-graphics-viewer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-help.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-keyring.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-log-viewer.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-network-manager.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-notes.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-statistics.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-system-monitor.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-terminal.png":[64,64,"png","qx"],"qx/icon/Tango/64/apps/utilities-text-editor.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/accessories.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/development.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/engineering.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/games.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/graphics.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/internet.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/multimedia.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/office.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/science.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/system.png":[64,64,"png","qx"],"qx/icon/Tango/64/categories/utilities.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/audio-card.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/audio-input-microphone.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/battery.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/camera-photo.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/camera-web.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/computer.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/display.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/drive-harddisk.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/drive-optical.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/input-keyboard.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/input-mouse.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/media-flash.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/media-optical.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/multimedia-player.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/network-wired.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/network-wireless.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/pda.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/phone.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/printer.png":[64,64,"png","qx"],"qx/icon/Tango/64/devices/scanner.png":[64,64,"png","qx"],"qx/icon/Tango/64/emblems/emblem-favorite.png":[64,64,"png","qx"],"qx/icon/Tango/64/emblems/emblem-important.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-angel.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-embarrassed.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-kiss.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-laugh.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-plain.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-raspberry.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-sad.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-smile-big.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-smile.png":[64,64,"png","qx"],"qx/icon/Tango/64/emotes/face-surprise.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/archive.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/executable.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-audio.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-image.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/media-video.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-calendar.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-contact.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-document.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-illustration.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-presentation.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/office-spreadsheet.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/text-html.png":[64,64,"png","qx"],"qx/icon/Tango/64/mimetypes/text-plain.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder-open.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder-remote.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/folder.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/network-server.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/network-workgroup.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-desktop.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-home.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-trash-full.png":[64,64,"png","qx"],"qx/icon/Tango/64/places/user-trash.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-error.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-information.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-password.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/dialog-warning.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/image-loading.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/image-missing.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-read.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-replied.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/mail-unread.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-high.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-low.png":[64,64,"png","qx"],"qx/icon/Tango/64/status/security-medium.png":[64,64,"png","qx"],"qx/icon/Tango/AUTHORS":"qx","qx/icon/Tango/LICENSE":"qx","qx/static/blank.gif":[1,1,"gif","qx"],"vuuvv/loading66.gif":[66,66,"gif","vuuvv"],"vuuvv/test.png":[32,32,"png","vuuvv"]},"translations":{"C":{},"en":{}}};
 (function(){var m="toString",k=".",j="default",h="Object",g='"',f="Array",e="()",d="String",c="Function",b=".prototype",L="function",K="Boolean",J="Error",I="constructor",H="warn",G="hasOwnProperty",F="string",E="toLocaleString",D="RegExp",C='\", "',t="info",u="BROKEN_IE",r="isPrototypeOf",s="Date",p="",q="qx.Bootstrap",n="]",o="Class",v="error",w="[Class ",y="valueOf",x="Number",A="count",z="debug",B="ES5";
 if(!window.qx){window.qx={};
 }qx.Bootstrap={genericToString:function(){return w+this.classname+n;
@@ -2649,13 +2649,13 @@ this.__cB=this._createRootWidget();
 qx.Class.define(a,{extend:qx.application.AbstractGui,members:{_createRootWidget:function(){return new qx.ui.root.Application(document);
 }}});
 })();
-(function(){var b="vuuvv.Application",a="qx.ui.tabview.TabView";
-qx.Class.define(b,{extend:qx.application.Standalone,properties:{tabView:{check:a}},members:{main:function(){qx.application.Standalone.prototype.main.call(this);
+(function(){var c="vuuvv.Application",b="qx.ui.tabview.TabView",a="Object";
+qx.Class.define(c,{extend:qx.application.Standalone,properties:{tabView:{check:b},appData:{check:a}},members:{main:function(){qx.application.Standalone.prototype.main.call(this);
 {};
-var c=new qx.ui.layout.VBox();
-var d=new qx.ui.container.Composite(c);
-this.getRoot().add(d,{edge:0});
-d.add(new vuuvv.ui.Frame(),{flex:1});
+var d=new qx.ui.layout.VBox();
+var e=new qx.ui.container.Composite(d);
+this.getRoot().add(e,{edge:0});
+e.add(new vuuvv.ui.Frame(),{flex:1});
 }}});
 })();
 (function(){var a="qx.event.type.Event";
@@ -10555,6 +10555,7 @@ v.setProhibitCaching(false);
 v.addListener(b,function(y){var content=y.getContent();
 var z=eval(i+content+c);
 this._initializeContent(z.appdata);
+qx.core.Init.getApplication().setAppData(z.appdata);
 this.setReadyState(r);
 s.call(t);
 },this);
@@ -10586,7 +10587,7 @@ this._status.setAppearance(n);
 this._status.setWidth(80);
 this._status.setTextAlign(e);
 C.add(this._status);
-var E=new qx.ui.tabview.TabView();
+var E=new vuuvv.ui.TabView();
 G.add(E);
 qx.core.Init.getApplication().setTabView(E);
 }}});
@@ -11786,39 +11787,39 @@ if(bf instanceof qx.ui.menubar.Button){bd.push(bf);
 (function(){var b="qx.ui.menubar.MenuBar",a="menubar";
 qx.Class.define(b,{extend:qx.ui.toolbar.ToolBar,properties:{appearance:{refine:true,init:a}}});
 })();
-(function(){var c="children",b="vuuvv.ui.view.Menubar",a="parent_id";
-qx.Class.define(b,{extend:qx.ui.menubar.MenuBar,construct:function(d){qx.ui.menubar.MenuBar.call(this);
+(function(){var e="children",d="root",c="all",b="vuuvv.ui.view.Menubar",a="parent_id";
+qx.Class.define(b,{extend:qx.ui.menubar.MenuBar,construct:function(f){qx.ui.menubar.MenuBar.call(this);
 this.__um={};
-this._createMenus(d);
-},events:{},members:{__um:null,__un:null,__uo:null,__up:null,__uq:null,_createMenus:function(e){var h=this._create_tree_data(e);
+this._createMenus(f);
+},events:{},members:{__um:null,__un:null,__uo:null,__up:null,__uq:null,_createMenus:function(g){g[d]=this._create_tree_data(g);
 
-for(var i in h){var j=h[i];
+for(var i in g[d].children){var k=g[d].children[i];
 
-if(j.children){var f=this.__um[i]=new qx.ui.menubar.Button(this.tr(j.label));
-this.add(f);
-var g=new qx.ui.menu.Menu();
-this._create_sub_menu(g,j.children);
-f.setMenu(g);
-}else{this.__um[i]=new qx.ui.menubar.Button(this.tr(j.label));
+if(k.children){var h=this.__um[i]=new qx.ui.menubar.Button(this.tr(k.label));
+this.add(h);
+var j=new qx.ui.menu.Menu();
+this._create_sub_menu(j,k.children);
+h.setMenu(j);
+}else{this.__um[i]=new qx.ui.menubar.Button(this.tr(k.label));
 this.add(this.__um[i]);
-}}},_create_sub_menu:function(k,l){for(var i in l){var p=l[i];
-var m=this.__um[i]=new qx.ui.menu.Button(this.tr(p.label));
-k.add(m);
+}}},_create_sub_menu:function(l,m){for(var i in m){var q=m[i];
+var n=this.__um[i]=new qx.ui.menu.Button(this.tr(q.label));
+l.add(n);
 
-if(p.children){var n=new qx.ui.menu.Menu();
-this._create_sub_menu(n,p.children);
-m.setMenu(n);
-}else{var o=new vuuvv.command.Command(p);
-m.setCommand(o);
-}}},_create_tree_data:function(q){var s={};
+if(q.children){var o=new qx.ui.menu.Menu();
+this._create_sub_menu(o,q.children);
+n.setMenu(o);
+}else{var p=new vuuvv.command.Command(q);
+n.setCommand(p);
+}}},_create_tree_data:function(r){var t={"label":c,"children":[]};
 
-for(var i in q){var r=q[i][a];
+for(var i in r){var s=r[i][a];
 
-if(!r)s[i]=q[i];
-else{if(!q[r][c])q[r][c]={};
-q[r][c][i]=q[i];
-}}return s;
-},_getMenuItem:function(t){}},destruct:function(){}});
+if(!s)t.children.push(r[i]);
+else{if(!r[s][e])r[s][e]=[];
+r[s][e].push(r[i]);
+}}return t;
+},_getMenuItem:function(u){}},destruct:function(){}});
 })();
 (function(){var b="toolbar-separator",a="qx.ui.toolbar.Separator";
 qx.Class.define(a,{extend:qx.ui.core.Widget,properties:{appearance:{refine:true,init:b},anonymous:{refine:true,init:true},width:{refine:true,init:0},height:{refine:true,init:0}}});
@@ -12800,171 +12801,6 @@ qx.Class.define(b,{extend:qx.ui.container.Composite,construct:function(){qx.ui.c
 this._setLayout(new qx.ui.layout.HBox);
 },properties:{appearance:{refine:true,init:e},show:{init:f,check:[f,a,d],inheritable:true,event:c}}});
 })();
-(function(){var o="String",n="execute",m="qx.ui.menu.Menu",l="_shortcut",k="changeEnabled",j="changeToolTipText",i="Boolean",h="qx.ui.core.Command",g="changeLabel",f="changeMenu",c="changeIcon",e="changeValue",d="_applyShortcut",b="_applyEnabled",a="qx.event.type.Data";
-qx.Class.define(h,{extend:qx.core.Object,construct:function(p){qx.core.Object.call(this);
-this._shortcut=new qx.bom.Shortcut(p);
-this._shortcut.addListener(n,this.execute,this);
-},events:{"execute":a},properties:{enabled:{init:true,check:i,event:k,apply:b},shortcut:{check:o,apply:d,nullable:true},label:{check:o,nullable:true,event:g},icon:{check:o,nullable:true,event:c},toolTipText:{check:o,nullable:true,event:j},value:{nullable:true,event:e},menu:{check:m,nullable:true,event:f}},members:{_shortcut:null,_applyEnabled:function(q){this._shortcut.setEnabled(q);
-},_applyShortcut:function(r){this._shortcut.setShortcut(r);
-},execute:function(s){this.fireDataEvent(n,s);
-},toString:function(){return this._shortcut.toString();
-}},destruct:function(){this._disposeObjects(l);
-}});
-})();
-(function(){var b="vuuvv.command.Command",a="execute";
-qx.Class.define(b,{extend:qx.ui.core.Command,construct:function(c){qx.ui.core.Command.call(this);
-this.setLabel(c.label);
-this.setToolTipText(c.tooltip);
-this.setIcon(c.icon);
-this.addListener(a,this.handle,this);
-},members:{handle:function(){var e=qx.core.Init.getApplication();
-var d=e.getTabView();
-var f=new qx.ui.tabview.Page(this.getLabel(),this.getIcon());
-f.setShowCloseButton(true);
-this.debug(d.indexOf(f));
-this.debug(f.getButton());
-d.add(f);
-this.debug(d.indexOf(f));
-d.setSelection([f]);
-}}});
-})();
-(function(){var m="Unidentified",l="Boolean",k="+",j="short",h="keydown",g="",f="Control",d="keypress",c="-",b="PageUp",S="Escape",R="qx.event.type.Data",Q="_applyShortcut",P="PrintScreen",O="NumLock",N="5",M="8",L="execute",K="Meta",J="0",t="2",u="Shift",r="You can only specify one non modifier key!",s="3",p="/",q="Delete",n="String",o="changeEnabled",v="*",w="qx.bom.Shortcut",B="6",A="4",D="1",C="Alt",F="Not a valid key name for a shortcut: ",E="PageDown",y="Whitespaces are not allowed within shortcuts",I="_applyEnabled",H="7",G="a",x="z",z="9";
-qx.Class.define(w,{extend:qx.core.Object,construct:function(T){qx.core.Object.call(this);
-this.__ur={};
-this.__us=null;
-
-if(T!=null){this.setShortcut(T);
-}this.initEnabled();
-},events:{"execute":R},properties:{enabled:{init:true,check:l,event:o,apply:I},shortcut:{check:n,apply:Q,nullable:true},autoRepeat:{check:l,init:false}},members:{__ur:g,__us:g,execute:function(U){this.fireDataEvent(L,U);
-},__ut:function(event){if(this.getEnabled()&&this.__uv(event)){if(!this.isAutoRepeat()){this.execute(event.getTarget());
-}event.stop();
-}},__uu:function(event){if(this.getEnabled()&&this.__uv(event)){if(this.isAutoRepeat()){this.execute(event.getTarget());
-}event.stop();
-}},_applyEnabled:function(V,W){if(V){qx.event.Registration.addListener(document.documentElement,h,this.__ut,this);
-qx.event.Registration.addListener(document.documentElement,d,this.__uu,this);
-}else{qx.event.Registration.removeListener(document.documentElement,h,this.__ut,this);
-qx.event.Registration.removeListener(document.documentElement,d,this.__uu,this);
-}},_applyShortcut:function(X,Y){if(X){if(X.search(/[\s]+/)!=-1){var bc=y;
-this.error(bc);
-throw new Error(bc);
-}this.__ur={"Control":false,"Shift":false,"Meta":false,"Alt":false};
-this.__us=null;
-var ba;
-var a=[];
-
-while(X.length>0&&ba!=-1){ba=X.search(/[-+]+/);
-a.push((X.length==1||ba==-1)?X:X.substring(0,ba));
-X=X.substring(ba+1);
-}var bb=a.length;
-
-for(var i=0;i<bb;i++){var bd=this.__ux(a[i]);
-
-switch(bd){case f:case u:case K:case C:this.__ur[bd]=true;
-break;
-case m:var bc=F+a[i];
-this.error(bc);
-throw bc;
-default:if(this.__us){var bc=r;
-this.error(bc);
-throw bc;
-}this.__us=bd;
-}}}return true;
-},__uv:function(e){var be=this.__us;
-
-if(!be){return ;
-}if((!this.__ur.Shift&&e.isShiftPressed())||(this.__ur.Shift&&!e.isShiftPressed())||(!this.__ur.Control&&e.isCtrlPressed())||(this.__ur.Control&&!e.isCtrlPressed())||(!this.__ur.Meta&&e.isMetaPressed())||(this.__ur.Meta&&!e.isMetaPressed())||(!this.__ur.Alt&&e.isAltPressed())||(this.__ur.Alt&&!e.isAltPressed())){return false;
-}
-if(be==e.getKeyIdentifier()){return true;
-}return false;
-},__uw:{esc:S,ctrl:f,print:P,del:q,pageup:b,pagedown:E,numlock:O,numpad_0:J,numpad_1:D,numpad_2:t,numpad_3:s,numpad_4:A,numpad_5:N,numpad_6:B,numpad_7:H,numpad_8:M,numpad_9:z,numpad_divide:p,numpad_multiply:v,numpad_minus:c,numpad_plus:k},__ux:function(bf){var bg=qx.event.handler.Keyboard;
-var bh=m;
-
-if(bg.isValidKeyIdentifier(bf)){return bf;
-}
-if(bf.length==1&&bf>=G&&bf<=x){return bf.toUpperCase();
-}bf=bf.toLowerCase();
-var bh=this.__uw[bf]||qx.lang.String.firstUp(bf);
-
-if(bg.isValidKeyIdentifier(bh)){return bh;
-}else{return m;
-}},toString:function(){var bk=this.__us;
-var bj=[];
-
-for(var bi in this.__ur){if(this.__ur[bi]){bj.push(qx.locale.Key.getKeyName(j,bi));
-}}
-if(bk){bj.push(qx.locale.Key.getKeyName(j,bk));
-}return bj.join(k);
-}},destruct:function(){this.setEnabled(false);
-this.__ur=this.__us=null;
-}});
-})();
-(function(){var bw="Control",bv="End",bu="Left",bt="Meta",bs="Pause",br="Down",bq="Ctrl",bp="Home",bo="Apps",bn="Win",bc="Right",bb="Backspace",ba="Space",Y="Up",X="Shift",W="Enter",V="Scroll",U="Alt",T="key_full_Meta",S="PrintScreen",bD="NumLock",bE="Escape",bB="key_short_Alt",bC="key_short_Control_Mac",bz="key_short_Insert",bA="Del",bx="Num",by="key_full_Enter",bF="key_full_Control",bG="qx.locale.Key",bg="Tabulator",bf="key_full_Space",bi="key_short_Meta",bh="key_short_PageUp",bk="key_short_Pause",bj="key_full_Down",bm="key_short_Apps",bl="key_short_Win",be="key_full_Right",bd="key_short_Up",a="key_full_PageDown",b="key_full_Alt",c="PgDn",d="Esc",e="key_full_Insert",f="key_short_Space",g="key_short_Backspace",h="key_short_Home",i="key_short_Down",j="PgUp",bK="_Mac",bJ="key_short_CapsLock",bI="PageUp",bH="key_full_Up",bO="key_full_Home",bN="key_full_Backspace",bM="PageDown",bL="CapsLock",bQ="Ins",bP="key_short_PrintScreen",C="Tab",D="key_full_Apps",A="key_short_Tab",B="key_short_End",G="_",H="Caps",E="key_short_NumLock",F="key_full_Scroll",y="key_short_Left",z="key_short_Scroll",r="key_",q="key_full_Pause",t="key_short_Right",s="key_full_PrintScreen",n="key_full_Win",m="key_full_Control_Mac",p="key_short_Shift",o="key_short_PageDown",l="key_short_Enter",k="key_short_Control",M="Insert",N="key_short_Escape",O="key_full_Tab",P="Print",I="Delete",J="key_full_CapsLock",K="key_full_Escape",L="key_short_Delete",Q="key_full_PageUp",R="key_full_Shift",x="key_full_NumLock",w="key_full_Delete",v="key_full_End",u="key_full_Left";
-qx.Class.define(bG,{statics:{getKeyName:function(bR,bS,bT){{};
-var bV=r+bR+G+bS;
-if(qx.bom.client.Platform.MAC&&bS==bw){bV+=bK;
-}var bU=qx.locale.Manager.getInstance().translate(bV,[],bT);
-
-if(bU==bV){return qx.locale.Key._keyNames[bV]||bS;
-}else{return bU;
-}}},defer:function(bW){var bY={};
-var bX=qx.locale.Manager;
-bY[bX.marktr(g)]=bb;
-bY[bX.marktr(A)]=C;
-bY[bX.marktr(f)]=ba;
-bY[bX.marktr(l)]=W;
-bY[bX.marktr(p)]=X;
-bY[bX.marktr(k)]=bq;
-bY[bX.marktr(bC)]=bq;
-bY[bX.marktr(bB)]=U;
-bY[bX.marktr(bJ)]=H;
-bY[bX.marktr(bi)]=bt;
-bY[bX.marktr(N)]=d;
-bY[bX.marktr(y)]=bu;
-bY[bX.marktr(bd)]=Y;
-bY[bX.marktr(t)]=bc;
-bY[bX.marktr(i)]=br;
-bY[bX.marktr(bh)]=j;
-bY[bX.marktr(o)]=c;
-bY[bX.marktr(B)]=bv;
-bY[bX.marktr(h)]=bp;
-bY[bX.marktr(bz)]=bQ;
-bY[bX.marktr(L)]=bA;
-bY[bX.marktr(E)]=bx;
-bY[bX.marktr(bP)]=P;
-bY[bX.marktr(z)]=V;
-bY[bX.marktr(bk)]=bs;
-bY[bX.marktr(bl)]=bn;
-bY[bX.marktr(bm)]=bo;
-bY[bX.marktr(bN)]=bb;
-bY[bX.marktr(O)]=bg;
-bY[bX.marktr(bf)]=ba;
-bY[bX.marktr(by)]=W;
-bY[bX.marktr(R)]=X;
-bY[bX.marktr(bF)]=bw;
-bY[bX.marktr(m)]=bw;
-bY[bX.marktr(b)]=U;
-bY[bX.marktr(J)]=bL;
-bY[bX.marktr(T)]=bt;
-bY[bX.marktr(K)]=bE;
-bY[bX.marktr(u)]=bu;
-bY[bX.marktr(bH)]=Y;
-bY[bX.marktr(be)]=bc;
-bY[bX.marktr(bj)]=br;
-bY[bX.marktr(Q)]=bI;
-bY[bX.marktr(a)]=bM;
-bY[bX.marktr(v)]=bv;
-bY[bX.marktr(bO)]=bp;
-bY[bX.marktr(e)]=M;
-bY[bX.marktr(w)]=I;
-bY[bX.marktr(x)]=bD;
-bY[bX.marktr(s)]=S;
-bY[bX.marktr(F)]=V;
-bY[bX.marktr(q)]=bs;
-bY[bX.marktr(n)]=bn;
-bY[bX.marktr(D)]=bo;
-bW._keyNames=bY;
-}});
-})();
 (function(){var l="button",k="",j="close",i="String",h="_applyIcon",g="page",f="qx.event.type.Event",e="_applyShowCloseButton",d="tabview-page",c="qx.ui.tabview.Page",a="_applyLabel",b="Boolean";
 qx.Class.define(c,{extend:qx.ui.container.Composite,construct:function(m,n){qx.ui.container.Composite.call(this);
 this._createChildControl(l);
@@ -12988,6 +12824,103 @@ break;
 },_applyShowCloseButton:function(y,z){this.getChildControl(l).setShowCloseButton(y);
 },_onButtonClose:function(){this.fireEvent(j);
 },getButton:function(){return this.getChildControl(l);
+}}});
+})();
+(function(){var a="vuuvv.ui.page.About";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var a="vuuvv.ui.page.Menu";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var a="vuuvv.ui.page.Permission";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var n="execute",m="Cancel",l="Last Name",k="Company",j="Save",i="First Name",h="Email",g="lastName",f="Date",e="vuuvv.ui.page.AdminMenu",b="firstName",d="label",c="children",a="Simple Form";
+qx.Class.define(e,{extend:qx.ui.tabview.Page,construct:function(o,p){qx.ui.tabview.Page.call(this,o,p);
+this.setShowCloseButton(true);
+this.setLayout(new qx.ui.layout.HBox(5));
+var u=qx.core.Init.getApplication().getAppData().menus;
+var y=new qx.data.marshal.Json();
+y.toClass(u.root,true);
+var z=y.toModel(u.root);
+var t=new qx.ui.tree.Tree();
+this.add(t,{flex:1});
+var v=new qx.data.controller.Tree(z,t,c,d);
+t.getRoot().setOpen(true);
+var w=new qx.ui.groupbox.GroupBox(a);
+w.setLayout(new qx.ui.layout.Canvas());
+this.add(w,{flex:1});
+var r=new qx.ui.form.Form();
+var q=new qx.ui.form.TextField();
+q.setRequired(true);
+q.setWidth(200);
+r.add(q,i,null,b);
+r.add(new qx.ui.form.TextField(),l,null,g);
+r.add(new qx.ui.form.TextField(),k);
+r.add(new qx.ui.form.TextField(),h);
+r.add(new qx.ui.form.DateField(),f);
+var x=new qx.ui.form.Button(j);
+x.setWidth(70);
+r.addButton(x);
+var s=new qx.ui.form.Button(m);
+s.setWidth(70);
+r.addButton(s);
+w.add(new qx.ui.form.renderer.Single(r));
+var v=new qx.data.controller.Form(null,r);
+var z=v.createModel();
+x.addListener(n,function(){if(r.validate()){alert("You are saving: "+qx.util.Serializer.toUriParameter(z));
+}},this);
+s.addListener(n,r.reset,r);
+}});
+})();
+(function(){var a="vuuvv.ui.page.Page";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var o="String",n="execute",m="qx.ui.menu.Menu",l="_shortcut",k="changeEnabled",j="changeToolTipText",i="Boolean",h="qx.ui.core.Command",g="changeLabel",f="changeMenu",c="changeIcon",e="changeValue",d="_applyShortcut",b="_applyEnabled",a="qx.event.type.Data";
+qx.Class.define(h,{extend:qx.core.Object,construct:function(p){qx.core.Object.call(this);
+this._shortcut=new qx.bom.Shortcut(p);
+this._shortcut.addListener(n,this.execute,this);
+},events:{"execute":a},properties:{enabled:{init:true,check:i,event:k,apply:b},shortcut:{check:o,apply:d,nullable:true},label:{check:o,nullable:true,event:g},icon:{check:o,nullable:true,event:c},toolTipText:{check:o,nullable:true,event:j},value:{nullable:true,event:e},menu:{check:m,nullable:true,event:f}},members:{_shortcut:null,_applyEnabled:function(q){this._shortcut.setEnabled(q);
+},_applyShortcut:function(r){this._shortcut.setShortcut(r);
+},execute:function(s){this.fireDataEvent(n,s);
+},toString:function(){return this._shortcut.toString();
+}},destruct:function(){this._disposeObjects(l);
+}});
+})();
+(function(){var a="vuuvv.ui.page.User";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var a="vuuvv.ui.page.Group";
+qx.Class.define(a,{extend:qx.ui.tabview.Page,construct:function(b,c){qx.ui.tabview.Page.call(this,b,c);
+this.setShowCloseButton(true);
+this.debug("construct the page");
+}});
+})();
+(function(){var c="vuuvv.command.Command",b="vuuvv.ui.page.",a="execute";
+qx.Class.define(c,{extend:qx.ui.core.Command,properties:{pageClassName:{check:String}},construct:function(d){qx.ui.core.Command.call(this);
+this.setLabel(d.label);
+this.setToolTipText(d.tooltip);
+this.setIcon(d.icon);
+this.addListener(a,this.handle,this);
+this.setPageClassName(b+d.command);
+},members:{handle:function(){var f=qx.core.Init.getApplication();
+var e=f.getTabView();
+e.add(this.getLabel(),this.getIcon(),this.getPageClassName());
 }}});
 })();
 (function(){var b="qx.ui.form.IRadioItem",a="qx.event.type.Data";
@@ -13715,682 +13648,97 @@ return dV;
 }},destruct:function(){this.__oh=this.__of=this.__og=this.__oi=this.__oj=this.__on=this.__om=null;
 }});
 })();
-(function(){var k="slider",j="splitter",i="horizontal",h="px",g="vertical",f="knob",d="mousedown",c="mouseout",b="Integer",a="height",D="mousemove",C="move",B="maxHeight",A="resize",z="width",w="_applyOrientation",v="_applyOffset",u="splitpane",t="qx.ui.splitpane.Pane",s="top",q="minHeight",r="mouseup",o="minWidth",p="appear",m="losecapture",n="left",l="maxWidth";
-qx.Class.define(t,{extend:qx.ui.core.Widget,construct:function(E){qx.ui.core.Widget.call(this);
-this.__mA=[];
-if(E){this.setOrientation(E);
-}else{this.initOrientation();
-}this.__mI.addListener(d,this._onMouseDown,this);
-this.__mI.addListener(r,this._onMouseUp,this);
-this.__mI.addListener(D,this._onMouseMove,this);
-this.__mI.addListener(c,this._onMouseOut,this);
-this.__mI.addListener(m,this._onMouseUp,this);
-},properties:{appearance:{refine:true,init:u},offset:{check:b,init:6,apply:v},orientation:{init:i,check:[i,g],apply:w}},members:{__mB:null,__mC:false,__mD:null,__mE:null,__mF:null,__mG:null,__mH:null,__mA:null,__mI:null,_createChildControlImpl:function(F,G){var H;
+(function(){var a="qx.data.marshal.IMarshaler";
+qx.Interface.define(a,{members:{toClass:function(b,c){},toModel:function(d){}}});
+})();
+(function(){var h="qx.data.model.",g="",f="_validate",e='"',d="change",c="qx.data.marshal.Json",b="set",a="_applyEventPropagation";
+qx.Class.define(c,{extend:qx.core.Object,implement:[qx.data.marshal.IMarshaler],construct:function(j){qx.core.Object.call(this);
+this.__uy=j;
+},statics:{__uz:null,createModel:function(k,l){if(this.__uz===null){this.__uz=new qx.data.marshal.Json();
+}this.__uz.toClass(k,l);
+return this.__uz.toModel(k);
+}},members:{__uy:null,__uA:function(m){var n=[];
 
-switch(F){case k:H=new qx.ui.splitpane.Slider(this);
-H.exclude();
-this._add(H,{type:F});
-break;
-case j:H=new qx.ui.splitpane.Splitter(this);
-this._add(H,{type:F});
-H.addListener(C,this.__mJ,this);
-break;
-}return H||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,F);
-},__mJ:function(e){this.__mL(e.getData());
-},__mK:function(I){this.__mI=new qx.ui.splitpane.Blocker(I);
-this.getContentElement().add(this.__mI);
-var J=this.getChildControl(j);
-var K=J.getWidth();
+for(var o in m){n.push(o);
+}return n.sort().join(e);
+},toClass:function(p,q){if(qx.lang.Type.isNumber(p)||qx.lang.Type.isString(p)||qx.lang.Type.isBoolean(p)||p==null||p instanceof qx.core.Object){return;
+}if(qx.lang.Type.isArray(p)){for(var i=0;i<p.length;i++){this.toClass(p[i],q);
+}return ;
+}var s=this.__uA(p);
+if(this.__uy&&this.__uy.getModelClass&&this.__uy.getModelClass(s)!=null){return;
+}for(var t in p){this.toClass(p[t],q);
+}if(qx.Class.isDefined(h+s)){return;
+}var z={};
+var y={__uB:this.__uB};
 
-if(!K){J.addListenerOnce(p,function(){this.__mL();
-},this);
-}J.addListener(A,function(e){var L=e.getData();
+for(var t in p){t=t.replace(/-/g,g);
+z[t]={};
+z[t].nullable=true;
+z[t].event=d+qx.lang.String.firstUp(t);
+if(q){z[t].apply=a;
+}if(this.__uy&&this.__uy.getValidationRule){var v=this.__uy.getValidationRule(s,t);
 
-if(L.height==0||L.width==0){this.__mI.hide();
-}else{this.__mI.show();
-}},this);
-},getBlocker:function(){return this.__mI;
-},_applyOrientation:function(M,N){var O=this.getChildControl(k);
-var R=this.getChildControl(j);
-this.__mF=M===i;
+if(v){z[t].validate=f+t;
+y[f+t]=v;
+}}}if(this.__uy&&this.__uy.getModelSuperClass){var x=this.__uy.getModelSuperClass(s)||qx.core.Object;
+}else{var x=qx.core.Object;
+}var u=[];
 
-if(!this.__mI){this.__mK(M);
-}this.__mI.setOrientation(M);
-var Q=this._getLayout();
+if(this.__uy&&this.__uy.getModelMixins){var w=this.__uy.getModelMixins(s);
+if(!qx.lang.Type.isArray(w)){if(w!=null){u=[w];
+}}}if(q){u.push(qx.data.marshal.MEventBubbling);
+}var r={extend:x,include:u,properties:z,members:y,destruct:this.__uC};
+qx.Class.define(h+s,r);
+},__uC:function(){var A=qx.util.PropertyUtil.getAllProperties(this.constructor);
 
-if(Q){Q.dispose();
-}var P=M===g?new qx.ui.splitpane.VLayout:new qx.ui.splitpane.HLayout;
-this._setLayout(P);
-R.removeState(N);
-R.addState(M);
-R.getChildControl(f).removeState(N);
-R.getChildControl(f).addState(M);
-O.removeState(N);
-O.addState(M);
-qx.ui.core.queue.Manager.flush();
-this.__mL();
-},_applyOffset:function(S,T){this.__mL();
-},__mL:function(U){var V=this.getChildControl(j);
-var ba=this.getOffset();
-var bb=V.getBounds();
-var Y=V.getContainerElement().getDomElement();
-if(!Y){return;
-}if(this.__mF){var X=null;
+for(var B in A){this.__uB(this.get(A[B].name));
+}},__uB:function(C){if(!(C instanceof qx.core.Object)){return ;
+}if(C.isDisposed()){return;
+}if(qx.Class.implementsInterface(C,qx.data.IListData)){for(var i=0;i<C.getLength();i++){this.__uB(C.getItem(i));
+}}C.dispose();
+},__uD:function(D){var E;
+if(this.__uy&&this.__uy.getModelClass){E=this.__uy.getModelClass(D);
+}
+if(E!=null){return (new E());
+}else{var F=qx.Class.getByName(h+D);
+return (new F());
+}},toModel:function(G){if(qx.lang.Type.isNumber(G)||qx.lang.Type.isString(G)||qx.lang.Type.isBoolean(G)||qx.lang.Type.isDate(G)||G==null||G instanceof qx.core.Object){return G;
+}else if(qx.lang.Type.isArray(G)){var K=new qx.data.Array();
 
-if(U){X=U.width;
-}else if(bb){X=bb.width;
-}var bc=U&&U.left;
-
-if(X){if(!bc){bc=qx.bom.element.Location.getPosition(Y).left;
-}this.__mI.setWidth(ba,X);
-this.__mI.setLeft(ba,bc);
-}}else{var W=null;
-
-if(U){W=U.height;
-}else if(bb){W=bb.height;
-}var top=U&&U.top;
-
-if(W){if(!top){top=qx.bom.element.Location.getPosition(Y).top;
-}this.__mI.setHeight(ba,W);
-this.__mI.setTop(ba,top);
-}}},add:function(bd,be){if(be==null){this._add(bd);
-}else{this._add(bd,{flex:be});
-}this.__mA.push(bd);
-},remove:function(bf){this._remove(bf);
-qx.lang.Array.remove(this.__mA,bf);
-},getChildren:function(){return this.__mA;
-},_onMouseDown:function(e){if(!e.isLeftPressed()){return;
-}var bg=this.getChildControl(j);
-var bi=bg.getContainerLocation();
-var bh=this.getContentLocation();
-this.__mB=this.__mF?e.getDocumentLeft()-bi.left+bh.left:e.getDocumentTop()-bi.top+bh.top;
-var bk=this.getChildControl(k);
-var bj=bg.getBounds();
-bk.setUserBounds(bj.left,bj.top,bj.width,bj.height);
-bk.setZIndex(bg.getZIndex()+1);
-bk.show();
-this.__mC=true;
-this.__mI.capture();
-e.stop();
-},_onMouseMove:function(e){this._setLastMousePosition(e.getDocumentLeft(),e.getDocumentTop());
-if(this.__mC){this.__mM();
-var bl=this.getChildControl(k);
-var bm=this.__mG;
-
-if(this.__mF){bl.setDomLeft(bm);
-this.__mI.setStyle(n,(bm-this.getOffset())+h);
-}else{bl.setDomTop(bm);
-this.__mI.setStyle(s,(bm-this.getOffset())+h);
-}e.stop();
-}},_onMouseOut:function(e){this._setLastMousePosition(e.getDocumentLeft(),e.getDocumentTop());
-},_onMouseUp:function(e){if(!this.__mC){return;
-}this._finalizeSizes();
-var bn=this.getChildControl(k);
-bn.exclude();
-this.__mC=false;
-this.releaseCapture();
-e.stop();
-},_finalizeSizes:function(){var br=this.__mG;
-var bo=this.__mH;
-
-if(br==null){return;
-}var bt=this._getChildren();
-var bs=bt[2];
-var bp=bt[3];
-var bq=bs.getLayoutProperties().flex;
-var bu=bp.getLayoutProperties().flex;
-if((bq!=0)&&(bu!=0)){bs.setLayoutProperties({flex:br});
-bp.setLayoutProperties({flex:bo});
-}else{if(this.__mF){bs.setWidth(br);
-bp.setWidth(bo);
-}else{bs.setHeight(br);
-bp.setHeight(bo);
-}}},__mM:function(){if(this.__mF){var bx=o,bE=z,by=l,bC=this.__mD;
-}else{var bx=q,bE=a,by=B,bC=this.__mE;
-}var bD=this._getChildren();
-var bv=bD[2].getSizeHint();
-var bA=bD[3].getSizeHint();
-var bB=bD[2].getBounds()[bE]+bD[3].getBounds()[bE];
-var bz=bC-this.__mB;
-var bw=bB-bz;
-if(bz<bv[bx]){bw-=bv[bx]-bz;
-bz=bv[bx];
-}else if(bw<bA[bx]){bz-=bA[bx]-bw;
-bw=bA[bx];
-}if(bz>bv[by]){bw+=bz-bv[by];
-bz=bv[by];
-}else if(bw>bA[by]){bz+=bw-bA[by];
-bw=bA[by];
-}this.__mG=bz;
-this.__mH=bw;
-},_isActiveDragSession:function(){return this.__mC;
-},_setLastMousePosition:function(x,y){this.__mD=x;
-this.__mE=y;
-}},destruct:function(){this.__mA=null;
+for(var i=0;i<G.length;i++){K.push(this.toModel(G[i]));
+}return K;
+}else if(qx.lang.Type.isObject(G)){var H=this.__uA(G);
+var L=this.__uD(H);
+for(var J in G){var I=J.replace(/-/g,g);
+L[b+qx.lang.String.firstUp(I)](this.toModel(G[J]));
+}return L;
+}throw new Error("Unsupported type!");
+}},destruct:function(){this.__uy=null;
 }});
 })();
-(function(){var a="qx.ui.splitpane.Slider";
-qx.Class.define(a,{extend:qx.ui.core.Widget,properties:{allowShrinkX:{refine:true,init:false},allowShrinkY:{refine:true,init:false}}});
-})();
-(function(){var e="center",d="knob",c="middle",b="qx.ui.splitpane.Splitter",a="vertical";
-qx.Class.define(b,{extend:qx.ui.core.Widget,construct:function(f){qx.ui.core.Widget.call(this);
-if(f.getOrientation()==a){this._setLayout(new qx.ui.layout.HBox(0,e));
-this._getLayout().setAlignY(c);
-}else{this._setLayout(new qx.ui.layout.VBox(0,c));
-this._getLayout().setAlignX(e);
-}this._createChildControl(d);
-},properties:{allowShrinkX:{refine:true,init:false},allowShrinkY:{refine:true,init:false}},members:{_createChildControlImpl:function(g,h){var i;
+(function(){var d="$$theme_",c="$$user_",b="$$init_",a="qx.util.PropertyUtil";
+qx.Class.define(a,{statics:{getProperties:function(e){return e.$$properties;
+},getAllProperties:function(f){var i={};
+var j=f;
+while(j!=qx.core.Object){var h=this.getProperties(j);
 
-switch(g){case d:i=new qx.ui.basic.Image;
-this._add(i);
-break;
-}return i||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,g);
+for(var g in h){i[g]=h[g];
+}j=j.superclass;
+}return i;
+},getUserValue:function(k,l){return k[c+l];
+},setUserValue:function(m,n,o){m[c+n]=o;
+},deleteUserValue:function(p,q){delete (p[c+q]);
+},getInitValue:function(r,s){return r[b+s];
+},setInitValue:function(t,u,v){t[b+u]=v;
+},deleteInitValue:function(w,x){delete (w[b+x]);
+},getThemeValue:function(y,z){return y[d+z];
+},setThemeValue:function(A,B,C){A[d+B]=C;
+},deleteThemeValue:function(D,E){delete (D[d+E]);
+},setThemed:function(F,G,H){var I=qx.core.Property.$$method.setThemed;
+F[I[G]](H);
+},resetThemed:function(J,K){var L=qx.core.Property.$$method.resetThemed;
+J[L[K]]();
 }}});
-})();
-(function(){var o="px",n="horizontal",m="top",l="height",k="width",j="left",i="100%",h="cursor",g="vertical",f="_applyOrientation",c="qx.ui.splitpane.Blocker",e="col-resize",d="row-resize",b="div",a="absolute";
-qx.Class.define(c,{extend:qx.html.Element,construct:function(p){var q={position:a,zIndex:11};
-qx.html.Element.call(this,b,q);
-if(p){this.setOrientation(p);
-}else{this.initOrientation();
-}},properties:{orientation:{init:n,check:[n,g],apply:f}},members:{_applyOrientation:function(r,s){if(r==n){this.setStyle(l,i);
-this.setStyle(h,e);
-this.setStyle(m,null);
-}else{this.setStyle(k,i);
-this.setStyle(j,null);
-this.setStyle(h,d);
-}},setWidth:function(t,u){var v=u+2*t;
-this.setStyle(k,v+o);
-},setHeight:function(w,x){var y=x+2*w;
-this.setStyle(l,y+o);
-},setLeft:function(z,A){var B=A-z;
-this.setStyle(j,B+o);
-},setTop:function(C,D){var top=D-C;
-this.setStyle(m,top+o);
-}}});
-})();
-(function(){var c="slider",b="splitter",a="qx.ui.splitpane.VLayout";
-qx.Class.define(a,{extend:qx.ui.layout.Abstract,members:{verifyLayoutProperty:null,renderLayout:function(d,e){var v=this._getLayoutChildren();
-var length=v.length;
-var r,u;
-var g,f,p,h;
-
-for(var i=0;i<length;i++){r=v[i];
-u=r.getLayoutProperties().type;
-
-if(u===b){f=r;
-}else if(u===c){p=r;
-}else if(!g){g=r;
-}else{h=r;
-}}
-if(g&&h){var x=g.getLayoutProperties().flex;
-var k=h.getLayoutProperties().flex;
-
-if(x==null){x=1;
-}
-if(k==null){k=1;
-}var w=g.getSizeHint();
-var n=f.getSizeHint();
-var o=h.getSizeHint();
-var j=w.height;
-var s=n.height;
-var t=o.height;
-
-if(x>0&&k>0){var l=x+k;
-var m=e-s;
-var j=Math.round((m/l)*x);
-var t=m-j;
-var q=qx.ui.layout.Util.arrangeIdeals(w.minHeight,j,w.maxHeight,o.minHeight,t,o.maxHeight);
-j=q.begin;
-t=q.end;
-}else if(x>0){j=e-s-t;
-
-if(j<w.minHeight){j=w.minHeight;
-}
-if(j>w.maxHeight){j=w.maxHeight;
-}}else if(k>0){t=e-j-s;
-
-if(t<o.minHeight){t=o.minHeight;
-}
-if(t>o.maxHeight){t=o.maxHeight;
-}}g.renderLayout(0,0,d,j);
-f.renderLayout(0,j,d,s);
-h.renderLayout(0,j+s,d,t);
-}else{f.renderLayout(0,0,0,0);
-if(g){g.renderLayout(0,0,d,e);
-}else if(h){h.renderLayout(0,0,d,e);
-}}},_computeSizeHint:function(){var H=this._getLayoutChildren();
-var length=H.length;
-var A,z,G;
-var B=0,D=0,C=0;
-var E=0,F=0,y=0;
-
-for(var i=0;i<length;i++){A=H[i];
-G=A.getLayoutProperties();
-if(G.type===c){continue;
-}z=A.getSizeHint();
-B+=z.minHeight;
-D+=z.height;
-C+=z.maxHeight;
-
-if(z.minWidth>E){E=z.minWidth;
-}
-if(z.width>F){F=z.width;
-}
-if(z.maxWidth>y){y=z.maxWidth;
-}}return {minHeight:B,height:D,maxHeight:C,minWidth:E,width:F,maxWidth:y};
-}}});
-})();
-(function(){var c="slider",b="splitter",a="qx.ui.splitpane.HLayout";
-qx.Class.define(a,{extend:qx.ui.layout.Abstract,members:{verifyLayoutProperty:null,renderLayout:function(d,e){var v=this._getLayoutChildren();
-var length=v.length;
-var s,u;
-var g,f,p,h;
-
-for(var i=0;i<length;i++){s=v[i];
-u=s.getLayoutProperties().type;
-
-if(u===b){f=s;
-}else if(u===c){p=s;
-}else if(!g){g=s;
-}else{h=s;
-}}
-if(g&&h){var x=g.getLayoutProperties().flex;
-var j=h.getLayoutProperties().flex;
-
-if(x==null){x=1;
-}
-if(j==null){j=1;
-}var w=g.getSizeHint();
-var m=f.getSizeHint();
-var o=h.getSizeHint();
-var t=w.width;
-var r=m.width;
-var q=o.width;
-
-if(x>0&&j>0){var k=x+j;
-var l=d-r;
-var t=Math.round((l/k)*x);
-var q=l-t;
-var n=qx.ui.layout.Util.arrangeIdeals(w.minWidth,t,w.maxWidth,o.minWidth,q,o.maxWidth);
-t=n.begin;
-q=n.end;
-}else if(x>0){t=d-r-q;
-
-if(t<w.minWidth){t=w.minWidth;
-}
-if(t>w.maxWidth){t=w.maxWidth;
-}}else if(j>0){q=d-t-r;
-
-if(q<o.minWidth){q=o.minWidth;
-}
-if(q>o.maxWidth){q=o.maxWidth;
-}}g.renderLayout(0,0,t,e);
-f.renderLayout(t,0,r,e);
-h.renderLayout(t+r,0,q,e);
-}else{f.renderLayout(0,0,0,0);
-if(g){g.renderLayout(0,0,d,e);
-}else if(h){h.renderLayout(0,0,d,e);
-}}},_computeSizeHint:function(){var H=this._getLayoutChildren();
-var length=H.length;
-var A,z,G;
-var E=0,F=0,y=0;
-var B=0,D=0,C=0;
-
-for(var i=0;i<length;i++){A=H[i];
-G=A.getLayoutProperties();
-if(G.type===c){continue;
-}z=A.getSizeHint();
-E+=z.minWidth;
-F+=z.width;
-y+=z.maxWidth;
-
-if(z.minHeight>B){B=z.minHeight;
-}
-if(z.height>D){D=z.height;
-}
-if(z.maxHeight>C){C=z.maxHeight;
-}}return {minWidth:E,width:F,maxWidth:y,minHeight:B,height:D,maxHeight:C};
-}}});
-})();
-(function(){var k="showingPlaceholder",j="",i="none",h="qx.dynlocale",g="Boolean",f="qx.client",d="color",c="qx.event.type.Data",b="readonly",a="placeholder",bc="input",bb="focusin",ba="visibility",Y="focusout",X="changeLocale",W="hidden",V="on",U="absolute",T="readOnly",S="text",r="_applyTextAlign",s="px",p="RegExp",q=")",n="syncAppearance",o="changeValue",l="A",m="change",v="textAlign",w="focused",E="center",C="visible",K="disabled",G="url(",O="off",M="String",y="resize",R="qx.ui.form.AbstractField",Q="transparent",P="spellcheck",x="false",A="right",B="PositiveInteger",D="mshtml",F="abstract",H="block",L="webkit",N="_applyReadOnly",t="_applyPlaceholder",u="left",z="qx/static/blank.gif",J="text-placeholder",I="changeReadOnly";
-qx.Class.define(R,{extend:qx.ui.core.Widget,implement:[qx.ui.form.IStringForm,qx.ui.form.IForm],include:[qx.ui.form.MForm],type:F,construct:function(bd){qx.ui.core.Widget.call(this);
-this.__mO=!qx.bom.client.Feature.PLACEHOLDER;
-
-if(bd!=null){this.setValue(bd);
-}this.getContentElement().addListener(m,this._onChangeContent,this);
-if(this.__mO){this.addListener(n,this._syncPlaceholder,this);
-}if(qx.core.Variant.isSet(h,V)){qx.locale.Manager.getInstance().addListener(X,this._onChangeLocale,this);
-}},events:{"input":c,"changeValue":c},properties:{textAlign:{check:[u,E,A],nullable:true,themeable:true,apply:r},readOnly:{check:g,apply:N,event:I,init:false},selectable:{refine:true,init:true},focusable:{refine:true,init:true},maxLength:{check:B,init:Infinity},liveUpdate:{check:g,init:false},placeholder:{check:M,nullable:true,apply:t},filter:{check:p,nullable:true,init:null}},members:{__mP:true,__mQ:null,__mR:null,__mS:null,__mO:true,getFocusElement:function(){var be=this.getContentElement();
-
-if(be){return be;
-}},_createInputElement:function(){return new qx.html.Input(S);
-},renderLayout:function(bf,top,bg,bh){var bi=this._updateInsets;
-var bm=qx.ui.core.Widget.prototype.renderLayout.call(this,bf,top,bg,bh);
-if(!bm){return;
-}var bk=bm.size||bi;
-var bn=s;
-
-if(bk||bm.local||bm.margin){var bj=this.getInsets();
-var innerWidth=bg-bj.left-bj.right;
-var innerHeight=bh-bj.top-bj.bottom;
-innerWidth=innerWidth<0?0:innerWidth;
-innerHeight=innerHeight<0?0:innerHeight;
-}var bl=this.getContentElement();
-if(bi&&this.__mO){this.__mV().setStyles({"left":bj.left+bn,"top":bj.top+bn});
-}
-if(bk){if(this.__mO){this.__mV().setStyles({"width":innerWidth+bn,"height":innerHeight+bn});
-}bl.setStyles({"width":innerWidth+bn,"height":innerHeight+bn});
-this._renderContentElement(innerHeight,bl);
-}},_renderContentElement:function(innerHeight,bo){},_createContentElement:function(){var bp=this._createInputElement();
-bp.setStyles({"border":i,"padding":0,"margin":0,"display":H,"background":Q,"outline":i,"appearance":i,"position":U,"autoComplete":O});
-bp.setSelectable(this.getSelectable());
-bp.setEnabled(this.getEnabled());
-bp.addListener(bc,this._onHtmlInput,this);
-bp.setAttribute(P,x);
-if(qx.core.Variant.isSet(f,L)){bp.setStyle(y,i);
-}if(qx.core.Variant.isSet(f,D)){bp.setStyles({backgroundImage:G+qx.util.ResourceManager.getInstance().toUri(z)+q});
-}return bp;
-},_applyEnabled:function(bq,br){qx.ui.core.Widget.prototype._applyEnabled.call(this,bq,br);
-this.getContentElement().setEnabled(bq);
-
-if(this.__mO){if(bq){this._showPlaceholder();
-}else{this._removePlaceholder();
-}}else{var bs=this.getContentElement();
-bs.setAttribute(a,bq?this.getPlaceholder():j);
-}},__mT:{width:16,height:16},_getContentHint:function(){return {width:this.__mT.width*10,height:this.__mT.height||16};
-},_applyFont:function(bt,bu){var bv;
-
-if(bt){var bw=qx.theme.manager.Font.getInstance().resolve(bt);
-bv=bw.getStyles();
-}else{bv=qx.bom.Font.getDefaultStyles();
-}this.getContentElement().setStyles(bv);
-if(this.__mO){this.__mV().setStyles(bv);
-}if(bt){this.__mT=qx.bom.Label.getTextSize(l,bv);
-}else{delete this.__mT;
-}qx.ui.core.queue.Layout.add(this);
-},_applyTextColor:function(bx,by){if(bx){this.getContentElement().setStyle(d,qx.theme.manager.Color.getInstance().resolve(bx));
-}else{this.getContentElement().removeStyle(d);
-}},tabFocus:function(){qx.ui.core.Widget.prototype.tabFocus.call(this);
-this.selectAllText();
-},_getTextSize:function(){return this.__mT;
-},_onHtmlInput:function(e){var bC=e.getData();
-var bB=true;
-this.__mP=false;
-if(this.getFilter()!=null){var bD=j;
-var bz=bC.search(this.getFilter());
-var bA=bC;
-
-while(bz>=0){bD=bD+(bA.charAt(bz));
-bA=bA.substring(bz+1,bA.length);
-bz=bA.search(this.getFilter());
-}
-if(bD!=bC){bB=false;
-bC=bD;
-this.getContentElement().setValue(bC);
-}}if(bC.length>this.getMaxLength()){var bB=false;
-this.getContentElement().setValue(bC.substr(0,this.getMaxLength()));
-}if(bB){this.fireDataEvent(bc,bC,this.__mS);
-this.__mS=bC;
-if(this.getLiveUpdate()){this.__mU(bC);
-}}},__mU:function(bE){var bF=this.__mR;
-this.__mR=bE;
-
-if(bF!=bE){this.fireNonBubblingEvent(o,qx.event.type.Data,[bE,bF]);
-}},setValue:function(bG){if(bG===null){if(this.__mP){return bG;
-}bG=j;
-this.__mP=true;
-}else{this.__mP=false;
-if(this.__mO){this._removePlaceholder();
-}}
-if(qx.lang.Type.isString(bG)){var bI=this.getContentElement();
-
-if(bG.length>this.getMaxLength()){bG=bG.substr(0,this.getMaxLength());
-}
-if(bI.getValue()!=bG){var bJ=bI.getValue();
-bI.setValue(bG);
-var bH=this.__mP?null:bG;
-this.__mR=bJ;
-this.__mU(bH);
-}if(this.__mO){this._showPlaceholder();
-}return bG;
-}throw new Error("Invalid value type: "+bG);
-},getValue:function(){var bK=this.getContentElement().getValue();
-return this.__mP?null:bK;
-},resetValue:function(){this.setValue(null);
-},_onChangeContent:function(e){this.__mP=e.getData()===null;
-this.__mU(e.getData());
-},getTextSelection:function(){return this.getContentElement().getTextSelection();
-},getTextSelectionLength:function(){return this.getContentElement().getTextSelectionLength();
-},getTextSelectionStart:function(){return this.getContentElement().getTextSelectionStart();
-},getTextSelectionEnd:function(){return this.getContentElement().getTextSelectionEnd();
-},setTextSelection:function(bL,bM){this.getContentElement().setTextSelection(bL,bM);
-},clearTextSelection:function(){this.getContentElement().clearTextSelection();
-},selectAllText:function(){this.setTextSelection(0);
-},_showPlaceholder:function(){var bO=this.getValue()||j;
-var bN=this.getPlaceholder();
-
-if(bN!=null&&bO==j&&!this.hasState(w)&&!this.hasState(K)){if(this.hasState(k)){this._syncPlaceholder();
-}else{this.addState(k);
-}}},_removePlaceholder:function(){if(this.hasState(k)){this.__mV().setStyle(ba,W);
-this.removeState(k);
-}},_syncPlaceholder:function(){if(this.hasState(k)){this.__mV().setStyle(ba,C);
-}},__mV:function(){if(this.__mQ==null){this.__mQ=new qx.html.Label();
-var bP=qx.theme.manager.Color.getInstance();
-this.__mQ.setStyles({"visibility":W,"zIndex":6,"position":U,"color":bP.resolve(J)});
-this.getContainerElement().add(this.__mQ);
-}return this.__mQ;
-},_onChangeLocale:qx.core.Variant.select(h,{"on":function(e){var content=this.getPlaceholder();
-
-if(content&&content.translate){this.setPlaceholder(content.translate());
-}},"off":null}),_applyPlaceholder:function(bQ,bR){if(this.__mO){this.__mV().setValue(bQ);
-
-if(bQ!=null){this.addListener(bb,this._removePlaceholder,this);
-this.addListener(Y,this._showPlaceholder,this);
-this._showPlaceholder();
-}else{this.removeListener(bb,this._removePlaceholder,this);
-this.removeListener(Y,this._showPlaceholder,this);
-this._removePlaceholder();
-}}else{if(this.getEnabled()){this.getContentElement().setAttribute(a,bQ);
-}}},_applyTextAlign:function(bS,bT){this.getContentElement().setStyle(v,bS);
-},_applyReadOnly:function(bU,bV){var bW=this.getContentElement();
-bW.setAttribute(T,bU);
-
-if(bU){this.addState(b);
-this.setFocusable(false);
-}else{this.removeState(b);
-this.setFocusable(true);
-}}},destruct:function(){this.__mQ=null;
-
-if(qx.core.Variant.isSet(h,V)){qx.locale.Manager.getInstance().removeListener(X,this._onChangeLocale,this);
-}}});
-})();
-(function(){var b="qx.ui.form.TextField",a="textfield";
-qx.Class.define(b,{extend:qx.ui.form.AbstractField,properties:{appearance:{refine:true,init:a},allowGrowY:{refine:true,init:false},allowShrinkY:{refine:true,init:false}},members:{_renderContentElement:function(innerHeight,c){}}});
-})();
-(function(){var k="wrap",j="value",i="textarea",h="none",g="qx.client",f="",e="input",d="qx.html.Input",c="select",b="disabled",a="read-only";
-qx.Class.define(d,{extend:qx.html.Element,construct:function(l,m,n){if(l===c||l===i){var o=l;
-}else{o=e;
-}qx.html.Element.call(this,o,m,n);
-this.__mW=l;
-},members:{__mW:null,__mX:null,__mY:null,_createDomElement:function(){return qx.bom.Input.create(this.__mW);
-},_applyProperty:function(name,p){qx.html.Element.prototype._applyProperty.call(this,name,p);
-var q=this.getDomElement();
-
-if(name===j){qx.bom.Input.setValue(q,p);
-}else if(name===k){qx.bom.Input.setWrap(q,p);
-}},setEnabled:qx.core.Variant.select(g,{"webkit":function(r){this.__mY=r;
-
-if(!r){this.setStyles({"userModify":a,"userSelect":h});
-}else{this.setStyles({"userModify":null,"userSelect":this.__mX?null:h});
-}},"default":function(s){this.setAttribute(b,s===false);
-}}),setSelectable:qx.core.Variant.select(g,{"webkit":function(t){this.__mX=t;
-qx.html.Element.prototype.setSelectable.call(this,this.__mY&&t);
-},"default":function(u){qx.html.Element.prototype.setSelectable.call(this,u);
-}}),setValue:function(v){var w=this.getDomElement();
-
-if(w){if(w.value!=v){qx.bom.Input.setValue(w,v);
-}}else{this._setProperty(j,v);
-}return this;
-},getValue:function(){var x=this.getDomElement();
-
-if(x){return qx.bom.Input.getValue(x);
-}return this._getProperty(j)||f;
-},setWrap:function(y){if(this.__mW===i){this._setProperty(k,y);
-}else{throw new Error("Text wrapping is only support by textareas!");
-}return this;
-},getWrap:function(){if(this.__mW===i){return this._getProperty(k);
-}else{throw new Error("Text wrapping is only support by textareas!");
-}}}});
-})();
-(function(){var w="change",v="input",u="qx.client",t="text",s="password",r="checkbox",q="radio",p="textarea",n="keypress",m="opera",d="propertychange",k="blur",h="keydown",c="keyup",b="select-multiple",g="checked",f="value",j="select",a="qx.event.handler.Input";
-qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,construct:function(){qx.core.Object.call(this);
-this._onChangeCheckedWrapper=qx.lang.Function.listener(this._onChangeChecked,this);
-this._onChangeValueWrapper=qx.lang.Function.listener(this._onChangeValue,this);
-this._onInputWrapper=qx.lang.Function.listener(this._onInput,this);
-this._onPropertyWrapper=qx.lang.Function.listener(this._onProperty,this);
-if(qx.core.Variant.isSet(u,m)){this._onKeyDownWrapper=qx.lang.Function.listener(this._onKeyDown,this);
-this._onKeyUpWrapper=qx.lang.Function.listener(this._onKeyUp,this);
-this._onBlurWrapper=qx.lang.Function.listener(this._onBlur,this);
-}},statics:{PRIORITY:qx.event.Registration.PRIORITY_NORMAL,SUPPORTED_TYPES:{input:1,change:1},TARGET_CHECK:qx.event.IEventHandler.TARGET_DOMNODE,IGNORE_CAN_HANDLE:false},members:{__na:false,__nb:null,__nc:null,canHandleEvent:function(x,y){var z=x.tagName.toLowerCase();
-
-if(y===v&&(z===v||z===p)){return true;
-}
-if(y===w&&(z===v||z===p||z===j)){return true;
-}return false;
-},registerEvent:qx.core.Variant.select(u,{"mshtml":function(A,B,C){if(!A.__nd){var D=A.tagName.toLowerCase();
-var E=A.type;
-
-if(E===t||E===s||D===p||E===r||E===q){qx.bom.Event.addNativeListener(A,d,this._onPropertyWrapper);
-}
-if(E!==r&&E!==q){qx.bom.Event.addNativeListener(A,w,this._onChangeValueWrapper);
-}
-if(E===t||E===s){this._onKeyPressWrapped=qx.lang.Function.listener(this._onKeyPress,this,A);
-qx.bom.Event.addNativeListener(A,n,this._onKeyPressWrapped);
-}A.__nd=true;
-}},"default":function(F,G,H){if(G===v){this.__ne(F);
-}else if(G===w){if(F.type===q||F.type===r){qx.bom.Event.addNativeListener(F,w,this._onChangeCheckedWrapper);
-}else{qx.bom.Event.addNativeListener(F,w,this._onChangeValueWrapper);
-}if(qx.core.Variant.isSet(u,m)){if(F.type===t||F.type===s){this._onKeyPressWrapped=qx.lang.Function.listener(this._onKeyPress,this,F);
-qx.bom.Event.addNativeListener(F,n,this._onKeyPressWrapped);
-}}}}}),__ne:qx.core.Variant.select(u,{"mshtml":null,"webkit":function(I){var J=I.tagName.toLowerCase();
-if(qx.bom.client.Engine.VERSION<532&&J==p){qx.bom.Event.addNativeListener(I,n,this._onInputWrapper);
-}qx.bom.Event.addNativeListener(I,v,this._onInputWrapper);
-},"opera":function(K){qx.bom.Event.addNativeListener(K,c,this._onKeyUpWrapper);
-qx.bom.Event.addNativeListener(K,h,this._onKeyDownWrapper);
-qx.bom.Event.addNativeListener(K,k,this._onBlurWrapper);
-qx.bom.Event.addNativeListener(K,v,this._onInputWrapper);
-},"default":function(L){qx.bom.Event.addNativeListener(L,v,this._onInputWrapper);
-}}),unregisterEvent:qx.core.Variant.select(u,{"mshtml":function(M,N){if(M.__nd){var O=M.tagName.toLowerCase();
-var P=M.type;
-
-if(P===t||P===s||O===p||P===r||P===q){qx.bom.Event.removeNativeListener(M,d,this._onPropertyWrapper);
-}
-if(P!==r&&P!==q){qx.bom.Event.removeNativeListener(M,w,this._onChangeValueWrapper);
-}
-if(P===t||P===s){qx.bom.Event.removeNativeListener(M,n,this._onKeyPressWrapped);
-}
-try{delete M.__nd;
-}catch(Q){M.__nd=null;
-}}},"default":function(R,S){if(S===v){this.__ne(R);
-}else if(S===w){if(R.type===q||R.type===r){qx.bom.Event.removeNativeListener(R,w,this._onChangeCheckedWrapper);
-}else{qx.bom.Event.removeNativeListener(R,w,this._onChangeValueWrapper);
-}}
-if(qx.core.Variant.isSet(u,m)){if(R.type===t||R.type===s){qx.bom.Event.removeNativeListener(R,n,this._onKeyPressWrapped);
-}}}}),__nf:qx.core.Variant.select(u,{"mshtml":null,"webkit":function(T){var U=T.tagName.toLowerCase();
-if(qx.bom.client.Engine.VERSION<532&&U==p){qx.bom.Event.removeNativeListener(T,n,this._onInputWrapper);
-}qx.bom.Event.removeNativeListener(T,v,this._onInputWrapper);
-},"opera":function(V){qx.bom.Event.removeNativeListener(V,c,this._onKeyUpWrapper);
-qx.bom.Event.removeNativeListener(V,h,this._onKeyDownWrapper);
-qx.bom.Event.removeNativeListener(V,k,this._onBlurWrapper);
-qx.bom.Event.removeNativeListener(V,v,this._onInputWrapper);
-},"default":function(W){qx.bom.Event.removeNativeListener(W,v,this._onInputWrapper);
-}}),_onKeyPress:qx.core.Variant.select(u,{"mshtml|opera":function(e,X){if(e.keyCode===13){if(X.value!==this.__nc){this.__nc=X.value;
-qx.event.Registration.fireEvent(X,w,qx.event.type.Data,[X.value]);
-}}},"default":null}),_onKeyDown:qx.core.Variant.select(u,{"opera":function(e){if(e.keyCode===13){this.__na=true;
-}},"default":null}),_onKeyUp:qx.core.Variant.select(u,{"opera":function(e){if(e.keyCode===13){this.__na=false;
-}},"default":null}),_onBlur:qx.core.Variant.select(u,{"opera":function(e){if(this.__nb){window.clearTimeout(this.__nb);
-}},"default":null}),_onInput:qx.event.GlobalError.observeMethod(function(e){var Y=qx.bom.Event.getTarget(e);
-if(!this.__na){if(qx.core.Variant.isSet(u,m)){this.__nb=window.setTimeout(function(){qx.event.Registration.fireEvent(Y,v,qx.event.type.Data,[Y.value]);
-},0);
-}else{qx.event.Registration.fireEvent(Y,v,qx.event.type.Data,[Y.value]);
-}}}),_onChangeValue:qx.event.GlobalError.observeMethod(function(e){var bb=qx.bom.Event.getTarget(e);
-var ba=bb.value;
-
-if(bb.type===b){var ba=[];
-
-for(var i=0,o=bb.options,l=o.length;i<l;i++){if(o[i].selected){ba.push(o[i].value);
-}}}qx.event.Registration.fireEvent(bb,w,qx.event.type.Data,[ba]);
-}),_onChangeChecked:qx.event.GlobalError.observeMethod(function(e){var bc=qx.bom.Event.getTarget(e);
-
-if(bc.type===q){if(bc.checked){qx.event.Registration.fireEvent(bc,w,qx.event.type.Data,[bc.value]);
-}}else{qx.event.Registration.fireEvent(bc,w,qx.event.type.Data,[bc.checked]);
-}}),_onProperty:qx.core.Variant.select(u,{"mshtml":qx.event.GlobalError.observeMethod(function(e){var bd=qx.bom.Event.getTarget(e);
-var be=e.propertyName;
-
-if(be===f&&(bd.type===t||bd.type===s||bd.tagName.toLowerCase()===p)){if(!bd.$$inValueSet){qx.event.Registration.fireEvent(bd,v,qx.event.type.Data,[bd.value]);
-}}else if(be===g){if(bd.type===r){qx.event.Registration.fireEvent(bd,w,qx.event.type.Data,[bd.checked]);
-}else if(bd.checked){qx.event.Registration.fireEvent(bd,w,qx.event.type.Data,[bd.value]);
-}}}),"default":function(){}})},defer:function(bf){qx.event.Registration.addHandler(bf);
-}});
-})();
-(function(){var v="",u="select",t="soft",s="off",r="qx.client",q="textarea",p="wrap",o="text",n="mshtml",m="number",d="checkbox",k="select-one",g="input",c="option",b="value",f="radio",e="qx.bom.Input",h="nowrap",a="auto",j="normal";
-qx.Class.define(e,{statics:{__ng:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(w,x,y){{};
-var x=x?qx.lang.Object.clone(x):{};
-var z;
-
-if(w===q||w===u){z=w;
-}else{z=g;
-x.type=w;
-}return qx.bom.Element.create(z,x,y);
-},setValue:function(A,B){var G=A.nodeName.toLowerCase();
-var D=A.type;
-var Array=qx.lang.Array;
-var H=qx.lang.Type;
-
-if(typeof B===m){B+=v;
-}
-if((D===d||D===f)){if(H.isArray(B)){A.checked=Array.contains(B,A.value);
-}else{A.checked=A.value==B;
-}}else if(G===u){var C=H.isArray(B);
-var I=A.options;
-var E,F;
-
-for(var i=0,l=I.length;i<l;i++){E=I[i];
-F=E.getAttribute(b);
-
-if(F==null){F=E.text;
-}E.selected=C?Array.contains(B,F):B==F;
-}
-if(C&&B.length==0){A.selectedIndex=-1;
-}}else if((D===o||D===q)&&qx.core.Variant.isSet(r,n)){A.$$inValueSet=true;
-A.value=B;
-A.$$inValueSet=null;
-}else{A.value=B;
-}},getValue:function(J){var P=J.nodeName.toLowerCase();
-
-if(P===c){return (J.attributes.value||{}).specified?J.value:J.text;
-}
-if(P===u){var K=J.selectedIndex;
-if(K<0){return null;
-}var Q=[];
-var S=J.options;
-var R=J.type==k;
-var O=qx.bom.Input;
-var N;
-for(var i=R?K:0,M=R?K+1:S.length;i<M;i++){var L=S[i];
-
-if(L.selected){N=O.getValue(L);
-if(R){return N;
-}Q.push(N);
-}}return Q;
-}else{return (J.value||v).replace(/\r/g,v);
-}},setWrap:qx.core.Variant.select(r,{"mshtml":function(T,U){T.wrap=U?t:s;
-},"gecko|webkit":function(V,W){var Y=W?t:s;
-var X=W?v:a;
-V.setAttribute(p,Y);
-V.style.overflow=X;
-},"default":function(ba,bb){ba.style.whiteSpace=bb?j:h;
-}})}});
 })();
 (function(){var b="qx.nativeScrollBars",a="qx.ui.core.scroll.MScrollBarFactory";
 qx.core.Setting.define(b,false);
@@ -14534,6 +13882,15 @@ bn.show();
 bn.setMaximum(Math.max(0,bp.height-br.height));
 bn.setKnobFactor((bp.height===0)?0:br.height/bp.height);
 }else{this._excludeChildControl(k);
+}}}});
+})();
+(function(){var p="Integer",o="_applyContentPadding",n="resetPaddingRight",m="setPaddingBottom",l="resetPaddingTop",k="qx.ui.core.MContentPadding",j="resetPaddingLeft",i="setPaddingTop",h="setPaddingRight",g="resetPaddingBottom",c="contentPaddingLeft",f="setPaddingLeft",e="contentPaddingTop",b="shorthand",a="contentPaddingRight",d="contentPaddingBottom";
+qx.Mixin.define(k,{properties:{contentPaddingTop:{check:p,init:0,apply:o,themeable:true},contentPaddingRight:{check:p,init:0,apply:o,themeable:true},contentPaddingBottom:{check:p,init:0,apply:o,themeable:true},contentPaddingLeft:{check:p,init:0,apply:o,themeable:true},contentPadding:{group:[e,a,d,c],mode:b,themeable:true}},members:{__oH:{contentPaddingTop:i,contentPaddingRight:h,contentPaddingBottom:m,contentPaddingLeft:f},__oI:{contentPaddingTop:l,contentPaddingRight:n,contentPaddingBottom:g,contentPaddingLeft:j},_applyContentPadding:function(q,r,name){var s=this._getContentPaddingTarget();
+
+if(q==null){var t=this.__oI[name];
+s[t]();
+}else{var u=this.__oH[name];
+s[u](q);
 }}}});
 })();
 (function(){var v="single",u="Boolean",t="one",s="changeSelection",r="mouseup",q="mousedown",p="losecapture",o="multi",n="_applyQuickSelection",m="mouseover",d="_applySelectionMode",l="_applyDragSelection",h="__nk",c="qx.ui.core.MMultiSelectionHandling",b="removeItem",g="keypress",f="qx.event.type.Data",j="addItem",a="additive",k="mousemove";
@@ -15111,61 +14468,156 @@ continue;
 }return m[q];
 }}}}});
 })();
-(function(){var m="horizontal",k="qx.event.type.Data",j="vertical",h="",g="qx.ui.form.List",f="Enter",d="one",c="addChildWidget",b="_applySpacing",a="Boolean",y="Integer",x="action",w="keyinput",v="addItem",u="removeChildWidget",t="_applyOrientation",s="single",r="keypress",q="list",p="__nJ",n="pane",o="removeItem";
-qx.Class.define(g,{extend:qx.ui.core.scroll.AbstractScrollArea,implement:[qx.ui.core.IMultiSelection,qx.ui.form.IForm,qx.ui.form.IModelSelection],include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.core.MMultiSelectionHandling,qx.ui.form.MForm,qx.ui.form.MModelSelection],construct:function(z){qx.ui.core.scroll.AbstractScrollArea.call(this);
-this.__nJ=new qx.ui.container.Composite();
-this.__nJ.addListener(c,this._onAddChild,this);
-this.__nJ.addListener(u,this._onRemoveChild,this);
-this.getChildControl(n).add(this.__nJ);
-if(z){this.setOrientation(m);
-}else{this.initOrientation();
-}this.addListener(r,this._onKeyPress);
-this.addListener(w,this._onKeyInput);
-this.__nK=h;
-},events:{addItem:k,removeItem:k},properties:{appearance:{refine:true,init:q},focusable:{refine:true,init:true},orientation:{check:[m,j],init:j,apply:t},spacing:{check:y,init:0,apply:b,themeable:true},enableInlineFind:{check:a,init:true}},members:{__nK:null,__nL:null,__nJ:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__nJ;
-},_onAddChild:function(e){this.fireDataEvent(v,e.getData());
-},_onRemoveChild:function(e){this.fireDataEvent(o,e.getData());
-},handleKeyPress:function(e){if(!this._onKeyPress(e)){this._getManager().handleKeyPress(e);
-}},_applyOrientation:function(A,B){var C=A===m;
-var D=C?new qx.ui.layout.HBox():new qx.ui.layout.VBox();
-var content=this.__nJ;
-content.setLayout(D);
-content.setAllowGrowX(!C);
-content.setAllowGrowY(C);
-this._applySpacing(this.getSpacing());
-},_applySpacing:function(E,F){this.__nJ.getLayout().setSpacing(E);
-},_onKeyPress:function(e){if(e.getKeyIdentifier()==f&&!e.isAltPressed()){var G=this.getSelection();
+(function(){var e="right",d="above",c="left",b="under",a="qx.ui.tree.SelectionManager";
+qx.Class.define(a,{extend:qx.ui.core.selection.ScrollArea,members:{_getSelectableLocationY:function(f){var g=f.getBounds();
 
-for(var i=0;i<G.length;i++){G[i].fireEvent(x);
-}return true;
-}return false;
-},_onKeyInput:function(e){if(!this.getEnableInlineFind()){return;
-}var H=this.getSelectionMode();
+if(g){var top=this._getWidget().getItemTop(f);
+return {top:top,bottom:top+g.height};
+}},_isSelectable:function(h){return this._isItemSelectable(h)&&h instanceof qx.ui.tree.AbstractTreeItem;
+},_getSelectableFromMouseEvent:function(event){return this._getWidget().getTreeItem(event.getTarget());
+},getSelectables:function(j){var m=false;
 
-if(!(H===s||H===d)){return;
-}if(((new Date).valueOf()-this.__nL)>1000){this.__nK=h;
-}this.__nK+=e.getChar();
-var I=this.findItemByLabelFuzzy(this.__nK);
-if(I){this.setSelection([I]);
-}this.__nL=(new Date).valueOf();
-},findItemByLabelFuzzy:function(J){J=J.toLowerCase();
-var K=this.getChildren();
-for(var i=0,l=K.length;i<l;i++){var L=K[i].getLabel();
-if(L&&L.toLowerCase().indexOf(J)==0){return K[i];
-}}return null;
-},findItem:function(M,N){if(N!==false){M=M.toLowerCase();
-}var O=this.getChildren();
-var Q;
-for(var i=0,l=O.length;i<l;i++){Q=O[i];
-var P=Q.getLabel();
+if(!j){m=this._userInteraction;
+this._userInteraction=true;
+}var l=this._getWidget();
+var n=[];
 
-if(P!=null){if(P.translate){P=P.translate();
+if(l.getRoot()!=null){var k=l.getRoot().getItems(true,!!j,l.getHideRoot());
+
+for(var i=0;i<k.length;i++){if(this._isSelectable(k[i])){n.push(k[i]);
+}}}this._userInteraction=m;
+return n;
+},_getSelectableRange:function(o,p){if(o===p){return [o];
+}var q=this.getSelectables();
+var r=q.indexOf(o);
+var s=q.indexOf(p);
+
+if(r<0||s<0){return [];
 }
-if(N!==false){P=P.toLowerCase();
+if(r<s){return q.slice(r,s+1);
+}else{return q.slice(s,r+1);
+}},_getFirstSelectable:function(){return this.getSelectables()[0]||null;
+},_getLastSelectable:function(){var t=this.getSelectables();
+
+if(t.length>0){return t[t.length-1];
+}else{return null;
+}},_getRelatedSelectable:function(u,v){var w=this._getWidget();
+var x=null;
+
+switch(v){case d:x=w.getPreviousNodeOf(u,false);
+break;
+case b:x=w.getNextNodeOf(u,false);
+break;
+case c:case e:break;
 }
-if(P.toString()==M.toString()){return Q;
-}}}return null;
-}},destruct:function(){this._disposeObjects(p);
+if(!x){return null;
+}
+if(this._isSelectable(x)){return x;
+}else{return this._getRelatedSelectable(x,v);
+}}}});
+})();
+(function(){var l="dblclick",k="click",j="Boolean",h="excluded",g="visible",f="qx.event.type.Data",d="_applyOpenMode",c="Space",b="Left",a="__oJ",z="Enter",y="changeOpenMode",x="_applyRootOpenClose",w="changeSelection",v="qx.ui.tree.Tree",u="tree",t="_applyHideRoot",s="changeRoot",r="_applyRoot",q="keypress",o="none",p="pane",m="Right",n="qx.ui.tree.AbstractTreeItem";
+qx.Class.define(v,{extend:qx.ui.core.scroll.AbstractScrollArea,implement:[qx.ui.core.IMultiSelection,qx.ui.form.IModelSelection,qx.ui.form.IForm],include:[qx.ui.core.MMultiSelectionHandling,qx.ui.core.MContentPadding,qx.ui.form.MModelSelection,qx.ui.form.MForm],construct:function(){qx.ui.core.scroll.AbstractScrollArea.call(this);
+this.__oJ=new qx.ui.container.Composite(new qx.ui.layout.VBox()).set({allowShrinkY:false,allowGrowX:true});
+this.getChildControl(p).add(this.__oJ);
+this.initOpenMode();
+this.initRootOpenClose();
+this.addListener(w,this._onChangeSelection,this);
+this.addListener(q,this._onKeyPress,this);
+},events:{addItem:f,removeItem:f},properties:{openMode:{check:[k,l,o],init:l,apply:d,event:y,themeable:true},root:{check:n,init:null,nullable:true,event:s,apply:r},hideRoot:{check:j,init:false,apply:t},rootOpenClose:{check:j,init:false,apply:x},appearance:{refine:true,init:u},focusable:{refine:true,init:true}},members:{__oJ:null,SELECTION_MANAGER:qx.ui.tree.SelectionManager,getChildrenContainer:function(){return this.__oJ;
+},_applyRoot:function(A,B){var C=this.getChildrenContainer();
+
+if(B){C.remove(B);
+
+if(B.hasChildren()){C.remove(B.getChildrenContainer());
+}}
+if(A){C.add(A);
+
+if(A.hasChildren()){C.add(A.getChildrenContainer());
+}A.setVisibility(this.getHideRoot()?h:g);
+A.recursiveAddToWidgetQueue();
+}},_applyHideRoot:function(D,E){var F=this.getRoot();
+
+if(!F){return;
+}F.setVisibility(D?h:g);
+F.recursiveAddToWidgetQueue();
+},_applyRootOpenClose:function(G,H){var I=this.getRoot();
+
+if(!I){return;
+}I.recursiveAddToWidgetQueue();
+},_getContentPaddingTarget:function(){return this.__oJ;
+},getNextNodeOf:function(J,K){if((K!==false||J.isOpen())&&J.hasChildren()){return J.getChildren()[0];
+}
+while(J){var parent=J.getParent();
+
+if(!parent){return null;
+}var M=parent.getChildren();
+var L=M.indexOf(J);
+
+if(L>-1&&L<M.length-1){return M[L+1];
+}J=parent;
+}return null;
+},getPreviousNodeOf:function(N,O){var parent=N.getParent();
+
+if(!parent){return null;
+}
+if(this.getHideRoot()){if(parent==this.getRoot()){if(parent.getChildren()[0]==N){return null;
+}}}else{if(N==this.getRoot()){return null;
+}}var R=parent.getChildren();
+var P=R.indexOf(N);
+
+if(P>0){var Q=R[P-1];
+
+while((O!==false||Q.isOpen())&&Q.hasChildren()){var S=Q.getChildren();
+Q=S[S.length-1];
+}return Q;
+}else{return parent;
+}},getNextSiblingOf:function(T){if(T==this.getRoot()){return null;
+}var parent=T.getParent();
+var U=parent.getChildren();
+var V=U.indexOf(T);
+
+if(V<U.length-1){return U[V+1];
+}return null;
+},getPreviousSiblingOf:function(W){if(W==this.getRoot()){return null;
+}var parent=W.getParent();
+var X=parent.getChildren();
+var Y=X.indexOf(W);
+
+if(Y>0){return X[Y-1];
+}return null;
+},getItems:function(ba,bb){if(this.getRoot()!=null){return this.getRoot().getItems(ba,bb,this.getHideRoot());
+}else{return [];
+}},getChildren:function(){if(this.getRoot()!=null){return [this.getRoot()];
+}else{return [];
+}},getTreeItem:function(bc){while(bc){if(bc==this){return null;
+}
+if(bc instanceof qx.ui.tree.AbstractTreeItem){return bc;
+}bc=bc.getLayoutParent();
+}return null;
+},_applyOpenMode:function(bd,be){if(be==k){this.removeListener(k,this._onOpen,this);
+}else if(be==l){this.removeListener(l,this._onOpen,this);
+}
+if(bd==k){this.addListener(k,this._onOpen,this);
+}else if(bd==l){this.addListener(l,this._onOpen,this);
+}},_onOpen:function(e){var bf=this.getTreeItem(e.getTarget());
+
+if(!bf||!bf.isOpenable()){return;
+}bf.setOpen(!bf.isOpen());
+e.stopPropagation();
+},_onChangeSelection:function(e){var bh=e.getData();
+for(var i=0;i<bh.length;i++){var bg=bh[i];
+while(bg.getParent()!=null){bg=bg.getParent();
+bg.setOpen(true);
+}}},_onKeyPress:function(e){var bi=this._getLeadItem();
+
+if(bi!==null){switch(e.getKeyIdentifier()){case b:if(bi.isOpenable()&&bi.isOpen()){bi.setOpen(false);
+}break;
+case m:if(bi.isOpenable()&&!bi.isOpen()){bi.setOpen(true);
+}break;
+case z:case c:if(bi.isOpenable()){bi.toggleOpen();
+}break;
+}}}},destruct:function(){this._disposeObjects(a);
 }});
 })();
 (function(){var b="qx.ui.core.scroll.IScrollBar",a="qx.event.type.Data";
@@ -15525,14 +14977,2731 @@ if(this.getOrientation()===d){g.width=0;
 }return g;
 }}});
 })();
-(function(){var p="Integer",o="_applyContentPadding",n="resetPaddingRight",m="setPaddingBottom",l="resetPaddingTop",k="qx.ui.core.MContentPadding",j="resetPaddingLeft",i="setPaddingTop",h="setPaddingRight",g="resetPaddingBottom",c="contentPaddingLeft",f="setPaddingLeft",e="contentPaddingTop",b="shorthand",a="contentPaddingRight",d="contentPaddingBottom";
-qx.Mixin.define(k,{properties:{contentPaddingTop:{check:p,init:0,apply:o,themeable:true},contentPaddingRight:{check:p,init:0,apply:o,themeable:true},contentPaddingBottom:{check:p,init:0,apply:o,themeable:true},contentPaddingLeft:{check:p,init:0,apply:o,themeable:true},contentPadding:{group:[e,a,d,c],mode:b,themeable:true}},members:{__oH:{contentPaddingTop:i,contentPaddingRight:h,contentPaddingBottom:m,contentPaddingLeft:f},__oI:{contentPaddingTop:l,contentPaddingRight:n,contentPaddingBottom:g,contentPaddingLeft:j},_applyContentPadding:function(q,r,name){var s=this._getContentPaddingTarget();
+(function(){var m="open",k="icon",j="auto",h="middle",g="String",f="label",d="changeOpen",c="excluded",b="visible",a="opened",H="always",G="qx.ui.tree.AbstractTreeItem",F="_applyIconOpened",E="Boolean",D="Integer",C="_applyIndent",B="changeOpenSymbolMode",A="_applyOpenSymbolMode",z="__oR",y="resize",t="",u="removeItem",r="addItem",s="__oO",p="iconOpened",q="__oN",n="abstract",o="never",v="_applyIcon",w="_applyOpen",x="_applyLabel";
+qx.Class.define(G,{extend:qx.ui.core.Widget,type:n,include:[qx.ui.form.MModelProperty],implement:[qx.ui.form.IModel],construct:function(){qx.ui.core.Widget.call(this);
+this.__oN=[];
+this._setLayout(new qx.ui.layout.HBox());
+this._addWidgets();
+this.initOpen();
+},properties:{open:{check:E,init:false,event:d,apply:w},openSymbolMode:{check:[H,o,j],init:j,event:B,apply:A},indent:{check:D,init:19,apply:C,themeable:true},parent:{check:G,nullable:true},icon:{check:g,apply:v,nullable:true,themeable:true},iconOpened:{check:g,apply:F,nullable:true,themeable:true},label:{check:g,apply:x,init:t}},members:{__oN:null,__oO:null,__oP:null,__oQ:null,__oR:null,__oS:null,_addWidgets:function(){throw new Error("Abstract method call.");
+},_createChildControlImpl:function(I,J){var K;
 
-if(q==null){var t=this.__oI[name];
-s[t]();
-}else{var u=this.__oH[name];
-s[u](q);
+switch(I){case f:K=new qx.ui.basic.Label().set({alignY:h,value:this.getLabel()});
+break;
+case k:K=new qx.ui.basic.Image().set({alignY:h,source:this.getIcon()});
+break;
+case m:K=new qx.ui.tree.FolderOpenButton().set({alignY:h});
+K.addListener(d,this._onChangeOpen,this);
+K.addListener(y,this._updateIndent,this);
+break;
+}return K||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,I);
+},getTree:function(){var M=this;
+
+while(M.getParent()){M=M.getParent();
+}var L=M.getLayoutParent()?M.getLayoutParent().getLayoutParent():0;
+
+if(L&&L instanceof qx.ui.core.scroll.ScrollPane){return L.getLayoutParent();
+}return null;
+},addWidget:function(N,O){this._add(N,O);
+},addSpacer:function(){if(!this.__oR){this.__oR=new qx.ui.core.Spacer();
+}else{this._remove(this.__oR);
+}this._add(this.__oR);
+},addOpenButton:function(){this._add(this.getChildControl(m));
+},_onChangeOpen:function(e){if(this.isOpenable()){this.setOpen(e.getData());
+}},addIcon:function(){var P=this.getChildControl(k);
+
+if(this.__oQ){this._remove(P);
+}this._add(P);
+this.__oQ=true;
+},addLabel:function(Q){var R=this.getChildControl(f);
+
+if(this.__oP){this._remove(R);
+}
+if(Q){this.setLabel(Q);
+}else{R.setValue(this.getLabel());
+}this._add(R);
+this.__oP=true;
+},addState:function(S){qx.ui.core.Widget.prototype.addState.call(this,S);
+var U=this._getChildren();
+
+for(var i=0,l=U.length;i<l;i++){var T=U[i];
+
+if(T.addState){U[i].addState(S);
+}}},removeState:function(V){qx.ui.core.Widget.prototype.removeState.call(this,V);
+var X=this._getChildren();
+
+for(var i=0,l=X.length;i<l;i++){var W=X[i];
+
+if(W.addState){X[i].removeState(V);
+}}},_applyIcon:function(Y,ba){if(!this.__oU()){this.__oV(Y);
+}else if(!this.isOpen()){this.__oV(Y);
+}},_applyIconOpened:function(bb,bc){if(this.isOpen()){if(this.__oT()&&this.__oU()){this.__oV(bb);
+}else if(!this.__oT()&&this.__oU()){this.__oV(bb);
+}}},_applyLabel:function(bd,be){var bf=this.getChildControl(f,true);
+
+if(bf){bf.setValue(bd);
+}},_applyOpen:function(bg,bh){if(this.hasChildren()){this.getChildrenContainer().setVisibility(bg?b:c);
+}var open=this.getChildControl(m,true);
+
+if(open){open.setOpen(bg);
+}var bi;
+if(bg){bi=this.__oU()?this.getIconOpened():null;
+}else{bi=this.getIcon();
+}
+if(bi){this.__oV(bi);
+}bg?this.addState(a):this.removeState(a);
+},__oT:function(){return qx.util.PropertyUtil.getUserValue(this,k);
+},__oU:function(){return qx.util.PropertyUtil.getUserValue(this,p);
+},__oV:function(bj){var bk=this.getChildControl(k,true);
+
+if(bk){bk.setSource(bj);
+}},isOpenable:function(){var bl=this.getOpenSymbolMode();
+return (bl===H||bl===j&&this.hasChildren());
+},_shouldShowOpenSymbol:function(){var open=this.getChildControl(m,true);
+
+if(!open){return false;
+}var bm=this.getTree();
+
+if(!bm.getRootOpenClose()){if(bm.getHideRoot()){if(bm.getRoot()==this.getParent()){return false;
+}}else{if(bm.getRoot()==this){return false;
+}}}return this.isOpenable();
+},_applyOpenSymbolMode:function(bn,bo){this._updateIndent();
+},_updateIndent:function(){if(!this.getTree()){return;
+}var bq=0;
+var open=this.getChildControl(m,true);
+
+if(open){if(this._shouldShowOpenSymbol()){open.show();
+var bp=open.getBounds();
+
+if(bp){bq=bp.width;
+}else{return;
+}}else{open.exclude();
+}}
+if(this.__oR){this.__oR.setWidth((this.getLevel()+1)*this.getIndent()-bq);
+}},_applyIndent:function(br,bs){this._updateIndent();
+},getLevel:function(){var bt=this.getTree();
+
+if(!bt){return;
+}var bu=this;
+var bv=-1;
+
+while(bu){bu=bu.getParent();
+bv+=1;
+}if(bt.getHideRoot()){bv-=1;
+}
+if(!bt.getRootOpenClose()){bv-=1;
+}return bv;
+},syncWidget:function(){this._updateIndent();
+},getChildrenContainer:function(){if(!this.__oO){this.__oO=new qx.ui.container.Composite(new qx.ui.layout.VBox()).set({visibility:this.isOpen()?b:c});
+}return this.__oO;
+},hasChildrenContainer:function(){return this.__oO;
+},getParentChildrenContainer:function(){if(this.getParent()){return this.getParent().getChildrenContainer();
+}else if(this.getLayoutParent()){return this.getLayoutParent();
+}else{return null;
+}},getChildren:function(){return this.__oN;
+},hasChildren:function(){return this.__oN?this.__oN.length>0:false;
+},getItems:function(bw,bx,by){if(by!==false){var bz=[];
+}else{var bz=[this];
+}var bC=this.hasChildren()&&(bx!==false||this.isOpen());
+
+if(bC){var bB=this.getChildren();
+
+if(bw===false){bz=bz.concat(bB);
+}else{for(var i=0,bA=bB.length;i<bA;i++){bz=bz.concat(bB[i].getItems(bw,bx,false));
+}}}return bz;
+},recursiveAddToWidgetQueue:function(){var bD=this.getItems(true,true,false);
+
+for(var i=0,l=bD.length;i<l;i++){qx.ui.core.queue.Widget.add(bD[i]);
+}},__oW:function(){if(this.getParentChildrenContainer()){this.getParentChildrenContainer()._addAfter(this.getChildrenContainer(),this);
+}},add:function(bE){var bF=this.getChildrenContainer();
+var bI=this.getTree();
+
+for(var i=0,l=arguments.length;i<l;i++){var bJ=arguments[i];
+var bH=bJ.getParent();
+
+if(bH){bH.remove(bJ);
+}bJ.setParent(this);
+var bG=this.hasChildren();
+bF.add(bJ);
+
+if(bJ.hasChildren()){bF.add(bJ.getChildrenContainer());
+}this.__oN.push(bJ);
+
+if(!bG){this.__oW();
+}
+if(bI){bJ.recursiveAddToWidgetQueue();
+bI.fireNonBubblingEvent(r,qx.event.type.Data,[bJ]);
+}}
+if(bI){qx.ui.core.queue.Widget.add(this);
+}},addAt:function(bK,bL){{};
+
+if(bL==this.__oN.length){this.add(bK);
+return;
+}var bP=bK.getParent();
+
+if(bP){bP.remove(bK);
+}var bN=this.getChildrenContainer();
+bK.setParent(this);
+var bO=this.hasChildren();
+var bM=this.__oN[bL];
+bN.addBefore(bK,bM);
+
+if(bK.hasChildren()){bN.addAfter(bK.getChildrenContainer(),bK);
+}qx.lang.Array.insertAt(this.__oN,bK,bL);
+
+if(!bO){this.__oW();
+}
+if(this.getTree()){bK.recursiveAddToWidgetQueue();
+qx.ui.core.queue.Widget.add(this);
+}},addBefore:function(bQ,bR){{};
+var bS=bQ.getParent();
+
+if(bS){bS.remove(bQ);
+}this.addAt(bQ,this.__oN.indexOf(bR));
+},addAfter:function(bT,bU){{};
+var bV=bT.getParent();
+
+if(bV){bV.remove(bT);
+}this.addAt(bT,this.__oN.indexOf(bU)+1);
+},addAtBegin:function(bW){this.addAt(bW,0);
+},remove:function(bX){for(var i=0,l=arguments.length;i<l;i++){var cc=arguments[i];
+
+if(this.__oN.indexOf(cc)==-1){this.warn("Cannot remove treeitem '"+cc+"'. It is not a child of this tree item.");
+return;
+}var bY=this.getChildrenContainer();
+
+if(cc.hasChildrenContainer()){var cb=cc.getChildrenContainer();
+
+if(bY.getChildren().indexOf(cb)>=0){bY.remove(cb);
+}}qx.lang.Array.remove(this.__oN,cc);
+cc.setParent(null);
+bY.remove(cc);
+}var ca=this.getTree();
+
+if(ca){ca.fireNonBubblingEvent(u,qx.event.type.Data,[cc]);
+}qx.ui.core.queue.Widget.add(this);
+},removeAt:function(cd){var ce=this.__oN[cd];
+
+if(ce){this.remove(ce);
+}},removeAll:function(){for(var i=this.__oN.length-1;i>=0;i--){this.remove(this.__oN[i]);
+}}},destruct:function(){this._disposeArray(q);
+this._disposeObjects(z,s);
+}});
+})();
+(function(){var i="opened",h="click",g="changeOpen",f="Boolean",d="qx.ui.tree.FolderOpenButton",c="_applyOpen",b="mouseup",a="mousedown";
+qx.Class.define(d,{extend:qx.ui.basic.Image,include:qx.ui.core.MExecutable,construct:function(){qx.ui.basic.Image.call(this);
+this.initOpen();
+this.addListener(h,this._onClick);
+this.addListener(a,this._stopPropagation,this);
+this.addListener(b,this._stopPropagation,this);
+},properties:{open:{check:f,init:false,event:g,apply:c}},members:{_applyOpen:function(j,k){j?this.addState(i):this.removeState(i);
+this.execute();
+},_stopPropagation:function(e){e.stopPropagation();
+},_onClick:function(e){this.toggleOpen();
+e.stopPropagation();
+}}});
+})();
+(function(){var f="changeSelection",e="change",d="qx.data.Array",c="qx.data.controller.MSelection",b="_applySelection",a="target";
+qx.Mixin.define(c,{construct:function(){if(!qx.Class.hasProperty(this.constructor,a)){throw new Error("Target property is needed.");
+}if(this.getSelection()==null){this.setSelection(new qx.data.Array());
+}},properties:{selection:{check:d,event:f,apply:b,init:null}},members:{_modifingSelection:0,__uE:null,__uF:null,_applySelection:function(g,h){if(this.__uF!=undefined&&h!=undefined){h.removeListenerById(this.__uF);
+}this.__uF=g.addListener(e,this.__uG,this);
+this._updateSelection();
+},__uG:function(){this._updateSelection();
+},_changeTargetSelection:function(){if(this.getTarget()==null){return;
+}if(!this.__uH()&&!this.__uI()){return;
+}if(this._inSelectionModification()){return;
+}var l=this.getTarget().getSelection();
+var k=this.getSelection();
+
+if(k==null){k=new qx.data.Array();
+this.setSelection(k);
+}if(l.length>0){k.toArray().splice(0,k.getLength());
+}else{k.splice(0,this.getSelection().getLength()).dispose();
+}for(var i=0;i<l.length;i++){var j=l[i].getModel();
+
+if(i+1==l.length){k.push(j);
+}else{k.toArray().push(j);
+}}this.fireDataEvent(f,this.getSelection());
+},_addChangeTargetListener:function(m,n){if(this.__uE!=undefined&&n!=undefined){n.removeListenerById(this.__uE);
+}
+if(m!=null){if(this.__uH()||this.__uI()){this.__uE=m.addListener(f,this._changeTargetSelection,this);
+}}},_updateSelection:function(){if(!this.getTarget()){return;
+}this._startSelectionModification();
+if(this.__uH()){var q=[];
+for(var i=0;i<this.getSelection().length;i++){var r=this.getSelection().getItem(i);
+var s=this.__uK(r);
+
+if(s!=null){q.push(s);
+}}this.getTarget().setSelection(q);
+q=this.getTarget().getSelection();
+var o=[];
+
+for(var i=0;i<q.length;i++){o[i]=q[i].getModel();
+}for(var i=this.getSelection().length-1;i>=0;i--){if(!qx.lang.Array.contains(o,this.getSelection().getItem(i))){this.getSelection().splice(i,1).dispose();
+}}}else if(this.__uI()){var p=this.getSelection().getItem(this.getSelection().length-1);
+
+if(p){this.__uJ(p);
+this.getSelection().splice(0,this.getSelection().getLength()-1).dispose();
+}else{this.getTarget().resetSelection();
+}}this._endSelectionModification();
+},__uH:function(){var t=this.getTarget().constructor;
+return qx.Class.implementsInterface(t,qx.ui.core.IMultiSelection);
+},__uI:function(){var u=this.getTarget().constructor;
+return qx.Class.implementsInterface(u,qx.ui.core.ISingleSelection);
+},__uJ:function(v){var w=this.__uK(v);
+if(w==null){return;
+}if(this.__uH()){this.getTarget().addToSelection(w);
+}else if(this.__uI()){this.getTarget().setSelection([w]);
+}},__uK:function(x){var y=this.getTarget().getSelectables(true);
+for(var i=0;i<y.length;i++){if(y[i].getModel()==x){return y[i];
+}}return null;
+},_startSelectionModification:function(){this._modifingSelection++;
+},_endSelectionModification:function(){this._modifingSelection>0?this._modifingSelection--:null;
+},_inSelectionModification:function(){return this._modifingSelection>0;
+}}});
+})();
+(function(){var t="String",s="get",r="changeModel",q="_applyDelegate",p="qx.core.Object",o="_applyLabelPath",n="icon",m="change",l="label",k="_applyTarget",c="changeTarget",h="_applyIconPath",g="_applyLabelOptions",b="_applyChildPath",a="_applyIconOptions",f="qx.data.controller.Tree",d="_applyModel";
+qx.Class.define(f,{extend:qx.core.Object,include:qx.data.controller.MSelection,construct:function(u,v,w,x){qx.core.Object.call(this);
+this.__uL={};
+this.__uM=[];
+this.__uN={};
+
+if(w!=null){this.setChildPath(w);
+}
+if(x!=null){this.setLabelPath(x);
+}
+if(u!=null){this.setModel(u);
+}
+if(v!=null){this.setTarget(v);
+}},properties:{model:{check:p,apply:d,event:r,nullable:true,dereference:true},target:{apply:k,event:c,init:null,dereference:true},childPath:{check:t,apply:b,nullable:true},labelPath:{check:t,apply:o,nullable:true},iconPath:{check:t,apply:h,nullable:true},labelOptions:{apply:g,nullable:true},iconOptions:{apply:a,nullable:true},delegate:{apply:q,init:null,nullable:true}},members:{__uN:null,__uL:null,__uM:null,_applyDelegate:function(y,z){this._setConfigureItem(y,z);
+this._setCreateItem(y,z);
+this._setBindItem(y,z);
+},_applyIconOptions:function(A,B){this.__uV();
+},_applyLabelOptions:function(C,D){this.__uV();
+},_applyTarget:function(E,F){if(F!=undefined){var G=F.getRoot();
+F.setRoot(null);
+G.destroy();
+}if(this.getModel()!=null){this.__uQ();
+}this._addChangeTargetListener(E,F);
+},_applyModel:function(H,I){this.__uQ();
+},_applyChildPath:function(J,K){this.__uQ();
+},_applyIconPath:function(L,M){this.__uV();
+},_applyLabelPath:function(N,O){this.__uV();
+},__uO:function(P){var R=P.getTarget();
+var Q=this.__uN[R.toHashCode()].treeNode;
+var S=this.__uN[R.toHashCode()].modelNode;
+this.__uR(Q,S);
+this._updateSelection();
+},__uP:function(e){var ba=e.getData();
+var V=e.getOldData();
+var W=this.__uN[V.toHashCode()];
+V.removeListenerById(W.changeListenerId);
+delete this.__uN[V.toHashCode()];
+W.modelNode.removeListenerById(W.changeChildernListenerId);
+var bb=W.modelNode;
+var Y=qx.Class.getPropertyDefinition(W.modelNode.constructor,this.getChildPath());
+var T=Y.event;
+var X=bb.addListener(T,this.__uP,this);
+var U=W.treeNode;
+this.__uN[ba.toHashCode()]={modelNode:bb,treeNode:U,changeListenerId:W.changeListenerId,changeChildernListenerId:X};
+this.__uR(U,bb);
+this._updateSelection();
+},_createItem:function(){var bd=this.getDelegate();
+if(bd!=null&&bd.createItem!=null){var bc=bd.createItem();
+}else{var bc=new qx.ui.tree.TreeFolder();
+}if(bd!=null&&bd.configureItem!=null){bd.configureItem(bc);
+}return bc;
+},__uQ:function(){if(this.getTarget()==null||this.getChildPath()==null){return;
+}if((this.getLabelPath()==null&&this.getDelegate()==null)||(this.getLabelPath()==null&&this.getDelegate()!=null&&this.getDelegate().bindItem==null)){return;
+}var be=this.getTarget().getRoot();
+
+if(be!=null){this.getTarget().resetRoot();
+be.destroy();
+this.__uN={};
+}if(this.getModel()!=null){var bf=this._createItem();
+bf.setModel(this.getModel());
+this.getTarget().setRoot(bf);
+this.__uW(this.getModel(),bf);
+this.__uR(bf,this.getModel());
+}},__uR:function(bg,bh){if(bh[s+qx.lang.String.firstUp(this.getChildPath())]==undefined){return;
+}var bq=bh[s+qx.lang.String.firstUp(this.getChildPath())]();
+if(this.__uN[bq.toHashCode()]==undefined){var bl=bq.addListener(m,this.__uO,this);
+var bp=qx.Class.getPropertyDefinition(bh.constructor,this.getChildPath());
+var bm=bp.event;
+var bn=bh.addListener(bm,this.__uP,this);
+this.__uN[bq.toHashCode()]={modelNode:bh,treeNode:bg,changeListenerId:bl,changeChildernListenerId:bn};
+}for(var i=0;i<bq.length;i++){if(bg.getChildren()[i]==null||bq.getItem(i)!=bg.getChildren()[i].getModel()){for(var j=i;j<bg.getChildren().length;j++){if(bg.getChildren()[j].getModel()===bq.getItem(i)){var bi=j;
+break;
+}}if(bi!=undefined){var bj=bg.getChildren()[bi];
+if(this.getTarget().isSelected(bj)){var br=true;
+}bg.removeAt(bi);
+bg.addAt(bj,i);
+if(br){this.getTarget().addToSelection(bj);
+}}else{var bo=this._createItem();
+bo.setModel(bq.getItem(i));
+bg.addAt(bo,i);
+this.__uW(bq.getItem(i),bo);
+this.__uR(bo,bq.getItem(i));
+}}}for(var i=bg.getChildren().length-1;i>=bq.length;i--){var bk=bg.getChildren()[i];
+this.__uU(bk,bg);
+}},__uS:function(){if(this.getTarget()==null){return;
+}var bs=this.getTarget().getRoot();
+
+if(bs!=null){this.getTarget().setRoot(null);
+this.__uT(bs);
+this.__uX(bs.getModel());
+bs.destroy();
+this.__uN={};
+}},__uT:function(bt){var bu=bt.getChildren();
+for(var i=bu.length-1;i>=0;i--){if(bu[i].getChildren().length>0){this.__uT(bu[i]);
+}this.__uU(bu[i],bt);
+}},__uU:function(bv,bw){var by=bv.getModel();
+var bA=s+qx.lang.String.firstUp(this.getChildPath());
+if(by[bA]!=undefined){var bz=by[bA]();
+var bx=this.__uN[bz.toHashCode()];
+bz.removeListenerById(bx.changeListenerId);
+by.removeListenerById(bx.changeChildernListenerId);
+this.__uT(bv);
+delete this.__uN[bz.toHashCode()];
+}this.__uX(by);
+bw.remove(bv);
+bv.destroy();
+},bindProperty:function(bB,bC,bD,bE,bF){var bH=bF.bind(bB,bE,bC,bD);
+if(this.__uL[bC]==null){this.__uL[bC]={};
+}var bG=this.__uL[bC];
+
+if(bG[bF.toHashCode()]){bG[bF.toHashCode()].reverseId=bH;
+}else{bG[bF.toHashCode()]={id:bH,reverseId:null,treeNode:bE};
+}if(!qx.lang.Array.contains(this.__uM,bC)){this.__uM.push(bC);
+}},bindPropertyReverse:function(bI,bJ,bK,bL,bM){var bO=bL.bind(bJ,bM,bI,bK);
+if(this.__uL[bJ]==null){this.__uL[bJ]={};
+}var bN=this.__uL[bJ];
+
+if(bN[bM.toHashCode()]){bN[bM.toHashCode()].reverseId=bO;
+}else{bN[bM.toHashCode()]={id:null,reverseId:bO,treeNode:bL};
+}if(!qx.lang.Array.contains(this.__uM,bJ)){this.__uM.push(bJ);
+}},bindDefaultProperties:function(bP,bQ){this.bindProperty(this.getLabelPath(),l,this.getLabelOptions(),bP,bQ);
+if(this.getIconPath()!=null){this.bindProperty(this.getIconPath(),n,this.getIconOptions(),bP,bQ);
+}},__uV:function(){var bS;
+
+for(var bU in this.__uL){bS=bU;
+break;
+}for(var bR in this.__uL[bS]){var bV=this.__uL[bS][bR].treeNode;
+var bT=qx.core.ObjectRegistry.fromHashCode(bR);
+this.__uX(bT);
+this.__uW(bT,bV);
+}},__uW:function(bW,bX){var bY=this.getDelegate();
+if(bY!=null&&bY.bindItem!=null){bY.bindItem(this,bX,bW);
+}else{this.bindDefaultProperties(bX,bW);
+}},__uX:function(ca){for(var i=0;i<this.__uM.length;i++){var cc=this.__uM[i];
+var cb=this.__uL[cc][ca.toHashCode()];
+
+if(cb!=null){if(cb.id){ca.removeBinding(cb.id);
+}
+if(cb.reverseId){cb.treeNode.removeBinding(cb.reverseId);
+}delete this.__uL[cc][ca.toHashCode()];
+}}},_setConfigureItem:function(cd,ce){if(cd!=null&&cd.configureItem!=null&&this.getTarget()!=null&&this.getModel()!=null){var cf=this.getTarget().getRoot().getItems(true,true,false);
+
+for(var i=0;i<cf.length;i++){cd.configureItem(cf[i]);
+}}},_setCreateItem:function(cg,ch){if(this.getTarget()==null||this.getModel()==null){return;
+}if(cg==null||cg.createItem==null){return;
+}if(ch&&ch.createItem&&cg&&cg.createItem&&ch.createItem==cg.createItem){return;
+}this._startSelectionModification();
+this.__uS();
+this.__uQ();
+this._endSelectionModification();
+this._updateSelection();
+},_setBindItem:function(ci,cj){if(ci!=null&&ci.bindItem!=null){if(cj!=null&&cj.bindItem!=null&&ci.bindItem==cj.bindItem){return;
+}this.__uQ();
+}}},destruct:function(){this.__uL=this.__uN=this.__uM=null;
+}});
+})();
+(function(){var b="tree-folder",a="qx.ui.tree.TreeFolder";
+qx.Class.define(a,{extend:qx.ui.tree.AbstractTreeItem,construct:function(c){qx.ui.tree.AbstractTreeItem.call(this);
+
+if(c){this.setLabel(c);
+}},properties:{appearance:{refine:true,init:b}},members:{_addWidgets:function(){this.addSpacer();
+this.addOpenButton();
+this.addIcon();
+this.addLabel();
+}}});
+})();
+(function(){var i="legend",h="frame",g="middle",f="top",d="resize",c="qx.ui.groupbox.GroupBox",b="groupbox",a="_applyLegendPosition";
+qx.Class.define(c,{extend:qx.ui.core.Widget,include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.core.MRemoteLayoutHandling,qx.ui.core.MContentPadding,qx.ui.form.MForm],implement:[qx.ui.form.IForm],construct:function(j,k){qx.ui.core.Widget.call(this);
+this._setLayout(new qx.ui.layout.Canvas);
+this._createChildControl(h);
+this._createChildControl(i);
+if(j!=null){this.setLegend(j);
+}
+if(k!=null){this.setIcon(k);
+}},properties:{appearance:{refine:true,init:b},legendPosition:{check:[f,g],init:g,apply:a,themeable:true}},members:{_forwardStates:{invalid:true},_createChildControlImpl:function(l,m){var n;
+
+switch(l){case h:n=new qx.ui.container.Composite();
+this._add(n,{left:0,top:6,right:0,bottom:0});
+break;
+case i:n=new qx.ui.basic.Atom();
+n.addListener(d,this._repositionFrame,this);
+this._add(n);
+break;
+}return n||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,l);
+},_getContentPaddingTarget:function(){return this.getChildControl(h);
+},_applyLegendPosition:function(e){if(this.getChildControl(i).getBounds()){this._repositionFrame();
+}},_repositionFrame:function(){var p=this.getChildControl(i);
+var o=this.getChildControl(h);
+var q=p.getBounds().height;
+if(this.getLegendPosition()==g){o.setLayoutProperties({"top":Math.round(q/2)});
+}else if(this.getLegendPosition()==f){o.setLayoutProperties({"top":q});
+}},getChildrenContainer:function(){return this.getChildControl(h);
+},setLegend:function(r){var s=this.getChildControl(i);
+
+if(r!==null){s.setLabel(r);
+s.show();
+}else{s.exclude();
+}},getLegend:function(){return this.getChildControl(i).getLabel();
+},setIcon:function(t){this.getChildControl(i).setIcon(t);
+},getIcon:function(){this.getChildControl(i).getIcon();
+}}});
+})();
+(function(){var b="qx.ui.form.Form",a="";
+qx.Class.define(b,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);
+this.__uY=[];
+this._buttons=[];
+this._buttonOptions=[];
+this._validationManager=new qx.ui.form.validation.Manager();
+this._resetter=new qx.ui.form.Resetter();
+},members:{__uY:null,_validationManager:null,_groupCounter:0,_buttons:null,_buttonOptions:null,_resetter:null,add:function(c,d,e,name,f,g){if(this.__va()){this.__uY.push({title:null,items:[],labels:[],names:[],options:[],headerOptions:{}});
+}this.__uY[this._groupCounter].items.push(c);
+this.__uY[this._groupCounter].labels.push(d);
+this.__uY[this._groupCounter].options.push(g);
+if(name==null){name=d.replace(/\s+|&|-|\+|\*|\/|\||!|\.|,|:|\?|;|~|%|\{|\}|\(|\)|\[|\]|<|>|=|\^|@|\\/g,a);
+}this.__uY[this._groupCounter].names.push(name);
+this._validationManager.add(c,e,f);
+this._resetter.add(c);
+},addGroupHeader:function(h,k){if(!this.__va()){this._groupCounter++;
+}this.__uY.push({title:h,items:[],labels:[],names:[],options:[],headerOptions:k});
+},addButton:function(l,m){this._buttons.push(l);
+this._buttonOptions.push(m||null);
+},__va:function(){return this.__uY.length===0;
+},reset:function(){this._resetter.reset();
+this._validationManager.reset();
+},redefineResetter:function(){this._resetter.redefine();
+},validate:function(){return this._validationManager.validate();
+},getValidationManager:function(){return this._validationManager;
+},getGroups:function(){return this.__uY;
+},getButtons:function(){return this._buttons;
+},getButtonOptions:function(){return this._buttonOptions;
+},getItems:function(){var n={};
+for(var i=0;i<this.__uY.length;i++){var o=this.__uY[i];
+for(var j=0;j<o.names.length;j++){var name=o.names[j];
+n[name]=o.items[j];
+}}return n;
+}},destruct:function(){this.__uY=this._buttons=this._buttonOptions=null;
+}});
+})();
+(function(){var k="",j="complete",h="String",g="changeValid",f="qx.event.type.Event",d="value instanceof Function || qx.Class.isSubClassOf(value.constructor, qx.ui.form.validation.AsyncValidator)",c="qx.ui.form.validation.Manager",b="This field is required",a="qx.event.type.Data";
+qx.Class.define(c,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);
+this.__vb=[];
+this.__vc={};
+this.setRequiredFieldMessage(qx.locale.Manager.tr(b));
+},events:{"changeValid":a,"complete":f},properties:{validator:{check:d,init:null,nullable:true},invalidMessage:{check:h,init:k},requiredFieldMessage:{check:h,init:k},context:{nullable:true}},members:{__vb:null,__vd:null,__vc:null,__ve:null,add:function(l,m,n){if(!this.__vj(l)){throw new Error("Added widget not supported.");
+}if(this.__vk(l)){if(m!=null){throw new Error("Widgets supporting selection can only be validated "+"in the form validator");
+}}var o={item:l,validator:m,valid:null,context:n};
+this.__vb.push(o);
+},validate:function(){var t=true;
+this.__ve=true;
+var q=[];
+for(var i=0;i<this.__vb.length;i++){var r=this.__vb[i].item;
+var u=this.__vb[i].validator;
+q.push(r);
+if(u==null){var p=this.__vf(r);
+t=t&&p;
+this.__ve=p&&this.__ve;
+continue;
+}var p=this.__vg(this.__vb[i],r.getValue());
+t=p&&t;
+
+if(p!=null){this.__ve=p&&this.__ve;
+}}var s=this.__vh(q);
+
+if(qx.lang.Type.isBoolean(s)){this.__ve=s&&this.__ve;
+}t=s&&t;
+this.__vl(t);
+
+if(qx.lang.Object.isEmpty(this.__vc)){this.fireEvent(j);
+}return t;
+},__vf:function(v){if(v.getRequired()){if(this.__vk(v)){var w=!!v.getSelection()[0];
+}else{var w=!!v.getValue();
+}v.setValid(w);
+var y=v.getRequiredInvalidMessage();
+var x=y?y:this.getRequiredFieldMessage();
+v.setInvalidMessage(x);
+return w;
+}return true;
+},__vg:function(z,A){var F=z.item;
+var E=z.context;
+var D=z.validator;
+if(this.__vi(D)){this.__vc[F.toHashCode()]=null;
+D.validate(F,F.getValue(),this,E);
+return null;
+}var C=null;
+
+try{var C=D.call(E||this,A,F);
+
+if(C===undefined){C=true;
+}}catch(e){if(e instanceof qx.core.ValidationError){C=false;
+
+if(e.message&&e.message!=qx.type.BaseError.DEFAULTMESSAGE){var B=e.message;
+}else{var B=e.getComment();
+}F.setInvalidMessage(B);
+}else{throw e;
+}}F.setValid(C);
+z.valid=C;
+return C;
+},__vh:function(G){var I=this.getValidator();
+var J=this.getContext()||this;
+
+if(I==null){return true;
+}this.setInvalidMessage(k);
+
+if(this.__vi(I)){this.__vc[this.toHashCode()]=null;
+I.validateForm(G,this,J);
+return null;
+}
+try{var K=I.call(J,G,this);
+
+if(K===undefined){K=true;
+}}catch(e){if(e instanceof qx.core.ValidationError){K=false;
+
+if(e.message&&e.message!=qx.type.BaseError.DEFAULTMESSAGE){var H=e.message;
+}else{var H=e.getComment();
+}this.setInvalidMessage(H);
+}else{throw e;
+}}return K;
+},__vi:function(L){var M=false;
+
+if(!qx.lang.Type.isFunction(L)){M=qx.Class.isSubClassOf(L.constructor,qx.ui.form.validation.AsyncValidator);
+}return M;
+},__vj:function(N){var O=N.constructor;
+return qx.Class.hasInterface(O,qx.ui.form.IForm);
+},__vk:function(P){var Q=P.constructor;
+return qx.Class.hasInterface(Q,qx.ui.core.ISingleSelection);
+},__vl:function(R){var S=this.__vd;
+this.__vd=R;
+if(S!=R){this.fireDataEvent(g,R,S);
+}},getValid:function(){return this.__vd;
+},isValid:function(){return this.getValid();
+},getInvalidMessages:function(){var T=[];
+for(var i=0;i<this.__vb.length;i++){var U=this.__vb[i].item;
+
+if(!U.getValid()){T.push(U.getInvalidMessage());
+}}if(this.getInvalidMessage()!=k){T.push(this.getInvalidMessage());
+}return T;
+},reset:function(){for(var i=0;i<this.__vb.length;i++){var V=this.__vb[i];
+V.item.setValid(true);
+}this.__vd=null;
+},setItemValid:function(W,X){this.__vc[W.toHashCode()]=X;
+W.setValid(X);
+this.__vm();
+},setFormValid:function(Y){this.__vc[this.toHashCode()]=Y;
+this.__vm();
+},__vm:function(){var bb=this.__ve;
+for(var bc in this.__vc){var ba=this.__vc[bc];
+bb=ba&&bb;
+if(ba==null){return;
+}}this.__vl(bb);
+this.__vc={};
+this.fireEvent(j);
+}},destruct:function(){this.__vb=null;
+}});
+})();
+(function(){var a="qx.ui.form.validation.AsyncValidator";
+qx.Class.define(a,{extend:qx.core.Object,construct:function(b){qx.core.Object.call(this);
+this.__vn=b;
+},members:{__vn:null,__vo:null,__vp:null,__vq:null,validate:function(c,d,e,f){this.__vq=false;
+this.__vo=c;
+this.__vp=e;
+this.__vn.call(f||this,this,d);
+},validateForm:function(g,h,i){this.__vq=true;
+this.__vp=h;
+this.__vn.call(i,g,this);
+},setValid:function(j,k){if(this.__vq){if(k!==undefined){this.__vp.setInvalidMessage(k);
+}this.__vp.setFormValid(j);
+}else{if(k!==undefined){this.__vo.setInvalidMessage(k);
+}this.__vp.setItemValid(this.__vo,j);
+}}},destruct:function(){this.__vp=this.__vo=null;
+}});
+})();
+(function(){var a="qx.ui.form.Resetter";
+qx.Class.define(a,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);
+this.__vr=[];
+},members:{__vr:null,add:function(b){if(this._supportsValue(b)){var c=b.getValue();
+}else if(this.__vu(b)){var c=b.getSelection();
+}else{throw new Error("Item "+b+" not supported for reseting.");
+}this.__vr.push({item:b,init:c});
+},reset:function(){for(var i=0;i<this.__vr.length;i++){var d=this.__vr[i];
+this.__vs(d.item,d.init);
+}},resetItem:function(e){var f;
+
+for(var i=0;i<this.__vr.length;i++){var g=this.__vr[i];
+
+if(g.item===e){f=g.init;
+break;
+}}if(f===undefined){throw new Error("The given item has not been added.");
+}this.__vs(e,f);
+},__vs:function(h,j){if(this._supportsValue(h)){h.setValue(j);
+}else if(this.__vu(h)){h.setSelection(j);
+}},redefine:function(){for(var i=0;i<this.__vr.length;i++){var k=this.__vr[i].item;
+this.__vr[i].init=this.__vt(k);
+}},redefineItem:function(l){var m;
+
+for(var i=0;i<this.__vr.length;i++){if(this.__vr[i].item===l){m=this.__vr[i];
+break;
+}}if(m===undefined){throw new Error("The given item has not been added.");
+}m.init=this.__vt(m.item);
+},__vt:function(n){if(this._supportsValue(n)){return n.getValue();
+}else if(this.__vu(n)){return n.getSelection();
+}},__vu:function(o){var p=o.constructor;
+return qx.Class.hasInterface(p,qx.ui.core.ISingleSelection);
+},_supportsValue:function(q){var r=q.constructor;
+return (qx.Class.hasInterface(r,qx.ui.form.IBooleanForm)||qx.Class.hasInterface(r,qx.ui.form.IColorForm)||qx.Class.hasInterface(r,qx.ui.form.IDateForm)||qx.Class.hasInterface(r,qx.ui.form.INumberForm)||qx.Class.hasInterface(r,qx.ui.form.IStringForm));
+}},destruct:function(){this.__vr=null;
+}});
+})();
+(function(){var b="qx.ui.form.IColorForm",a="qx.event.type.Data";
+qx.Interface.define(b,{events:{"changeValue":a},members:{setValue:function(c){return arguments.length==1;
+},resetValue:function(){},getValue:function(){}}});
+})();
+(function(){var b="qx.ui.form.IDateForm",a="qx.event.type.Data";
+qx.Interface.define(b,{events:{"changeValue":a},members:{setValue:function(c){return arguments.length==1;
+},resetValue:function(){},getValue:function(){}}});
+})();
+(function(){var k="showingPlaceholder",j="",i="none",h="qx.dynlocale",g="Boolean",f="qx.client",d="color",c="qx.event.type.Data",b="readonly",a="placeholder",bc="input",bb="focusin",ba="visibility",Y="focusout",X="changeLocale",W="hidden",V="on",U="absolute",T="readOnly",S="text",r="_applyTextAlign",s="px",p="RegExp",q=")",n="syncAppearance",o="changeValue",l="A",m="change",v="textAlign",w="focused",E="center",C="visible",K="disabled",G="url(",O="off",M="String",y="resize",R="qx.ui.form.AbstractField",Q="transparent",P="spellcheck",x="false",A="right",B="PositiveInteger",D="mshtml",F="abstract",H="block",L="webkit",N="_applyReadOnly",t="_applyPlaceholder",u="left",z="qx/static/blank.gif",J="text-placeholder",I="changeReadOnly";
+qx.Class.define(R,{extend:qx.ui.core.Widget,implement:[qx.ui.form.IStringForm,qx.ui.form.IForm],include:[qx.ui.form.MForm],type:F,construct:function(bd){qx.ui.core.Widget.call(this);
+this.__mO=!qx.bom.client.Feature.PLACEHOLDER;
+
+if(bd!=null){this.setValue(bd);
+}this.getContentElement().addListener(m,this._onChangeContent,this);
+if(this.__mO){this.addListener(n,this._syncPlaceholder,this);
+}if(qx.core.Variant.isSet(h,V)){qx.locale.Manager.getInstance().addListener(X,this._onChangeLocale,this);
+}},events:{"input":c,"changeValue":c},properties:{textAlign:{check:[u,E,A],nullable:true,themeable:true,apply:r},readOnly:{check:g,apply:N,event:I,init:false},selectable:{refine:true,init:true},focusable:{refine:true,init:true},maxLength:{check:B,init:Infinity},liveUpdate:{check:g,init:false},placeholder:{check:M,nullable:true,apply:t},filter:{check:p,nullable:true,init:null}},members:{__mP:true,__mQ:null,__mR:null,__mS:null,__mO:true,getFocusElement:function(){var be=this.getContentElement();
+
+if(be){return be;
+}},_createInputElement:function(){return new qx.html.Input(S);
+},renderLayout:function(bf,top,bg,bh){var bi=this._updateInsets;
+var bm=qx.ui.core.Widget.prototype.renderLayout.call(this,bf,top,bg,bh);
+if(!bm){return;
+}var bk=bm.size||bi;
+var bn=s;
+
+if(bk||bm.local||bm.margin){var bj=this.getInsets();
+var innerWidth=bg-bj.left-bj.right;
+var innerHeight=bh-bj.top-bj.bottom;
+innerWidth=innerWidth<0?0:innerWidth;
+innerHeight=innerHeight<0?0:innerHeight;
+}var bl=this.getContentElement();
+if(bi&&this.__mO){this.__mV().setStyles({"left":bj.left+bn,"top":bj.top+bn});
+}
+if(bk){if(this.__mO){this.__mV().setStyles({"width":innerWidth+bn,"height":innerHeight+bn});
+}bl.setStyles({"width":innerWidth+bn,"height":innerHeight+bn});
+this._renderContentElement(innerHeight,bl);
+}},_renderContentElement:function(innerHeight,bo){},_createContentElement:function(){var bp=this._createInputElement();
+bp.setStyles({"border":i,"padding":0,"margin":0,"display":H,"background":Q,"outline":i,"appearance":i,"position":U,"autoComplete":O});
+bp.setSelectable(this.getSelectable());
+bp.setEnabled(this.getEnabled());
+bp.addListener(bc,this._onHtmlInput,this);
+bp.setAttribute(P,x);
+if(qx.core.Variant.isSet(f,L)){bp.setStyle(y,i);
+}if(qx.core.Variant.isSet(f,D)){bp.setStyles({backgroundImage:G+qx.util.ResourceManager.getInstance().toUri(z)+q});
+}return bp;
+},_applyEnabled:function(bq,br){qx.ui.core.Widget.prototype._applyEnabled.call(this,bq,br);
+this.getContentElement().setEnabled(bq);
+
+if(this.__mO){if(bq){this._showPlaceholder();
+}else{this._removePlaceholder();
+}}else{var bs=this.getContentElement();
+bs.setAttribute(a,bq?this.getPlaceholder():j);
+}},__mT:{width:16,height:16},_getContentHint:function(){return {width:this.__mT.width*10,height:this.__mT.height||16};
+},_applyFont:function(bt,bu){var bv;
+
+if(bt){var bw=qx.theme.manager.Font.getInstance().resolve(bt);
+bv=bw.getStyles();
+}else{bv=qx.bom.Font.getDefaultStyles();
+}this.getContentElement().setStyles(bv);
+if(this.__mO){this.__mV().setStyles(bv);
+}if(bt){this.__mT=qx.bom.Label.getTextSize(l,bv);
+}else{delete this.__mT;
+}qx.ui.core.queue.Layout.add(this);
+},_applyTextColor:function(bx,by){if(bx){this.getContentElement().setStyle(d,qx.theme.manager.Color.getInstance().resolve(bx));
+}else{this.getContentElement().removeStyle(d);
+}},tabFocus:function(){qx.ui.core.Widget.prototype.tabFocus.call(this);
+this.selectAllText();
+},_getTextSize:function(){return this.__mT;
+},_onHtmlInput:function(e){var bC=e.getData();
+var bB=true;
+this.__mP=false;
+if(this.getFilter()!=null){var bD=j;
+var bz=bC.search(this.getFilter());
+var bA=bC;
+
+while(bz>=0){bD=bD+(bA.charAt(bz));
+bA=bA.substring(bz+1,bA.length);
+bz=bA.search(this.getFilter());
+}
+if(bD!=bC){bB=false;
+bC=bD;
+this.getContentElement().setValue(bC);
+}}if(bC.length>this.getMaxLength()){var bB=false;
+this.getContentElement().setValue(bC.substr(0,this.getMaxLength()));
+}if(bB){this.fireDataEvent(bc,bC,this.__mS);
+this.__mS=bC;
+if(this.getLiveUpdate()){this.__mU(bC);
+}}},__mU:function(bE){var bF=this.__mR;
+this.__mR=bE;
+
+if(bF!=bE){this.fireNonBubblingEvent(o,qx.event.type.Data,[bE,bF]);
+}},setValue:function(bG){if(bG===null){if(this.__mP){return bG;
+}bG=j;
+this.__mP=true;
+}else{this.__mP=false;
+if(this.__mO){this._removePlaceholder();
+}}
+if(qx.lang.Type.isString(bG)){var bI=this.getContentElement();
+
+if(bG.length>this.getMaxLength()){bG=bG.substr(0,this.getMaxLength());
+}
+if(bI.getValue()!=bG){var bJ=bI.getValue();
+bI.setValue(bG);
+var bH=this.__mP?null:bG;
+this.__mR=bJ;
+this.__mU(bH);
+}if(this.__mO){this._showPlaceholder();
+}return bG;
+}throw new Error("Invalid value type: "+bG);
+},getValue:function(){var bK=this.getContentElement().getValue();
+return this.__mP?null:bK;
+},resetValue:function(){this.setValue(null);
+},_onChangeContent:function(e){this.__mP=e.getData()===null;
+this.__mU(e.getData());
+},getTextSelection:function(){return this.getContentElement().getTextSelection();
+},getTextSelectionLength:function(){return this.getContentElement().getTextSelectionLength();
+},getTextSelectionStart:function(){return this.getContentElement().getTextSelectionStart();
+},getTextSelectionEnd:function(){return this.getContentElement().getTextSelectionEnd();
+},setTextSelection:function(bL,bM){this.getContentElement().setTextSelection(bL,bM);
+},clearTextSelection:function(){this.getContentElement().clearTextSelection();
+},selectAllText:function(){this.setTextSelection(0);
+},_showPlaceholder:function(){var bO=this.getValue()||j;
+var bN=this.getPlaceholder();
+
+if(bN!=null&&bO==j&&!this.hasState(w)&&!this.hasState(K)){if(this.hasState(k)){this._syncPlaceholder();
+}else{this.addState(k);
+}}},_removePlaceholder:function(){if(this.hasState(k)){this.__mV().setStyle(ba,W);
+this.removeState(k);
+}},_syncPlaceholder:function(){if(this.hasState(k)){this.__mV().setStyle(ba,C);
+}},__mV:function(){if(this.__mQ==null){this.__mQ=new qx.html.Label();
+var bP=qx.theme.manager.Color.getInstance();
+this.__mQ.setStyles({"visibility":W,"zIndex":6,"position":U,"color":bP.resolve(J)});
+this.getContainerElement().add(this.__mQ);
+}return this.__mQ;
+},_onChangeLocale:qx.core.Variant.select(h,{"on":function(e){var content=this.getPlaceholder();
+
+if(content&&content.translate){this.setPlaceholder(content.translate());
+}},"off":null}),_applyPlaceholder:function(bQ,bR){if(this.__mO){this.__mV().setValue(bQ);
+
+if(bQ!=null){this.addListener(bb,this._removePlaceholder,this);
+this.addListener(Y,this._showPlaceholder,this);
+this._showPlaceholder();
+}else{this.removeListener(bb,this._removePlaceholder,this);
+this.removeListener(Y,this._showPlaceholder,this);
+this._removePlaceholder();
+}}else{if(this.getEnabled()){this.getContentElement().setAttribute(a,bQ);
+}}},_applyTextAlign:function(bS,bT){this.getContentElement().setStyle(v,bS);
+},_applyReadOnly:function(bU,bV){var bW=this.getContentElement();
+bW.setAttribute(T,bU);
+
+if(bU){this.addState(b);
+this.setFocusable(false);
+}else{this.removeState(b);
+this.setFocusable(true);
+}}},destruct:function(){this.__mQ=null;
+
+if(qx.core.Variant.isSet(h,V)){qx.locale.Manager.getInstance().removeListener(X,this._onChangeLocale,this);
+}}});
+})();
+(function(){var b="qx.ui.form.TextField",a="textfield";
+qx.Class.define(b,{extend:qx.ui.form.AbstractField,properties:{appearance:{refine:true,init:a},allowGrowY:{refine:true,init:false},allowShrinkY:{refine:true,init:false}},members:{_renderContentElement:function(innerHeight,c){}}});
+})();
+(function(){var k="wrap",j="value",i="textarea",h="none",g="qx.client",f="",e="input",d="qx.html.Input",c="select",b="disabled",a="read-only";
+qx.Class.define(d,{extend:qx.html.Element,construct:function(l,m,n){if(l===c||l===i){var o=l;
+}else{o=e;
+}qx.html.Element.call(this,o,m,n);
+this.__mW=l;
+},members:{__mW:null,__mX:null,__mY:null,_createDomElement:function(){return qx.bom.Input.create(this.__mW);
+},_applyProperty:function(name,p){qx.html.Element.prototype._applyProperty.call(this,name,p);
+var q=this.getDomElement();
+
+if(name===j){qx.bom.Input.setValue(q,p);
+}else if(name===k){qx.bom.Input.setWrap(q,p);
+}},setEnabled:qx.core.Variant.select(g,{"webkit":function(r){this.__mY=r;
+
+if(!r){this.setStyles({"userModify":a,"userSelect":h});
+}else{this.setStyles({"userModify":null,"userSelect":this.__mX?null:h});
+}},"default":function(s){this.setAttribute(b,s===false);
+}}),setSelectable:qx.core.Variant.select(g,{"webkit":function(t){this.__mX=t;
+qx.html.Element.prototype.setSelectable.call(this,this.__mY&&t);
+},"default":function(u){qx.html.Element.prototype.setSelectable.call(this,u);
+}}),setValue:function(v){var w=this.getDomElement();
+
+if(w){if(w.value!=v){qx.bom.Input.setValue(w,v);
+}}else{this._setProperty(j,v);
+}return this;
+},getValue:function(){var x=this.getDomElement();
+
+if(x){return qx.bom.Input.getValue(x);
+}return this._getProperty(j)||f;
+},setWrap:function(y){if(this.__mW===i){this._setProperty(k,y);
+}else{throw new Error("Text wrapping is only support by textareas!");
+}return this;
+},getWrap:function(){if(this.__mW===i){return this._getProperty(k);
+}else{throw new Error("Text wrapping is only support by textareas!");
 }}}});
+})();
+(function(){var w="change",v="input",u="qx.client",t="text",s="password",r="checkbox",q="radio",p="textarea",n="keypress",m="opera",d="propertychange",k="blur",h="keydown",c="keyup",b="select-multiple",g="checked",f="value",j="select",a="qx.event.handler.Input";
+qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,construct:function(){qx.core.Object.call(this);
+this._onChangeCheckedWrapper=qx.lang.Function.listener(this._onChangeChecked,this);
+this._onChangeValueWrapper=qx.lang.Function.listener(this._onChangeValue,this);
+this._onInputWrapper=qx.lang.Function.listener(this._onInput,this);
+this._onPropertyWrapper=qx.lang.Function.listener(this._onProperty,this);
+if(qx.core.Variant.isSet(u,m)){this._onKeyDownWrapper=qx.lang.Function.listener(this._onKeyDown,this);
+this._onKeyUpWrapper=qx.lang.Function.listener(this._onKeyUp,this);
+this._onBlurWrapper=qx.lang.Function.listener(this._onBlur,this);
+}},statics:{PRIORITY:qx.event.Registration.PRIORITY_NORMAL,SUPPORTED_TYPES:{input:1,change:1},TARGET_CHECK:qx.event.IEventHandler.TARGET_DOMNODE,IGNORE_CAN_HANDLE:false},members:{__na:false,__nb:null,__nc:null,canHandleEvent:function(x,y){var z=x.tagName.toLowerCase();
+
+if(y===v&&(z===v||z===p)){return true;
+}
+if(y===w&&(z===v||z===p||z===j)){return true;
+}return false;
+},registerEvent:qx.core.Variant.select(u,{"mshtml":function(A,B,C){if(!A.__nd){var D=A.tagName.toLowerCase();
+var E=A.type;
+
+if(E===t||E===s||D===p||E===r||E===q){qx.bom.Event.addNativeListener(A,d,this._onPropertyWrapper);
+}
+if(E!==r&&E!==q){qx.bom.Event.addNativeListener(A,w,this._onChangeValueWrapper);
+}
+if(E===t||E===s){this._onKeyPressWrapped=qx.lang.Function.listener(this._onKeyPress,this,A);
+qx.bom.Event.addNativeListener(A,n,this._onKeyPressWrapped);
+}A.__nd=true;
+}},"default":function(F,G,H){if(G===v){this.__ne(F);
+}else if(G===w){if(F.type===q||F.type===r){qx.bom.Event.addNativeListener(F,w,this._onChangeCheckedWrapper);
+}else{qx.bom.Event.addNativeListener(F,w,this._onChangeValueWrapper);
+}if(qx.core.Variant.isSet(u,m)){if(F.type===t||F.type===s){this._onKeyPressWrapped=qx.lang.Function.listener(this._onKeyPress,this,F);
+qx.bom.Event.addNativeListener(F,n,this._onKeyPressWrapped);
+}}}}}),__ne:qx.core.Variant.select(u,{"mshtml":null,"webkit":function(I){var J=I.tagName.toLowerCase();
+if(qx.bom.client.Engine.VERSION<532&&J==p){qx.bom.Event.addNativeListener(I,n,this._onInputWrapper);
+}qx.bom.Event.addNativeListener(I,v,this._onInputWrapper);
+},"opera":function(K){qx.bom.Event.addNativeListener(K,c,this._onKeyUpWrapper);
+qx.bom.Event.addNativeListener(K,h,this._onKeyDownWrapper);
+qx.bom.Event.addNativeListener(K,k,this._onBlurWrapper);
+qx.bom.Event.addNativeListener(K,v,this._onInputWrapper);
+},"default":function(L){qx.bom.Event.addNativeListener(L,v,this._onInputWrapper);
+}}),unregisterEvent:qx.core.Variant.select(u,{"mshtml":function(M,N){if(M.__nd){var O=M.tagName.toLowerCase();
+var P=M.type;
+
+if(P===t||P===s||O===p||P===r||P===q){qx.bom.Event.removeNativeListener(M,d,this._onPropertyWrapper);
+}
+if(P!==r&&P!==q){qx.bom.Event.removeNativeListener(M,w,this._onChangeValueWrapper);
+}
+if(P===t||P===s){qx.bom.Event.removeNativeListener(M,n,this._onKeyPressWrapped);
+}
+try{delete M.__nd;
+}catch(Q){M.__nd=null;
+}}},"default":function(R,S){if(S===v){this.__ne(R);
+}else if(S===w){if(R.type===q||R.type===r){qx.bom.Event.removeNativeListener(R,w,this._onChangeCheckedWrapper);
+}else{qx.bom.Event.removeNativeListener(R,w,this._onChangeValueWrapper);
+}}
+if(qx.core.Variant.isSet(u,m)){if(R.type===t||R.type===s){qx.bom.Event.removeNativeListener(R,n,this._onKeyPressWrapped);
+}}}}),__nf:qx.core.Variant.select(u,{"mshtml":null,"webkit":function(T){var U=T.tagName.toLowerCase();
+if(qx.bom.client.Engine.VERSION<532&&U==p){qx.bom.Event.removeNativeListener(T,n,this._onInputWrapper);
+}qx.bom.Event.removeNativeListener(T,v,this._onInputWrapper);
+},"opera":function(V){qx.bom.Event.removeNativeListener(V,c,this._onKeyUpWrapper);
+qx.bom.Event.removeNativeListener(V,h,this._onKeyDownWrapper);
+qx.bom.Event.removeNativeListener(V,k,this._onBlurWrapper);
+qx.bom.Event.removeNativeListener(V,v,this._onInputWrapper);
+},"default":function(W){qx.bom.Event.removeNativeListener(W,v,this._onInputWrapper);
+}}),_onKeyPress:qx.core.Variant.select(u,{"mshtml|opera":function(e,X){if(e.keyCode===13){if(X.value!==this.__nc){this.__nc=X.value;
+qx.event.Registration.fireEvent(X,w,qx.event.type.Data,[X.value]);
+}}},"default":null}),_onKeyDown:qx.core.Variant.select(u,{"opera":function(e){if(e.keyCode===13){this.__na=true;
+}},"default":null}),_onKeyUp:qx.core.Variant.select(u,{"opera":function(e){if(e.keyCode===13){this.__na=false;
+}},"default":null}),_onBlur:qx.core.Variant.select(u,{"opera":function(e){if(this.__nb){window.clearTimeout(this.__nb);
+}},"default":null}),_onInput:qx.event.GlobalError.observeMethod(function(e){var Y=qx.bom.Event.getTarget(e);
+if(!this.__na){if(qx.core.Variant.isSet(u,m)){this.__nb=window.setTimeout(function(){qx.event.Registration.fireEvent(Y,v,qx.event.type.Data,[Y.value]);
+},0);
+}else{qx.event.Registration.fireEvent(Y,v,qx.event.type.Data,[Y.value]);
+}}}),_onChangeValue:qx.event.GlobalError.observeMethod(function(e){var bb=qx.bom.Event.getTarget(e);
+var ba=bb.value;
+
+if(bb.type===b){var ba=[];
+
+for(var i=0,o=bb.options,l=o.length;i<l;i++){if(o[i].selected){ba.push(o[i].value);
+}}}qx.event.Registration.fireEvent(bb,w,qx.event.type.Data,[ba]);
+}),_onChangeChecked:qx.event.GlobalError.observeMethod(function(e){var bc=qx.bom.Event.getTarget(e);
+
+if(bc.type===q){if(bc.checked){qx.event.Registration.fireEvent(bc,w,qx.event.type.Data,[bc.value]);
+}}else{qx.event.Registration.fireEvent(bc,w,qx.event.type.Data,[bc.checked]);
+}}),_onProperty:qx.core.Variant.select(u,{"mshtml":qx.event.GlobalError.observeMethod(function(e){var bd=qx.bom.Event.getTarget(e);
+var be=e.propertyName;
+
+if(be===f&&(bd.type===t||bd.type===s||bd.tagName.toLowerCase()===p)){if(!bd.$$inValueSet){qx.event.Registration.fireEvent(bd,v,qx.event.type.Data,[bd.value]);
+}}else if(be===g){if(bd.type===r){qx.event.Registration.fireEvent(bd,w,qx.event.type.Data,[bd.checked]);
+}else if(bd.checked){qx.event.Registration.fireEvent(bd,w,qx.event.type.Data,[bd.value]);
+}}}),"default":function(){}})},defer:function(bf){qx.event.Registration.addHandler(bf);
+}});
+})();
+(function(){var v="",u="select",t="soft",s="off",r="qx.client",q="textarea",p="wrap",o="text",n="mshtml",m="number",d="checkbox",k="select-one",g="input",c="option",b="value",f="radio",e="qx.bom.Input",h="nowrap",a="auto",j="normal";
+qx.Class.define(e,{statics:{__ng:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(w,x,y){{};
+var x=x?qx.lang.Object.clone(x):{};
+var z;
+
+if(w===q||w===u){z=w;
+}else{z=g;
+x.type=w;
+}return qx.bom.Element.create(z,x,y);
+},setValue:function(A,B){var G=A.nodeName.toLowerCase();
+var D=A.type;
+var Array=qx.lang.Array;
+var H=qx.lang.Type;
+
+if(typeof B===m){B+=v;
+}
+if((D===d||D===f)){if(H.isArray(B)){A.checked=Array.contains(B,A.value);
+}else{A.checked=A.value==B;
+}}else if(G===u){var C=H.isArray(B);
+var I=A.options;
+var E,F;
+
+for(var i=0,l=I.length;i<l;i++){E=I[i];
+F=E.getAttribute(b);
+
+if(F==null){F=E.text;
+}E.selected=C?Array.contains(B,F):B==F;
+}
+if(C&&B.length==0){A.selectedIndex=-1;
+}}else if((D===o||D===q)&&qx.core.Variant.isSet(r,n)){A.$$inValueSet=true;
+A.value=B;
+A.$$inValueSet=null;
+}else{A.value=B;
+}},getValue:function(J){var P=J.nodeName.toLowerCase();
+
+if(P===c){return (J.attributes.value||{}).specified?J.value:J.text;
+}
+if(P===u){var K=J.selectedIndex;
+if(K<0){return null;
+}var Q=[];
+var S=J.options;
+var R=J.type==k;
+var O=qx.bom.Input;
+var N;
+for(var i=R?K:0,M=R?K+1:S.length;i<M;i++){var L=S[i];
+
+if(L.selected){N=O.getValue(L);
+if(R){return N;
+}Q.push(N);
+}}return Q;
+}else{return (J.value||v).replace(/\r/g,v);
+}},setWrap:qx.core.Variant.select(r,{"mshtml":function(T,U){T.wrap=U?t:s;
+},"gecko|webkit":function(V,W){var Y=W?t:s;
+var X=W?v:a;
+V.setAttribute(p,Y);
+V.style.overflow=X;
+},"default":function(ba,bb){ba.style.whiteSpace=bb?j:h;
+}})}});
+})();
+(function(){var v="popup",u="list",t="",s="mousewheel",r="resize",q="Function",p="blur",o="abstract",n="keypress",m="Number",f="changeSelection",l="PageUp",i="_applyMaxListHeight",c="PageDown",b="mouseup",h="Escape",g="changeVisibility",j="one",a="middle",k="qx.ui.form.AbstractSelectBox",d="mousedown";
+qx.Class.define(k,{extend:qx.ui.core.Widget,include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.form.MForm],implement:[qx.ui.form.IForm],type:o,construct:function(){qx.ui.core.Widget.call(this);
+var x=new qx.ui.layout.HBox();
+this._setLayout(x);
+x.setAlignY(a);
+this.addListener(n,this._onKeyPress);
+this.addListener(p,this._onBlur,this);
+var w=qx.core.Init.getApplication().getRoot();
+w.addListener(s,this._onMousewheel,this,true);
+this.addListener(r,this._onResize,this);
+},properties:{focusable:{refine:true,init:true},width:{refine:true,init:120},maxListHeight:{check:m,apply:i,nullable:true,init:200},format:{check:q,init:function(y){return this._defaultFormat(y);
+},nullable:true}},members:{_createChildControlImpl:function(z,A){var B;
+
+switch(z){case u:B=new qx.ui.form.List().set({focusable:false,keepFocus:true,height:null,width:null,maxHeight:this.getMaxListHeight(),selectionMode:j,quickSelection:true});
+B.addListener(f,this._onListChangeSelection,this);
+B.addListener(d,this._onListMouseDown,this);
+break;
+case v:B=new qx.ui.popup.Popup(new qx.ui.layout.VBox);
+B.setAutoHide(false);
+B.setKeepActive(true);
+B.addListener(b,this.close,this);
+B.add(this.getChildControl(u));
+B.addListener(g,this._onPopupChangeVisibility,this);
+break;
+}return B||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,z);
+},_applyMaxListHeight:function(C,D){this.getChildControl(u).setMaxHeight(C);
+},getChildrenContainer:function(){return this.getChildControl(u);
+},open:function(){var E=this.getChildControl(v);
+E.placeToWidget(this,true);
+E.show();
+},close:function(){this.getChildControl(v).hide();
+},toggle:function(){var F=this.getChildControl(v).isVisible();
+
+if(F){this.close();
+}else{this.open();
+}},_defaultFormat:function(G){var H=G?G.getLabel():t;
+var I=G?G.getRich():false;
+
+if(I){H=H.replace(/<[^>]+?>/g,t);
+H=qx.bom.String.unescape(H);
+}return H;
+},_onBlur:function(e){this.close();
+},_onKeyPress:function(e){var J=e.getKeyIdentifier();
+var K=this.getChildControl(v);
+if(K.isHidden()&&(J==c||J==l)){e.stopPropagation();
+}else if(!K.isHidden()&&J==h){this.close();
+e.stop();
+}else{this.getChildControl(u).handleKeyPress(e);
+}},_onMousewheel:function(e){var M=e.getTarget();
+var L=this.getChildControl(v,true);
+
+if(L==null){return;
+}
+if(qx.ui.core.Widget.contains(L,M)){e.preventDefault();
+}else{this.close();
+}},_onResize:function(e){this.getChildControl(v).setMinWidth(e.getData().width);
+},_onListChangeSelection:function(e){throw new Error("Abstract method: _onListChangeSelection()");
+},_onListMouseDown:function(e){throw new Error("Abstract method: _onListMouseDown()");
+},_onPopupChangeVisibility:function(e){throw new Error("Abstract method: _onPopupChangeVisibility()");
+}},destruct:function(){var N=qx.core.Init.getApplication().getRoot();
+
+if(N){N.removeListener(s,this._onMousewheel,this,true);
+}}});
+})();
+(function(){var u="textfield",t="button",s="list",r="selected",q="focusout",p="inner",o="changeValue",n="popup",m="focusin",l="combobox",d="click",k="blur",h="Enter",c="quick",b="_applyPlaceholder",g="qx.ui.form.ComboBox",f="single",i="Down",a="String",j="qx.event.type.Data";
+qx.Class.define(g,{extend:qx.ui.form.AbstractSelectBox,implement:[qx.ui.form.IStringForm],construct:function(){qx.ui.form.AbstractSelectBox.call(this);
+var v=this._createChildControl(u);
+this._createChildControl(t);
+this.addListener(d,this._onClick);
+this.addListener(m,function(e){v.fireNonBubblingEvent(m,qx.event.type.Focus);
+},this);
+this.addListener(q,function(e){v.fireNonBubblingEvent(q,qx.event.type.Focus);
+},this);
+},properties:{appearance:{refine:true,init:l},placeholder:{check:a,nullable:true,apply:b}},events:{"changeValue":j},members:{__vv:null,__vw:null,_applyPlaceholder:function(w,x){this.getChildControl(u).setPlaceholder(w);
+},_createChildControlImpl:function(y,z){var A;
+
+switch(y){case u:A=new qx.ui.form.TextField();
+A.setFocusable(false);
+A.addState(p);
+A.addListener(o,this._onTextFieldChangeValue,this);
+A.addListener(k,this.close,this);
+this._add(A,{flex:1});
+break;
+case t:A=new qx.ui.form.Button();
+A.setFocusable(false);
+A.setKeepActive(true);
+A.addState(p);
+this._add(A);
+break;
+case s:A=qx.ui.form.AbstractSelectBox.prototype._createChildControlImpl.call(this,y);
+A.setSelectionMode(f);
+break;
+}return A||qx.ui.form.AbstractSelectBox.prototype._createChildControlImpl.call(this,y);
+},_forwardStates:{focused:true},tabFocus:function(){var B=this.getChildControl(u);
+B.getFocusElement().focus();
+B.selectAllText();
+},focus:function(){qx.ui.form.AbstractSelectBox.prototype.focus.call(this);
+this.getChildControl(u).getFocusElement().focus();
+},setValue:function(C){var D=this.getChildControl(u);
+
+if(D.getValue()==C){return;
+}D.setValue(C);
+},getValue:function(){return this.getChildControl(u).getValue();
+},resetValue:function(){this.getChildControl(u).setValue(null);
+},_onKeyPress:function(e){var F=this.getChildControl(n);
+var E=e.getKeyIdentifier();
+
+if(E==i&&e.isAltPressed()){this.getChildControl(t).addState(r);
+this.toggle();
+e.stopPropagation();
+}else if(E==h){if(F.isVisible()){this.close();
+e.stop();
+}}else if(F.isVisible()){qx.ui.form.AbstractSelectBox.prototype._onKeyPress.call(this,e);
+}},_onClick:function(e){var G=e.getTarget();
+
+if(G==this.getChildControl(t)){this.toggle();
+}else{this.close();
+}},_onListMouseDown:function(e){if(this.__vv){var H=this.__vv.getLabel();
+
+if(this.getFormat()!=null){H=this.getFormat().call(this,this.__vv);
+}if(H&&H.translate){H=H.translate();
+}this.setValue(H);
+this.__vv=null;
+}},_onListChangeSelection:function(e){var I=e.getData();
+
+if(I.length>0){var J=this.getChildControl(s);
+
+if(J.getSelectionContext()==c){this.__vv=I[0];
+}else{var K=I[0].getLabel();
+
+if(this.getFormat()!=null){K=this.getFormat().call(this,I[0]);
+}if(K&&K.translate){K=K.translate();
+}this.setValue(K);
+this.__vv=null;
+}}},_onPopupChangeVisibility:function(e){var M=this.getChildControl(n);
+
+if(M.isVisible()){var N=this.getChildControl(s);
+var O=this.getValue();
+var L=null;
+
+if(O){L=N.findItem(O);
+}
+if(L){N.setSelection([L]);
+}else{N.resetSelection();
+}}else{this.tabFocus();
+}this.getChildControl(t).removeState(r);
+},_onTextFieldChangeValue:function(e){var R=e.getData();
+var Q=this.getChildControl(s);
+
+if(R!=null){var P=Q.findItem(R,false);
+
+if(P){Q.setSelection([P]);
+}else{Q.resetSelection();
+}}else{Q.resetSelection();
+}this.fireDataEvent(o,R,e.getOldData());
+},getTextSelection:function(){return this.getChildControl(u).getTextSelection();
+},getTextSelectionLength:function(){return this.getChildControl(u).getTextSelectionLength();
+},setTextSelection:function(S,T){this.getChildControl(u).setTextSelection(S,T);
+},clearTextSelection:function(){this.getChildControl(u).clearTextSelection();
+},selectAllText:function(){this.getChildControl(u).selectAllText();
+}}});
+})();
+(function(){var k="list",j="textfield",i="popup",h="Down",g="",f="Escape",d="qx.util.format.DateFormat",c="changeValue",b="Left",a="Up",w="execute",v="changeLocale",u="_applyDateFormat",t="changeVisibility",s="qx.dynlocale",r="medium",q="mouseup",p="qx.ui.form.DateField",o="datefield",n="hidden",l="on",m="Right";
+qx.Class.define(p,{extend:qx.ui.form.ComboBox,implement:[qx.ui.form.IDateForm],construct:function(){qx.ui.form.ComboBox.call(this);
+this.setDateFormat(qx.ui.form.DateField.getDefaultDateFormatter());
+if(qx.core.Variant.isSet(s,l)){qx.locale.Manager.getInstance().addListener(v,function(){this.setDateFormat(qx.ui.form.DateField.getDefaultDateFormatter());
+},this);
+}},properties:{appearance:{refine:true,init:o},dateFormat:{check:d,apply:u}},statics:{__vx:null,__vy:null,getDefaultDateFormatter:function(){var x=qx.locale.Date.getDateFormat(r).toString();
+
+if(x==this.__vx){return this.__vy;
+}
+if(this.__vy){this.__vy.dispose();
+}this.__vy=new qx.util.format.DateFormat(x,qx.locale.Manager.getInstance().getLocale());
+this.__vx=x;
+return this.__vy;
+}},members:{setValue:function(y){var z=this.getChildControl(j);
+z.setValue(this.getDateFormat().format(y));
+var A=this.getChildControl(k);
+A.setValue(y);
+},getValue:function(){var B=this.getChildControl(j).getValue();
+try{return this.getDateFormat().parse(B);
+}catch(C){return null;
+}},resetValue:function(){var D=this.getChildControl(j);
+D.setValue(g);
+var E=this.getChildControl(k);
+E.setValue(null);
+},_applyDateFormat:function(F,G){if(!G){return;
+}try{var I=this.getChildControl(j);
+var J=I.getValue();
+var H=G.parse(J);
+I.setValue(F.format(H));
+}catch(K){}},_createChildControlImpl:function(L,M){var N;
+
+switch(L){case k:N=new qx.ui.control.DateChooser();
+N.setFocusable(false);
+N.setKeepFocus(true);
+N.addListener(w,this._onChangeDate,this);
+break;
+case i:N=new qx.ui.popup.Popup(new qx.ui.layout.VBox);
+N.setAutoHide(false);
+N.add(this.getChildControl(k));
+N.addListener(q,this._onChangeDate,this);
+N.addListener(t,this._onPopupChangeVisibility,this);
+break;
+}return N||qx.ui.form.ComboBox.prototype._createChildControlImpl.call(this,L);
+},_onChangeDate:function(e){var O=this.getChildControl(j);
+var P=this.getChildControl(k).getValue();
+O.setValue(this.getDateFormat().format(P));
+this.close();
+},_onKeyPress:function(e){var Q=e.getKeyIdentifier();
+
+if(Q==h&&e.isAltPressed()){this.toggle();
+e.stopPropagation();
+return;
+}var R=this.getChildControl(i);
+
+if(R.getVisibility()==n){return;
+}if(Q==f){this.close();
+e.stopPropagation();
+return;
+}if(Q===b||Q===m||Q===h||Q===a){e.preventDefault();
+}this.getChildControl(k).handleKeyPress(e);
+},_onPopupChangeVisibility:function(e){var T=this.getChildControl(i);
+
+if(T.isVisible()){var U=this.getChildControl(k);
+var S=this.getValue();
+U.setValue(S);
+}},_onTextFieldChangeValue:function(e){var V=this.getValue();
+
+if(V!=null){var W=this.getChildControl(k);
+W.setValue(V);
+}this.fireDataEvent(c,this.getValue());
+},isEmpty:function(){var X=this.getChildControl(j).getValue();
+return X==null||X==g;
+}}});
+})();
+(function(){var m="horizontal",k="qx.event.type.Data",j="vertical",h="",g="qx.ui.form.List",f="Enter",d="one",c="addChildWidget",b="_applySpacing",a="Boolean",y="Integer",x="action",w="keyinput",v="addItem",u="removeChildWidget",t="_applyOrientation",s="single",r="keypress",q="list",p="__nJ",n="pane",o="removeItem";
+qx.Class.define(g,{extend:qx.ui.core.scroll.AbstractScrollArea,implement:[qx.ui.core.IMultiSelection,qx.ui.form.IForm,qx.ui.form.IModelSelection],include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.core.MMultiSelectionHandling,qx.ui.form.MForm,qx.ui.form.MModelSelection],construct:function(z){qx.ui.core.scroll.AbstractScrollArea.call(this);
+this.__nJ=new qx.ui.container.Composite();
+this.__nJ.addListener(c,this._onAddChild,this);
+this.__nJ.addListener(u,this._onRemoveChild,this);
+this.getChildControl(n).add(this.__nJ);
+if(z){this.setOrientation(m);
+}else{this.initOrientation();
+}this.addListener(r,this._onKeyPress);
+this.addListener(w,this._onKeyInput);
+this.__nK=h;
+},events:{addItem:k,removeItem:k},properties:{appearance:{refine:true,init:q},focusable:{refine:true,init:true},orientation:{check:[m,j],init:j,apply:t},spacing:{check:y,init:0,apply:b,themeable:true},enableInlineFind:{check:a,init:true}},members:{__nK:null,__nL:null,__nJ:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__nJ;
+},_onAddChild:function(e){this.fireDataEvent(v,e.getData());
+},_onRemoveChild:function(e){this.fireDataEvent(o,e.getData());
+},handleKeyPress:function(e){if(!this._onKeyPress(e)){this._getManager().handleKeyPress(e);
+}},_applyOrientation:function(A,B){var C=A===m;
+var D=C?new qx.ui.layout.HBox():new qx.ui.layout.VBox();
+var content=this.__nJ;
+content.setLayout(D);
+content.setAllowGrowX(!C);
+content.setAllowGrowY(C);
+this._applySpacing(this.getSpacing());
+},_applySpacing:function(E,F){this.__nJ.getLayout().setSpacing(E);
+},_onKeyPress:function(e){if(e.getKeyIdentifier()==f&&!e.isAltPressed()){var G=this.getSelection();
+
+for(var i=0;i<G.length;i++){G[i].fireEvent(x);
+}return true;
+}return false;
+},_onKeyInput:function(e){if(!this.getEnableInlineFind()){return;
+}var H=this.getSelectionMode();
+
+if(!(H===s||H===d)){return;
+}if(((new Date).valueOf()-this.__nL)>1000){this.__nK=h;
+}this.__nK+=e.getChar();
+var I=this.findItemByLabelFuzzy(this.__nK);
+if(I){this.setSelection([I]);
+}this.__nL=(new Date).valueOf();
+},findItemByLabelFuzzy:function(J){J=J.toLowerCase();
+var K=this.getChildren();
+for(var i=0,l=K.length;i<l;i++){var L=K[i].getLabel();
+if(L&&L.toLowerCase().indexOf(J)==0){return K[i];
+}}return null;
+},findItem:function(M,N){if(N!==false){M=M.toLowerCase();
+}var O=this.getChildren();
+var Q;
+for(var i=0,l=O.length;i<l;i++){Q=O[i];
+var P=Q.getLabel();
+
+if(P!=null){if(P.translate){P=P.translate();
+}
+if(N!==false){P=P.toLowerCase();
+}
+if(P.toString()==M.toString()){return Q;
+}}}return null;
+}},destruct:function(){this._disposeObjects(p);
+}});
+})();
+(function(){var g="",f="<br",e=" &nbsp;",d="<br>",c=" ",b="\n",a="qx.bom.String";
+qx.Class.define(a,{statics:{TO_CHARCODE:{"quot":34,"amp":38,"lt":60,"gt":62,"nbsp":160,"iexcl":161,"cent":162,"pound":163,"curren":164,"yen":165,"brvbar":166,"sect":167,"uml":168,"copy":169,"ordf":170,"laquo":171,"not":172,"shy":173,"reg":174,"macr":175,"deg":176,"plusmn":177,"sup2":178,"sup3":179,"acute":180,"micro":181,"para":182,"middot":183,"cedil":184,"sup1":185,"ordm":186,"raquo":187,"frac14":188,"frac12":189,"frac34":190,"iquest":191,"Agrave":192,"Aacute":193,"Acirc":194,"Atilde":195,"Auml":196,"Aring":197,"AElig":198,"Ccedil":199,"Egrave":200,"Eacute":201,"Ecirc":202,"Euml":203,"Igrave":204,"Iacute":205,"Icirc":206,"Iuml":207,"ETH":208,"Ntilde":209,"Ograve":210,"Oacute":211,"Ocirc":212,"Otilde":213,"Ouml":214,"times":215,"Oslash":216,"Ugrave":217,"Uacute":218,"Ucirc":219,"Uuml":220,"Yacute":221,"THORN":222,"szlig":223,"agrave":224,"aacute":225,"acirc":226,"atilde":227,"auml":228,"aring":229,"aelig":230,"ccedil":231,"egrave":232,"eacute":233,"ecirc":234,"euml":235,"igrave":236,"iacute":237,"icirc":238,"iuml":239,"eth":240,"ntilde":241,"ograve":242,"oacute":243,"ocirc":244,"otilde":245,"ouml":246,"divide":247,"oslash":248,"ugrave":249,"uacute":250,"ucirc":251,"uuml":252,"yacute":253,"thorn":254,"yuml":255,"fnof":402,"Alpha":913,"Beta":914,"Gamma":915,"Delta":916,"Epsilon":917,"Zeta":918,"Eta":919,"Theta":920,"Iota":921,"Kappa":922,"Lambda":923,"Mu":924,"Nu":925,"Xi":926,"Omicron":927,"Pi":928,"Rho":929,"Sigma":931,"Tau":932,"Upsilon":933,"Phi":934,"Chi":935,"Psi":936,"Omega":937,"alpha":945,"beta":946,"gamma":947,"delta":948,"epsilon":949,"zeta":950,"eta":951,"theta":952,"iota":953,"kappa":954,"lambda":955,"mu":956,"nu":957,"xi":958,"omicron":959,"pi":960,"rho":961,"sigmaf":962,"sigma":963,"tau":964,"upsilon":965,"phi":966,"chi":967,"psi":968,"omega":969,"thetasym":977,"upsih":978,"piv":982,"bull":8226,"hellip":8230,"prime":8242,"Prime":8243,"oline":8254,"frasl":8260,"weierp":8472,"image":8465,"real":8476,"trade":8482,"alefsym":8501,"larr":8592,"uarr":8593,"rarr":8594,"darr":8595,"harr":8596,"crarr":8629,"lArr":8656,"uArr":8657,"rArr":8658,"dArr":8659,"hArr":8660,"forall":8704,"part":8706,"exist":8707,"empty":8709,"nabla":8711,"isin":8712,"notin":8713,"ni":8715,"prod":8719,"sum":8721,"minus":8722,"lowast":8727,"radic":8730,"prop":8733,"infin":8734,"ang":8736,"and":8743,"or":8744,"cap":8745,"cup":8746,"int":8747,"there4":8756,"sim":8764,"cong":8773,"asymp":8776,"ne":8800,"equiv":8801,"le":8804,"ge":8805,"sub":8834,"sup":8835,"sube":8838,"supe":8839,"oplus":8853,"otimes":8855,"perp":8869,"sdot":8901,"lceil":8968,"rceil":8969,"lfloor":8970,"rfloor":8971,"lang":9001,"rang":9002,"loz":9674,"spades":9824,"clubs":9827,"hearts":9829,"diams":9830,"OElig":338,"oelig":339,"Scaron":352,"scaron":353,"Yuml":376,"circ":710,"tilde":732,"ensp":8194,"emsp":8195,"thinsp":8201,"zwnj":8204,"zwj":8205,"lrm":8206,"rlm":8207,"ndash":8211,"mdash":8212,"lsquo":8216,"rsquo":8217,"sbquo":8218,"ldquo":8220,"rdquo":8221,"bdquo":8222,"dagger":8224,"Dagger":8225,"permil":8240,"lsaquo":8249,"rsaquo":8250,"euro":8364},escape:function(h){return qx.util.StringEscape.escape(h,qx.bom.String.FROM_CHARCODE);
+},unescape:function(i){return qx.util.StringEscape.unescape(i,qx.bom.String.TO_CHARCODE);
+},fromText:function(j){return qx.bom.String.escape(j).replace(/(  |\n)/g,function(k){var l={"  ":e,"\n":d};
+return l[k]||k;
+});
+},toText:function(m){return qx.bom.String.unescape(m.replace(/\s+|<([^>])+>/gi,function(n){if(n.indexOf(f)===0){return b;
+}else if(n.length>0&&n.replace(/^\s*/,g).replace(/\s*$/,g)==g){return c;
+}else{return g;
+}}));
+}},defer:function(o){o.FROM_CHARCODE=qx.lang.Object.invert(o.TO_CHARCODE);
+}});
+})();
+(function(){var g=";",f="&",e='X',d="",c='#',b="&#",a="qx.util.StringEscape";
+qx.Class.define(a,{statics:{escape:function(h,j){var m,o=d;
+
+for(var i=0,l=h.length;i<l;i++){var n=h.charAt(i);
+var k=n.charCodeAt(0);
+
+if(j[k]){m=f+j[k]+g;
+}else{if(k>0x7F){m=b+k+g;
+}else{m=n;
+}}o+=m;
+}return o;
+},unescape:function(p,q){return p.replace(/&[#\w]+;/gi,function(r){var s=r;
+var r=r.substring(1,r.length-1);
+var t=q[r];
+
+if(t){s=String.fromCharCode(t);
+}else{if(r.charAt(0)==c){if(r.charAt(1).toUpperCase()==e){t=r.substring(2);
+if(t.match(/^[0-9A-Fa-f]+$/gi)){s=String.fromCharCode(parseInt(t,16));
+}}else{t=r.substring(1);
+if(t.match(/^\d+$/gi)){s=String.fromCharCode(parseInt(t,10));
+}}}}return s;
+});
+}}});
+})();
+(function(){var k="_",j="format",h="thu",g="sat",f="cldr_day_",e="cldr_month_",d="wed",c="fri",b="tue",a="mon",B="sun",A="short",z="HH:mm",y="HHmmsszz",x="HHmm",w="HHmmss",v="cldr_date_format_",u="HH:mm:ss zz",t="full",s="cldr_pm",q="long",r="medium",o="cldr_am",p="qx.locale.Date",m="cldr_date_time_format_",n="cldr_time_format_",l="HH:mm:ss";
+qx.Class.define(p,{statics:{__pN:qx.locale.Manager.getInstance(),getAmMarker:function(C){return this.__pN.localize(o,[],C);
+},getPmMarker:function(D){return this.__pN.localize(s,[],D);
+},getDayNames:function(length,E,F){var F=F?F:j;
+{};
+var H=[B,a,b,d,h,c,g];
+var I=[];
+
+for(var i=0;i<H.length;i++){var G=f+F+k+length+k+H[i];
+I.push(this.__pN.localize(G,[],E));
+}return I;
+},getDayName:function(length,J,K,L){var L=L?L:j;
+{};
+var N=[B,a,b,d,h,c,g];
+var M=f+L+k+length+k+N[J];
+return this.__pN.localize(M,[],K);
+},getMonthNames:function(length,O,P){var P=P?P:j;
+{};
+var R=[];
+
+for(var i=0;i<12;i++){var Q=e+P+k+length+k+(i+1);
+R.push(this.__pN.localize(Q,[],O));
+}return R;
+},getMonthName:function(length,S,T,U){var U=U?U:j;
+{};
+var V=e+U+k+length+k+(S+1);
+return this.__pN.localize(V,[],T);
+},getDateFormat:function(W,X){{};
+var Y=v+W;
+return this.__pN.localize(Y,[],X);
+},getDateTimeFormat:function(ba,bb,bc){var be=m+ba;
+var bd=this.__pN.localize(be,[],bc);
+
+if(bd==be){bd=bb;
+}return bd;
+},getTimeFormat:function(bf,bg){{};
+var bi=n+bf;
+var bh=this.__pN.localize(bi,[],bg);
+
+if(bh!=bi){return bh;
+}
+switch(bf){case A:case r:return qx.locale.Date.getDateTimeFormat(x,z);
+case q:return qx.locale.Date.getDateTimeFormat(w,l);
+case t:return qx.locale.Date.getDateTimeFormat(y,u);
+default:throw new Error("This case should never happen.");
+}},getWeekStart:function(bj){var bk={"MV":5,"AE":6,"AF":6,"BH":6,"DJ":6,"DZ":6,"EG":6,"ER":6,"ET":6,"IQ":6,"IR":6,"JO":6,"KE":6,"KW":6,"LB":6,"LY":6,"MA":6,"OM":6,"QA":6,"SA":6,"SD":6,"SO":6,"TN":6,"YE":6,"AS":0,"AU":0,"AZ":0,"BW":0,"CA":0,"CN":0,"FO":0,"GE":0,"GL":0,"GU":0,"HK":0,"IE":0,"IL":0,"IS":0,"JM":0,"JP":0,"KG":0,"KR":0,"LA":0,"MH":0,"MN":0,"MO":0,"MP":0,"MT":0,"NZ":0,"PH":0,"PK":0,"SG":0,"TH":0,"TT":0,"TW":0,"UM":0,"US":0,"UZ":0,"VI":0,"ZA":0,"ZW":0,"MW":0,"NG":0,"TJ":0};
+var bl=qx.locale.Date._getTerritory(bj);
+return bk[bl]!=null?bk[bl]:1;
+},getWeekendStart:function(bm){var bo={"EG":5,"IL":5,"SY":5,"IN":0,"AE":4,"BH":4,"DZ":4,"IQ":4,"JO":4,"KW":4,"LB":4,"LY":4,"MA":4,"OM":4,"QA":4,"SA":4,"SD":4,"TN":4,"YE":4};
+var bn=qx.locale.Date._getTerritory(bm);
+return bo[bn]!=null?bo[bn]:6;
+},getWeekendEnd:function(bp){var bq={"AE":5,"BH":5,"DZ":5,"IQ":5,"JO":5,"KW":5,"LB":5,"LY":5,"MA":5,"OM":5,"QA":5,"SA":5,"SD":5,"TN":5,"YE":5,"AF":5,"IR":5,"EG":6,"IL":6,"SY":6};
+var br=qx.locale.Date._getTerritory(bp);
+return bq[br]!=null?bq[br]:0;
+},isWeekend:function(bs,bt){var bv=qx.locale.Date.getWeekendStart(bt);
+var bu=qx.locale.Date.getWeekendEnd(bt);
+
+if(bu>bv){return ((bs>=bv)&&(bs<=bu));
+}else{return ((bs>=bv)||(bs<=bu));
+}},_getTerritory:function(bw){if(bw){var bx=bw.split(k)[1]||bw;
+}else{bx=this.__pN.getTerritory()||this.__pN.getLanguage();
+}return bx.toUpperCase();
+}}});
+})();
+(function(){var bD="(\\d\\d?)",bC="format",bB="",bA="abbreviated",bz="wide",by="(",bx=")",bw="|",bv="stand-alone",bu="wildcard",bj="default",bi="literal",bh="'",bg="hour",bf="(\\d\\d?\\d?)",be="ms",bd="narrow",bc="-",bb="quoted_literal",ba='a',bK="HH:mm:ss",bL="+",bI="HHmmss",bJ="long",bG='z',bH="0",bE="sec",bF="day",bM='Z',bN=" ",bn="min",bm="mm",bp="(\\d+)",bo="h",br="KK",bq='L',bt="Z",bs="(\\d\\d+)",bl="EEEE",bk="^",a=":",b='y',c="K",d="a",e="([\\+\\-]\\d\\d:?\\d\\d)",f="GMT",g="dd",h="qx.util.format.DateFormat",j="yyy",k="H",bR="YYYY",bQ="y",bP="HH",bO="EE",bV='h',bU="S",bT='s',bS='A',bX="yyyyyy",bW="kk",J="ss",K='H',H='S',I="MMMM",N='c',O="d",L="([a-zA-Z]+)",M='k',F="m",G='Y',s='D',r="yyyyy",u='K',t="hh",o="SSS",n="MM",q="yy",p="(\\d\\d\\d\\d\\d\\d+)",m="yyyy-MM-dd HH:mm:ss",l="(\\d\\d\\d\\d\\d+)",T="short",U='d',V="unkown",W='m',P="(\\d\\d\\d\\d)",Q="(\\d\\d\\d+)",R="k",S='M',X="(\\d\\d\\d\\d+)",Y="SS",C="MMM",B="s",A="M",z='w',y="EEE",x="$",w="?",v='E',E="z",D="yyyy";
+qx.Class.define(h,{extend:qx.core.Object,implement:qx.util.format.IFormat,construct:function(bY,ca){qx.core.Object.call(this);
+
+if(!ca){this.__pB=qx.locale.Manager.getInstance().getLocale();
+}else{this.__pB=ca;
+}
+if(bY!=null){this.__pC=bY.toString();
+}else{this.__pC=qx.locale.Date.getDateFormat(bJ,this.__pB)+bN+qx.locale.Date.getDateTimeFormat(bI,bK,this.__pB);
+}},statics:{getDateTimeInstance:function(){var cc=qx.util.format.DateFormat;
+var cb=qx.locale.Date.getDateFormat(bJ)+bN+qx.locale.Date.getDateTimeFormat(bI,bK);
+
+if(cc._dateInstance==null||cc._dateInstance.__pC!=cb){cc._dateTimeInstance=new cc();
+}return cc._dateTimeInstance;
+},getDateInstance:function(){var ce=qx.util.format.DateFormat;
+var cd=qx.locale.Date.getDateFormat(T)+bB;
+
+if(ce._dateInstance==null||ce._dateInstance.__pC!=cd){ce._dateInstance=new ce(cd);
+}return ce._dateInstance;
+},ASSUME_YEAR_2000_THRESHOLD:30,LOGGING_DATE_TIME__format:m,AM_MARKER:"am",PM_MARKER:"pm",MEDIUM_TIMEZONE_NAMES:["GMT"],FULL_TIMEZONE_NAMES:["Greenwich Mean Time"]},members:{__pB:null,__pC:null,__pD:null,__pE:null,__pF:null,__pG:function(cf,cg){var ch=bB+cf;
+
+while(ch.length<cg){ch=bH+ch;
+}return ch;
+},__pH:function(ci){var cj=new Date(ci.getTime());
+var ck=cj.getDate();
+
+while(cj.getMonth()!=0){cj.setDate(-1);
+ck+=cj.getDate()+1;
+}return ck;
+},__pI:function(cl){return new Date(cl.getTime()+(3-((cl.getDay()+6)%7))*86400000);
+},__pJ:function(cm){var co=this.__pI(cm);
+var cp=co.getFullYear();
+var cn=this.__pI(new Date(cp,0,4));
+return Math.floor(1.5+(co.getTime()-cn.getTime())/86400000/7);
+},format:function(cq){if(cq==null){return null;
+}var cw=qx.util.format.DateFormat;
+var cx=this.__pB;
+var cH=cq.getFullYear();
+var cB=cq.getMonth();
+var cJ=cq.getDate();
+var cr=cq.getDay();
+var cC=cq.getHours();
+var cy=cq.getMinutes();
+var cD=cq.getSeconds();
+var cF=cq.getMilliseconds();
+var cI=cq.getTimezoneOffset();
+var cu=cI>0?1:-1;
+var cs=Math.floor(Math.abs(cI)/60);
+var cz=Math.abs(cI)%60;
+this.__pK();
+var cG=bB;
+
+for(var i=0;i<this.__pF.length;i++){var cE=this.__pF[i];
+
+if(cE.type==bi){cG+=cE.text;
+}else{var cv=cE.character;
+var cA=cE.size;
+var ct=w;
+
+switch(cv){case b:case G:if(cA==2){ct=this.__pG(cH%100,2);
+}else{ct=cH+bB;
+
+if(cA>ct.length){for(var i=ct.length;i<cA;i++){ct=bH+ct;
+}}}break;
+case s:ct=this.__pG(this.__pH(cq),cA);
+break;
+case U:ct=this.__pG(cJ,cA);
+break;
+case z:ct=this.__pG(this.__pJ(cq),cA);
+break;
+case v:if(cA==2){ct=qx.locale.Date.getDayName(bd,cr,cx,bC);
+}else if(cA==3){ct=qx.locale.Date.getDayName(bA,cr,cx,bC);
+}else if(cA==4){ct=qx.locale.Date.getDayName(bz,cr,cx,bC);
+}break;
+case N:if(cA==2){ct=qx.locale.Date.getDayName(bd,cr,cx,bv);
+}else if(cA==3){ct=qx.locale.Date.getDayName(bA,cr,cx,bv);
+}else if(cA==4){ct=qx.locale.Date.getDayName(bz,cr,cx,bv);
+}break;
+case S:if(cA==1||cA==2){ct=this.__pG(cB+1,cA);
+}else if(cA==3){ct=qx.locale.Date.getMonthName(bA,cB,cx,bC);
+}else if(cA==4){ct=qx.locale.Date.getMonthName(bz,cB,cx,bC);
+}break;
+case bq:if(cA==1||cA==2){ct=this.__pG(cB+1,cA);
+}else if(cA==3){ct=qx.locale.Date.getMonthName(bA,cB,cx,bv);
+}else if(cA==4){ct=qx.locale.Date.getMonthName(bz,cB,cx,bv);
+}break;
+case ba:ct=(cC<12)?qx.locale.Date.getAmMarker(cx):qx.locale.Date.getPmMarker(cx);
+break;
+case K:ct=this.__pG(cC,cA);
+break;
+case M:ct=this.__pG((cC==0)?24:cC,cA);
+break;
+case u:ct=this.__pG(cC%12,cA);
+break;
+case bV:ct=this.__pG(((cC%12)==0)?12:(cC%12),cA);
+break;
+case W:ct=this.__pG(cy,cA);
+break;
+case bT:ct=this.__pG(cD,cA);
+break;
+case H:ct=this.__pG(cF,cA);
+break;
+case bG:if(cA==1){ct=f+((cu>0)?bc:bL)+this.__pG(Math.abs(cs))+a+this.__pG(cz,2);
+}else if(cA==2){ct=cw.MEDIUM_TIMEZONE_NAMES[cs];
+}else if(cA==3){ct=cw.FULL_TIMEZONE_NAMES[cs];
+}break;
+case bM:ct=((cu>0)?bc:bL)+this.__pG(Math.abs(cs),2)+this.__pG(cz,2);
+break;
+}cG+=ct;
+}}return cG;
+},parse:function(cK){this.__pL();
+var cQ=this.__pD.regex.exec(cK);
+
+if(cQ==null){throw new Error("Date string '"+cK+"' does not match the date format: "+this.__pC);
+}var cL={year:1970,month:0,day:1,hour:0,ispm:false,min:0,sec:0,ms:0};
+var cM=1;
+
+for(var i=0;i<this.__pD.usedRules.length;i++){var cO=this.__pD.usedRules[i];
+var cN=cQ[cM];
+
+if(cO.field!=null){cL[cO.field]=parseInt(cN,10);
+}else{cO.manipulator(cL,cN);
+}cM+=(cO.groups==null)?1:cO.groups;
+}var cP=new Date(cL.year,cL.month,cL.day,(cL.ispm)?(cL.hour+12):cL.hour,cL.min,cL.sec,cL.ms);
+
+if(cL.month!=cP.getMonth()||cL.year!=cP.getFullYear()){throw new Error("Error parsing date '"+cK+"': the value for day or month is too large");
+}return cP;
+},__pK:function(){if(this.__pF!=null){return;
+}this.__pF=[];
+var cV;
+var cT=0;
+var cX=bB;
+var cR=this.__pC;
+var cU=bj;
+var i=0;
+
+while(i<cR.length){var cW=cR.charAt(i);
+
+switch(cU){case bb:if(cW==bh){if(i+1>=cR.length){i++;
+break;
+}var cS=cR.charAt(i+1);
+
+if(cS==bh){cX+=cW;
+i++;
+}else{i++;
+cU=V;
+}}else{cX+=cW;
+i++;
+}break;
+case bu:if(cW==cV){cT++;
+i++;
+}else{this.__pF.push({type:bu,character:cV,size:cT});
+cV=null;
+cT=0;
+cU=bj;
+}break;
+default:if((cW>=ba&&cW<=bG)||(cW>=bS&&cW<=bM)){cV=cW;
+cU=bu;
+}else if(cW==bh){if(i+1>=cR.length){cX+=cW;
+i++;
+break;
+}var cS=cR.charAt(i+1);
+
+if(cS==bh){cX+=cW;
+i++;
+}i++;
+cU=bb;
+}else{cU=bj;
+}
+if(cU!=bj){if(cX.length>0){this.__pF.push({type:bi,text:cX});
+cX=bB;
+}}else{cX+=cW;
+i++;
+}break;
+}}if(cV!=null){this.__pF.push({type:bu,character:cV,size:cT});
+}else if(cX.length>0){this.__pF.push({type:bi,text:cX});
+}},__pL:function(){if(this.__pD!=null){return ;
+}var dc=this.__pC;
+this.__pM();
+this.__pK();
+var di=[];
+var de=bk;
+
+for(var da=0;da<this.__pF.length;da++){var dj=this.__pF[da];
+
+if(dj.type==bi){de+=qx.lang.String.escapeRegexpChars(dj.text);
+}else{var db=dj.character;
+var df=dj.size;
+var dd;
+
+for(var dk=0;dk<this.__pE.length;dk++){var dg=this.__pE[dk];
+
+if(db==dg.pattern.charAt(0)&&df==dg.pattern.length){dd=dg;
+break;
+}}if(dd==null){var dh=bB;
+
+for(var i=0;i<df;i++){dh+=db;
+}throw new Error("Malformed date format: "+dc+". Wildcard "+dh+" is not supported");
+}else{di.push(dd);
+de+=dd.regex;
+}}}de+=x;
+var cY;
+
+try{cY=new RegExp(de);
+}catch(dl){throw new Error("Malformed date format: "+dc);
+}this.__pD={regex:cY,"usedRules":di,pattern:de};
+},__pM:function(){var dw=qx.util.format.DateFormat;
+var dz=qx.lang.String;
+
+if(this.__pE!=null){return ;
+}var dx=this.__pE=[];
+var dn=qx.locale.Date.getAmMarker(this.__pB).toString()||dw.AM_MARKER;
+var dE=qx.locale.Date.getPmMarker(this.__pB).toString()||dw.PM_MARKER;
+var ds=function(dI,dJ){dJ=parseInt(dJ,10);
+
+if(dJ<dw.ASSUME_YEAR_2000_THRESHOLD){dJ+=2000;
+}else if(dJ<100){dJ+=1900;
+}dI.year=dJ;
+};
+var du=function(dK,dL){dK.month=parseInt(dL,10)-1;
+};
+var dq=function(dM,dN){var dO=qx.locale.Date.getPmMarker(this.__pB).toString()||dw.PM_MARKER;
+dM.ispm=(dN==dO);
+};
+var dG=function(dP,dQ){dP.hour=parseInt(dQ,10)%24;
+};
+var dp=function(dR,dS){dR.hour=parseInt(dS,10)%12;
+};
+var dB=function(dT,dU){return;
+};
+var dH=qx.locale.Date.getMonthNames(bA,this.__pB,bC);
+
+for(var i=0;i<dH.length;i++){dH[i]=dz.escapeRegexpChars(dH[i].toString());
+}var dr=function(dV,dW){dW=dz.escapeRegexpChars(dW);
+dV.month=dH.indexOf(dW);
+};
+var dy=qx.locale.Date.getMonthNames(bz,this.__pB,bC);
+
+for(var i=0;i<dy.length;i++){dy[i]=dz.escapeRegexpChars(dy[i].toString());
+}var dC=function(dX,dY){dY=dz.escapeRegexpChars(dY);
+dX.month=dy.indexOf(dY);
+};
+var dm=qx.locale.Date.getDayNames(bd,this.__pB,bC);
+
+for(var i=0;i<dm.length;i++){dm[i]=dz.escapeRegexpChars(dm[i].toString());
+}var dF=function(ea,eb){eb=dz.escapeRegexpChars(eb);
+ea.month=dm.indexOf(eb);
+};
+var dD=qx.locale.Date.getDayNames(bA,this.__pB,bC);
+
+for(var i=0;i<dD.length;i++){dD[i]=dz.escapeRegexpChars(dD[i].toString());
+}var dt=function(ec,ed){ed=dz.escapeRegexpChars(ed);
+ec.month=dD.indexOf(ed);
+};
+var dA=qx.locale.Date.getDayNames(bz,this.__pB,bC);
+
+for(var i=0;i<dA.length;i++){dA[i]=dz.escapeRegexpChars(dA[i].toString());
+}var dv=function(ee,ef){ef=dz.escapeRegexpChars(ef);
+ee.month=dA.indexOf(ef);
+};
+dx.push({pattern:bR,regex:P,manipulator:ds});
+dx.push({pattern:bQ,regex:bp,manipulator:ds});
+dx.push({pattern:q,regex:bs,manipulator:ds});
+dx.push({pattern:j,regex:Q,manipulator:ds});
+dx.push({pattern:D,regex:X,manipulator:ds});
+dx.push({pattern:r,regex:l,manipulator:ds});
+dx.push({pattern:bX,regex:p,manipulator:ds});
+dx.push({pattern:A,regex:bD,manipulator:du});
+dx.push({pattern:n,regex:bD,manipulator:du});
+dx.push({pattern:C,regex:by+dH.join(bw)+bx,manipulator:dr});
+dx.push({pattern:I,regex:by+dy.join(bw)+bx,manipulator:dC});
+dx.push({pattern:g,regex:bD,field:bF});
+dx.push({pattern:O,regex:bD,field:bF});
+dx.push({pattern:bO,regex:by+dm.join(bw)+bx,manipulator:dF});
+dx.push({pattern:y,regex:by+dD.join(bw)+bx,manipulator:dt});
+dx.push({pattern:bl,regex:by+dA.join(bw)+bx,manipulator:dv});
+dx.push({pattern:d,regex:by+dn+bw+dE+bx,manipulator:dq});
+dx.push({pattern:bP,regex:bD,field:bg});
+dx.push({pattern:k,regex:bD,field:bg});
+dx.push({pattern:bW,regex:bD,manipulator:dG});
+dx.push({pattern:R,regex:bD,manipulator:dG});
+dx.push({pattern:br,regex:bD,field:bg});
+dx.push({pattern:c,regex:bD,field:bg});
+dx.push({pattern:t,regex:bD,manipulator:dp});
+dx.push({pattern:bo,regex:bD,manipulator:dp});
+dx.push({pattern:bm,regex:bD,field:bn});
+dx.push({pattern:F,regex:bD,field:bn});
+dx.push({pattern:J,regex:bD,field:bE});
+dx.push({pattern:B,regex:bD,field:bE});
+dx.push({pattern:o,regex:bf,field:be});
+dx.push({pattern:Y,regex:bf,field:be});
+dx.push({pattern:bU,regex:bf,field:be});
+dx.push({pattern:bt,regex:e,manipulator:dB});
+dx.push({pattern:E,regex:L,manipulator:dB});
+}},destruct:function(){this.__pF=this.__pD=this.__pE=null;
+}});
+})();
+(function(){var m="selected",l="click",k="last-month-button",j="default",h="next-month-button",g="otherMonth",f="month-year-label",d="last-year-button",c="navigation-bar",b="next-year-button",bm="date-pane",bl="PageUp",bk="mousedown",bj="today",bi="Integer",bh="PageDown",bg="changeLocale",bf="next-month-button-tooltip",be="last-month-button-tooltip",bd="qx.dynlocale",t="last-year-button-tooltip",u="next-year-button-tooltip",r="on",s="weekend",p="day",q="lastMonth",n="Next month",o="Escape",z="Left",A="weekday",I="changeValue",G="Space",Q="Down",L="qx.ui.control.DateChooser",Y="Date",V="Enter",C="dblclick",bc="day#",bb="Next year",ba="ww",B="_applyValue",E="Up",F="weekday#",H="datechooser",J="header",M="week",S="lastYear",X="nextYear",v="changeShownYear",w="week#",D="Last month",P="Right",O="Last year",N="EE",U="mouseup",T="keypress",K="",R="nextMonth",a="week#0",W="changeShownMonth";
+qx.Class.define(L,{extend:qx.ui.core.Widget,include:[qx.ui.core.MExecutable,qx.ui.form.MForm],implement:[qx.ui.form.IExecutable,qx.ui.form.IForm,qx.ui.form.IDateForm],construct:function(bn){qx.ui.core.Widget.call(this);
+var bp=new qx.ui.layout.VBox();
+this._setLayout(bp);
+this._createChildControl(c);
+this._createChildControl(bm);
+this.addListener(T,this._onKeyPress);
+var bo=(bn!=null)?bn:new Date();
+this.showMonth(bo.getMonth(),bo.getFullYear());
+if(qx.core.Variant.isSet(bd,r)){qx.locale.Manager.getInstance().addListener(bg,this._updateDatePane,this);
+}this.addListener(bk,this._onMouseUpDown,this);
+this.addListener(U,this._onMouseUpDown,this);
+},statics:{MONTH_YEAR_FORMAT:qx.locale.Date.getDateTimeFormat("yyyyMMMM","MMMM yyyy")},properties:{appearance:{refine:true,init:H},width:{refine:true,init:200},height:{refine:true,init:150},shownMonth:{check:bi,init:null,nullable:true,event:W},shownYear:{check:bi,init:null,nullable:true,event:v},value:{check:Y,init:null,nullable:true,event:I,apply:B}},members:{__vz:null,__vA:null,__vB:null,_forwardStates:{invalid:true},_createChildControlImpl:function(bq,br){var bs;
+
+switch(bq){case c:bs=new qx.ui.container.Composite(new qx.ui.layout.HBox());
+bs.add(this.getChildControl(d));
+bs.add(this.getChildControl(k));
+bs.add(this.getChildControl(f),{flex:1});
+bs.add(this.getChildControl(h));
+bs.add(this.getChildControl(b));
+this._add(bs);
+break;
+case t:bs=new qx.ui.tooltip.ToolTip(this.tr(O));
+break;
+case d:bs=new qx.ui.toolbar.Button();
+bs.addState(S);
+bs.setFocusable(false);
+bs.setToolTip(this.getChildControl(t));
+bs.addListener(l,this._onNavButtonClicked,this);
+break;
+case be:bs=new qx.ui.tooltip.ToolTip(this.tr(D));
+break;
+case k:bs=new qx.ui.toolbar.Button();
+bs.addState(q);
+bs.setFocusable(false);
+bs.setToolTip(this.getChildControl(be));
+bs.addListener(l,this._onNavButtonClicked,this);
+break;
+case bf:bs=new qx.ui.tooltip.ToolTip(this.tr(n));
+break;
+case h:bs=new qx.ui.toolbar.Button();
+bs.addState(R);
+bs.setFocusable(false);
+bs.setToolTip(this.getChildControl(bf));
+bs.addListener(l,this._onNavButtonClicked,this);
+break;
+case u:bs=new qx.ui.tooltip.ToolTip(this.tr(bb));
+break;
+case b:bs=new qx.ui.toolbar.Button();
+bs.addState(X);
+bs.setFocusable(false);
+bs.setToolTip(this.getChildControl(u));
+bs.addListener(l,this._onNavButtonClicked,this);
+break;
+case f:bs=new qx.ui.basic.Label();
+bs.setAllowGrowX(true);
+bs.setAnonymous(true);
+break;
+case M:bs=new qx.ui.basic.Label();
+bs.setAllowGrowX(true);
+bs.setAllowGrowY(true);
+bs.setSelectable(false);
+bs.setAnonymous(true);
+bs.setCursor(j);
+break;
+case A:bs=new qx.ui.basic.Label();
+bs.setAllowGrowX(true);
+bs.setAllowGrowY(true);
+bs.setSelectable(false);
+bs.setAnonymous(true);
+bs.setCursor(j);
+break;
+case p:bs=new qx.ui.basic.Label();
+bs.setAllowGrowX(true);
+bs.setAllowGrowY(true);
+bs.setCursor(j);
+bs.addListener(bk,this._onDayClicked,this);
+bs.addListener(C,this._onDayDblClicked,this);
+break;
+case bm:var bt=new qx.ui.layout.Grid();
+bs=new qx.ui.container.Composite(bt);
+
+for(var i=0;i<8;i++){bt.setColumnFlex(i,1);
+}
+for(var i=0;i<7;i++){bt.setRowFlex(i,1);
+}var bu=this.getChildControl(a);
+bu.addState(J);
+bs.add(bu,{column:0,row:0});
+this.__vz=[];
+
+for(var i=0;i<7;i++){bu=this.getChildControl(F+i);
+bs.add(bu,{column:i+1,row:0});
+this.__vz.push(bu);
+}this.__vA=[];
+this.__vB=[];
+
+for(var y=0;y<6;y++){var bu=this.getChildControl(w+(y+1));
+bs.add(bu,{column:0,row:y+1});
+this.__vB.push(bu);
+for(var x=0;x<7;x++){var bu=this.getChildControl(bc+((y*7)+x));
+bs.add(bu,{column:x+1,row:y+1});
+this.__vA.push(bu);
+}}this._add(bs);
+break;
+}return bs||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,bq);
+},_applyValue:function(bv,bw){if((bv!=null)&&(this.getShownMonth()!=bv.getMonth()||this.getShownYear()!=bv.getFullYear())){this.showMonth(bv.getMonth(),bv.getFullYear());
+}else{var by=(bv==null)?-1:bv.getDate();
+
+for(var i=0;i<6*7;i++){var bx=this.__vA[i];
+
+if(bx.hasState(g)){if(bx.hasState(m)){bx.removeState(m);
+}}else{var bz=parseInt(bx.getValue(),10);
+
+if(bz==by){bx.addState(m);
+}else if(bx.hasState(m)){bx.removeState(m);
+}}}}},_onMouseUpDown:function(e){var bA=e.getTarget();
+
+if(bA==this.getChildControl(c)||bA==this.getChildControl(bm)){e.stopPropagation();
+return;
+}},_onNavButtonClicked:function(bB){var bD=this.getShownYear();
+var bC=this.getShownMonth();
+
+switch(bB.getCurrentTarget()){case this.getChildControl(d):bD--;
+break;
+case this.getChildControl(k):bC--;
+
+if(bC<0){bC=11;
+bD--;
+}break;
+case this.getChildControl(h):bC++;
+
+if(bC>=12){bC=0;
+bD++;
+}break;
+case this.getChildControl(b):bD++;
+break;
+}this.showMonth(bC,bD);
+},_onDayClicked:function(bE){var bF=bE.getCurrentTarget().dateTime;
+this.setValue(new Date(bF));
+},_onDayDblClicked:function(){this.execute();
+},_onKeyPress:function(bG){var bK=null;
+var bI=null;
+var bJ=null;
+
+if(bG.getModifiers()==0){switch(bG.getKeyIdentifier()){case z:bK=-1;
+break;
+case P:bK=1;
+break;
+case E:bK=-7;
+break;
+case Q:bK=7;
+break;
+case bl:bI=-1;
+break;
+case bh:bI=1;
+break;
+case o:if(this.getValue()!=null){this.setValue(null);
+return true;
+}break;
+case V:case G:if(this.getValue()!=null){this.execute();
+}return;
+}}else if(bG.isShiftPressed()){switch(bG.getKeyIdentifier()){case bl:bJ=-1;
+break;
+case bh:bJ=1;
+break;
+}}
+if(bK!=null||bI!=null||bJ!=null){var bH=this.getValue();
+
+if(bH!=null){bH=new Date(bH.getTime());
+}
+if(bH==null){bH=new Date();
+}else{if(bK!=null){bH.setDate(bH.getDate()+bK);
+}
+if(bI!=null){bH.setMonth(bH.getMonth()+bI);
+}
+if(bJ!=null){bH.setFullYear(bH.getFullYear()+bJ);
+}}this.setValue(bH);
+}},showMonth:function(bL,bM){if((bL!=null&&bL!=this.getShownMonth())||(bM!=null&&bM!=this.getShownYear())){if(bL!=null){this.setShownMonth(bL);
+}
+if(bM!=null){this.setShownYear(bM);
+}this._updateDatePane();
+}},handleKeyPress:function(e){this._onKeyPress(e);
+},_updateDatePane:function(){var cd=qx.ui.control.DateChooser;
+var ca=new Date();
+var bS=ca.getFullYear();
+var bX=ca.getMonth();
+var bV=ca.getDate();
+var ce=this.getValue();
+var ch=(ce==null)?-1:ce.getFullYear();
+var co=(ce==null)?-1:ce.getMonth();
+var cb=(ce==null)?-1:ce.getDate();
+var bW=this.getShownMonth();
+var cl=this.getShownYear();
+var bT=qx.locale.Date.getWeekStart();
+var cf=new Date(this.getShownYear(),this.getShownMonth(),1);
+var cc=new qx.util.format.DateFormat(cd.MONTH_YEAR_FORMAT);
+this.getChildControl(f).setValue(cc.format(cf));
+var cn=cf.getDay();
+var bY=1+((7-cn)%7);
+var cg=new qx.util.format.DateFormat(N);
+
+for(var i=0;i<7;i++){var ci=(i+bT)%7;
+var ck=this.__vz[i];
+cf.setDate(bY+ci);
+ck.setValue(cg.format(cf));
+
+if(qx.locale.Date.isWeekend(ci)){ck.addState(s);
+}else{ck.removeState(s);
+}}cf=new Date(cl,bW,1,12,0,0);
+var bO=(7+cn-bT)%7;
+cf.setDate(cf.getDate()-bO);
+var cj=new qx.util.format.DateFormat(ba);
+
+for(var bN=0;bN<6;bN++){this.__vB[bN].setValue(cj.format(cf));
+
+for(var i=0;i<7;i++){var ck=this.__vA[bN*7+i];
+var bR=cf.getFullYear();
+var bQ=cf.getMonth();
+var bU=cf.getDate();
+var bP=(ch==bR&&co==bQ&&cb==bU);
+
+if(bP){ck.addState(m);
+}else{ck.removeState(m);
+}
+if(bQ!=bW){ck.addState(g);
+}else{ck.removeState(g);
+}var cm=(bR==bS&&bQ==bX&&bU==bV);
+
+if(cm){ck.addState(bj);
+}else{ck.removeState(bj);
+}ck.setValue(K+bU);
+ck.dateTime=cf.getTime();
+cf.setDate(cf.getDate()+1);
+}}cc.dispose();
+cg.dispose();
+cj.dispose();
+}},destruct:function(){if(qx.core.Variant.isSet(bd,r)){qx.locale.Manager.getInstance().removeListener(bg,this._updateDatePane,this);
+}this.__vz=this.__vA=this.__vB=null;
+}});
+})();
+(function(){var e="inherit",d="toolbar-button",c="keydown",b="qx.ui.toolbar.Button",a="keyup";
+qx.Class.define(b,{extend:qx.ui.form.Button,construct:function(f,g,h){qx.ui.form.Button.call(this,f,g,h);
+this.removeListener(c,this._onKeyDown);
+this.removeListener(a,this._onKeyUp);
+},properties:{appearance:{refine:true,init:d},show:{refine:true,init:e},focusable:{refine:true,init:false}}});
+})();
+(function(){var a="qx.ui.form.renderer.IFormRenderer";
+qx.Interface.define(a,{members:{addItems:function(b,c,d,e,f){},addButton:function(g,h){}}});
+})();
+(function(){var k="qx.dynlocale",j="",h="changeLocale",g="visibility",f="on",d=" <span style='color:red'>*</span> ",c="abstract",b="qx.ui.form.renderer.AbstractRenderer",a=" :";
+qx.Class.define(b,{type:c,extend:qx.ui.core.Widget,implement:qx.ui.form.renderer.IFormRenderer,construct:function(l){qx.ui.core.Widget.call(this);
+this._visibilityBindingIds=[];
+if(qx.core.Variant.isSet(k,f)){qx.locale.Manager.getInstance().addListener(h,this._onChangeLocale,this);
+this._names=[];
+}var p=l.getGroups();
+
+for(var i=0;i<p.length;i++){var o=p[i];
+this.addItems(o.items,o.labels,o.title,o.options,o.headerOptions);
+}var m=l.getButtons();
+var n=l.getButtonOptions();
+
+for(var i=0;i<m.length;i++){this.addButton(m[i],n[i]);
+}},members:{_names:null,_visibilityBindingIds:null,_connectVisibility:function(q,r){var s=q.bind(g,r,g);
+this._visibilityBindingIds.push({id:s,item:q});
+},_onChangeLocale:qx.core.Variant.select(k,{"on":function(e){for(var i=0;i<this._names.length;i++){var t=this._names[i];
+
+if(t.name&&t.name.translate){t.name=t.name.translate();
+}var u=this._createLabelText(t.name,t.item);
+t.label.setValue(u);
+}},"off":null}),_createLabelText:function(name,v){var w=j;
+
+if(v.getRequired()){w=d;
+}var x=name.length>0||v.getRequired()?a:j;
+return name+w+x;
+},addItems:function(y,z,A){throw new Error("Abstract method call");
+},addButton:function(B){throw new Error("Abstract method call");
+}},destruct:function(){if(qx.core.Variant.isSet(k,f)){qx.locale.Manager.getInstance().removeListener(h,this._onChangeLocale,this);
+}this._names=null;
+for(var i=0;i<this._visibilityBindingIds.length;i++){var C=this._visibilityBindingIds[i];
+C.item.removeBinding(C.id);
+}}});
+})();
+(function(){var h="right",g="bold",f="_buttonRow",e="qx.ui.form.renderer.Single",d="left",c="qx.dynlocale",b="top",a="on";
+qx.Class.define(e,{extend:qx.ui.form.renderer.AbstractRenderer,construct:function(j){var k=new qx.ui.layout.Grid();
+k.setSpacing(6);
+k.setColumnFlex(0,1);
+k.setColumnAlign(0,h,b);
+this._setLayout(k);
+qx.ui.form.renderer.AbstractRenderer.call(this,j);
+},members:{_row:0,_buttonRow:null,addItems:function(l,m,n){if(n!=null){this._add(this._createHeader(n),{row:this._row,column:0,colSpan:2});
+this._row++;
+}for(var i=0;i<l.length;i++){var p=this._createLabel(m[i],l[i]);
+this._add(p,{row:this._row,column:0});
+var o=l[i];
+p.setBuddy(o);
+this._add(o,{row:this._row,column:1});
+this._row++;
+this._connectVisibility(o,p);
+if(qx.core.Variant.isSet(c,a)){this._names.push({name:m[i],label:p,item:l[i]});
+}}},addButton:function(q){if(this._buttonRow==null){this._buttonRow=new qx.ui.container.Composite();
+this._buttonRow.setMarginTop(5);
+var r=new qx.ui.layout.HBox();
+r.setAlignX(h);
+r.setSpacing(5);
+this._buttonRow.setLayout(r);
+this._add(this._buttonRow,{row:this._row,column:0,colSpan:2});
+this._row++;
+}this._buttonRow.add(q);
+},getLayout:function(){return this._getLayout();
+},_createLabel:function(name,s){var t=new qx.ui.basic.Label(this._createLabelText(name,s));
+t.setRich(true);
+return t;
+},_createHeader:function(u){var v=new qx.ui.basic.Label(u);
+v.setFont(g);
+
+if(this._row!=0){v.setMarginTop(10);
+}v.setAlignX(d);
+return v;
+}},destruct:function(){if(this._buttonRow){this._buttonRow.removeAll();
+this._disposeObjects(f);
+}}});
+})();
+(function(){var k="modelSelection[0]",j="value",h="changeModel",g="qx.core.Object",f="_applyTarget",e="qx.data.controller.Form",d="changeTarget",c=".",b="qx.ui.form.Form",a="_applyModel";
+qx.Class.define(e,{extend:qx.core.Object,construct:function(l,m,n){qx.core.Object.call(this);
+this._selfUpdate=!!n;
+this.__vC={};
+
+if(l!=null){this.setModel(l);
+}
+if(m!=null){this.setTarget(m);
+}},properties:{model:{check:g,apply:a,event:h,nullable:true,dereference:true},target:{check:b,apply:f,event:d,nullable:true,init:null,dereference:true}},members:{__vD:null,__vC:null,addBindingOptions:function(name,o,p){this.__vC[name]=[o,p];
+if(this.getModel()==null||this.getTarget()==null){return;
+}var q=this.getTarget().getItems()[name];
+var r=this.__vG(q)?k:j;
+this.__vD.removeTarget(q,r,name);
+this.__vD.addTarget(q,r,name,!this._selfUpdate,o,p);
+},createModel:function(s){var u=this.getTarget();
+if(u==null){throw new Error("No target is set.");
+}var v=u.getItems();
+var w={};
+
+for(var name in v){var x=name.split(c);
+var A=w;
+
+for(var i=0;i<x.length;i++){if(i+1==x.length){var z=v[name].constructor;
+var t=null;
+
+if(qx.Class.hasInterface(z,qx.ui.core.ISingleSelection)){t=v[name].getModelSelection().getItem(0)||null;
+}else{t=v[name].getValue();
+}if(this.__vC[name]&&this.__vC[name][1]){t=this.__vC[name][1].converter(t);
+}A[x[i]]=t;
+}else{if(!A[x[i]]){A[x[i]]={};
+}A=A[x[i]];
+}}}var y=qx.data.marshal.Json.createModel(w,s);
+this.setModel(y);
+return y;
+},updateModel:function(){if(!this._selfUpdate||!this.getModel()||!this.getTarget()){return;
+}var B=this.getTarget().getItems();
+
+for(var name in B){var E=B[name];
+var D=this.__vG(E)?k:j;
+var C=this.__vC[name];
+C=C&&this.__vC[name][1];
+qx.data.SingleValueBinding.updateTarget(E,D,this.getModel(),name,C);
+}},_applyTarget:function(F,G){if(G!=null){this.__vF(G);
+}if(this.getModel()==null){return;
+}if(F!=null){this.__vE();
+}},_applyModel:function(H,I){if(this.__vD!=null){var J=this.getTarget().getItems();
+
+for(var name in J){var L=J[name];
+var K=this.__vG(L)?k:j;
+this.__vD.removeTarget(L,K,name);
+}}if(this.__vD!=null){this.__vD.setModel(H);
+}if(this.getTarget()==null){return;
+}if(H!=null){this.__vE();
+}},__vE:function(){if(this.__vD==null){this.__vD=new qx.data.controller.Object(this.getModel());
+}var M=this.getTarget().getItems();
+for(var name in M){var P=M[name];
+var N=this.__vG(P)?k:j;
+var O=this.__vC[name];
+try{if(O==null){this.__vD.addTarget(P,N,name,!this._selfUpdate);
+}else{this.__vD.addTarget(P,N,name,!this._selfUpdate,O[0],O[1]);
+}}catch(Q){{};
+}}},__vF:function(R){if(this.__vD==null){return;
+}var S=R.getItems();
+for(var name in S){var U=S[name];
+var T=this.__vG(U)?k:j;
+this.__vD.removeTarget(U,T,name);
+}},__vG:function(V){return qx.Class.hasInterface(V.constructor,qx.ui.core.ISingleSelection)&&qx.Class.hasInterface(V.constructor,qx.ui.form.IModelSelection);
+}},destruct:function(){if(this.__vD){this.__vD.dispose();
+}}});
+})();
+(function(){var h="[",g="changeModel",f="qx.core.Object",e="qx.data.controller.Object",d="get",c="reset",b="_applyModel",a="last";
+qx.Class.define(e,{extend:qx.core.Object,construct:function(j){qx.core.Object.call(this);
+this.__vH={};
+this.__vI=[];
+
+if(j!=null){this.setModel(j);
+}},properties:{model:{check:f,event:g,apply:b,nullable:true,dereference:true}},members:{__vI:null,__vH:null,_applyModel:function(k,l){for(var i=0;i<this.__vI.length;i++){var t=this.__vI[i][0];
+var q=this.__vI[i][1];
+var o=this.__vI[i][2];
+var r=this.__vI[i][3];
+var s=this.__vI[i][4];
+var n=this.__vI[i][5];
+if(l!=undefined){this.__vK(t,q,o,l);
+}if(k!=undefined){this.__vJ(t,q,o,r,s,n);
+}else{if(t.isDisposed()||qx.core.ObjectRegistry.inShutDown){continue;
+}if(q.indexOf(h)==-1){t[c+qx.lang.String.firstUp(q)]();
+}else{var open=q.indexOf(h);
+var m=parseInt(q.substring(open+1,q.length-1),10);
+q=q.substring(0,open);
+var p=t[d+qx.lang.String.firstUp(q)]();
+
+if(m==a){m=p.length;
+}
+if(p){p.setItem(m,null);
+}}}}},addTarget:function(u,v,w,x,y,z){this.__vI.push([u,v,w,x,y,z]);
+this.__vJ(u,v,w,x,y,z);
+},__vJ:function(A,B,C,D,E,F){if(this.getModel()==null){return;
+}var G=this.getModel().bind(C,A,B,E);
+var H=null;
+
+if(D){H=A.bind(B,this.getModel(),C,F);
+}var I=A.toHashCode();
+
+if(this.__vH[I]==undefined){this.__vH[I]=[];
+}this.__vH[I].push([G,H,B,C,E,F]);
+},removeTarget:function(J,K,L){this.__vK(J,K,L,this.getModel());
+for(var i=0;i<this.__vI.length;i++){if(this.__vI[i][0]==J&&this.__vI[i][1]==K&&this.__vI[i][2]==L){this.__vI.splice(i,1);
+}}},__vK:function(M,N,O,P){if(!(M instanceof qx.core.Object)){return ;
+}var Q=this.__vH[M.toHashCode()];
+if(Q==undefined||Q.length==0){return;
+}for(var i=0;i<Q.length;i++){if(Q[i][2]==N&&Q[i][3]==O){var R=Q[i][0];
+P.removeBinding(R);
+if(Q[i][1]!=null){M.removeBinding(Q[i][1]);
+}Q.splice(i,1);
+return;
+}}}},destruct:function(){if(this.getModel()!=null&&!this.getModel().isDisposed()){this.setModel(null);
+}}});
+})();
+(function(){var u='"',t="{",s="[",r=",",q="",p="get",o="}",n="]",m='":',l="&",d="null",k='\\t',g='\\"',c='\\n',b='\\b',f="=",e="qx.util.Serializer",h='\\r',a='\\\\',j='\\f';
+qx.Class.define(e,{statics:{toUriParameter:function(v,w,x){var z=q;
+var A=qx.util.PropertyUtil.getProperties(v.constructor);
+
+for(var name in A){var y=v[p+qx.lang.String.firstUp(name)]();
+if(qx.lang.Type.isArray(y)){for(var i=0;i<y.length;i++){z+=this.__vL(name,y[i],w);
+}}else if(qx.lang.Type.isDate(y)&&x!=null){z+=this.__vL(name,x.format(y),w);
+}else{z+=this.__vL(name,y,w);
+}}return z.substring(0,z.length-1);
+},__vL:function(name,B,C){if(B instanceof qx.core.Object&&C!=null){var D=encodeURIComponent(C(B));
+
+if(D===undefined){var D=encodeURIComponent(B);
+}}else{var D=encodeURIComponent(B);
+}return encodeURIComponent(name)+f+D+l;
+},toNativeObject:function(E,F,G){var J;
+if(E==null){return null;
+}if(qx.Class.hasInterface(E.constructor,qx.data.IListData)){J=[];
+
+for(var i=0;i<E.getLength();i++){J.push(qx.util.Serializer.toNativeObject(E.getItem(i),F,G));
+}return J;
+}if(qx.lang.Type.isArray(E)){J=[];
+
+for(var i=0;i<E.length;i++){J.push(qx.util.Serializer.toNativeObject(E[i],F,G));
+}return J;
+}if(E instanceof qx.core.Object){if(F!=null){var K=F(E);
+if(K!=undefined){return K;
+}}J={};
+var L=qx.util.PropertyUtil.getAllProperties(E.constructor);
+
+for(var name in L){if(L[name].group!=undefined){continue;
+}var I=E[p+qx.lang.String.firstUp(name)]();
+J[name]=qx.util.Serializer.toNativeObject(I,F,G);
+}return J;
+}if(qx.lang.Type.isDate(E)&&G!=null){return G.format(E);
+}if(qx.lang.Type.isObject(E)){J={};
+
+for(var H in E){J[H]=qx.util.Serializer.toNativeObject(E[H],F,G);
+}return J;
+}return E;
+},toJson:function(M,N,O){var R=q;
+if(M==null){return d;
+}else if(qx.Class.hasInterface(M.constructor,qx.data.IListData)){R+=s;
+
+for(var i=0;i<M.getLength();i++){R+=qx.util.Serializer.toJson(M.getItem(i),N,O)+r;
+}
+if(R!=s){R=R.substring(0,R.length-1);
+}return R+n;
+}else if(qx.lang.Type.isArray(M)){R+=s;
+
+for(var i=0;i<M.length;i++){R+=qx.util.Serializer.toJson(M[i],N,O)+r;
+}
+if(R!=s){R=R.substring(0,R.length-1);
+}return R+n;
+}else if(M instanceof qx.core.Object){if(N!=null){var S=N(M);
+if(S!=undefined){return u+S+u;
+}}R+=t;
+var T=qx.util.PropertyUtil.getProperties(M.constructor);
+
+for(var name in T){if(T[name].group!=undefined){continue;
+}var Q=M[p+qx.lang.String.firstUp(name)]();
+R+=u+name+m+qx.util.Serializer.toJson(Q,N,O)+r;
+}
+if(R!=t){R=R.substring(0,R.length-1);
+}return R+o;
+}else if(qx.lang.Type.isDate(M)&&O!=null){return u+O.format(M)+u;
+}else if(qx.lang.Type.isObject(M)){R+=t;
+
+for(var P in M){R+=u+P+m+qx.util.Serializer.toJson(M[P],N,O)+r;
+}
+if(R!=t){R=R.substring(0,R.length-1);
+}return R+o;
+}else if(qx.lang.Type.isString(M)){M=M.replace(/([\\])/g,a);
+M=M.replace(/(["])/g,g);
+M=M.replace(/([\r])/g,h);
+M=M.replace(/([\f])/g,j);
+M=M.replace(/([\n])/g,c);
+M=M.replace(/([\t])/g,k);
+M=M.replace(/([\b])/g,b);
+return u+M+u;
+}else if(qx.lang.Type.isDate(M)||qx.lang.Type.isRegExp(M)){return u+M+u;
+}return M+q;
+}}});
+})();
+(function(){var m="Unidentified",l="Boolean",k="+",j="short",h="keydown",g="",f="Control",d="keypress",c="-",b="PageUp",S="Escape",R="qx.event.type.Data",Q="_applyShortcut",P="PrintScreen",O="NumLock",N="5",M="8",L="execute",K="Meta",J="0",t="2",u="Shift",r="You can only specify one non modifier key!",s="3",p="/",q="Delete",n="String",o="changeEnabled",v="*",w="qx.bom.Shortcut",B="6",A="4",D="1",C="Alt",F="Not a valid key name for a shortcut: ",E="PageDown",y="Whitespaces are not allowed within shortcuts",I="_applyEnabled",H="7",G="a",x="z",z="9";
+qx.Class.define(w,{extend:qx.core.Object,construct:function(T){qx.core.Object.call(this);
+this.__ur={};
+this.__us=null;
+
+if(T!=null){this.setShortcut(T);
+}this.initEnabled();
+},events:{"execute":R},properties:{enabled:{init:true,check:l,event:o,apply:I},shortcut:{check:n,apply:Q,nullable:true},autoRepeat:{check:l,init:false}},members:{__ur:g,__us:g,execute:function(U){this.fireDataEvent(L,U);
+},__ut:function(event){if(this.getEnabled()&&this.__uv(event)){if(!this.isAutoRepeat()){this.execute(event.getTarget());
+}event.stop();
+}},__uu:function(event){if(this.getEnabled()&&this.__uv(event)){if(this.isAutoRepeat()){this.execute(event.getTarget());
+}event.stop();
+}},_applyEnabled:function(V,W){if(V){qx.event.Registration.addListener(document.documentElement,h,this.__ut,this);
+qx.event.Registration.addListener(document.documentElement,d,this.__uu,this);
+}else{qx.event.Registration.removeListener(document.documentElement,h,this.__ut,this);
+qx.event.Registration.removeListener(document.documentElement,d,this.__uu,this);
+}},_applyShortcut:function(X,Y){if(X){if(X.search(/[\s]+/)!=-1){var bc=y;
+this.error(bc);
+throw new Error(bc);
+}this.__ur={"Control":false,"Shift":false,"Meta":false,"Alt":false};
+this.__us=null;
+var ba;
+var a=[];
+
+while(X.length>0&&ba!=-1){ba=X.search(/[-+]+/);
+a.push((X.length==1||ba==-1)?X:X.substring(0,ba));
+X=X.substring(ba+1);
+}var bb=a.length;
+
+for(var i=0;i<bb;i++){var bd=this.__ux(a[i]);
+
+switch(bd){case f:case u:case K:case C:this.__ur[bd]=true;
+break;
+case m:var bc=F+a[i];
+this.error(bc);
+throw bc;
+default:if(this.__us){var bc=r;
+this.error(bc);
+throw bc;
+}this.__us=bd;
+}}}return true;
+},__uv:function(e){var be=this.__us;
+
+if(!be){return ;
+}if((!this.__ur.Shift&&e.isShiftPressed())||(this.__ur.Shift&&!e.isShiftPressed())||(!this.__ur.Control&&e.isCtrlPressed())||(this.__ur.Control&&!e.isCtrlPressed())||(!this.__ur.Meta&&e.isMetaPressed())||(this.__ur.Meta&&!e.isMetaPressed())||(!this.__ur.Alt&&e.isAltPressed())||(this.__ur.Alt&&!e.isAltPressed())){return false;
+}
+if(be==e.getKeyIdentifier()){return true;
+}return false;
+},__uw:{esc:S,ctrl:f,print:P,del:q,pageup:b,pagedown:E,numlock:O,numpad_0:J,numpad_1:D,numpad_2:t,numpad_3:s,numpad_4:A,numpad_5:N,numpad_6:B,numpad_7:H,numpad_8:M,numpad_9:z,numpad_divide:p,numpad_multiply:v,numpad_minus:c,numpad_plus:k},__ux:function(bf){var bg=qx.event.handler.Keyboard;
+var bh=m;
+
+if(bg.isValidKeyIdentifier(bf)){return bf;
+}
+if(bf.length==1&&bf>=G&&bf<=x){return bf.toUpperCase();
+}bf=bf.toLowerCase();
+var bh=this.__uw[bf]||qx.lang.String.firstUp(bf);
+
+if(bg.isValidKeyIdentifier(bh)){return bh;
+}else{return m;
+}},toString:function(){var bk=this.__us;
+var bj=[];
+
+for(var bi in this.__ur){if(this.__ur[bi]){bj.push(qx.locale.Key.getKeyName(j,bi));
+}}
+if(bk){bj.push(qx.locale.Key.getKeyName(j,bk));
+}return bj.join(k);
+}},destruct:function(){this.setEnabled(false);
+this.__ur=this.__us=null;
+}});
+})();
+(function(){var bw="Control",bv="End",bu="Left",bt="Meta",bs="Pause",br="Down",bq="Ctrl",bp="Home",bo="Apps",bn="Win",bc="Right",bb="Backspace",ba="Space",Y="Up",X="Shift",W="Enter",V="Scroll",U="Alt",T="key_full_Meta",S="PrintScreen",bD="NumLock",bE="Escape",bB="key_short_Alt",bC="key_short_Control_Mac",bz="key_short_Insert",bA="Del",bx="Num",by="key_full_Enter",bF="key_full_Control",bG="qx.locale.Key",bg="Tabulator",bf="key_full_Space",bi="key_short_Meta",bh="key_short_PageUp",bk="key_short_Pause",bj="key_full_Down",bm="key_short_Apps",bl="key_short_Win",be="key_full_Right",bd="key_short_Up",a="key_full_PageDown",b="key_full_Alt",c="PgDn",d="Esc",e="key_full_Insert",f="key_short_Space",g="key_short_Backspace",h="key_short_Home",i="key_short_Down",j="PgUp",bK="_Mac",bJ="key_short_CapsLock",bI="PageUp",bH="key_full_Up",bO="key_full_Home",bN="key_full_Backspace",bM="PageDown",bL="CapsLock",bQ="Ins",bP="key_short_PrintScreen",C="Tab",D="key_full_Apps",A="key_short_Tab",B="key_short_End",G="_",H="Caps",E="key_short_NumLock",F="key_full_Scroll",y="key_short_Left",z="key_short_Scroll",r="key_",q="key_full_Pause",t="key_short_Right",s="key_full_PrintScreen",n="key_full_Win",m="key_full_Control_Mac",p="key_short_Shift",o="key_short_PageDown",l="key_short_Enter",k="key_short_Control",M="Insert",N="key_short_Escape",O="key_full_Tab",P="Print",I="Delete",J="key_full_CapsLock",K="key_full_Escape",L="key_short_Delete",Q="key_full_PageUp",R="key_full_Shift",x="key_full_NumLock",w="key_full_Delete",v="key_full_End",u="key_full_Left";
+qx.Class.define(bG,{statics:{getKeyName:function(bR,bS,bT){{};
+var bV=r+bR+G+bS;
+if(qx.bom.client.Platform.MAC&&bS==bw){bV+=bK;
+}var bU=qx.locale.Manager.getInstance().translate(bV,[],bT);
+
+if(bU==bV){return qx.locale.Key._keyNames[bV]||bS;
+}else{return bU;
+}}},defer:function(bW){var bY={};
+var bX=qx.locale.Manager;
+bY[bX.marktr(g)]=bb;
+bY[bX.marktr(A)]=C;
+bY[bX.marktr(f)]=ba;
+bY[bX.marktr(l)]=W;
+bY[bX.marktr(p)]=X;
+bY[bX.marktr(k)]=bq;
+bY[bX.marktr(bC)]=bq;
+bY[bX.marktr(bB)]=U;
+bY[bX.marktr(bJ)]=H;
+bY[bX.marktr(bi)]=bt;
+bY[bX.marktr(N)]=d;
+bY[bX.marktr(y)]=bu;
+bY[bX.marktr(bd)]=Y;
+bY[bX.marktr(t)]=bc;
+bY[bX.marktr(i)]=br;
+bY[bX.marktr(bh)]=j;
+bY[bX.marktr(o)]=c;
+bY[bX.marktr(B)]=bv;
+bY[bX.marktr(h)]=bp;
+bY[bX.marktr(bz)]=bQ;
+bY[bX.marktr(L)]=bA;
+bY[bX.marktr(E)]=bx;
+bY[bX.marktr(bP)]=P;
+bY[bX.marktr(z)]=V;
+bY[bX.marktr(bk)]=bs;
+bY[bX.marktr(bl)]=bn;
+bY[bX.marktr(bm)]=bo;
+bY[bX.marktr(bN)]=bb;
+bY[bX.marktr(O)]=bg;
+bY[bX.marktr(bf)]=ba;
+bY[bX.marktr(by)]=W;
+bY[bX.marktr(R)]=X;
+bY[bX.marktr(bF)]=bw;
+bY[bX.marktr(m)]=bw;
+bY[bX.marktr(b)]=U;
+bY[bX.marktr(J)]=bL;
+bY[bX.marktr(T)]=bt;
+bY[bX.marktr(K)]=bE;
+bY[bX.marktr(u)]=bu;
+bY[bX.marktr(bH)]=Y;
+bY[bX.marktr(be)]=bc;
+bY[bX.marktr(bj)]=br;
+bY[bX.marktr(Q)]=bI;
+bY[bX.marktr(a)]=bM;
+bY[bX.marktr(v)]=bv;
+bY[bX.marktr(bO)]=bp;
+bY[bX.marktr(e)]=M;
+bY[bX.marktr(w)]=I;
+bY[bX.marktr(x)]=bD;
+bY[bX.marktr(s)]=S;
+bY[bX.marktr(F)]=V;
+bY[bX.marktr(q)]=bs;
+bY[bX.marktr(n)]=bn;
+bY[bX.marktr(D)]=bo;
+bW._keyNames=bY;
+}});
+})();
+(function(){var k="slider",j="splitter",i="horizontal",h="px",g="vertical",f="knob",d="mousedown",c="mouseout",b="Integer",a="height",D="mousemove",C="move",B="maxHeight",A="resize",z="width",w="_applyOrientation",v="_applyOffset",u="splitpane",t="qx.ui.splitpane.Pane",s="top",q="minHeight",r="mouseup",o="minWidth",p="appear",m="losecapture",n="left",l="maxWidth";
+qx.Class.define(t,{extend:qx.ui.core.Widget,construct:function(E){qx.ui.core.Widget.call(this);
+this.__mA=[];
+if(E){this.setOrientation(E);
+}else{this.initOrientation();
+}this.__mI.addListener(d,this._onMouseDown,this);
+this.__mI.addListener(r,this._onMouseUp,this);
+this.__mI.addListener(D,this._onMouseMove,this);
+this.__mI.addListener(c,this._onMouseOut,this);
+this.__mI.addListener(m,this._onMouseUp,this);
+},properties:{appearance:{refine:true,init:u},offset:{check:b,init:6,apply:v},orientation:{init:i,check:[i,g],apply:w}},members:{__mB:null,__mC:false,__mD:null,__mE:null,__mF:null,__mG:null,__mH:null,__mA:null,__mI:null,_createChildControlImpl:function(F,G){var H;
+
+switch(F){case k:H=new qx.ui.splitpane.Slider(this);
+H.exclude();
+this._add(H,{type:F});
+break;
+case j:H=new qx.ui.splitpane.Splitter(this);
+this._add(H,{type:F});
+H.addListener(C,this.__mJ,this);
+break;
+}return H||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,F);
+},__mJ:function(e){this.__mL(e.getData());
+},__mK:function(I){this.__mI=new qx.ui.splitpane.Blocker(I);
+this.getContentElement().add(this.__mI);
+var J=this.getChildControl(j);
+var K=J.getWidth();
+
+if(!K){J.addListenerOnce(p,function(){this.__mL();
+},this);
+}J.addListener(A,function(e){var L=e.getData();
+
+if(L.height==0||L.width==0){this.__mI.hide();
+}else{this.__mI.show();
+}},this);
+},getBlocker:function(){return this.__mI;
+},_applyOrientation:function(M,N){var O=this.getChildControl(k);
+var R=this.getChildControl(j);
+this.__mF=M===i;
+
+if(!this.__mI){this.__mK(M);
+}this.__mI.setOrientation(M);
+var Q=this._getLayout();
+
+if(Q){Q.dispose();
+}var P=M===g?new qx.ui.splitpane.VLayout:new qx.ui.splitpane.HLayout;
+this._setLayout(P);
+R.removeState(N);
+R.addState(M);
+R.getChildControl(f).removeState(N);
+R.getChildControl(f).addState(M);
+O.removeState(N);
+O.addState(M);
+qx.ui.core.queue.Manager.flush();
+this.__mL();
+},_applyOffset:function(S,T){this.__mL();
+},__mL:function(U){var V=this.getChildControl(j);
+var ba=this.getOffset();
+var bb=V.getBounds();
+var Y=V.getContainerElement().getDomElement();
+if(!Y){return;
+}if(this.__mF){var X=null;
+
+if(U){X=U.width;
+}else if(bb){X=bb.width;
+}var bc=U&&U.left;
+
+if(X){if(!bc){bc=qx.bom.element.Location.getPosition(Y).left;
+}this.__mI.setWidth(ba,X);
+this.__mI.setLeft(ba,bc);
+}}else{var W=null;
+
+if(U){W=U.height;
+}else if(bb){W=bb.height;
+}var top=U&&U.top;
+
+if(W){if(!top){top=qx.bom.element.Location.getPosition(Y).top;
+}this.__mI.setHeight(ba,W);
+this.__mI.setTop(ba,top);
+}}},add:function(bd,be){if(be==null){this._add(bd);
+}else{this._add(bd,{flex:be});
+}this.__mA.push(bd);
+},remove:function(bf){this._remove(bf);
+qx.lang.Array.remove(this.__mA,bf);
+},getChildren:function(){return this.__mA;
+},_onMouseDown:function(e){if(!e.isLeftPressed()){return;
+}var bg=this.getChildControl(j);
+var bi=bg.getContainerLocation();
+var bh=this.getContentLocation();
+this.__mB=this.__mF?e.getDocumentLeft()-bi.left+bh.left:e.getDocumentTop()-bi.top+bh.top;
+var bk=this.getChildControl(k);
+var bj=bg.getBounds();
+bk.setUserBounds(bj.left,bj.top,bj.width,bj.height);
+bk.setZIndex(bg.getZIndex()+1);
+bk.show();
+this.__mC=true;
+this.__mI.capture();
+e.stop();
+},_onMouseMove:function(e){this._setLastMousePosition(e.getDocumentLeft(),e.getDocumentTop());
+if(this.__mC){this.__mM();
+var bl=this.getChildControl(k);
+var bm=this.__mG;
+
+if(this.__mF){bl.setDomLeft(bm);
+this.__mI.setStyle(n,(bm-this.getOffset())+h);
+}else{bl.setDomTop(bm);
+this.__mI.setStyle(s,(bm-this.getOffset())+h);
+}e.stop();
+}},_onMouseOut:function(e){this._setLastMousePosition(e.getDocumentLeft(),e.getDocumentTop());
+},_onMouseUp:function(e){if(!this.__mC){return;
+}this._finalizeSizes();
+var bn=this.getChildControl(k);
+bn.exclude();
+this.__mC=false;
+this.releaseCapture();
+e.stop();
+},_finalizeSizes:function(){var br=this.__mG;
+var bo=this.__mH;
+
+if(br==null){return;
+}var bt=this._getChildren();
+var bs=bt[2];
+var bp=bt[3];
+var bq=bs.getLayoutProperties().flex;
+var bu=bp.getLayoutProperties().flex;
+if((bq!=0)&&(bu!=0)){bs.setLayoutProperties({flex:br});
+bp.setLayoutProperties({flex:bo});
+}else{if(this.__mF){bs.setWidth(br);
+bp.setWidth(bo);
+}else{bs.setHeight(br);
+bp.setHeight(bo);
+}}},__mM:function(){if(this.__mF){var bx=o,bE=z,by=l,bC=this.__mD;
+}else{var bx=q,bE=a,by=B,bC=this.__mE;
+}var bD=this._getChildren();
+var bv=bD[2].getSizeHint();
+var bA=bD[3].getSizeHint();
+var bB=bD[2].getBounds()[bE]+bD[3].getBounds()[bE];
+var bz=bC-this.__mB;
+var bw=bB-bz;
+if(bz<bv[bx]){bw-=bv[bx]-bz;
+bz=bv[bx];
+}else if(bw<bA[bx]){bz-=bA[bx]-bw;
+bw=bA[bx];
+}if(bz>bv[by]){bw+=bz-bv[by];
+bz=bv[by];
+}else if(bw>bA[by]){bz+=bw-bA[by];
+bw=bA[by];
+}this.__mG=bz;
+this.__mH=bw;
+},_isActiveDragSession:function(){return this.__mC;
+},_setLastMousePosition:function(x,y){this.__mD=x;
+this.__mE=y;
+}},destruct:function(){this.__mA=null;
+}});
+})();
+(function(){var a="qx.ui.splitpane.Slider";
+qx.Class.define(a,{extend:qx.ui.core.Widget,properties:{allowShrinkX:{refine:true,init:false},allowShrinkY:{refine:true,init:false}}});
+})();
+(function(){var e="center",d="knob",c="middle",b="qx.ui.splitpane.Splitter",a="vertical";
+qx.Class.define(b,{extend:qx.ui.core.Widget,construct:function(f){qx.ui.core.Widget.call(this);
+if(f.getOrientation()==a){this._setLayout(new qx.ui.layout.HBox(0,e));
+this._getLayout().setAlignY(c);
+}else{this._setLayout(new qx.ui.layout.VBox(0,c));
+this._getLayout().setAlignX(e);
+}this._createChildControl(d);
+},properties:{allowShrinkX:{refine:true,init:false},allowShrinkY:{refine:true,init:false}},members:{_createChildControlImpl:function(g,h){var i;
+
+switch(g){case d:i=new qx.ui.basic.Image;
+this._add(i);
+break;
+}return i||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,g);
+}}});
+})();
+(function(){var o="px",n="horizontal",m="top",l="height",k="width",j="left",i="100%",h="cursor",g="vertical",f="_applyOrientation",c="qx.ui.splitpane.Blocker",e="col-resize",d="row-resize",b="div",a="absolute";
+qx.Class.define(c,{extend:qx.html.Element,construct:function(p){var q={position:a,zIndex:11};
+qx.html.Element.call(this,b,q);
+if(p){this.setOrientation(p);
+}else{this.initOrientation();
+}},properties:{orientation:{init:n,check:[n,g],apply:f}},members:{_applyOrientation:function(r,s){if(r==n){this.setStyle(l,i);
+this.setStyle(h,e);
+this.setStyle(m,null);
+}else{this.setStyle(k,i);
+this.setStyle(j,null);
+this.setStyle(h,d);
+}},setWidth:function(t,u){var v=u+2*t;
+this.setStyle(k,v+o);
+},setHeight:function(w,x){var y=x+2*w;
+this.setStyle(l,y+o);
+},setLeft:function(z,A){var B=A-z;
+this.setStyle(j,B+o);
+},setTop:function(C,D){var top=D-C;
+this.setStyle(m,top+o);
+}}});
+})();
+(function(){var c="slider",b="splitter",a="qx.ui.splitpane.VLayout";
+qx.Class.define(a,{extend:qx.ui.layout.Abstract,members:{verifyLayoutProperty:null,renderLayout:function(d,e){var v=this._getLayoutChildren();
+var length=v.length;
+var r,u;
+var g,f,p,h;
+
+for(var i=0;i<length;i++){r=v[i];
+u=r.getLayoutProperties().type;
+
+if(u===b){f=r;
+}else if(u===c){p=r;
+}else if(!g){g=r;
+}else{h=r;
+}}
+if(g&&h){var x=g.getLayoutProperties().flex;
+var k=h.getLayoutProperties().flex;
+
+if(x==null){x=1;
+}
+if(k==null){k=1;
+}var w=g.getSizeHint();
+var n=f.getSizeHint();
+var o=h.getSizeHint();
+var j=w.height;
+var s=n.height;
+var t=o.height;
+
+if(x>0&&k>0){var l=x+k;
+var m=e-s;
+var j=Math.round((m/l)*x);
+var t=m-j;
+var q=qx.ui.layout.Util.arrangeIdeals(w.minHeight,j,w.maxHeight,o.minHeight,t,o.maxHeight);
+j=q.begin;
+t=q.end;
+}else if(x>0){j=e-s-t;
+
+if(j<w.minHeight){j=w.minHeight;
+}
+if(j>w.maxHeight){j=w.maxHeight;
+}}else if(k>0){t=e-j-s;
+
+if(t<o.minHeight){t=o.minHeight;
+}
+if(t>o.maxHeight){t=o.maxHeight;
+}}g.renderLayout(0,0,d,j);
+f.renderLayout(0,j,d,s);
+h.renderLayout(0,j+s,d,t);
+}else{f.renderLayout(0,0,0,0);
+if(g){g.renderLayout(0,0,d,e);
+}else if(h){h.renderLayout(0,0,d,e);
+}}},_computeSizeHint:function(){var H=this._getLayoutChildren();
+var length=H.length;
+var A,z,G;
+var B=0,D=0,C=0;
+var E=0,F=0,y=0;
+
+for(var i=0;i<length;i++){A=H[i];
+G=A.getLayoutProperties();
+if(G.type===c){continue;
+}z=A.getSizeHint();
+B+=z.minHeight;
+D+=z.height;
+C+=z.maxHeight;
+
+if(z.minWidth>E){E=z.minWidth;
+}
+if(z.width>F){F=z.width;
+}
+if(z.maxWidth>y){y=z.maxWidth;
+}}return {minHeight:B,height:D,maxHeight:C,minWidth:E,width:F,maxWidth:y};
+}}});
+})();
+(function(){var c="slider",b="splitter",a="qx.ui.splitpane.HLayout";
+qx.Class.define(a,{extend:qx.ui.layout.Abstract,members:{verifyLayoutProperty:null,renderLayout:function(d,e){var v=this._getLayoutChildren();
+var length=v.length;
+var s,u;
+var g,f,p,h;
+
+for(var i=0;i<length;i++){s=v[i];
+u=s.getLayoutProperties().type;
+
+if(u===b){f=s;
+}else if(u===c){p=s;
+}else if(!g){g=s;
+}else{h=s;
+}}
+if(g&&h){var x=g.getLayoutProperties().flex;
+var j=h.getLayoutProperties().flex;
+
+if(x==null){x=1;
+}
+if(j==null){j=1;
+}var w=g.getSizeHint();
+var m=f.getSizeHint();
+var o=h.getSizeHint();
+var t=w.width;
+var r=m.width;
+var q=o.width;
+
+if(x>0&&j>0){var k=x+j;
+var l=d-r;
+var t=Math.round((l/k)*x);
+var q=l-t;
+var n=qx.ui.layout.Util.arrangeIdeals(w.minWidth,t,w.maxWidth,o.minWidth,q,o.maxWidth);
+t=n.begin;
+q=n.end;
+}else if(x>0){t=d-r-q;
+
+if(t<w.minWidth){t=w.minWidth;
+}
+if(t>w.maxWidth){t=w.maxWidth;
+}}else if(j>0){q=d-t-r;
+
+if(q<o.minWidth){q=o.minWidth;
+}
+if(q>o.maxWidth){q=o.maxWidth;
+}}g.renderLayout(0,0,t,e);
+f.renderLayout(t,0,r,e);
+h.renderLayout(t+r,0,q,e);
+}else{f.renderLayout(0,0,0,0);
+if(g){g.renderLayout(0,0,d,e);
+}else if(h){h.renderLayout(0,0,d,e);
+}}},_computeSizeHint:function(){var H=this._getLayoutChildren();
+var length=H.length;
+var A,z,G;
+var E=0,F=0,y=0;
+var B=0,D=0,C=0;
+
+for(var i=0;i<length;i++){A=H[i];
+G=A.getLayoutProperties();
+if(G.type===c){continue;
+}z=A.getSizeHint();
+E+=z.minWidth;
+F+=z.width;
+y+=z.maxWidth;
+
+if(z.minHeight>B){B=z.minHeight;
+}
+if(z.height>D){D=z.height;
+}
+if(z.maxHeight>C){C=z.maxHeight;
+}}return {minWidth:E,width:F,maxWidth:y,minHeight:B,height:D,maxHeight:C};
+}}});
 })();
 (function(){var m="pane",k="lastTab",j="bar",h="page",g="firstTab",f="right",d="bottom",c="button",b="changeSelection",a="close",B="top",A="left",z="qx.event.type.Data",y="barRight",x="beforeChangeSelection",w="close-button",v="tabview",u="vertical",t="_applyBarPosition",s="barLeft",q="horizontal",r="qx.ui.tabview.TabView",o="barTop",p="barBottom",n="__tr";
 qx.Class.define(r,{extend:qx.ui.core.Widget,implement:qx.ui.core.ISingleSelection,include:[qx.ui.core.MContentPadding],construct:function(C){qx.ui.core.Widget.call(this);
@@ -15655,6 +17824,48 @@ this.remove(bu);
 }},destruct:function(){this._disposeObjects(n);
 this.__tq=null;
 }});
+})();
+(function(){var g="execute",f="vuuvv.ui.TabView",d="Close All",c="close-button",b="Close",a="Close Other";
+qx.Class.define(f,{extend:qx.ui.tabview.TabView,construct:function(){qx.ui.tabview.TabView.call(this);
+},members:{add:function(h,j,k){var l=this.getPage(h);
+
+if(!l){var m=qx.Class.getByName(k);
+l=new m(h,j);
+l.setShowCloseButton(true);
+qx.ui.tabview.TabView.prototype.add.call(this,l);
+l.getButton().setContextMenu(this.getContextMenu(l));
+}this.setSelection([l]);
+},getContextMenu:function(n){var o=new qx.ui.menu.Menu;
+var q=new qx.ui.menu.Button(this.tr(b));
+var p=new qx.ui.menu.Button(this.tr(d));
+var r=new qx.ui.menu.Button(this.tr(a));
+o.add(q);
+o.add(p);
+o.add(r);
+q.addListener(g,function(e){this._closePage(n);
+},this);
+p.addListener(g,function(e){this._closePage(this.getChildren());
+},this);
+r.addListener(g,function(e){this._closePage(this._otherpages(n));
+},this);
+return o;
+},getPage:function(s){var t=this.getChildren();
+
+for(var i in t){if(t[i].getLabel()==s)return t[i];
+}return null;
+},_otherpages:function(u){var v=this.getChildren();
+var w=[];
+
+for(var i in v){if(v[i]!=u)w.push(v[i]);
+}return w;
+},_closePage:function(x){if(!(x instanceof Array))x=[x];
+else x=Array.prototype.slice.call(x);
+
+for(var i in x){var z=x[i];
+var y=z.getButton().getChildControl(c);
+y.reset();
+this.remove(z);
+}}}});
 })();
 (function(){var c="Tango",b="qx/icon/Tango",a="qx.theme.icon.Tango";
 qx.Theme.define(a,{title:c,aliases:{"icon":b},icons:{}});
