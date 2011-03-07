@@ -50,6 +50,7 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 				var content = evt.getContent();
 				var treeData = eval("(" + content + ")");
 				this._initializeContent(treeData.appdata);
+				qx.core.Init.getApplication().setAppData(treeData.appdata);
 				this.setReadyState("complete");
 				callback.call(context);
 			}, this);

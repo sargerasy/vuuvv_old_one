@@ -61,7 +61,6 @@
 			litimer = setTimeout(function() {
 				if (!sub.data("stayin")) 
 					return;
-				console.log("Large in");
 				clear_timer();
 				show_menu(disp_menu, false);
 				show_menu(t, true);
@@ -71,7 +70,6 @@
 			clear_timer();
 			get_sub(t).data("stayin", false);
 			Lotimer = setTimeout(function() {
-				console.log("Large out");
 				show_menu(t, false);
 				show_origin();
 			}, 800);
@@ -80,13 +78,11 @@
 		$(".sub-container").hover(function() {
 			var t = $(this);
 			t.data("stayin", true);
-			console.log("Small in");
 			clear_timer();
 		}, function() {
 			var t = $(this);
 			t.data("stayin", false);
 			Lotimer = setTimeout(function() {
-				console.log("Small out");
 				show_menu(disp_menu, false);
 				show_origin();
 			}, 800);

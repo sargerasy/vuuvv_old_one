@@ -55,9 +55,9 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 		__gistMenu : null,
 
 		_createMenus: function(menuData) {
-			var data = this._create_tree_data(menuData);
-			for(var i in data) {
-				var value = data[i];
+			menuData["root"] = this._create_tree_data(menuData);
+			for(var i in menuData["root"].children) {
+				var value = menuData["root"].children[i];
 				if (value.children) {
 					var menu = this.__menuItemStore[i] = new qx.ui.menubar.Button(
 						this.tr(value.label)
@@ -94,15 +94,15 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 		},
 
 		_create_tree_data: function(data) {
-			var root = {};
+			var root = {"label": "all", "children": []};
 			for(var i in data) {
 				var pid = data[i]["parent_id"];
 				if (!pid)
-					root[i] = data[i];
+					root.children.push(data[i]);
 				else {
 					if(!data[pid]["children"]) 
-						data[pid]["children"] = {};    
-					data[pid]["children"][i] = data[i];
+						data[pid]["children"] = [];    
+					data[pid]["children"].push(data[i]);
 				}
 			}
 			return root;

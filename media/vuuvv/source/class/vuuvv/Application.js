@@ -26,6 +26,9 @@ qx.Class.define("vuuvv.Application", {
 	{
 		tabView: {
 			check: "qx.ui.tabview.TabView"
+		},
+		appData: {
+			check: "Object"
 		}
 	},
 
