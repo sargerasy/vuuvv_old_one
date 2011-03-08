@@ -41,6 +41,14 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 		this._createMenus(menuData);
 	},
 
+	properties: 
+	{
+		model: {
+			check: "Object",
+			event: "changeModel"
+		}
+	},
+
 	events :
 	{
 	},
@@ -55,57 +63,40 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 		__gistMenu : null,
 
 		_createMenus: function(menuData) {
-			menuData["root"] = this._create_tree_data(menuData);
-			for(var i in menuData["root"].children) {
-				var value = menuData["root"].children[i];
-				if (value.children) {
-					var menu = this.__menuItemStore[i] = new qx.ui.menubar.Button(
-						this.tr(value.label)
-					);
-					this.add(menu);
+			var root = vuuvv.model.AdminMenu.create(menuData, "parent_id");
+			this.setModel(root);
+			var top = root.struct.getChildren();
+			for (var i = 0; i < top.getLength(); i++) {
+				var item = top.getItem(i);
+				var children = item.getChildren();
+				var menu = this.__menuItemStore[i] = new qx.ui.menubar.Button(
+				   this.tr(item.getLabel())
+				);
+				this.add(menu);
+				if (children.getLength() > 0) {
 					var sub_menu = new qx.ui.menu.Menu();
-					this._create_sub_menu(sub_menu, value.children);
+					this._create_sub_menu(sub_menu, children)
 					menu.setMenu(sub_menu);
-				} else {
-					this.__menuItemStore[i] = new qx.ui.menubar.Button(
-						this.tr(value.label)
-					);
-					this.add(this.__menuItemStore[i]);
 				}
 			}
 		},
 
 		_create_sub_menu: function(widget, model) {
-			for(var i in model) {
-				var value = model[i];
+			for (var i = 0; i < model.getLength(); i++) {
+				var item = model.getItem(i);
 				var menu = this.__menuItemStore[i] = new qx.ui.menu.Button(
-					this.tr(value.label)
+					this.tr(item.getLabel())
 				);
 				widget.add(menu);
-				if(value.children) {
+				var comm = new vuuvv.command.Command(item);
+				menu.setCommand(comm);
+				var children = item.getChildren();
+				if (children.getLength()) {
 					var sub_menu = new qx.ui.menu.Menu();
-					this._create_sub_menu(sub_menu, value.children);
+					this._create_sub_menu(sub_menu, children);
 					menu.setMenu(sub_menu);
-				} else {
-					var comm = new vuuvv.command.Command(value);
-					menu.setCommand(comm);
 				}
 			}
-		},
-
-		_create_tree_data: function(data) {
-			var root = {"label": "all", "children": []};
-			for(var i in data) {
-				var pid = data[i]["parent_id"];
-				if (!pid)
-					root.children.push(data[i]);
-				else {
-					if(!data[pid]["children"]) 
-						data[pid]["children"] = [];    
-					data[pid]["children"].push(data[i]);
-				}
-			}
-			return root;
 		},
 
 		/**

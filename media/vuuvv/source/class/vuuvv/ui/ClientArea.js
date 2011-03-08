@@ -63,8 +63,9 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 		},
 
 		_initializeContent: function(appdata) {
-			this.__toolbar = new vuuvv.ui.view.Menubar(appdata.menus);
-			this.add(this.__toolbar, {flex: 0});
+			this.__menubar = new vuuvv.ui.view.Menubar(appdata.menus);
+			appdata.menus = this.__menubar.getModel();
+			this.add(this.__menubar, {flex: 0});
 
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
 			this.add(mainsplit, {flex: 1});
