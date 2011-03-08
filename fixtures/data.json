@@ -6,7 +6,7 @@
 			"label": "System",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "System",
 			"parent": null
 		}
 	},
@@ -17,7 +17,7 @@
 			"label": "User",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "User",
 			"parent": 1
 		}
 	},
@@ -28,7 +28,7 @@
 			"label": "Group",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Group",
 			"parent": 1
 		}
 	},
@@ -39,7 +39,7 @@
 			"label": "Permission",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Permission",
 			"parent": 1
 		}
 	},
@@ -50,7 +50,7 @@
 			"label": "Pages",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Pages",
 			"parent": null
 		}
 	},
@@ -61,7 +61,7 @@
 			"label": "Menu",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Menu",
 			"parent": 5
 		}
 	},
@@ -72,7 +72,7 @@
 			"label": "Page",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Page",
 			"parent": 5
 		}
 	},
@@ -83,7 +83,7 @@
 			"label": "Help",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "Help",
 			"parent": null
 		}
 	},
@@ -94,7 +94,7 @@
 			"label": "About",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "About",
 			"parent": 8
 		}
 	},
@@ -105,7 +105,7 @@
 			"label": "Admin Menu",
 			"tooltip": "",
 			"icon": "",
-			"command": "",
+			"command": "AdminMenu",
 			"parent": 1
 		}
 	}

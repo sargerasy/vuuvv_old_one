@@ -53,8 +53,8 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 							pm.push(items[i]);
 						}
 						console.log(pm);
-						this._fc.setModel(model);
 						this._pc.setModel(pm);
+						this._fc.setModel(model);
 					}, self);
 
 
