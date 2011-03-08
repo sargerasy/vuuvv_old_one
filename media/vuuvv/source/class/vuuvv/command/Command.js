@@ -20,11 +20,11 @@ qx.Class.define("vuuvv.command.Command", {
 	construct: function(options)
 	{
 		this.base(arguments);
-		this.setLabel(options.label);
-		this.setToolTipText(options.tooltip);
-		this.setIcon(options.icon);
+		this.setLabel(options.getLabel());
+		this.setToolTipText(options.getTooltip());
+		this.setIcon(options.getIcon());
 		this.addListener("execute", this.handle, this);
-		this.setPageClassName("vuuvv.ui.page." + options.command);
+		this.setPageClassName("vuuvv.ui.page." + options.getCommand());
 	},
 
 	members:
