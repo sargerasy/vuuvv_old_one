@@ -49,7 +49,7 @@ qx.Class.define("vuuvv.ui.TabView", {
 		getPage: function(label)
 		{
 			var pages = this.getChildren();
-			for(var i in pages) {
+			for(var i = 0; i < pages.length; i++) {
 				if(pages[i].getLabel() == label)
 					return pages[i];
 			}

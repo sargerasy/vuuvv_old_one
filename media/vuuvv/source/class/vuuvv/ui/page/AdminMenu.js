@@ -32,47 +32,64 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 	{
 		getTree: function()
 		{
-			var model = qx.core.Init.getApplication().getAppData().menus.struct;
+			var model = vuuvv.utils.getMenus()[-1];
 			var tree = new qx.ui.tree.Tree();
 			tree.setSelectionMode("multi");
 
-			this._tc = new qx.data.controller.Tree(model, tree, "children", "label");
-			var self = this;
-			this._tc.setDelegate({
-				configureItem: function(item){
-					var model = item.getModel();
-					if(model.getChildren().getLength() > 0)
-						item.setAppearance("tree-folder");
-					else
-						item.setAppearance("tree-file");
-
-					item.addListener("dblclick", function(){
-						var items = qx.core.Init.getApplication().getAppData().menus.items;
-						var pm = new qx.data.Array();
-						for (var i in items) {
-							pm.push(items[i]);
-						}
-						console.log(pm);
-						this._pc.setModel(pm);
-						this._fc.setModel(model);
-					}, self);
-
-
-					// drag & drop
-					item.setDraggable(true);
-					item.setDroppable(true);
-
-					item.addListener("dragstart", function(e) {
-						e.addAction("move");
-					});
-
-					item.addListener("drop", function(e) {
-						console.log(e.getRelatedTarget());
-					});
-				}
-			});
+			this._tc = new qx.data.controller.Tree(null, tree, "children", "label");
+			this._tc.setDelegate(this._getTreeDelegate());
+			this._tc.setModel(model);
 			tree.getRoot().setOpen(true);
 			return tree;
+		},
+
+		_getTreeDelegate: function() {
+			var self = this;
+			return {
+				bindItem: function(controller, widget, model){
+					//if(model.getChildren().getLength() > 0)
+					//	widget.setAppearance("tree-folder");
+					//else
+					//	widget.setAppearance("tree-file");
+
+					widget.addListener("dblclick", function(e){
+						if(model.getId() == -1)
+							return;
+						this._setParentListModel(model, false);
+						vuuvv.utils.syncObject(model, this._fm, [
+							"id", "label", "tooltip", "icon", "command"
+						]);
+					}, self);
+
+					// drag & drop
+					widget.setDraggable(true);
+					widget.setDroppable(true);
+					widget.addListener("dragstart", function(e) {
+						e.addAction("move");
+					});
+					widget.addListener("drop", function(e) {
+						console.log(e.getRelatedTarget());
+					});
+					controller.bindDefaultProperties(widget, model);
+				}
+			};
+		},
+
+		_setParentListModel: function(model, isNew) {
+			var items = vuuvv.utils.getMenus();
+			var id = model.getId();
+			var pm = new qx.data.Array();
+			for (var i in items) {
+				if (!isNew && items[i].isAncestor(id))
+					continue;
+				pm.push(items[i]);
+			}
+			this._pc.setModel(pm);
+			// make the current parent selected
+			var sel = new qx.data.Array();
+			var selid = isNew ? model.getId() : model.getParentId();
+			sel.push(selid);
+			this._pc.setSelection(sel);
 		},
 
 		getForm: function()
@@ -80,23 +97,20 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			// form
 			var form = new qx.ui.form.Form();
 
-			// add the form items
-			var nameTextfield = new qx.ui.form.TextField();
-			nameTextfield.setRequired(true);
-			nameTextfield.setWidth(200);
-			form.add(nameTextfield, "Label", null, "label");
-			form.add(new qx.ui.form.TextField(), "Tooltip");
-			form.add(new qx.ui.form.TextField(), "Icon", null, "icon");
-			form.add(new qx.ui.form.TextField(), "Command");
-
-			var parent = new qx.ui.form.SelectBox();
-			this._pc = new qx.data.controller.List(null, parent);
-			this._pc.setDelegate({bindItem: function(controller, item, index) {
-				controller.bindProperty("label", "label", null, item, index);
-				controller.bindProperty("id", "model", null, item, index);
-			}});
-			//this._pc.add
-			form.add(parent, "Parent");
+			// items
+			var labelTxt = new qx.ui.form.TextField().set({
+				required: true,
+				width: 200
+			});
+			form.add(labelTxt, "Label");
+			var tooltipTxt = new qx.ui.form.TextField();
+			form.add(tooltipTxt, "Tooltip");
+			var iconTxt = new qx.ui.form.TextField();
+			form.add(iconTxt, "Icon");
+			var commandTxt = new qx.ui.form.TextField();
+			form.add(commandTxt, "Command");
+			var parentBox = new qx.ui.form.SelectBox();
+			form.add(parentBox, "Parent");
 
 			// buttons
 			var saveButton = new qx.ui.form.Button("Save");
@@ -106,18 +120,62 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			cancelButton.setWidth(70);
 			form.addButton(cancelButton);
 
-			// create the view
-			this._fc = new qx.data.controller.Form(null, form);
+
+			this._fm = this._getFormModelSkel();
+			this._fc = new qx.data.controller.Form(this._fm, form);
+
+			this._pc = new qx.data.controller.List(null, parentBox);
+			this._pc.setDelegate({bindItem: function(controller, item, index) {
+				controller.bindProperty("label", "label", null, item, index);
+				controller.bindProperty("id", "model", null, item, index);
+			}});
 
 			// serialization and reset /////////
 			saveButton.addListener("execute", function() {
 				if (form.validate()) {
-				  alert("You are saving: " + qx.util.Serializer.toUriParameter(this._fc.getModel()));
+					//TODO: First send a requst to server ask updating the database.
+					//TODO: create a class of submit buttons.
+
+					var url = "/admin/menu/save"
+					var req = new qx.io.remote.Request(url, "POST");
+					req.setTimeout(180000);
+					req.setProhibitCaching(false);
+					var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
+					req.setData(data);
+					req.send();
+
+					// following code should be in the callback function of request completed event
+					//var id = this._fm.getId();
+					//var menus = vuuvv.utils.getMenus();
+					//var menuModel = menus[id];
+					//vuuvv.utils.syncObject(this._fm, menuModel, ["label", "icon", "tooltip", "command"]);
+					//var opid = menuModel.getParentId();
+					//var npid = this._fm.getParent();
+					//if (opid != npid) {
+					//	var old = menuModel.getParent();
+					//	var cur = menus[npid];
+					//	old.getChildren().remove(menuModel);
+					//	cur.getChildren().push(menuModel);
+					//	menuModel.setParent(cur);
+					//} 
+					//this.debug("You are saving: " + qx.util.Serializer.toUriParameter(this._fc.getModel()));
 				}
 			}, this);
 			cancelButton.addListener("execute", form.reset, form);
 
 			return form
+		},
+
+		_getFormModelSkel: function() {
+			var modelSkeleton = {
+				id: -1,
+				label: null,
+				tooltip: null,
+				icon: null,
+				command: null,
+				parent: []
+			};
+			return qx.data.marshal.Json.createModel(modelSkeleton);
 		},
 
 		getCommandFrame: function()
@@ -138,8 +196,9 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 				var sel = this._tree.getSelection();
 				if(sel.length == 1) {
 					var model = sel[0].getModel();
-					var children = model.getChildren ? model.getChildren() : new qx.data.Array();
-					console.log(children);
+					this._fm = this._getFormModelSkel();
+					this._fc.setModel(this._fm);
+					this._setParentListModel(model, true);
 				} else {
 					alert("You should select only one item!");
 				}
@@ -151,6 +210,6 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 
 	destruct: function()
 	{
-		this._disposeObjects("_tree", "_form", "_tc", "_fc", "_pc");
+		this._disposeObjects("_tree", "_form", "_tc", "_fc", "_pc", "_fm");
 	}
 });

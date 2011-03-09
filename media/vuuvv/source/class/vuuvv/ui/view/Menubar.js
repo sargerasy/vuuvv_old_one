@@ -45,7 +45,8 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 	{
 		model: {
 			check: "Object",
-			event: "changeModel"
+			event: "changeModel",
+			init: null
 		}
 	},
 
@@ -63,9 +64,9 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 		__gistMenu : null,
 
 		_createMenus: function(menuData) {
-			var root = vuuvv.model.AdminMenu.create(menuData, "parent_id");
-			this.setModel(root);
-			var top = root.struct.getChildren();
+			var menus = vuuvv.model.AdminMenu.create(menuData, "parent_id");
+			this.setModel(menus);
+			var top = menus[-1].getChildren();
 			for (var i = 0; i < top.getLength(); i++) {
 				var item = top.getItem(i);
 				var children = item.getChildren();

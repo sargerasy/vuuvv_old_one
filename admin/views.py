@@ -21,4 +21,26 @@ def appdata(request):
 
 	return HttpResponse(json.dumps(data))
 
+def save_menu(request):
+	label = request.REQUEST["label"]
+	icon = request.REQUEST["icon"]
+	tooltip = request.REQUEST["tooltip"]
+	command = request.REQUEST["command"]
+	parent = request.REQUEST["parent"]
+	id = request.REQUEST["id"]
+	if id == "-1":
+		logging.info("new")
+		menu = models.Menu(
+				label = label,
+				icon = icon,
+				tooltip = tooltip,
+				command = command,
+				parent = models.Menu.objects.get(pk=int(parent))
+				)
+		menu.save()
+		logging.info(menu.pk);
+	else:
+		logging.info("update")
+	return HttpResponse(json.dumps("{id: 1}"));
+
 

@@ -39,7 +39,30 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 
 		parent: {
 			check: "vuuvv.model.AdminMenu",
-			event: "changeParent"
+			event: "changeParent",
+			init: null
+		}
+	},
+
+	members: {
+		isAncestor: function(id) {
+			var p = this;
+			while (p.getId() != -1) {
+				if (p.getId() == id)
+					return true;
+				p = p.getParent();
+			}
+		},
+
+		isParent: function(id) {
+			return this.getParent().getId() == id;
+		},
+
+		getParentId: function() {
+			var p = this.getParent();
+			if(p)
+				return p.getId();
+			return null;
 		}
 	},
 
@@ -47,7 +70,8 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 		create: function(data, parentPath) {
 			var root = new vuuvv.model.AdminMenu();
 			root.setLabel("all");
-			var parents = {};
+			root.setId(-1);
+			var items = {};
 
 			for (var i in data) {
 				var child = new vuuvv.model.AdminMenu();
@@ -57,17 +81,18 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 				child.setTooltip(item.tooltip);
 				child.setIcon(item.icon);
 				child.setCommand(item.command);
-				parents[i] = child;
+				items[i] = child;
 			}
 
-			for (var i in parents) {
+			for (var i in items) {
 				var pid = data[i][parentPath];
-				var item = parents[i];
-				parent = pid ? parents[pid] : root;
-				item.setParent(parent);
-				parent.getChildren().push(item);
+				var item = items[i];
+				var p = pid ? items[pid] : root;
+				item.setParent(p);
+				p.getChildren().push(item);
 			}
-			return {"struct": root, "items": parents};
+			items[-1] = root;
+			return items;
 		}
 	},
 
