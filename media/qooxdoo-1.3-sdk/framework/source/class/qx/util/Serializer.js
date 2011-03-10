@@ -52,7 +52,7 @@ qx.Class.define("qx.util.Serializer",
         // handle arrays
         if (qx.lang.Type.isArray(value)) {
           for (var i = 0; i < value.length; i++) {
-            result += this.__toUriParameter(name, value[i], qxSerializer);
+            result += this.__toUriParameter(name, value.getItem(i), qxSerializer);
           };
         } else if (qx.lang.Type.isDate(value) && dateFormat != null) {
           result += this.__toUriParameter(

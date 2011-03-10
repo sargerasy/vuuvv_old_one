@@ -19,22 +19,26 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 
 		label: {
 			check: "String",
-			event: "changeLabel"
+			event: "changeLabel",
+			init: ""
 		},
 
 		tooltip: {
 			check: "String",
-			event: "changeTooltip"
+			event: "changeTooltip",
+			init: ""
 		},
 
 		icon : {
 			check: "String",
-			event: "changeIcon"
+			event: "changeIcon",
+			init: ""
 		},
 
 		command: {
 			check: "String",
-			event: "changeCommand"
+			event: "changeCommand",
+			init: ""
 		},
 
 		parent: {
@@ -45,7 +49,10 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 	},
 
 	members: {
-		isAncestor: function(id) {
+		/*
+		* Tell the this object is descendance of id
+		*/
+		isDescendance: function(id) {
 			var p = this;
 			while (p.getId() != -1) {
 				if (p.getId() == id)
@@ -63,6 +70,15 @@ qx.Class.define("vuuvv.model.AdminMenu", {
 			if(p)
 				return p.getId();
 			return null;
+		},
+
+		getDescendance: function() {
+			var children = this.getChildren().toArray();
+			var len = children.length;
+			for (var i = 0; i < len; i++) {
+				children = children.concat(children[i].getDescendance());
+			}
+			return children;
 		}
 	},
 

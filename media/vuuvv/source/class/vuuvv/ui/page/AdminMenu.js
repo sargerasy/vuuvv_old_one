@@ -30,6 +30,17 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 
 	members:
 	{
+		// Tree Widget
+		_tree: null,
+		// Form Widget
+		_form: null,
+		// Tree Controller
+		_tc: null,
+		// Form Controller
+		_fc: null,
+		// Parent Field in form Controller
+		_pc: null,
+
 		getTree: function()
 		{
 			var model = vuuvv.utils.getMenus()[-1];
@@ -40,6 +51,7 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			this._tc.setDelegate(this._getTreeDelegate());
 			this._tc.setModel(model);
 			tree.getRoot().setOpen(true);
+
 			return tree;
 		},
 
@@ -56,7 +68,7 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 						if(model.getId() == -1)
 							return;
 						this._setParentListModel(model, false);
-						vuuvv.utils.syncObject(model, this._fm, [
+						vuuvv.utils.syncObject(model, this._fc.getModel(), [
 							"id", "label", "tooltip", "icon", "command"
 						]);
 					}, self);
@@ -80,16 +92,20 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			var id = model.getId();
 			var pm = new qx.data.Array();
 			for (var i in items) {
-				if (!isNew && items[i].isAncestor(id))
+				if (!isNew && items[i].isDescendance(id))
 					continue;
 				pm.push(items[i]);
 			}
 			this._pc.setModel(pm);
 			// make the current parent selected
-			var sel = new qx.data.Array();
 			var selid = isNew ? model.getId() : model.getParentId();
-			sel.push(selid);
-			this._pc.setSelection(sel);
+			this._setSelection(this._pc, selid);
+		},
+
+		_setSelection: function(controller, target) {
+			var sel = new qx.data.Array();
+			sel.push(target);
+			controller.setSelection(sel);
 		},
 
 		getForm: function()
@@ -121,8 +137,7 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			form.addButton(cancelButton);
 
 
-			this._fm = this._getFormModelSkel();
-			this._fc = new qx.data.controller.Form(this._fm, form);
+			this._fc = new qx.data.controller.Form(this._getFormModelSkel(), form);
 
 			this._pc = new qx.data.controller.List(null, parentBox);
 			this._pc.setDelegate({bindItem: function(controller, item, index) {
@@ -131,48 +146,129 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 			}});
 
 			// serialization and reset /////////
-			saveButton.addListener("execute", function() {
-				if (form.validate()) {
-					//TODO: First send a requst to server ask updating the database.
-					//TODO: create a class of submit buttons.
-
-					var url = "/admin/menu/save"
-					var req = new qx.io.remote.Request(url, "POST");
-					req.setTimeout(180000);
-					req.setProhibitCaching(false);
-					var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
-					req.setData(data);
-					req.send();
-
-					// following code should be in the callback function of request completed event
-					//var id = this._fm.getId();
-					//var menus = vuuvv.utils.getMenus();
-					//var menuModel = menus[id];
-					//vuuvv.utils.syncObject(this._fm, menuModel, ["label", "icon", "tooltip", "command"]);
-					//var opid = menuModel.getParentId();
-					//var npid = this._fm.getParent();
-					//if (opid != npid) {
-					//	var old = menuModel.getParent();
-					//	var cur = menus[npid];
-					//	old.getChildren().remove(menuModel);
-					//	cur.getChildren().push(menuModel);
-					//	menuModel.setParent(cur);
-					//} 
-					//this.debug("You are saving: " + qx.util.Serializer.toUriParameter(this._fc.getModel()));
-				}
-			}, this);
+			saveButton.addListener("execute", this._onSave, this);
 			cancelButton.addListener("execute", form.reset, form);
 
 			return form
 		},
 
+
+		_onDelete: function() {
+			var sel = this._tc.getSelection();
+			var data = {"ids": []};
+			var items = [];
+			for (var i = 0; i < sel.length; i++) {
+				var item = sel.getItem(i);
+				// handler the root node delete
+				if (item.getId() == -1) {
+					items = item.getChildren();
+					data = {"ids": []};
+					for (var j = 0; j < items.length; j++) {
+						data.ids.push(items.getItem(j).getId());
+					}
+					break;
+				}
+
+				// normal condition
+				var valid = true;
+				for (var j = 0; j < items.length; j++) {
+					if (items[j].isDescendance(item.getId())) {
+						valid = false;
+						items[j] = item;
+						data.ids[j] = item.getId();
+						break;
+					}
+					if (item.isDescendance(items[j].getId())) {
+						valid = false;
+						break;
+					}
+				}
+				if (valid) {
+					data.ids.push(item.getId());
+					items.push(item);
+				}
+			}
+			data = qx.util.Serializer.toUriParameter(qx.data.marshal.Json.createModel(data));
+			var url = "/admin/menu/remove"
+			var req = new qx.io.remote.Request(url, "POST");
+			req.setTimeout(180000);
+			req.setProhibitCaching(false);
+			req.setData(data);
+			req.addListener("completed", this._onDeleteCompleted, this);
+
+			req.send();
+		},
+
+		_onDeleteCompleted: function(e) {
+			var data = eval("(" + e.getContent() + ")");
+			var menus = vuuvv.utils.getMenus();
+			for (var i = 0; i < data.ids.length; i++) {
+				var id = data.ids[i];
+				var menu = menus[id];
+				menu.getParent().getChildren().remove(menu);
+				var descen = menu.getDescendance();
+				for (var j = 0; j < descen.length; j++)
+					delete menus[descen[j].getId()];
+				delete menus[id];
+			}
+		},
+
+		_onSave: function(e) {
+			if (this._form.validate()) {
+				//TODO: create a class of submit buttons.
+				var url = "/admin/menu/save"
+				var req = new qx.io.remote.Request(url, "POST");
+				req.setTimeout(180000);
+				req.setProhibitCaching(false);
+				var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
+				req.setData(data);
+
+				req.addListener("completed", this._onSaveCompleted, this);
+				req.addListener("failed", function(e) {
+					this.debug("failed");
+				}, this);
+				req.addListener("timeout", function(e) {
+					this.debug("timeout");
+				}, this);
+				req.send();
+			}
+		},
+
+		_onSaveCompleted: function(e) {
+			var model;
+			var menus = vuuvv.utils.getMenus();
+			var data = eval("(" + e.getContent() + ")");
+			var id = data.id;
+			var formModel = this._fc.getModel();
+			var pid = formModel.getParent();
+			if(data.create) {
+				model = new vuuvv.model.AdminMenu();
+				model.setId(id);
+				menus[id] = model;
+				menus[pid].getChildren().push(model);
+				model.setParent(menus[pid]);
+			} else {
+				model = menus[id];
+				var opid = model.getParentId();
+				if (opid != pid) {
+					var old = model.getParent();
+					var cur = menus[pid];
+					old.getChildren().remove(model);
+					cur.getChildren().push(model);
+					model.setParent(cur);
+				} 
+			}
+			vuuvv.utils.syncObject(formModel, model, ["label", "icon", "tooltip", "command"]);
+			this._setSelection(this._tc, model);
+		},
+
 		_getFormModelSkel: function() {
 			var modelSkeleton = {
 				id: -1,
-				label: null,
-				tooltip: null,
-				icon: null,
-				command: null,
+				label: "",
+				tooltip: "",
+				icon: "",
+				command: "",
 				parent: []
 			};
 			return qx.data.marshal.Json.createModel(modelSkeleton);
@@ -196,16 +292,16 @@ qx.Class.define("vuuvv.ui.page.AdminMenu", {
 				var sel = this._tree.getSelection();
 				if(sel.length == 1) {
 					var model = sel[0].getModel();
-					this._fm = this._getFormModelSkel();
-					this._fc.setModel(this._fm);
+					this._fc.setModel(this._getFormModelSkel());
 					this._setParentListModel(model, true);
 				} else {
 					alert("You should select only one item!");
 				}
 			}, this);
+
+			delBtn.addListener("execute", this._onDelete, this);
 			return commandFrame;
 		}
-
 	},
 
 	destruct: function()

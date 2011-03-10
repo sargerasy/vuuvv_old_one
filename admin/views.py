@@ -26,21 +26,35 @@ def save_menu(request):
 	icon = request.REQUEST["icon"]
 	tooltip = request.REQUEST["tooltip"]
 	command = request.REQUEST["command"]
-	parent = request.REQUEST["parent"]
+	pid = request.REQUEST["parent"]
 	id = request.REQUEST["id"]
-	if id == "-1":
-		logging.info("new")
-		menu = models.Menu(
-				label = label,
-				icon = icon,
-				tooltip = tooltip,
-				command = command,
-				parent = models.Menu.objects.get(pk=int(parent))
-				)
-		menu.save()
-		logging.info(menu.pk);
+	if pid == "-1":
+		parent = None
 	else:
-		logging.info("update")
-	return HttpResponse(json.dumps("{id: 1}"));
+		parent = models.Menu.objects.get(pk=int(pid))
+	if id == "-1":
+		menu = models.Menu()
+		create = True
+	else:
+		menu = models.Menu.objects.get(pk=int(id))
+		create = False
 
+	menu.label = label
+	menu.icon = icon
+	menu.tooltip = tooltip
+	menu.command = command
+	menu.parent = parent
+	menu.save()
+	obj = {"id": menu.pk, "create": create}
+	return HttpResponse(json.dumps(obj));
+
+def remove_menu(request):
+	ids = [int(i) for i in request.REQUEST.getlist("ids")]
+	logging.info(ids)
+	for id in ids:
+		model = models.Menu.objects.get(pk=id)
+		model.delete()
+
+	obj = {"ids": ids}
+	return HttpResponse(json.dumps(obj));
 
