@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
 import json
 import models
+import main.models
 import logging
 
 def model_to_dict(qs):
@@ -18,6 +19,11 @@ def appdata(request):
 	data = {"appdata": {
 		"menus": model_to_dict(models.Menu.objects.all()),
 	}}
+
+	return HttpResponse(json.dumps(data))
+
+def nav(request):
+	data = {"nav": model_to_dict(main.models.Menu.objects.all())}
 
 	return HttpResponse(json.dumps(data))
 

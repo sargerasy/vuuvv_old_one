@@ -1,0 +1,693 @@
+[
+{
+	"pk": 1,
+	"model": "main.Menu",
+	"fields": {
+		"url": "products",
+		"parent": null,
+		"label": "Products",
+		"order": 3
+	}
+},
+{
+	"pk": 2,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir",
+		"parent": null,
+		"label": "Investor Relations",
+		"order": 4
+	}
+},
+{
+	"pk": 3,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story",
+		"parent": 2,
+		"label": "Equity Story",
+		"order": 1
+	}
+},
+{
+	"pk": 4,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/highlights",
+		"parent": 3,
+		"label": "Investment Highlights",
+		"order": 3
+	}
+},
+{
+	"pk": 5,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths",
+		"parent": 3,
+		"label": "Strengths",
+		"order": 2
+	}
+},
+{
+	"pk": 6,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/dist_network",
+		"parent": 5,
+		"label": "Distribution Network",
+		"order": 0
+	}
+},
+{
+	"pk": 7,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/dist_network/network_2",
+		"parent": 6,
+		"label": "Project Business",
+		"order": 1
+	}
+},
+{
+	"pk": 8,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/dist_network/network_3",
+		"parent": 6,
+		"label": "OEM/ ODM International",
+		"order": 2
+	}
+},
+{
+	"pk": 9,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/dist_network/network_1",
+		"parent": 6,
+		"label": "Joyou Brand Local",
+		"order": 0
+	}
+},
+{
+	"pk": 10,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/brand",
+		"parent": 5,
+		"label": "Established Brand",
+		"order": 2
+	}
+},
+{
+	"pk": 11,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/experience",
+		"parent": 5,
+		"label": "Extensive Manufacturing Experience",
+		"order": 3
+	}
+},
+{
+	"pk": 12,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/market_position",
+		"parent": 5,
+		"label": "Market Position",
+		"order": 1
+	}
+},
+{
+	"pk": 13,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/grohe",
+		"parent": 5,
+		"label": "Cooperation with Grohe AG",
+		"order": 5
+	}
+},
+{
+	"pk": 14,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strengths/management",
+		"parent": 5,
+		"label": "Management and Board",
+		"order": 4
+	}
+},
+{
+	"pk": 15,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/market",
+		"parent": 3,
+		"label": "Market",
+		"order": 0
+	}
+},
+{
+	"pk": 16,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/market/driver_2",
+		"parent": 15,
+		"label": "Market Driver: Consumer Lead Growth Dynamics",
+		"order": 2
+	}
+},
+{
+	"pk": 17,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/market/driver_1",
+		"parent": 15,
+		"label": "Market Driver: Strong Underlying Market Growth",
+		"order": 1
+	}
+},
+{
+	"pk": 18,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/market/market",
+		"parent": 15,
+		"label": "Market",
+		"order": 0
+	}
+},
+{
+	"pk": 19,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy",
+		"parent": 3,
+		"label": "Strategy for Growth",
+			"order": 1
+	}
+},
+{
+	"pk": 20,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy/strategy_4",
+		"parent": 19,
+		"label": "Product Portfolio Expansion",
+		"order": 3
+	}
+},
+{
+	"pk": 21,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy/strategy_5",
+		"parent": 19,
+		"label": "Expansion of Project Business",
+		"order": 4
+	}
+},
+{
+	"pk": 22,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy/strategy_1",
+		"parent": 19,
+		"label": "Distribution Network Expansion",
+		"order": 0
+	}
+},
+{
+	"pk": 23,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy/strategy_2",
+		"parent": 19,
+		"label": "Strategic Cooperation with Grohe",
+		"order": 1
+	}
+},
+{
+	"pk": 24,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/equity_story/strategy/strategy_3",
+		"parent": 19,
+		"label": "Greater Recognition of Joyou Brand Name",
+		"order": 2
+	}
+},
+{
+	"pk": 25,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company",
+		"parent": 2,
+		"label": "The Company",
+		"order": 0
+	}
+},
+{
+	"pk": 26,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/profile",
+		"parent": 25,
+		"label": "Profile",
+		"order": 1
+	}
+},
+{
+	"pk": 27,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/outlook",
+		"parent": 25,
+		"label": "Outlook",
+		"order": 3
+	}
+},
+{
+	"pk": 28,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/management",
+		"parent": 25,
+		"label": "Management Board",
+		"order": 0
+	}
+},
+{
+	"pk": 29,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq",
+		"parent": 25,
+		"label": "FAQ",
+		"order": 4
+	}
+},
+{
+	"pk": 30,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/disclosure",
+		"parent": 29,
+		"label": "Disclosure",
+		"order": 2
+	}
+},
+{
+	"pk": 31,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/management",
+		"parent": 29,
+		"label": "Management",
+		"order": 3
+	}
+},
+{
+	"pk": 32,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/financial",
+		"parent": 29,
+		"label": "Financial",
+		"order": 1
+	}
+},
+{
+	"pk": 33,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/brand",
+		"parent": 29,
+		"label": "Brand",
+		"order": 5
+	}
+},
+{
+	"pk": 34,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/sale_distribution",
+		"parent": 29,
+		"label": "Sales and Distribution",
+		"order": 4
+	}
+},
+{
+	"pk": 35,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/faq/shares",
+		"parent": 29,
+		"label": "Listing & Shares",
+		"order": 0
+	}
+},
+{
+	"pk": 36,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/company_tour",
+		"parent": 25,
+		"label": "Company Tour",
+		"order": 5
+	}
+},
+{
+	"pk": 37,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/company/key_figures",
+		"parent": 25,
+		"label": "Group Key Figures",
+		"order": 2
+	}
+},
+{
+	"pk": 38,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/share",
+		"parent": 2,
+		"label": "The Share",
+		"order": 2
+	}
+},
+{
+	"pk": 39,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/share/share_3",
+		"parent": 38,
+		"label": "Shareholder Structure",
+		"order": 2
+	}
+},
+{
+	"pk": 40,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/share/share_2",
+		"parent": 38,
+		"label": "Analyst Coverage",
+		"order": 1
+	}
+},
+{
+	"pk": 41,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/share/share_1",
+		"parent": 38,
+		"label": "Share Price",
+		"order": 0
+	}
+},
+{
+	"pk": 42,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance",
+		"parent": 2,
+		"label": "Corporate Governance",
+		"order": 6
+	}
+},
+{
+	"pk": 43,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_5",
+		"parent": 42,
+		"label": "Annual Shareholders' Meeting",
+		"order": 4
+	}
+},
+{
+	"pk": 44,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_4",
+		"parent": 42,
+		"label": "Articles of Association",
+		"order": 3
+	}
+},
+{
+	"pk": 45,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_6",
+		"parent": 42,
+		"label": "Voting Rights Notifications",
+		"order": 5
+	}
+},
+{
+	"pk": 46,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_1",
+		"parent": 42,
+		"label": "Management Board",
+		"order": 0
+	}
+},
+{
+	"pk": 47,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_3",
+		"parent": 42,
+		"label": "Directors' Dealings",
+		"order": 2
+	}
+},
+{
+	"pk": 48,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/governance/governance_2",
+		"parent": 42,
+		"label": "Declaration of Compliance",
+		"order": 1
+	}
+},
+{
+	"pk": 49,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/contact",
+		"parent": 2,
+		"label": "IR & Press Contact ",
+		"order": 7
+	}
+},
+{
+	"pk": 50,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/publications",
+		"parent": 2,
+		"label": "Financial Publications",
+		"order": 3
+	}
+},
+{
+	"pk": 51,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/news",
+		"parent": 2,
+		"label": "News from Joyou",
+		"order": 4
+	}
+},
+{
+	"pk": 52,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/news/press",
+		"parent": 51,
+		"label": "Press Releases",
+		"order": 1
+	}
+},
+{
+	"pk": 53,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/news/ad_hoc",
+		"parent": 51,
+		"label": "Ad Hoc Releases",
+		"order": 0
+	}
+},
+{
+	"pk": 54,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/news/company",
+		"parent": 51,
+		"label": "Company News",
+		"order": 2
+	}
+},
+{
+	"pk": 55,
+	"model": "main.Menu",
+	"fields": {
+		"url": "ir/calendar",
+		"parent": 2,
+		"label": "Financial Calendar",
+		"order": 5
+	}
+},
+{
+	"pk": 56,
+	"model": "main.Menu",
+	"fields": {
+		"url": "contact",
+		"parent": null,
+		"label": "Contact",
+		"order": 5
+	}
+},
+{
+	"pk": 57,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp",
+		"parent": null,
+		"label": "Corporate",
+		"order": 1
+	}
+},
+{
+	"pk": 58,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/management",
+		"parent": 57,
+		"label": "Management & Board",
+		"order": 1
+	}
+},
+{
+	"pk": 59,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/env_responsibility",
+		"parent": 57,
+		"label": "Environmental Responsibility",
+		"order": 2
+	}
+},
+{
+	"pk": 60,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/overview",
+		"parent": 57,
+		"label": "Corporate Overview",
+		"order": 0
+	}
+},
+{
+	"pk": 61,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/culture",
+		"parent": 57,
+		"label": "Culture",
+		"order": 3
+	}
+},
+{
+	"pk": 62,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/awards",
+		"parent": 57,
+		"label": "Awards",
+		"order": 5
+	}
+},
+{
+	"pk": 63,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/milestone",
+		"parent": 57,
+		"label": "Milestones",
+		"order": 4
+	}
+},
+{
+	"pk": 64,
+	"model": "main.Menu",
+	"fields": {
+		"url": "corp/careers",
+		"parent": 57,
+		"label": "Careers",
+		"order": 6
+	}
+},
+{
+	"pk": 65,
+	"model": "main.Menu",
+	"fields": {
+		"url": "news",
+		"parent": null,
+		"label": "News",
+		"order": 2
+	}
+},
+{
+	"pk": 66,
+	"model": "main.Menu",
+	"fields": {
+		"url": "news/press",
+		"parent": 65,
+		"label": "Press Releases",
+		"order": 1
+	}
+},
+{
+	"pk": 67,
+	"model": "main.Menu",
+	"fields": {
+		"url": "news/ad_hoc",
+		"parent": 65,
+		"label": "Ad Hoc Releases",
+		"order": 0
+	}
+},
+{
+	"pk": 68,
+	"model": "main.Menu",
+	"fields": {
+		"url": "news/company",
+		"parent": 65,
+		"label": "Company News",
+		"order": 2
+	}
+},
+{
+	"pk": 69,
+	"model": "main.Menu",
+	"fields": {
+		"url": "home",
+		"parent": null,
+		"label": "Home",
+		"order": 0
+	}
+}
+]
+
