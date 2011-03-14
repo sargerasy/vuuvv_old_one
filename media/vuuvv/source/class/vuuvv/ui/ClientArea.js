@@ -3,26 +3,14 @@
 */
 
 qx.Class.define("vuuvv.ui.ClientArea", {
-	extend: qx.ui.container.Composite,
+	extend: vuuvv.ui.LoadingFrame,
 
 	construct: function() {
-		this.base(arguments, new qx.ui.layout.VBox());
-		this.initReadyState();
-		this.addListener("changeState", function(){
-			this.debug(this.getReadyState());
-		});
-	},
-
-	properties: {
-		readyState: {
-			check: ["initialized", "loading", "complete"],
-			init: "initialized",
-			event: "changeState"
-		}
+		this.base(arguments, "/admin/appdata");
 	},
 
 	members: {
-		load: function(callback, context) {
+		_load: function(callback, context) {
 			var callback = callback || qx.lang.Function.empty;
 			var context = context || this;
 
@@ -62,13 +50,15 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			req.send();
 		},
 
-		_initializeContent: function(appdata) {
+		_initializeContent: function(data) {
+			var appdata = data.appdata;
+			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox());
 			this.__menubar = new vuuvv.ui.view.Menubar(appdata.menus);
 			appdata.menus = this.__menubar.getModel();
-			this.add(this.__menubar, {flex: 0});
+			container.add(this.__menubar, {flex: 0});
 
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
-			this.add(mainsplit, {flex: 1});
+			container.add(mainsplit, {flex: 1});
 
 			//left side
 			var leftside = new qx.ui.container.Composite(new qx.ui.layout.VBox(3));
@@ -103,6 +93,8 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			var tabView = new vuuvv.ui.TabView();
 			mainsplit.add(tabView);
 			qx.core.Init.getApplication().setTabView(tabView);
+			qx.core.Init.getApplication().setAppData(appdata);
+			return container;
 		}
 	}
 });

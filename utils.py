@@ -10,7 +10,7 @@ def insert_to_collection(item):
 	myobj["model"] = "main.Menu"
 	myobj["pk"] = item["id"]
 	myobj["fields"] = {}
-	for i in ["name", "url", "order", "parent_id"]:
+	for i in ["name", "tag", "order", "parent_id"]:
 		myobj["fields"][i] = item[i]
 	collection.append(myobj)
 	
@@ -22,12 +22,12 @@ def gen_id():
 
 def trans(items, path, pid):
 	for k, v in items.items():
-		v["url"] = path+"/"+k
+		v["tag"] = k
 		v["id"] = gen_id()
 		v["parent_id"] = pid
 		print path+"/"+k, v["id"], v["parent_id"]
 		insert_to_collection(v)
-		trans(v["children"], path+"/"+k, v["id"])
+		trans(v["children"], k, v["id"])
 
 f = open("sitemap.json")
 js = f.read()
@@ -35,7 +35,7 @@ f.close()
 obj = json.loads(js)
 
 for k, v in obj["sitemap"].items():
-	v["url"] = k
+	v["tag"] = k
 	v["id"] = gen_id()
 	v["parent_id"] = None
 	print k, v["id"]
@@ -46,6 +46,6 @@ f = open("sitemap-bak-1.json", "w")
 f.write(json.dumps(obj))
 f.close()
 
-f = open("sitemap-bak-2.json", "w")
+f = open("sitemap-bak-3.json", "w")
 f.write(json.dumps(collection))
 f.close()

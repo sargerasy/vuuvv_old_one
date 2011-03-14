@@ -13,8 +13,13 @@ qx.Class.define("vuuvv.ui.TabView", {
 			var page = this.getPage(label);
 			if (!page) {
 				var pageClass = qx.Class.getByName(pageClassName);
-				page = new pageClass(label, icon);
+				page = new qx.ui.tabview.Page(label, icon);
 				page.setShowCloseButton(true);
+
+				page.setLayout(new qx.ui.layout.VBox());
+				var content = new pageClass();
+				page.add(content, {flex: 1});
+
 				this.base(arguments, page);
 				page.getButton().setContextMenu(this.getContextMenu(page));
 			}
@@ -60,7 +65,7 @@ qx.Class.define("vuuvv.ui.TabView", {
 		{
 			var all = this.getChildren();
 			var other = [];
-			for(var i in all) {
+			for(var i = 0; i < all.length; i++) {
 				if(all[i] != page)
 					other.push(all[i]);
 			}
@@ -73,7 +78,7 @@ qx.Class.define("vuuvv.ui.TabView", {
 				pages = [pages];
 			else
 				pages = Array.prototype.slice.call(pages);
-			for(var i in pages) {
+			for(var i = 0; i < pages.length; i++) {
 				var page = pages[i];
 				var closeButton = page.getButton().getChildControl("close-button");
 				closeButton.reset();

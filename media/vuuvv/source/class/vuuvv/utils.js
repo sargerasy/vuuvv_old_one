@@ -29,6 +29,12 @@ qx.Class.define("vuuvv.utils",
 			return ret;
 		},
 
+		set: function(obj, key, value) {
+		},
+
+		get: function(obj, key) {
+		},
+
 		values: function(map) {
 			var ret = [];
 			for(var key in map) ret.push(map[key]);

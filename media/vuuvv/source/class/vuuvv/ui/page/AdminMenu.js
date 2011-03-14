@@ -1,10 +1,9 @@
 qx.Class.define("vuuvv.ui.page.AdminMenu", {
-	extend: qx.ui.tabview.Page,
+	extend: qx.ui.container.Composite,
 
-	construct: function(label, icon)
+	construct: function()
 	{
-		this.base(arguments, label, icon);
-		this.setShowCloseButton(true);
+		this.base(arguments);
 		this.setLayout(new qx.ui.layout.HBox());
 
 		var mainsplit = new qx.ui.splitpane.Pane("horizontal");

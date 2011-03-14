@@ -64,7 +64,8 @@ qx.Class.define("vuuvv.Application", {
 
 			var mainContainer = new qx.ui.container.Composite(layout);
 			this.getRoot().add(mainContainer, {edge: 0});
-			mainContainer.add(new vuuvv.ui.Frame(), {flex: 1});
+			mainContainer.add(new vuuvv.ui.view.Header(), {flex: 0});
+			mainContainer.add(new vuuvv.ui.ClientArea(), {flex: 1});
 		}
 	}
 });
