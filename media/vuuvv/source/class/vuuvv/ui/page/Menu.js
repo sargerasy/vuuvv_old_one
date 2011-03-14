@@ -31,8 +31,8 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			groupBox.setLayout(new qx.ui.layout.Canvas());
 			mainsplit.add(groupBox, 1);
 
-			//this._form = this.getForm();
-			//groupBox.add(new qx.ui.form.renderer.Single(this._form));
+			this._form = this.getForm();
+			groupBox.add(new qx.ui.form.renderer.Single(this._form));
 
 			return mainsplit;
 		},
@@ -68,6 +68,27 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			commandFrame.add(createBtn, {flex: 1});
 
 			return commandFrame;
+		},
+
+		getForm: function() {
+			var form = new qx.ui.form.Form();
+			form.add(new qx.ui.form.TextField().set({
+				required: true,
+				width: 200
+			}), "Label");
+			form.add(new qx.ui.form.TextField().set({
+				required: true,
+			}), "Tag");
+			form.add(new qx.ui.form.TextField().set({
+				required: true,
+			}), "Order");
+			form.add(new qx.ui.form.TextField(), "page_id");
+
+			var saveButton = new qx.ui.form.Button("save");
+			form.addButton(saveButton);
+			var cancelButton = new qx.ui.form.Button("Cancel");
+			form.addButton(cancelButton);
+			return form;
 		}
 	},
 
