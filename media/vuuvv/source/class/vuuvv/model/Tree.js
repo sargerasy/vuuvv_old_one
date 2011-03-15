@@ -82,16 +82,41 @@ qx.Class.define("vuuvv.model.Tree", {
 			} else
 				kids.push(node);
 			node.setParent(this);
+		},
+
+		isDescendantOf: function(node, include_self) {
+			include_self = include_self || false;
+			if (include_self && this == node)
+				return true;
+
+			var p = this.getParent();
+			while (p) {
+				if (p == node)
+					return true;
+				p = p.getParent()
+			}
+			return false;
+		},
+
+		isAncestorOf: function(node, include_self) {
+			return node.isDescendantOf(this, include_self);
+		},
+
+		// not check the circular reference
+		moveto: function(node, orderPath) {
+			var old = this.getParent();
+			orderPath = orderPath || false;
+			old.getChildren().remove(this);
+			node.add(this, orderPath);
 		}
 	},
 
 	statics: 
 	{
-		create: function(data, cls, parentPath, orderPath, tagPath) {
+		create: function(data, cls, parentPath, orderPath) {
 			var root = new cls();
 			root.setLabel("all");
 			root.setId(-1);
-			if (tagPath) root.set(tagPath, "");
 			var lookup = {};
 
 			for (var i in data) {
@@ -114,6 +139,31 @@ qx.Class.define("vuuvv.model.Tree", {
 			}
 			lookup[-1] = root;
 			return lookup;
+		},
+
+		findRoots: function(nodes) {
+			var items = [];
+			for (var i = 0; i < nodes.length; i++) {
+				var item = nodes.getItem(i);
+				if (item.getId() == -1) {
+					items = item.getChildren().toArray();
+					break;
+				}
+
+				var valid = true;
+				for (var j = 0; j < items.length; j++) {
+					var old = items[j];
+					if (old.isDescendantOf(item)) {
+						items.splice(j, 1);
+					} else if (old.isAncestorOf(item)) {
+						valid = false;
+						break;
+					}
+				}
+				if (valid) 
+					items.push(item);
+			}
+			return items;
 		}
 	}
 });

@@ -17,9 +17,10 @@ qx.Class.define("vuuvv.model.Menu", {
 			event: "changeLabel"
 		},
 
-		tag: {
+		url: {
 			check: "String",
-			event: "changeUrl"
+			event: "changeUrl",
+			init: "/"
 		},
 
 		order: {
@@ -27,9 +28,10 @@ qx.Class.define("vuuvv.model.Menu", {
 			event: "changeOrder"
 		},
 
-		page_id: {
-			event: "changePage_id",
-			nullable: true
+		level: {
+			check: "Integer",
+			event: "changeLevel",
+			init: 0
 		}
 	}
 });
