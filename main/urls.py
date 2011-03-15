@@ -7,6 +7,7 @@ import views
 
 
 urlpatterns = patterns('',
+	#(r'^test/(.*)$', views.test),
 	(r'^[/]*$', views.index),
 	(r'^home[/]?$', views.index),
 	(r'^(.*)$', views.joyou),

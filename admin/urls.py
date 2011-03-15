@@ -8,6 +8,7 @@ import views
 
 urlpatterns = patterns('',
 	(r'^appdata$', views.appdata),
+	(r'^nav/save', views.save_nav),
 	(r'^menu/save$', views.save_menu),
 	(r'^menu/remove$', views.remove_menu),
 	(r'^nav$', views.nav),

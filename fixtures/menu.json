@@ -3,9 +3,10 @@
     "pk": 1,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "products",
+        "url": "products",
+        "level": 1,
         "label": "Products",
+        "parent": null,
         "order": 3
     }
 },
@@ -13,9 +14,10 @@
     "pk": 2,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "ir",
+        "url": "ir",
+        "level": 1,
         "label": "Investor Relations",
+        "parent": null,
         "order": 4
     }
 },
@@ -23,9 +25,10 @@
     "pk": 3,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "equity_story",
+        "url": "ir/equity_story",
+        "level": 2,
         "label": "Equity Story",
+        "parent": 2,
         "order": 1
     }
 },
@@ -33,9 +36,10 @@
     "pk": 4,
     "model": "main.Menu",
     "fields": {
-        "parent": 3,
-        "tag": "highlights",
+        "url": "ir/equity_story/highlights",
+        "level": 3,
         "label": "Investment Highlights",
+        "parent": 3,
         "order": 3
     }
 },
@@ -43,9 +47,10 @@
     "pk": 5,
     "model": "main.Menu",
     "fields": {
-        "parent": 3,
-        "tag": "strengths",
+        "url": "ir/equity_story/strengths",
+        "level": 3,
         "label": "Strengths",
+        "parent": 3,
         "order": 2
     }
 },
@@ -53,9 +58,10 @@
     "pk": 6,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "dist_network",
+        "url": "ir/equity_story/strengths/dist_network",
+        "level": 4,
         "label": "Distribution Network",
+        "parent": 5,
         "order": 0
     }
 },
@@ -63,9 +69,10 @@
     "pk": 7,
     "model": "main.Menu",
     "fields": {
-        "parent": 6,
-        "tag": "network_2",
+        "url": "ir/equity_story/strengths/dist_network/network_2",
+        "level": 5,
         "label": "Project Business",
+        "parent": 6,
         "order": 1
     }
 },
@@ -73,9 +80,10 @@
     "pk": 8,
     "model": "main.Menu",
     "fields": {
-        "parent": 6,
-        "tag": "network_3",
+        "url": "ir/equity_story/strengths/dist_network/network_3",
+        "level": 5,
         "label": "OEM/ ODM International",
+        "parent": 6,
         "order": 2
     }
 },
@@ -83,9 +91,10 @@
     "pk": 9,
     "model": "main.Menu",
     "fields": {
-        "parent": 6,
-        "tag": "network_1",
+        "url": "ir/equity_story/strengths/dist_network/network_1",
+        "level": 5,
         "label": "Joyou Brand Local",
+        "parent": 6,
         "order": 0
     }
 },
@@ -93,9 +102,10 @@
     "pk": 10,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "brand",
+        "url": "ir/equity_story/strengths/brand",
+        "level": 4,
         "label": "Established Brand",
+        "parent": 5,
         "order": 2
     }
 },
@@ -103,9 +113,10 @@
     "pk": 11,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "experience",
+        "url": "ir/equity_story/strengths/experience",
+        "level": 4,
         "label": "Extensive Manufacturing Experience",
+        "parent": 5,
         "order": 3
     }
 },
@@ -113,9 +124,10 @@
     "pk": 12,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "market_position",
+        "url": "ir/equity_story/strengths/market_position",
+        "level": 4,
         "label": "Market Position",
+        "parent": 5,
         "order": 1
     }
 },
@@ -123,9 +135,10 @@
     "pk": 13,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "grohe",
+        "url": "ir/equity_story/strengths/grohe",
+        "level": 4,
         "label": "Cooperation with Grohe AG",
+        "parent": 5,
         "order": 5
     }
 },
@@ -133,9 +146,10 @@
     "pk": 14,
     "model": "main.Menu",
     "fields": {
-        "parent": 5,
-        "tag": "management",
+        "url": "ir/equity_story/strengths/management",
+        "level": 4,
         "label": "Management and Board",
+        "parent": 5,
         "order": 4
     }
 },
@@ -143,9 +157,10 @@
     "pk": 15,
     "model": "main.Menu",
     "fields": {
-        "parent": 3,
-        "tag": "market",
+        "url": "ir/equity_story/market",
+        "level": 3,
         "label": "Market",
+        "parent": 3,
         "order": 0
     }
 },
@@ -153,9 +168,10 @@
     "pk": 16,
     "model": "main.Menu",
     "fields": {
-        "parent": 15,
-        "tag": "driver_2",
+        "url": "ir/equity_story/market/driver_2",
+        "level": 4,
         "label": "Market Driver: Consumer Lead Growth Dynamics",
+        "parent": 15,
         "order": 2
     }
 },
@@ -163,9 +179,10 @@
     "pk": 17,
     "model": "main.Menu",
     "fields": {
-        "parent": 15,
-        "tag": "driver_1",
+        "url": "ir/equity_story/market/driver_1",
+        "level": 4,
         "label": "Market Driver: Strong Underlying Market Growth",
+        "parent": 15,
         "order": 1
     }
 },
@@ -173,9 +190,10 @@
     "pk": 18,
     "model": "main.Menu",
     "fields": {
-        "parent": 15,
-        "tag": "market",
+        "url": "ir/equity_story/market/market",
+        "level": 4,
         "label": "Market",
+        "parent": 15,
         "order": 0
     }
 },
@@ -183,9 +201,10 @@
     "pk": 19,
     "model": "main.Menu",
     "fields": {
-        "parent": 3,
-        "tag": "strategy",
+        "url": "ir/equity_story/strategy",
+        "level": 3,
         "label": "Strategy for Growth",
+        "parent": 3,
         "order": 1
     }
 },
@@ -193,9 +212,10 @@
     "pk": 20,
     "model": "main.Menu",
     "fields": {
-        "parent": 19,
-        "tag": "strategy_4",
+        "url": "ir/equity_story/strategy/strategy_4",
+        "level": 4,
         "label": "Product Portfolio Expansion",
+        "parent": 19,
         "order": 3
     }
 },
@@ -203,9 +223,10 @@
     "pk": 21,
     "model": "main.Menu",
     "fields": {
-        "parent": 19,
-        "tag": "strategy_5",
+        "url": "ir/equity_story/strategy/strategy_5",
+        "level": 4,
         "label": "Expansion of Project Business",
+        "parent": 19,
         "order": 4
     }
 },
@@ -213,9 +234,10 @@
     "pk": 22,
     "model": "main.Menu",
     "fields": {
-        "parent": 19,
-        "tag": "strategy_1",
+        "url": "ir/equity_story/strategy/strategy_1",
+        "level": 4,
         "label": "Distribution Network Expansion",
+        "parent": 19,
         "order": 0
     }
 },
@@ -223,9 +245,10 @@
     "pk": 23,
     "model": "main.Menu",
     "fields": {
-        "parent": 19,
-        "tag": "strategy_2",
+        "url": "ir/equity_story/strategy/strategy_2",
+        "level": 4,
         "label": "Strategic Cooperation with Grohe",
+        "parent": 19,
         "order": 1
     }
 },
@@ -233,9 +256,10 @@
     "pk": 24,
     "model": "main.Menu",
     "fields": {
-        "parent": 19,
-        "tag": "strategy_3",
+        "url": "ir/equity_story/strategy/strategy_3",
+        "level": 4,
         "label": "Greater Recognition of Joyou Brand Name",
+        "parent": 19,
         "order": 2
     }
 },
@@ -243,9 +267,10 @@
     "pk": 25,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "company",
+        "url": "ir/company",
+        "level": 2,
         "label": "The Company",
+        "parent": 2,
         "order": 0
     }
 },
@@ -253,9 +278,10 @@
     "pk": 26,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "profile",
+        "url": "ir/company/profile",
+        "level": 3,
         "label": "Profile",
+        "parent": 25,
         "order": 1
     }
 },
@@ -263,9 +289,10 @@
     "pk": 27,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "outlook",
+        "url": "ir/company/outlook",
+        "level": 3,
         "label": "Outlook",
+        "parent": 25,
         "order": 3
     }
 },
@@ -273,9 +300,10 @@
     "pk": 28,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "management",
+        "url": "ir/company/management",
+        "level": 3,
         "label": "Management Board",
+        "parent": 25,
         "order": 0
     }
 },
@@ -283,9 +311,10 @@
     "pk": 29,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "faq",
+        "url": "ir/company/faq",
+        "level": 3,
         "label": "FAQ",
+        "parent": 25,
         "order": 4
     }
 },
@@ -293,9 +322,10 @@
     "pk": 30,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "disclosure",
+        "url": "ir/company/faq/disclosure",
+        "level": 4,
         "label": "Disclosure",
+        "parent": 29,
         "order": 2
     }
 },
@@ -303,9 +333,10 @@
     "pk": 31,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "management",
+        "url": "ir/company/faq/management",
+        "level": 4,
         "label": "Management",
+        "parent": 29,
         "order": 3
     }
 },
@@ -313,9 +344,10 @@
     "pk": 32,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "financial",
+        "url": "ir/company/faq/financial",
+        "level": 4,
         "label": "Financial",
+        "parent": 29,
         "order": 1
     }
 },
@@ -323,9 +355,10 @@
     "pk": 33,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "brand",
+        "url": "ir/company/faq/brand",
+        "level": 4,
         "label": "Brand",
+        "parent": 29,
         "order": 5
     }
 },
@@ -333,9 +366,10 @@
     "pk": 34,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "sale_distribution",
+        "url": "ir/company/faq/sale_distribution",
+        "level": 4,
         "label": "Sales and Distribution",
+        "parent": 29,
         "order": 4
     }
 },
@@ -343,9 +377,10 @@
     "pk": 35,
     "model": "main.Menu",
     "fields": {
-        "parent": 29,
-        "tag": "shares",
+        "url": "ir/company/faq/shares",
+        "level": 4,
         "label": "Listing & Shares",
+        "parent": 29,
         "order": 0
     }
 },
@@ -353,9 +388,10 @@
     "pk": 36,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "company_tour",
+        "url": "ir/company/company_tour",
+        "level": 3,
         "label": "Company Tour",
+        "parent": 25,
         "order": 5
     }
 },
@@ -363,9 +399,10 @@
     "pk": 37,
     "model": "main.Menu",
     "fields": {
-        "parent": 25,
-        "tag": "key_figures",
+        "url": "ir/company/key_figures",
+        "level": 3,
         "label": "Group Key Figures",
+        "parent": 25,
         "order": 2
     }
 },
@@ -373,9 +410,10 @@
     "pk": 38,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "share",
+        "url": "ir/share",
+        "level": 2,
         "label": "The Share",
+        "parent": 2,
         "order": 2
     }
 },
@@ -383,9 +421,10 @@
     "pk": 39,
     "model": "main.Menu",
     "fields": {
-        "parent": 38,
-        "tag": "share_3",
+        "url": "ir/share/share_3",
+        "level": 3,
         "label": "Shareholder Structure",
+        "parent": 38,
         "order": 2
     }
 },
@@ -393,9 +432,10 @@
     "pk": 40,
     "model": "main.Menu",
     "fields": {
-        "parent": 38,
-        "tag": "share_2",
+        "url": "ir/share/share_2",
+        "level": 3,
         "label": "Analyst Coverage",
+        "parent": 38,
         "order": 1
     }
 },
@@ -403,9 +443,10 @@
     "pk": 41,
     "model": "main.Menu",
     "fields": {
-        "parent": 38,
-        "tag": "share_1",
+        "url": "ir/share/share_1",
+        "level": 3,
         "label": "Share Price",
+        "parent": 38,
         "order": 0
     }
 },
@@ -413,9 +454,10 @@
     "pk": 42,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "governance",
+        "url": "ir/governance",
+        "level": 2,
         "label": "Corporate Governance",
+        "parent": 2,
         "order": 6
     }
 },
@@ -423,9 +465,10 @@
     "pk": 43,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_5",
+        "url": "ir/governance/governance_5",
+        "level": 3,
         "label": "Annual Shareholders' Meeting",
+        "parent": 42,
         "order": 4
     }
 },
@@ -433,9 +476,10 @@
     "pk": 44,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_4",
+        "url": "ir/governance/governance_4",
+        "level": 3,
         "label": "Articles of Association",
+        "parent": 42,
         "order": 3
     }
 },
@@ -443,9 +487,10 @@
     "pk": 45,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_6",
+        "url": "ir/governance/governance_6",
+        "level": 3,
         "label": "Voting Rights Notifications",
+        "parent": 42,
         "order": 5
     }
 },
@@ -453,9 +498,10 @@
     "pk": 46,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_1",
+        "url": "ir/governance/governance_1",
+        "level": 3,
         "label": "Management Board",
+        "parent": 42,
         "order": 0
     }
 },
@@ -463,9 +509,10 @@
     "pk": 47,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_3",
+        "url": "ir/governance/governance_3",
+        "level": 3,
         "label": "Directors' Dealings",
+        "parent": 42,
         "order": 2
     }
 },
@@ -473,9 +520,10 @@
     "pk": 48,
     "model": "main.Menu",
     "fields": {
-        "parent": 42,
-        "tag": "governance_2",
+        "url": "ir/governance/governance_2",
+        "level": 3,
         "label": "Declaration of Compliance",
+        "parent": 42,
         "order": 1
     }
 },
@@ -483,9 +531,10 @@
     "pk": 49,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "contact",
+        "url": "ir/contact",
+        "level": 2,
         "label": "IR & Press Contact ",
+        "parent": 2,
         "order": 7
     }
 },
@@ -493,9 +542,10 @@
     "pk": 50,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "publications",
+        "url": "ir/publications",
+        "level": 2,
         "label": "Financial Publications",
+        "parent": 2,
         "order": 3
     }
 },
@@ -503,9 +553,10 @@
     "pk": 51,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "news",
+        "url": "ir/news",
+        "level": 2,
         "label": "News from Joyou",
+        "parent": 2,
         "order": 4
     }
 },
@@ -513,9 +564,10 @@
     "pk": 52,
     "model": "main.Menu",
     "fields": {
-        "parent": 51,
-        "tag": "press",
+        "url": "ir/news/press",
+        "level": 3,
         "label": "Press Releases",
+        "parent": 51,
         "order": 1
     }
 },
@@ -523,9 +575,10 @@
     "pk": 53,
     "model": "main.Menu",
     "fields": {
-        "parent": 51,
-        "tag": "ad_hoc",
+        "url": "ir/news/ad_hoc",
+        "level": 3,
         "label": "Ad Hoc Releases",
+        "parent": 51,
         "order": 0
     }
 },
@@ -533,9 +586,10 @@
     "pk": 54,
     "model": "main.Menu",
     "fields": {
-        "parent": 51,
-        "tag": "company",
+        "url": "ir/news/company",
+        "level": 3,
         "label": "Company News",
+        "parent": 51,
         "order": 2
     }
 },
@@ -543,9 +597,10 @@
     "pk": 55,
     "model": "main.Menu",
     "fields": {
-        "parent": 2,
-        "tag": "calendar",
+        "url": "ir/calendar",
+        "level": 2,
         "label": "Financial Calendar",
+        "parent": 2,
         "order": 5
     }
 },
@@ -553,9 +608,10 @@
     "pk": 56,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "contact",
+        "url": "contact",
+        "level": 1,
         "label": "Contact",
+        "parent": null,
         "order": 5
     }
 },
@@ -563,9 +619,10 @@
     "pk": 57,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "corp",
+        "url": "corp",
+        "level": 1,
         "label": "Corporate",
+        "parent": null,
         "order": 1
     }
 },
@@ -573,9 +630,10 @@
     "pk": 58,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "management",
+        "url": "corp/management",
+        "level": 2,
         "label": "Management & Board",
+        "parent": 57,
         "order": 1
     }
 },
@@ -583,9 +641,10 @@
     "pk": 59,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "env_responsibility",
+        "url": "corp/env_responsibility",
+        "level": 2,
         "label": "Environmental Responsibility",
+        "parent": 57,
         "order": 2
     }
 },
@@ -593,9 +652,10 @@
     "pk": 60,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "overview",
+        "url": "corp/overview",
+        "level": 2,
         "label": "Corporate Overview",
+        "parent": 57,
         "order": 0
     }
 },
@@ -603,9 +663,10 @@
     "pk": 61,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "culture",
+        "url": "corp/culture",
+        "level": 2,
         "label": "Culture",
+        "parent": 57,
         "order": 3
     }
 },
@@ -613,9 +674,10 @@
     "pk": 62,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "awards",
+        "url": "corp/awards",
+        "level": 2,
         "label": "Awards",
+        "parent": 57,
         "order": 5
     }
 },
@@ -623,9 +685,10 @@
     "pk": 63,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "milestone",
+        "url": "corp/milestone",
+        "level": 2,
         "label": "Milestones",
+        "parent": 57,
         "order": 4
     }
 },
@@ -633,9 +696,10 @@
     "pk": 64,
     "model": "main.Menu",
     "fields": {
-        "parent": 57,
-        "tag": "careers",
+        "url": "corp/careers",
+        "level": 2,
         "label": "Careers",
+        "parent": 57,
         "order": 6
     }
 },
@@ -643,9 +707,10 @@
     "pk": 65,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "news",
+        "url": "news",
+        "level": 1,
         "label": "News",
+        "parent": null,
         "order": 2
     }
 },
@@ -653,9 +718,10 @@
     "pk": 66,
     "model": "main.Menu",
     "fields": {
-        "parent": 65,
-        "tag": "press",
+        "url": "news/press",
+        "level": 2,
         "label": "Press Releases",
+        "parent": 65,
         "order": 1
     }
 },
@@ -663,9 +729,10 @@
     "pk": 67,
     "model": "main.Menu",
     "fields": {
-        "parent": 65,
-        "tag": "ad_hoc",
+        "url": "news/ad_hoc",
+        "level": 2,
         "label": "Ad Hoc Releases",
+        "parent": 65,
         "order": 0
     }
 },
@@ -673,9 +740,10 @@
     "pk": 68,
     "model": "main.Menu",
     "fields": {
-        "parent": 65,
-        "tag": "company",
+        "url": "news/company",
+        "level": 2,
         "label": "Company News",
+        "parent": 65,
         "order": 2
     }
 },
@@ -683,12 +751,14 @@
     "pk": 69,
     "model": "main.Menu",
     "fields": {
-        "parent": null,
-        "tag": "home",
+        "url": "home",
+        "level": 1,
         "label": "Home",
+        "parent": null,
         "order": 0
     }
 }
 ]
+
 
 

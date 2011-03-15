@@ -1,10 +1,9 @@
 
 class Node(object):
-	def __init__(self, data, label_path="label"):
+	def __init__(self, data):
 		self.data = data
 		self.children = []
 		self.parent = None
-		self.label_path = label_path
 
 	def hasChildren(self):
 		return len(self.children) != 0
@@ -31,9 +30,9 @@ class Node(object):
 
 	def pwd(self):
 		if self.parent is None:
-			return [self.data[self.label_path]]
+			return [self]
 		else:
-			return self.parent.pwd() + [self.data[self.label_path]]
+			return self.parent.pwd() + [self]
 
 	def xpath(self, path, attr):
 		parts = [ i for i in path.split("/") if i]
@@ -64,6 +63,9 @@ class Node(object):
 			return sibs[index]
 		return None
 
+	def siblings(self):
+		return self.parent.children
+
 	def left(self):
 		return self.sibling(-1)
 
@@ -93,21 +95,6 @@ class Node(object):
 			curr = agenda.pop(0)
 			agenda = curr.children + agenda
 			yield curr
-
-class dbTree(object):
-	def __init__(self, models, parent_path, label_path):
-		self.obj = models
-		self._lookup = {None: Node("root")}
-		for item in models:
-			attrs = [a.attname for a in item._meta.fields]
-			raw = dict([(attr, getattr(item, attr)) for attr in attrs])
-			self._lookup[item.id] = Node(raw)
-
-		for key, val in self._lookup.items():
-			if key is not None:
-				pid = val.data[parent_path]
-				parent = self._lookup[pid]
-				parent.add(val)
 
 if __name__ == "__main__":
 	Node1 = Node({"label": "1"})

@@ -1,51 +1,10 @@
-import json
-
-id = 1
-
-collection = []
-
-def insert_to_collection(item):
-	global collection
-	myobj = { }
-	myobj["model"] = "main.Menu"
-	myobj["pk"] = item["id"]
-	myobj["fields"] = {}
-	for i in ["name", "tag", "order", "parent_id"]:
-		myobj["fields"][i] = item[i]
-	collection.append(myobj)
+def model_to_dict(qs):
+	ret = {}
+	for i in qs:
+		attrs = [a.attname for a in i._meta.fields]
+		ret[i.id] = {}
+		for attr in attrs:
+			ret[i.id][attr] = getattr(i, attr)
 	
-def gen_id():
-	global id
-	ret = id
-	id += 1
 	return ret
 
-def trans(items, path, pid):
-	for k, v in items.items():
-		v["tag"] = k
-		v["id"] = gen_id()
-		v["parent_id"] = pid
-		print path+"/"+k, v["id"], v["parent_id"]
-		insert_to_collection(v)
-		trans(v["children"], k, v["id"])
-
-f = open("sitemap.json")
-js = f.read()
-f.close()
-obj = json.loads(js)
-
-for k, v in obj["sitemap"].items():
-	v["tag"] = k
-	v["id"] = gen_id()
-	v["parent_id"] = None
-	print k, v["id"]
-	insert_to_collection(v)
-	trans(v["children"], k, v["id"])
-
-f = open("sitemap-bak-1.json", "w")
-f.write(json.dumps(obj))
-f.close()
-
-f = open("sitemap-bak-3.json", "w")
-f.write(json.dumps(collection))
-f.close()
