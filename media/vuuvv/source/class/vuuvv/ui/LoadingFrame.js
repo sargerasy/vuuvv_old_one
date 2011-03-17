@@ -11,22 +11,58 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			this.debug(this.getReadyState());
 		});
 
-		this.__stack = new qx.ui.container.Stack();
-		this.add(this.__stack, {flex: 1});
+		this._stack = new qx.ui.container.Stack();
+		this.add(this._stack, {flex: 1});
 
-		this.__stack.add(this.getLoadingPage(), {flex: 1});
+		this._stack.add(this.getLoadingPage(), {flex: 1});
 		this.load(url);
 	},
 
 	properties: {
 		readyState: {
-			check: ["initialized", "loading", "complete"],
+			check: ["initialized", "loading", "completed", "failed"],
 			init: "initialized",
 			event: "changeState"
+		},
+
+		url: {
+			check: "String",
+			apply: "_applyUrl",
+			event: "changeUrl",
+			init: ""
 		}
 	},
 
 	members: {
+		_stack: null,
+		_loadingPage: null,
+		_loadedPage: null,
+
+		_applyUrl: function() {
+			this._stack.setSelection([this._loadingPage]);
+			var state = this.getReadyState();
+			if (state == "completed" || state == "loading") 
+				return;
+			this._stack.setSelection([this._loadingPage]);
+			this.setReadyState("loading");
+
+			var req = new qx.io.remote.Request(url);
+			req.setTimeout(180000);
+			req.setProhibitCaching(false);
+
+			req.addListener("completed", function(e) {
+				var data = eval("(" + e.getContent() + ")");
+				if (state == "initialized") this._createPage();
+				this._setupPage(data);
+				this._stack.setSelection([this._loadedPage]);
+				this.setReadyState("completed");
+			}, this);
+
+			req.addListener("failed", function(e) {
+				this.setReadyState("failed");
+			}, this);
+		},
+
 		getLoadingPage: function() {
 			var layout = new qx.ui.layout.Atom();
 			layout.setCenter(true);
@@ -41,7 +77,7 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			var context = context || this;
 
 			var state = this.getReadyState();
-			if (state == "complete") {
+			if (state == "completed") {
 				callback.call(context);
 				return;
 			}
@@ -60,9 +96,9 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			req.addListener("completed", function(e) {
 				var data = eval("(" + e.getContent() + ")");
 				var content = this._initializeContent(data);
-				this.__stack.add(content);
-				this.__stack.setSelection([content]);
-				this.setReadyState("complete");
+				this._stack.add(content);
+				this._stack.setSelection([content]);
+				this.setReadyState("completed");
 				callback.call(context);
 			}, this);
 
@@ -75,6 +111,6 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 	},
 
 	destruct: function() {
-		this._disposeObjects("__stack");
+		this._disposeObjects("_stack");
 	}
 });

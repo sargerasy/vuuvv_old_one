@@ -39,7 +39,6 @@ qx.Class.define("vuuvv.model.Tree", {
 
 				if (agenda.length) {
 					curr = agenda.shift();
-					console.log(curr);
 					var children = curr.getChildren().toArray();
 
 					if (children.length) {
@@ -74,7 +73,7 @@ qx.Class.define("vuuvv.model.Tree", {
 				// because the number of data is small, so use the simple algorithm
 				var order = node.get(orderPath);
 				for (var i = 0; i < kids.length; i++) {
-					if (order <= kids.getItem(i).get(orderPath)) {
+					if (order < kids.getItem(i).get(orderPath)) {
 						break;
 					}
 				}
@@ -82,6 +81,15 @@ qx.Class.define("vuuvv.model.Tree", {
 			} else
 				kids.push(node);
 			node.setParent(this);
+		},
+
+		// include self
+		siblings: function() {
+			return this.getParent().getChildren();
+		},
+
+		rm: function() {
+			this.siblings().remove(this);
 		},
 
 		isDescendantOf: function(node, include_self) {
@@ -104,9 +112,8 @@ qx.Class.define("vuuvv.model.Tree", {
 
 		// not check the circular reference
 		moveto: function(node, orderPath) {
-			var old = this.getParent();
 			orderPath = orderPath || false;
-			old.getChildren().remove(this);
+			this.rm();
 			node.add(this, orderPath);
 		}
 	},
@@ -155,6 +162,7 @@ qx.Class.define("vuuvv.model.Tree", {
 					var old = items[j];
 					if (old.isDescendantOf(item)) {
 						items.splice(j, 1);
+						j--;
 					} else if (old.isAncestorOf(item)) {
 						valid = false;
 						break;

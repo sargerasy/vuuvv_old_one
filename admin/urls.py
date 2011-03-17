@@ -8,9 +8,13 @@ import views
 
 urlpatterns = patterns('',
 	(r'^appdata$', views.appdata),
+	(r'^nav$', views.nav),
 	(r'^nav/save', views.save_nav),
+	(r'^nav/remove', views.remove_nav),
 	(r'^menu/save$', views.save_menu),
 	(r'^menu/remove$', views.remove_menu),
-	(r'^nav$', views.nav),
+	(r'^page$', views.page),
+	(r'^page/save$', views.save_page),
+	(r'^page/remove$', views.remove_page),
 )
 

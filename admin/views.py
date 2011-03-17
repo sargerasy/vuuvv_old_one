@@ -39,6 +39,16 @@ def save_nav(request):
 	obj = {"id": menu.pk, "create": create}
 	return HttpResponse(json.dumps(obj));
 
+def remove_nav(request):
+	ids = [int(i) for i in request.REQUEST.getlist("ids")]
+	logging.info(ids)
+	for id in ids:
+		model = main.models.Menu.objects.get(pk=id)
+		model.delete()
+
+	obj = {"ids": ids}
+	return HttpResponse(json.dumps(obj));
+
 def save_menu(request):
 	label = request.REQUEST["label"]
 	icon = request.REQUEST["icon"]
@@ -76,3 +86,13 @@ def remove_menu(request):
 	obj = {"ids": ids}
 	return HttpResponse(json.dumps(obj));
 
+def page(request):
+	model = main.models.Page.objects.order_by("url").values("id", "url")
+	return HttpResponse(json.dumps(list(model)));
+
+def save_page(request):
+	return HttpResponse();
+
+def remove_page(request):
+	return HttpResponse();
+	

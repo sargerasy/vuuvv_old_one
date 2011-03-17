@@ -15,6 +15,7 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 
 		_initializeContent: function(data) {
 			data = data.nav
+			this._createCommands();
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
 
 			var treeFrame = new qx.ui.container.Composite(new qx.ui.layout.VBox(3));
@@ -59,20 +60,33 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			var commandFrame = new qx.ui.container.Composite(box);
 			box.setSpacing(5);
 
-			var newBtn = new qx.ui.form.Button(this.tr("New"));
-			var delBtn = new qx.ui.form.Button(this.tr("Delete"));
-			var editBtn = new qx.ui.form.Button(this.tr("Edit Page"));
-			var createBtn = new qx.ui.form.Button(this.tr("Create Page"));
+			var newBtn = new qx.ui.form.Button("", "", this._new);
+			var editBtn = new qx.ui.form.Button("", "", this._edit);
+			var delBtn = new qx.ui.form.Button("", "", this._delete);
+			var editPageBtn = new qx.ui.form.Button("", "", this._editPage);
 
 			commandFrame.add(newBtn, {flex: 1});
-			commandFrame.add(delBtn, {flex: 1});
 			commandFrame.add(editBtn, {flex: 1});
-			commandFrame.add(createBtn, {flex: 1});
-
-			newBtn.addListener("execute", this._onNew, this);
-			delBtn.addListener("execute", this._onDelete, this);
+			commandFrame.add(delBtn, {flex: 1});
+			commandFrame.add(editPageBtn, {flex: 1});
 
 			return commandFrame;
+		},
+
+		_getTreeContextMenu: function() {
+			var menu = new qx.ui.menu.Menu;
+
+			var newBtn = new qx.ui.menu.Button("", "", this._new);
+			var editBtn = new qx.ui.menu.Button("", "", this._edit);
+			var delBtn = new qx.ui.menu.Button("", "", this._delete);
+			var editPageBtn = new qx.ui.menu.Button("", "", this._editPage);
+
+			menu.add(newBtn);
+			menu.add(editBtn);
+			menu.add(delBtn);
+			menu.add(editPageBtn);
+
+			return menu;
 		},
 
 		getForm: function() {
@@ -117,6 +131,15 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			return form;
 		},
 
+		_onEdit: function() {
+			var model = this._tc.getSelection().getItem(0);
+			this._editModel(model);
+		},
+
+		_onEditPage: function() {
+			this.debug("Edit Page");
+		},
+
 		_onNew: function() {
 			var s = this._tc.getSelection();
 			if (s.length == 1) {
@@ -130,9 +153,35 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 
 		_onDelete: function() {
 			var nodes = this._tc.getSelection();
-			console.log(nodes.toArray());
 			nodes = vuuvv.model.Tree.findRoots(nodes);
-			console.log(nodes);
+			var proto = {"ids": []};
+			for (var i = 0; i < nodes.length; i++) {
+				proto.ids.push(nodes[i].getId());
+			}
+
+			var data = qx.util.Serializer.toUriParameter(qx.data.marshal.Json.createModel(proto));
+			var url = "/admin/nav/remove"
+			var req = new qx.io.remote.Request(url, "POST");
+			req.setTimeout(180000);
+			req.setProhibitCaching(false);
+			req.setData(data);
+			req.addListener("completed", this._onDeleteCompleted, this);
+
+			req.send();
+		},
+
+		_onDeleteCompleted: function(e) {
+			var data = eval("(" + e.getContent() + ")");
+			for (var i = 0; i < data.ids.length; i++) {
+				var id = data.ids[i];
+				var node = this._lookup[id];
+				node.rm();
+				var self = this;
+				node.map(function() {
+					// this point to the node object;
+					delete self._lookup[this.getId()];
+				}, []);
+			}
 		},
 
 		_onSave: function(e) {
@@ -142,7 +191,6 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 				req.setTimeout(180000);
 				req.setProhibitCaching(false);
 				var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
-				console.log(data);
 				req.setData(data);
 				req.addListener("completed", this._onSaveCompleted, this);
 				req.addListener("failed", function(e) {
@@ -162,11 +210,12 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			var pid = fm.getParent();
 			var parent = this._lookup[pid];
 			var model = data.create ? new vuuvv.model.Menu() : this._lookup[id];
+			fm.setId(id);
 			model.setLevel(parent.getLevel() + 1);
-			vuuvv.utils.syncObject(fm, model, ["label", "url", "order", "level"]);
+			vuuvv.utils.syncObject(fm, model, ["id", "label", "url", "order", "level"]);
 			if (data.create) {
-				model.setId(id);
 				parent.add(model, "order");
+				this._lookup[id] = model;
 			} else {
 				model.moveto(parent, "order");
 			}
@@ -190,15 +239,11 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			return {
 				bindItem: function(controller, widget, model) {
 					widget.addListener("dblclick", function(e) {
-						console.log(model);
-						if (model.getId() == -1)
-							return;
-						this._setParentListModel(model, false);
-						vuuvv.utils.syncObject(model, this._fc.getModel(),[
-							"id", "label", "url", "order", "level"
-						]);
+						this._editModel(model);
 					}, self);
+					widget.setContextMenu(self._getTreeContextMenu());
 
+					self._enableTreeDnd(widget);
 					controller.bindDefaultProperties(widget, model);
 				}
 			};
@@ -221,12 +266,50 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			var s = new qx.data.Array();
 			s.push(target);
 			controller.setSelection(s);
+		},
+
+		_editModel: function(model) {
+			if (model.getId() == -1)
+				return;
+			this._setParentListModel(model, false);
+			vuuvv.utils.syncObject(model, this._fc.getModel(),[
+				"id", "label", "url", "order", "level"
+			]);
+		},
+
+		_createCommands: function() {
+			this._new = new qx.ui.core.Command();
+			this._new.setLabel("New");
+			this._new.addListener("execute", this._onNew, this);
+
+			this._delete = new qx.ui.core.Command();
+			this._delete.setLabel("Delete");
+			this._delete.addListener("execute", this._onDelete, this);
+
+			this._editPage = new qx.ui.core.Command();
+			this._editPage.setLabel("Edit Page");
+			this._editPage.addListener("execute", this._onEditPage, this);
+
+			this._edit = new qx.ui.core.Command();
+			this._edit.setLabel("Edit");
+			this._edit.addListener("execute", this._onEdit, this);
+		},
+
+		_enableTreeDnd: function(widget) {
+			widget.setDraggable(true);
+			widget.setDroppable(true);
+			widget.addListener("dragstart", function(e) {
+				e.addAction("move");
+			});
+			widget.addListener("drop", function(e) {
+				console.log(e.getRelatedTarget());
+			});
 		}
 
 	},
 
 	destruct: function()
 	{
-		this._disposeObjects("_lookup");
+		this._disposeObjects("_tree", "_form", "_tc", "_fc", "_pc", "_lookup", "_new", "_delete", "_editPage", "_edit");
 	}
 });
