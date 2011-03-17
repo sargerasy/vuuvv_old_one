@@ -13,8 +13,7 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 	{
 		_lookup: null,
 
-		_initializeContent: function(data) {
-			data = data.nav
+		createPage: function() {
 			this._createCommands();
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
 
@@ -22,37 +21,61 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			treeFrame.setBackgroundColor("background-splitpane");
 			treeFrame.add(this.getCommandFrame());
 
-			this._tree = this.getTree(data);
+			this._tree = this.getTree();
 			treeFrame.add(this._tree, {flex: 1});
 
 			mainsplit.add(treeFrame, 0);
 
-
-			var groupBox = new qx.ui.groupbox.GroupBox(this.tr("Menu Details"));
-			groupBox.setLayout(new qx.ui.layout.Canvas());
-			mainsplit.add(groupBox, 1);
-
-			this._form = this.getForm();
-			groupBox.add(new qx.ui.form.renderer.Single(this._form));
+			this._editarea = this.getEditArea();
+			mainsplit.add(this._editarea);
 
 			return mainsplit;
 		},
 
-		getTree: function(data) {
+		setupPage: function(data) {
+			data = data.nav;
 			this._lookup = vuuvv.model.Tree.create(data, vuuvv.model.Menu, "parent_id", "order");
-			var model = this._lookup[-1]
-			model.map(function(){ this.debug(this.pwd("tag").join("/")); }, [], true);
+			var model = this._lookup[-1];
+			this._tc.setModel(model);
+			this._tree.getRoot().setOpen(true);
+		},
+
+		getTree: function() {
 			var tree = new qx.ui.tree.Tree();
 			tree.set({width: 300});
 			tree.setSelectionMode("multi");
 
 			var ctrl = new qx.data.controller.Tree(null, tree, "children", "label");
 			ctrl.setDelegate(this._getTreeDelegate());
-			ctrl.setModel(model);
 			this._tc = ctrl;
 
-			tree.getRoot().setOpen(true);
 			return tree;
+		},
+
+		getEditArea: function() {
+			var editarea = new qx.ui.container.Stack();
+
+			var menueditor = new qx.ui.groupbox.GroupBox(this.tr("Menu Details"));
+			menueditor.setLayout(new qx.ui.layout.Canvas());
+			this._menuForm = this.getMenuForm();
+			menueditor.add(new qx.ui.form.renderer.Single(this._menuForm));
+			editarea.add(menueditor);
+
+			var pageeditor = new vuuvv.ui.page.PageForm();
+			editarea.add(pageeditor);
+
+			this._pageeditor = pageeditor;
+			this._menueditor = menueditor;
+
+			return editarea;
+		},
+
+		toMenuEditor: function() {
+			this._editarea.setSelection([this._menueditor]);
+		},
+
+		toPageEditor: function() {
+			this._editarea.setSelection([this._pageeditor]);
 		},
 
 		getCommandFrame: function() {
@@ -89,7 +112,7 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			return menu;
 		},
 
-		getForm: function() {
+		getMenuForm: function() {
 			var form = new qx.ui.form.Form();
 			form.add(new qx.ui.form.TextField().set({
 				required: true,
@@ -132,15 +155,21 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 		},
 
 		_onEdit: function() {
+			this.toMenuEditor();
 			var model = this._tc.getSelection().getItem(0);
 			this._editModel(model);
 		},
 
 		_onEditPage: function() {
-			this.debug("Edit Page");
+			this.toPageEditor();
+			var model = this._tc.getSelection().getItem(0);
+			if (model.getId() == -1)
+				return;
+			var page = this._pageeditor.goPage(model.getUrl());
 		},
 
 		_onNew: function() {
+			this.toMenuEditor();
 			var s = this._tc.getSelection();
 			if (s.length == 1) {
 				var model = s.getItem(0);
@@ -185,7 +214,7 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 		},
 
 		_onSave: function(e) {
-			if (this._form.validate()) {
+			if (this._menuForm.validate()) {
 				var url = "/admin/nav/save";
 				var req = new qx.io.remote.Request(url, "POST");
 				req.setTimeout(180000);
@@ -310,6 +339,9 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 
 	destruct: function()
 	{
-		this._disposeObjects("_tree", "_form", "_tc", "_fc", "_pc", "_lookup", "_new", "_delete", "_editPage", "_edit");
+		this._disposeObjects("_tree", "_form", "_tc", "_fc", "_pc", 
+							"_lookup", "_new", "_delete", "_editPage", "_edit",
+							"_pageeditor", "_menueditor", "_editarea"
+		);
 	}
 });

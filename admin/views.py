@@ -86,13 +86,23 @@ def remove_menu(request):
 	obj = {"ids": ids}
 	return HttpResponse(json.dumps(obj));
 
-def page(request):
+def pages(request):
 	model = main.models.Page.objects.order_by("url").values("id", "url")
 	return HttpResponse(json.dumps(list(model)));
 
+def page(request, url):
+	obj = {"create": False, "page": None}
+	model = main.models.Page.objects.filter(url__exact=url)
+	if len(model) < 1:
+		obj["create"] = True
+	else:
+		obj["page"] = list(model)[0]
+
+	return HttpResponse(json.dumps(obj))
+
 def save_page(request):
-	return HttpResponse();
+	return HttpResponse("{}")
 
 def remove_page(request):
-	return HttpResponse();
+	return HttpResponse("{}")
 	

@@ -3,15 +3,14 @@ qx.Class.define("vuuvv.ui.page.Page", {
 
 	construct: function()
 	{
-		this.base(arguments, "/admin/page");
+		this.base(arguments, "/admin/pages");
 	},
 
 	members:
 	{
 		_lookup: null,
 
-		_initializeContent: function(data) {
-			data = data.page
+		createPage: function() {
 			//this._createCommands();
 			var mainsplit = new qx.ui.splitpane.Pane("horizontal");
 
@@ -19,7 +18,7 @@ qx.Class.define("vuuvv.ui.page.Page", {
 			listFrame.setBackgroundColor("background-splitpane");
 			//listFrame.add(this.getCommandFrame());
 
-			this._list = this.getList(data);
+			this._list = this.getList();
 			listFrame.add(this._list, {flex: 1});
 
 			mainsplit.add(listFrame, 0);
@@ -35,10 +34,16 @@ qx.Class.define("vuuvv.ui.page.Page", {
 			return mainsplit;
 		},
 
-		getList: function(data) {
+		setupPage: function(data) {
+			var model = qx.data.marshal.Json.createModel(data.page);
+			this._lc.setModel()
+		},
+
+		getList: function() {
 			var list = new qx.ui.list.List();
 			list.set({width: 300});
 			list.setSelectionMode("multi");
+			this._lc = new qx.data.controller.List(null, list);
 			return list;
 		}
 	}

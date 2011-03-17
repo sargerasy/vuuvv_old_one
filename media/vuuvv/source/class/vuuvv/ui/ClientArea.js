@@ -10,49 +10,9 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 	},
 
 	members: {
-		_load: function(callback, context) {
-			var callback = callback || qx.lang.Function.empty;
-			var context = context || this;
-
-			var state = this.getReadyState();
-			if (state == "complete") {
-				callback.call(context);
-				return;
-			}
-			if (state == "loading") {
-				this.addListenerOnce("changeState", function(){
-					callback.call(context);
-				});
-				return;
-			}
-			this.setReadyState("loading");
-			var timer = qx.util.TimerManager.getInstance();
-
-			var url = "/admin/appdata";
-
-			var req = new qx.io.remote.Request(url);
-			req.setTimeout(180000);
-			req.setProhibitCaching(false);
-
-			req.addListener("completed", function(evt) {
-				var content = evt.getContent();
-				var treeData = eval("(" + content + ")");
-				this._initializeContent(treeData.appdata);
-				qx.core.Init.getApplication().setAppData(treeData.appdata);
-				this.setReadyState("complete");
-				callback.call(context);
-			}, this);
-
-			req.addListener("failed", function(evt) {
-				this.error("Couldn't load file: " + url);
-			}, this);
-
-			req.send();
-		},
-
-		_initializeContent: function(data) {
+		setupPage: function(data) {
 			var appdata = data.appdata;
-			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox());
+			var container = this._container;
 			this.__menubar = new vuuvv.ui.view.Menubar(appdata.menus);
 			appdata.menus = this.__menubar.getModel();
 			container.add(this.__menubar, {flex: 0});
@@ -95,6 +55,11 @@ qx.Class.define("vuuvv.ui.ClientArea", {
 			qx.core.Init.getApplication().setTabView(tabView);
 			qx.core.Init.getApplication().setAppData(appdata);
 			return container;
+		},
+
+		createPage: function() {
+			this._container = new qx.ui.container.Composite(new qx.ui.layout.VBox());
+			return this._container;
 		}
 	}
 });

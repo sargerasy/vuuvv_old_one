@@ -14,8 +14,9 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 		this._stack = new qx.ui.container.Stack();
 		this.add(this._stack, {flex: 1});
 
-		this._stack.add(this.getLoadingPage(), {flex: 1});
-		this.load(url);
+		this._loadingPage = this.getLoadingPage();
+		this._stack.add(this._loadingPage, {flex: 1});
+		if (url) this.setUrl(url);
 	},
 
 	properties: {
@@ -38,10 +39,10 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 		_loadingPage: null,
 		_loadedPage: null,
 
-		_applyUrl: function() {
-			this._stack.setSelection([this._loadingPage]);
+		_applyUrl: function(url) {
+			console.log(url);
 			var state = this.getReadyState();
-			if (state == "completed" || state == "loading") 
+			if (state == "loading") 
 				return;
 			this._stack.setSelection([this._loadingPage]);
 			this.setReadyState("loading");
@@ -52,8 +53,12 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 
 			req.addListener("completed", function(e) {
 				var data = eval("(" + e.getContent() + ")");
-				if (state == "initialized") this._createPage();
-				this._setupPage(data);
+				if (state == "initialized") {
+					var page = this.createPage();
+					this._stack.add(page);
+					this._loadedPage = page;
+				}
+				this.setupPage(data);
 				this._stack.setSelection([this._loadedPage]);
 				this.setReadyState("completed");
 			}, this);
@@ -61,6 +66,8 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			req.addListener("failed", function(e) {
 				this.setReadyState("failed");
 			}, this);
+
+			req.send();
 		},
 
 		getLoadingPage: function() {
@@ -70,47 +77,10 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			var loading = new qx.ui.basic.Image("vuuvv/loading66.gif", "100%", "100%");
 			container.add(loading);
 			return container;
-		},
-
-		load: function(url, callback, context) {
-			var callback = callback || qx.lang.Function.empty;
-			var context = context || this;
-
-			var state = this.getReadyState();
-			if (state == "completed") {
-				callback.call(context);
-				return;
-			}
-			if (state == "loading") {
-				this.addListenerOnce("changeState", function(){
-					callback.call(context);
-				});
-				return;
-			}
-			this.setReadyState("loading");
-
-			var req = new qx.io.remote.Request(url);
-			req.setTimeout(180000);
-			req.setProhibitCaching(false);
-
-			req.addListener("completed", function(e) {
-				var data = eval("(" + e.getContent() + ")");
-				var content = this._initializeContent(data);
-				this._stack.add(content);
-				this._stack.setSelection([content]);
-				this.setReadyState("completed");
-				callback.call(context);
-			}, this);
-
-			req.addListener("failed", function(evt) {
-				this.error("Couldn't load file: " + url);
-			}, this);
-
-			req.send();
 		}
 	},
 
 	destruct: function() {
-		this._disposeObjects("_stack");
+		this._disposeObjects("_stack", "_loadingPage", "_loadedPage");
 	}
 });
