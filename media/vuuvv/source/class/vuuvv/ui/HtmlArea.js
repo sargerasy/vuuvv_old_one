@@ -56,6 +56,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 
 	members : {
 		_htmlArea: null,
+		_filebrowser: null,
 
 		syncValue: function() {
 			this.setValue(this._htmlArea.getHtml());
@@ -67,6 +68,9 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 
 		_test: function() {
 			this.debug(this.getHtml());
+		},
+
+		_getUploader: function() {
 		},
 
 		_getToolbarEntries: function() {
@@ -85,6 +89,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 				indent:              { text: "Indent More", image: "qx/icon/Oxygen/16/actions/format-indent-more.png", action: this._htmlArea.insertIndent },
 				outdent:             { text: "Indent Less", image: "qx/icon/Oxygen/16/actions/format-indent-less.png", action: this._htmlArea.insertOutdent }
 			}, {
+				insertImage:         { text: "Insert Image", image: "qx/icon/Oxygen/16/actions/insert-image.png", action: this._insertImageHandler, context: this},
 				insertHR:            { text: "Insert Horizontal Ruler", image: "vuuvv/images/insert-horizontal-rule.png", action: this._htmlArea.insertHorizontalRuler }
 			}, {
 				ol:                  { text: "Insert Ordered List", image: "vuuvv/images/format-list-ordered.png", action: this._htmlArea.insertOrderedList },
@@ -134,10 +139,20 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 				this._editArea.setSelection([this._htmlArea]);
 				this.setMode("html");
 			}
+		},
+
+		_insertImageHandler: function() {
+			this.getFileBrowser().show();
+		},
+
+		getFileBrowser: function() {
+			if (!this._filebrowser)
+				this._filebrowser = new vuuvv.ui.FileBrowser();
+			return this._filebrowser;
 		}
 	},
 
 	destruct : function() {
-		this._disposeObjects("_htmlArea");
+		this._disposeObjects("_htmlArea", "_filebrowser");
 	}
 });

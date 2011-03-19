@@ -11,11 +11,18 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 			this.debug(this.getReadyState());
 		});
 
+		var scroll = new qx.ui.container.Scroll();
+		scroll.getChildControl("scrollbar-x");
+		scroll.getChildControl("scrollbar-y");
+		scroll.getChildControl("corner");
+		this.add(scroll, {flex: 1});
+
 		this._stack = new qx.ui.container.Stack();
-		this.add(this._stack, {flex: 1});
+		scroll.add(this._stack);
 
 		this._loadingPage = this.getLoadingPage();
 		this._stack.add(this._loadingPage, {flex: 1});
+
 		if (url) this.setUrl(url);
 	},
 

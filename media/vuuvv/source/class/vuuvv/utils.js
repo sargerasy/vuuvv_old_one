@@ -29,17 +29,44 @@ qx.Class.define("vuuvv.utils",
 			return ret;
 		},
 
-		set: function(obj, key, value) {
-		},
-
-		get: function(obj, key) {
-		},
-
 		values: function(map) {
 			var ret = [];
 			for(var key in map) ret.push(map[key]);
 			return ret
-		}
+		},
 
+		getShowEffect: function(widget) {
+			var effect;
+			if (qx.bom.client.Engine.MSHTML) {
+				effect = new qx.fx.effect.core.Fade(
+					widget.getContainerElement().getDomElement()
+				).set({
+					from: 0,
+					to: 1
+				});
+			} else {
+				effect = new qx.fx.effect.combination.Grow(
+					widget.getContainerElement().getDomElement()
+				);
+			}
+			return effect;
+		},
+
+		getHideEffect: function(widget) {
+			var effect;
+			if (qx.bom.client.Engine.MSHTML) {
+				effect = new qx.fx.effect.core.Fade(
+					widget.getContainerElement().getDomElement()
+				).set({
+					from: 1,
+					to: 0
+				});
+			} else {
+				effect = new qx.fx.effect.combination.Shrink(
+					widget.getContainerElement().getDomElement()
+				);
+			}
+			return effect;
+		}
 	}
 });
