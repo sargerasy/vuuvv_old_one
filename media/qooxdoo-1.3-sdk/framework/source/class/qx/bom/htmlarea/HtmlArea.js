@@ -940,7 +940,7 @@ qx.Class.define("qx.bom.htmlarea.HtmlArea",
 
         var doc = this._getIframeDocument();
         if (doc && doc.body) {
-          doc.body.innerHTML = this.__generateDefaultContent(value);
+          doc.body.innerHTML = value;//this.__generateDefaultContent(value);
         }
       }
     },
