@@ -4,6 +4,8 @@ from utils import model_to_dict
 import json
 import models
 import main.models
+import settings
+import os
 import logging
 
 def appdata(request):
@@ -37,7 +39,7 @@ def save_nav(request):
 	menu.parent = parent
 	menu.save()
 	obj = {"id": menu.pk, "create": create}
-	return HttpResponse(json.dumps(obj));
+	return HttpResponse(json.dumps(obj))
 
 def remove_nav(request):
 	ids = [int(i) for i in request.REQUEST.getlist("ids")]
@@ -47,7 +49,7 @@ def remove_nav(request):
 		model.delete()
 
 	obj = {"ids": ids}
-	return HttpResponse(json.dumps(obj));
+	return HttpResponse(json.dumps(obj))
 
 def save_menu(request):
 	label = request.REQUEST["label"]
@@ -74,7 +76,7 @@ def save_menu(request):
 	menu.parent = parent
 	menu.save()
 	obj = {"id": menu.pk, "create": create}
-	return HttpResponse(json.dumps(obj));
+	return HttpResponse(json.dumps(obj))
 
 def remove_menu(request):
 	ids = [int(i) for i in request.REQUEST.getlist("ids")]
@@ -84,11 +86,11 @@ def remove_menu(request):
 		model.delete()
 
 	obj = {"ids": ids}
-	return HttpResponse(json.dumps(obj));
+	return HttpResponse(json.dumps(obj))
 
 def pages(request):
 	model = main.models.Page.objects.order_by("url").values("id", "url")
-	return HttpResponse(json.dumps(list(model)));
+	return HttpResponse(json.dumps(list(model)))
 
 def page(request, url):
 	obj = {"create": False, "page": None}
@@ -106,3 +108,27 @@ def save_page(request):
 def remove_page(request):
 	return HttpResponse("{}")
 	
+def file(request, dir):
+	import time
+	path = os.path.join(settings.PROJECT_DIR, dir)
+	logging.info(path)
+	resp = [{"File Name": "..", "Size": 0, "Last Modified": "-", "dir": True}] 
+	for root, dirs, files in os.walk(path):
+		for dir in dirs:
+			abpath = os.path.join(root, dir)
+			resp.append({
+				"File Name": dir, 
+				"Size": 0, 
+				"Last Modified": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.path.getmtime(abpath))),
+				"dir": True,
+			})
+		for file in files:
+			abpath = os.path.join(root, file)
+			resp.append({
+				"File Name": file, 
+				"Size": os.path.getsize(abpath), 
+				"Last Modified": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.path.getmtime(abpath))),
+				"dir": False,
+			})
+		for i in range(len(dirs)): dirs.pop()
+	return HttpResponse(json.dumps(resp))

@@ -17,5 +17,6 @@ urlpatterns = patterns('',
 	(r'^page/(.+)$', views.page),
 	(r'^page/save$', views.save_page),
 	(r'^page/remove$', views.remove_page),
+	(r'^file/(.*)$', views.file),
 )
 
