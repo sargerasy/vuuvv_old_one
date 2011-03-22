@@ -29,6 +29,10 @@ qx.Class.define("vuuvv.Application", {
 		},
 		appData: {
 			check: "Object"
+		},
+		uploader: {
+			nullable: true,
+			init: null
 		}
 	},
 

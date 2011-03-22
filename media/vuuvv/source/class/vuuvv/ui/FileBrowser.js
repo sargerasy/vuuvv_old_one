@@ -15,14 +15,55 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 		}
 	},
 
+	statics: {
+		callback: function(elementID, event) {
+			console.log(event);
+		}
+	},
+
 	members: {
 		_createWidgetContent: function() {
 			var toolbar = new qx.ui.toolbar.ToolBar();
 			toolbar.add(new qx.ui.toolbar.Button("test"));
 			this.add(toolbar);
 
+			var container = new qx.ui.splitpane.Pane("horizontal");
+
 			this._table = this._getTable();
-			this.add(this._table);
+			container.add(this._table, 7);
+			this._rightside = new qx.ui.container.Stack();
+			this._infoArea = this._getInfoArea();
+			this._rightside.add(this._infoArea);
+			this._overlay = this._getOverlay();
+			this._rightside.add(this._overlay);
+			container.add(this._rightside, 3);
+
+			this.add(container);
+
+			this._enableDnd();
+		},
+
+		_enableDnd: function() {
+			var self = this;
+			this.addListener("appear", function() {
+				var dom = this._rightside.getContainerElement().getDomElement();
+				console.log(dom);
+				qx.bom.Event.addNativeListener(dom, "dragover", function(e) {
+					qx.bom.Event.preventDefault(e);
+					self._onDragOver(e);
+				});
+				qx.bom.Event.addNativeListener(dom, "dragenter", function(e) {
+					self._onDragEnter(e);
+				});
+				qx.bom.Event.addNativeListener(dom, "dragleave", function(e) {
+					qx.bom.Event.preventDefault(e);
+					self._onDragLevel(e);
+				});
+				qx.bom.Event.addNativeListener(dom, "drop", function(e) {
+					qx.bom.Event.preventDefault(e);
+					self._onDrop(e);
+				});
+			}, this);
 		},
 
 		_getTable: function() {
@@ -31,6 +72,7 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			table.getTableColumnModel().setColumnVisible(0, false);
 			this.set({width: 600, height: 400});
 			table.addListener("cellDblclick", function(e) {
+				console.log(this);
 				var model = table.getTableModel();
 				model.cdRow(e.getRow());
 			}, this);
@@ -38,6 +80,45 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			newRenderer.addNumericCondition("==", true, null, "#0000FF", null, null, "dir");
 			table.getTableColumnModel().setDataCellRenderer(1, newRenderer);
 			return table;
+		},
+
+		_getInfoArea: function() {
+			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox);
+			var uploader = new vuuvv.ui.Uploader();
+			//uploader.setWmode("transparent");
+			//uploader.setVariables({
+			//	"YUIBridgeCallback": "vuuvv.ui.FileBrowser.callback",
+			//	"buttonSkin": "/media/images/selectFileButton.png"
+			//});
+			container.add(uploader);
+			return container;
+		},
+
+		_getOverlay: function() {
+			var container = new qx.ui.container.Composite();
+			return container;
+		},
+
+		_onDragOver: function(e) {
+			this.debug("dragover");
+			console.log(e);
+		},
+
+		_onDragEnter: function(e) {
+			this._rightside.setSelection([this._overlay]);
+			this.debug("dragenter");
+			console.log(e);
+		},
+
+		_onDragLevel: function(e) {
+			this._rightside.setSelection([this._infoArea]);
+			this.debug("dragleave");
+		},
+
+		_onDrop: function(e) {
+			this._rightside.setSelection([this._infoArea]);
+			this.debug("drop");
+			console.log(e.dataTransfer.files);
 		}
 	}
 });
