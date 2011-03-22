@@ -31,11 +31,7 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 
 			this._table = this._getTable();
 			container.add(this._table, 7);
-			this._rightside = new qx.ui.container.Stack();
-			this._infoArea = this._getInfoArea();
-			this._rightside.add(this._infoArea);
-			this._overlay = this._getOverlay();
-			this._rightside.add(this._overlay);
+			this._rightside = this._getInfoArea();
 			container.add(this._rightside, 3);
 
 			this.add(container);
@@ -84,39 +80,37 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 
 		_getInfoArea: function() {
 			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox);
+			var btnPane = new qx.ui.container.Composite(new qx.ui.layout.HBox);
 			var uploader = new vuuvv.ui.Uploader();
-			//uploader.setWmode("transparent");
-			//uploader.setVariables({
-			//	"YUIBridgeCallback": "vuuvv.ui.FileBrowser.callback",
-			//	"buttonSkin": "/media/images/selectFileButton.png"
-			//});
-			container.add(uploader);
+			btnPane.add(uploader);
+			btnPane.add(new qx.ui.form.Button("", "/media/images/uploadFileButton.png"));
+			container.add(btnPane);
 			return container;
 		},
 
-		_getOverlay: function() {
-			var container = new qx.ui.container.Composite();
-			return container;
+		_setDragEffect: function() {
+			this._rightside.getContentElement().setStyle("backgroundColor", "#cccccc");
+		},
+
+		_clearDragEffect: function() {
+			this._rightside.getContentElement().setStyle("backgroundColor", "");
 		},
 
 		_onDragOver: function(e) {
-			this.debug("dragover");
-			console.log(e);
 		},
 
 		_onDragEnter: function(e) {
-			this._rightside.setSelection([this._overlay]);
+			this._setDragEffect();
 			this.debug("dragenter");
-			console.log(e);
 		},
 
 		_onDragLevel: function(e) {
-			this._rightside.setSelection([this._infoArea]);
+			this._clearDragEffect();
 			this.debug("dragleave");
 		},
 
 		_onDrop: function(e) {
-			this._rightside.setSelection([this._infoArea]);
+			this._clearDragEffect();
 			this.debug("drop");
 			console.log(e.dataTransfer.files);
 		}

@@ -1,25 +1,17 @@
 qx.Class.define("vuuvv.ui.Uploader", {
 	extend: qx.ui.embed.Flash,
 
-	construct: function() {
-		this.base(arguments, "/media/flash/uploader.swf");
+	construct: function(swfUrl, callback, buttonSkin) {
+		swfUrl = swfUrl || "/media/flash/uploader.swf";
+		callback = callback || "vuuvv.ui.Uploader.callback";
+		buttonSkin = buttonSkin || "/media/images/selectFileButton.png";
+		this.base(arguments, swfUrl);
 		this.setWmode("transparent");
-		this.setButtonSkin("/media/images/selectFileButton.png");
-		this.setCallback("vuuvv.ui.Uploader.callback");
+		this.setVariables({
+			"YUIBridgeCallback": callback,
+			"buttonSkin": buttonSkin
+		});
 		vuuvv.utils.getApp().setUploader(this);
-	},
-
-	properties: {
-		buttonSkin: {
-			event: "changeButtonSkin",
-			apply: "_applyButtonSkin",
-			init: "/media/images/selectFileButton.png"
-		},
-
-		callback: {
-			event: "changeCallback",
-			apply: "_applyCallback"
-		}
 	},
 
 	events: {
@@ -35,20 +27,13 @@ qx.Class.define("vuuvv.ui.Uploader", {
 	statics: {
 		callback: function(id, evt) {
 			var self = vuuvv.utils.getApp().getUploader();
+			console.log(self.getContentElement());
 			console.log(evt);
 		}
 	},
 
 	members: {
 		_swf: null,
-
-		_applyCallback: function(value, old) {
-			this.setVariables({"YUIBridgeCallback": value});
-		},
-
-		_applyButtonSkin: function(value, old) {
-			this.setVariables({"buttonSkin": value});
-		},
 
 		upload: function(fileid, url, method, vars, fieldName) {
 			this._swf.upload(fileid, url, method, vars, fieldName);
