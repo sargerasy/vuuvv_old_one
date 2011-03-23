@@ -12,9 +12,17 @@ qx.Class.define("vuuvv.ui.Uploader", {
 			"buttonSkin": buttonSkin
 		});
 		vuuvv.utils.getApp().setUploader(this);
+		this.addListener("swfReady", function(e) {
+			this.setAllowMultipleFiles(true);
+		}, this);
+		this.addListener("fileSelect", function(e) {
+			console.log(e.getData());
+		}, this);
+		console.log(this);
 	},
 
 	events: {
+		swfReady: "qx.event.type.Event",
 		fileSelect: "qx.event.type.Data",
 		uploadStart: "qx.event.type.Event",
 		uploadProgress: "qx.event.type.Data",
@@ -26,65 +34,70 @@ qx.Class.define("vuuvv.ui.Uploader", {
 
 	statics: {
 		callback: function(id, evt) {
-			var self = vuuvv.utils.getApp().getUploader();
-			console.log(self.getContentElement());
-			console.log(evt);
+			var me = vuuvv.utils.getApp().getUploader();
+			var data = {};
+			for (var key in evt) {
+				if (key !== "type")
+					data[key] = evt[key];
+			}
+			if (data !== {})
+				me.fireDataEvent(evt.type, data);
+			else
+				me.fireEvent(evt.type);
 		}
 	},
 
 	members: {
-		_swf: null,
-
 		upload: function(fileid, url, method, vars, fieldName) {
-			this._swf.upload(fileid, url, method, vars, fieldName);
+			this.getFlashElement().upload(fileid, url, method, vars, fieldName);
 		},
 
 		uploadThese: function(fileids, url, method, vars, fieldName) {
-			this._swf.uploadThese(fileids, url, method, vars, fieldName);
+			this.getFlashElement().uploadThese(fileids, url, method, vars, fieldName);
 		},
 
 		uploadAll: function(url, method, vars, fieldName) {
-			this._swf.uploadAll(url, method, vars, fieldName);
+			this.getFlashElement().uploadAll(url, method, vars, fieldName);
 		},
 
 		cancel: function(fileid) {
-			this._swf.cancel(fileid);
+			this.getFlashElement().cancel(fileid);
 		},
 
 		clearFileList: function() {
-			this._swf.clearFileList();
+			this.getFlashElement().clearFileList();
 		},
 
 		removeFile: function (fileID) {
-			this._swf.removeFile(fileID);
+			this.getFlashElement().removeFile(fileID);
 		},
 
 		setAllowLogging: function (allowLogging) {
-			this._swf.setAllowLogging(allowLogging);
+			this.getFlashElement().setAllowLogging(allowLogging);
 		},
 
 		setSimUploadLimit : function (simUploadLimit) {
-		   this._swf.setSimUploadLimit(simUploadLimit);
+		   this.getFlashElement().setSimUploadLimit(simUploadLimit);
 		},
 
 		setAllowMultipleFiles : function (allowMultipleFiles) {
-		   this._swf.setAllowMultipleFiles(allowMultipleFiles);
+			this.getFlashElement().setAllowMultipleFiles(allowMultipleFiles);
 		},
 
 		setFileFilters : function (fileFilters) {
-		   this._swf.setFileFilters(fileFilters);
+		   this.getFlashElement().setFileFilters(fileFilters);
 		},
 
 		enable : function () {
-			this._swf.enable();
+			this.getFlashElement().enable();
 		},
 
 		disable : function () {
-			this._swf.disable();
+			this.getFlashElement().disable();
 		}
 	},
 
 	destruct: function() {
-		this._disposeObjects("_swf");
+		this._disposeObjects();
 	}
 });

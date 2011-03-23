@@ -15,12 +15,6 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 		}
 	},
 
-	statics: {
-		callback: function(elementID, event) {
-			console.log(event);
-		}
-	},
-
 	members: {
 		_createWidgetContent: function() {
 			var toolbar = new qx.ui.toolbar.ToolBar();
@@ -30,9 +24,9 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			var container = new qx.ui.splitpane.Pane("horizontal");
 
 			this._table = this._getTable();
-			container.add(this._table, 7);
+			container.add(this._table, 1);
 			this._rightside = this._getInfoArea();
-			container.add(this._rightside, 3);
+			container.add(this._rightside, 0);
 
 			this.add(container);
 
@@ -43,7 +37,6 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			var self = this;
 			this.addListener("appear", function() {
 				var dom = this._rightside.getContainerElement().getDomElement();
-				console.log(dom);
 				qx.bom.Event.addNativeListener(dom, "dragover", function(e) {
 					qx.bom.Event.preventDefault(e);
 					self._onDragOver(e);
@@ -68,7 +61,6 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			table.getTableColumnModel().setColumnVisible(0, false);
 			this.set({width: 600, height: 400});
 			table.addListener("cellDblclick", function(e) {
-				console.log(this);
 				var model = table.getTableModel();
 				model.cdRow(e.getRow());
 			}, this);
@@ -79,11 +71,20 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 		},
 
 		_getInfoArea: function() {
-			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox);
-			var btnPane = new qx.ui.container.Composite(new qx.ui.layout.HBox);
+			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox).set({
+				width: 200
+			});
+			var btnPane = new qx.ui.container.Composite(new qx.ui.layout.HBox).set({
+				height: 40
+			});
 			var uploader = new vuuvv.ui.Uploader();
+			vuuvv.utils.getApp().setUploader(uploader);
+			uploader.fireEvent("uploadStart");
 			btnPane.add(uploader);
-			btnPane.add(new qx.ui.form.Button("", "/media/images/uploadFileButton.png"));
+			btnPane.add(new qx.ui.form.Button("Upload", "/media/images/uploadFileButton1.png").set({
+				show: "icon",
+				padding: 0
+			}));
 			container.add(btnPane);
 			return container;
 		},
