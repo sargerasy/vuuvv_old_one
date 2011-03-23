@@ -67,6 +67,27 @@ qx.Class.define("vuuvv.utils",
 				);
 			}
 			return effect;
+		},
+
+		suffix: function(name) {
+			var parts = name.split(".");
+			return parts.length <= 1 ? "" : parts[parts.length - 1];
+		},
+
+		shrink: function(x, y, mx, my) {
+			var ret = {x: x, y: y};
+			if (x <= mx && y <= my)
+				return ret;
+			var dx = mx/x;
+			var dy = my/y;
+			var d = Math.min(dx, dy);
+			ret.x = x * d;
+			ret.y = y * d;
+			return ret;
+		},
+
+		shrinky: function(x, y, mx, my) {
+
 		}
 	}
 });

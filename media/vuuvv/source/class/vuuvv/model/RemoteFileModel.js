@@ -95,15 +95,14 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 		_genUrl: function(url) {
 			var url = [this.getUrl(), url].join("/");
 			url = this._normpath(url);
-			this.debug(url);
 			if (!qx.lang.String.startsWith(url, this.getTop()))
 				url = this.getTop();
-			this.debug(url);
 			return url;
 		},
 
 		rowUrl: function(row) {
-			return this._genUrl(this.getRowData(row)["File Name"]);
+			var url = this._genUrl(this.getRowData(row)["File Name"]);
+			return url.substring("/admin/file".length);
 		}
 	}
 });

@@ -58,15 +58,25 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 		_getTable: function() {
 			var model = new vuuvv.model.RemoteFileModel;
 			var table = new qx.ui.table.Table(model);
+
 			table.getTableColumnModel().setColumnVisible(0, false);
 			this.set({width: 600, height: 400});
+			var newRenderer = new qx.ui.table.cellrenderer.Conditional();
+			newRenderer.addNumericCondition("==", true, null, "#0000FF", null, null, "dir");
+			table.getTableColumnModel().setDataCellRenderer(1, newRenderer);
+
 			table.addListener("cellDblclick", function(e) {
 				var model = table.getTableModel();
 				model.cdRow(e.getRow());
 			}, this);
-			var newRenderer = new qx.ui.table.cellrenderer.Conditional();
-			newRenderer.addNumericCondition("==", true, null, "#0000FF", null, null, "dir");
-			table.getTableColumnModel().setDataCellRenderer(1, newRenderer);
+			table.addListener("cellClick", function(e) {
+				var model = table.getTableModel();
+				var row = e.getRow();
+				var src = model.rowUrl(row);
+				this.debug(vuuvv.utils.suffix(src));
+				if (["jpg", "png", "gif"].indexOf(vuuvv.utils.suffix(src)) > 0)
+					this._preview.setSource(src);
+			}, this);
 			return table;
 		},
 
@@ -74,6 +84,7 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox).set({
 				width: 200
 			});
+
 			var btnPane = new qx.ui.container.Composite(new qx.ui.layout.HBox).set({
 				height: 40
 			});
@@ -86,6 +97,34 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 				padding: 0
 			}));
 			container.add(btnPane);
+
+			var fileList = new qx.ui.list.List();
+			container.add(fileList, {flex: 1});
+
+			var preview = this._getPreview();
+			container.add(preview, {flex: 1});
+
+			return container;
+		},
+
+		_getPreview: function() {
+			var layout = new qx.ui.layout.Atom;
+			layout.setCenter(true);
+			var container = new qx.ui.container.Composite(layout);
+			this._preview = new qx.ui.basic.Image().set({
+				scale: true
+			});
+			this._preview.addListener("changeSource", function() {
+				var src = this._preview.getSource();
+				var loader = qx.io.ImageLoader;
+				var area = vuuvv.utils.shrink(loader.getWidth(src), loader.getHeight(src), 120, 120);
+				this.debug(area);
+				this._preview.set({
+					width: parseInt(area.x),
+					height: parseInt(area.y)
+				});
+			}, this);
+			container.add(this._preview);
 			return container;
 		},
 
