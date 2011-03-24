@@ -15,6 +15,21 @@ def appdata(request):
 
 	return HttpResponse(json.dumps(data))
 
+def upload(request):
+	logging.info("upload")
+	if request.method == 'POST':
+		file = request.FILES['Filedata']
+		path = settings.PROJECT_DIR + request.POST['path']
+		logging.info(path)
+		logging.info(file.name)
+		path = "/".join([path, file.name])
+		fd = open(path, "wb+")
+		for chunk in file.chunks():
+			fd.write(chunk);
+		fd.close()
+
+	return HttpResponse(json.dumps({}))
+
 def nav(request):
 	data = {"nav": model_to_dict(main.models.Menu.objects.all())}
 

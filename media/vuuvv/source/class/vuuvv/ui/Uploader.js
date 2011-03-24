@@ -15,9 +15,6 @@ qx.Class.define("vuuvv.ui.Uploader", {
 		this.addListener("swfReady", function(e) {
 			this.setAllowMultipleFiles(true);
 		}, this);
-		this.addListener("fileSelect", function(e) {
-			console.log(e.getData());
-		}, this);
 		console.log(this);
 	},
 

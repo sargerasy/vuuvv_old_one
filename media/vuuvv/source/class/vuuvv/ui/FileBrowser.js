@@ -81,7 +81,9 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 		},
 
 		_getInfoArea: function() {
-			var container = new qx.ui.container.Composite(new qx.ui.layout.VBox).set({
+			var vbox = new qx.ui.layout.VBox().set({spacing: 3});
+			var container = new qx.ui.container.Composite(vbox).set({
+				backgroundColor: "#AFAFAF",
 				width: 200
 			});
 
@@ -89,43 +91,109 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 				height: 40
 			});
 			var uploader = new vuuvv.ui.Uploader();
-			vuuvv.utils.getApp().setUploader(uploader);
-			uploader.fireEvent("uploadStart");
 			btnPane.add(uploader);
-			btnPane.add(new qx.ui.form.Button("Upload", "/media/images/uploadFileButton1.png").set({
+			var uploadBtn = new qx.ui.form.Button("Upload", "/media/images/uploadFileButton1.png").set({
 				show: "icon",
 				padding: 0
-			}));
+			});
+			btnPane.add(uploadBtn);
+			uploadBtn.addListener("execute", function() {
+				uploader.uploadAll("/admin/upload", "POST", {"path": "/media/upload"});
+			}, this);
+
+			uploader.addListener("fileSelect", function(e) {
+				var files = e.getData().fileList;
+				var rawdata = [];
+				for (var i in files) {
+					var model = this._getProtoModel();
+					model.setName(files[i].name);
+					model.setSize(files[i].size);
+					model.setId(files[i].id);
+					rawdata.push(model);
+				}
+				this._filectrl.setModel(new qx.data.Array(rawdata));
+				console.log(files);
+			}, this);
+			uploader.addListener("uploadProgress", function(e) {
+				this.debug("uploadProgress");
+				var files = this._filectrl.getModel();
+				var data = e.getData();
+				console.log(data);
+				for (var i = 0; i < files.length; i++){
+					if (files.getItem(i).getId() === data.id) {
+						break;
+					}
+				}
+				files.getItem(i).setUploaded(data.bytesLoaded);
+			}, this);
+			uploader.addListener("uploadCompleteData", function(e) {
+				this.debug("uploadCompleteData");
+			}, this);
 			container.add(btnPane);
 
-			var fileList = new qx.ui.list.List();
+			var fileList = new qx.ui.form.List();
+			this._filectrl = new qx.data.controller.List(null, fileList);
 			container.add(fileList, {flex: 1});
 
 			var preview = this._getPreview();
-			container.add(preview, {flex: 1});
+			container.add(preview, {height: "40%"});
 
+			this._filectrl.setDelegate({
+				createItem: function() {
+					return new vuuvv.ui.UploadView();
+				},
+
+				bindItem: function(ctrl, item, id) {
+					ctrl.bindProperty("name", "name", null, item, id);
+					ctrl.bindProperty("uploaded", "uploaded", null, item, id);
+					ctrl.bindProperty("size", "size", null, item, id);
+				},
+
+				configureItem: function(item) {
+				}
+			});
 			return container;
+		},
+
+		_getProtoModel: function() {
+			var data = {
+				id: "",
+				name: "",
+				uploaded: 0,
+				size: 0
+			};
+			return qx.data.marshal.Json.createModel(data);
 		},
 
 		_getPreview: function() {
 			var layout = new qx.ui.layout.Atom;
 			layout.setCenter(true);
-			var container = new qx.ui.container.Composite(layout);
+			var border = new qx.ui.decoration.Single(1, "solid", "black");
+			var container = new qx.ui.container.Composite(layout).set({
+				backgroundColor: "white",
+				decorator: border
+			});
 			this._preview = new qx.ui.basic.Image().set({
+				decorator: border,
 				scale: true
 			});
-			this._preview.addListener("changeSource", function() {
-				var src = this._preview.getSource();
-				var loader = qx.io.ImageLoader;
-				var area = vuuvv.utils.shrink(loader.getWidth(src), loader.getHeight(src), 120, 120);
+			this._preview.addListener("changeSource", this._adjustImage, this);
+			this._preview.addListener("loaded", this._adjustImage, this);
+			container.add(this._preview);
+			return container;
+		},
+
+		_adjustImage: function() {
+			var src = this._preview.getSource();
+			var loader = qx.io.ImageLoader;
+			if (loader.isLoaded(src)) {
+				var area = vuuvv.utils.shrink(loader.getWidth(src), loader.getHeight(src), 160, 160);
 				this.debug(area);
 				this._preview.set({
 					width: parseInt(area.x),
 					height: parseInt(area.y)
 				});
-			}, this);
-			container.add(this._preview);
-			return container;
+			}
 		},
 
 		_setDragEffect: function() {

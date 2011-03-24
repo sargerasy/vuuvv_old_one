@@ -18,5 +18,6 @@ urlpatterns = patterns('',
 	(r'^page/save$', views.save_page),
 	(r'^page/remove$', views.remove_page),
 	(r'^file/(.*)$', views.file),
+	(r'^upload$', views.upload),
 )
 

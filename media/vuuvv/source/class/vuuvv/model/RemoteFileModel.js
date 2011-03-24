@@ -4,9 +4,11 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 	construct: function() {
 		this.base(arguments);
 		this.setColumns(["dir", "File Name", "Size", "Last Modified"]);
-		var top = "/admin/file/media/upload/";
+		var top = "/media/upload";
+		var url = "/admin/file"
+		this.setUrl(url);
 		this.setTop(top);
-		this.setUrl(top);
+		this.setPath(top);
 	},
 
 	properties: {
@@ -18,9 +20,15 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 
 		url: {
 			check: "String",
-			event: "changeString",
+			event: "changeUrl",
+			init: ""
+		},
+
+		path: {
+			check: "String",
+			event: "changePath",
 			init: "",
-			apply: "_applyUrl"
+			apply: "_applyPath"
 		},
 
 		top: {
@@ -33,7 +41,7 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 	members: {
 		// overloaded - called whenever the table request the row count
 		_loadRowCount: function() {
-			var url = this.getUrl();
+			var url = this.getPath();
 			var req = new qx.io.remote.Request(url, "GET", "application/json");
 
 			req.addListener("completed", this._onRowCountCompleted, this);
@@ -54,7 +62,7 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 			this._onRowDataLoaded(items);
 		},
 
-		_applyUrl: function(value, old) {
+		_applyPath: function(value, old) {
 			this.reloadData();
 		},
 
@@ -83,7 +91,7 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 		},
 
 		cd: function(url) {
-			this.setUrl(this._genUrl(url));
+			this.setPath(this._genPath(url));
 		},
 
 		cdRow: function(row) {
@@ -92,16 +100,21 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 				this.cd(this.getRowData(row)["File Name"]);
 		},
 
-		_genUrl: function(url) {
-			var url = [this.getUrl(), url].join("/");
+		_genPath: function(url) {
+			var url = [this.getUrl(), this.getTop(), this.getPath(), url].join("/");
 			url = this._normpath(url);
 			if (!qx.lang.String.startsWith(url, this.getTop()))
 				url = this.getTop();
 			return url;
 		},
 
-		rowUrl: function(row) {
-			var url = this._genUrl(this.getRowData(row)["File Name"]);
+		rowPath: function(row) {
+			var url = this._genPath(this.getRowData(row)["File Name"]);
+			return url.substring("/admin/file".length);
+		},
+
+		curPath: function() {
+			var url = this._genPath("");
 			return url.substring("/admin/file".length);
 		}
 	}
