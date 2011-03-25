@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.conf import settings
 from main.tree import Node
-from main.models import Menu
+from main.models import Menu, Page
 import django.views.static
 import logging
 import utils
@@ -13,13 +13,23 @@ def index(request):
 
 def joyou(request, path):
 	tree = MenuTree(Menu.objects.all())
-	menus = tree.create_menus(path)
+	url = "/".join([ i for i in path.split("/") if i])
+	page = Page.objects.filter(url__exact=url)
+	if page:
+		template = page[0].template
+		content = page[0].content
+	else:
+		template = "index"
+		content = None
 	
-	return render_to_response("main/normal.html", {
+	menus = tree.create_menus(url)
+	
+	return render_to_response("main/%s.html" % template, {
 		"root": "/",
 		"menus": menus[0],
 		"title": menus[1],
 		"subs": tree.generate_all_subs(),
+		"content": content,
 	})
 
 def media(request, path):
@@ -61,8 +71,7 @@ class MenuTree(object):
 		s = sorted(array, key=lambda x: x.data["order"])
 		return s
 
-	def create_menus(self, path):
-		url = "/".join([ i for i in path.split("/") if i])
+	def create_menus(self, url):
 		curr = self.find_by_url(url)
 		select = curr.pwd()[1:]
 		title = select[-1].data["label"]

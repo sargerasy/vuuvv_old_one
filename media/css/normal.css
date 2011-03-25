@@ -241,8 +241,19 @@
 /* manage fixture test data */
 
 .right-content {
-	width: 670px;
+	color: #666666;
+	height: auto !important;
+	width: 680px;
 	margin: 20px auto;
+	min-height: 450px;
+	padding-bottom: 50px;
+	text-align: left;
+}
+
+.right-content p{
+	line-height: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .tit {
@@ -306,5 +317,42 @@
 	color: #666;
 	line-height: 24px;
 	text-indent: 1em;
+	margin: 5px 0 0 0;
 }
 /* end manage fixture test data */
+.aboutpic{
+	float:right;
+}
+.aboutpic li{
+	padding:20px 30px;
+}
+.courselist{
+   float: left;
+	width:430px;
+	margin-top:25px;
+}
+.courselist li{
+	clear:both;
+	line-height:24px;
+	padding-left:20px;
+	background:url(/images/arrow04.gif) 0 9px no-repeat;
+}
+.courselist li span{
+	width:50px;
+	display:block;
+	float:left;
+	margin-right:10px;
+	color: #7f373b;
+	font-size:13px;
+}
+.courselist li div{
+	width:350px;
+	font-style:normal;
+	float:left;
+}
+
+.pagelist {display:table;clear:both;line-height:30px;}
+.pagelist em {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;color:#14316B;font-weight:bold;font-style:normal;}
+.pagelist strong {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;color:#009900;}
+.pagelist a {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;}
+
