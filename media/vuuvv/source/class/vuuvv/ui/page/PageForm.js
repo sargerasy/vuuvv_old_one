@@ -16,6 +16,12 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 		}
 	},
 
+	events: 
+	{
+		newPageLoaded: "qx.event.type.Event",
+		oldPageLoaded: "qx.event.type.Event"
+	},
+
 	members:
 	{
 		createPage: function() {
@@ -32,6 +38,10 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 		},
 
 		setupPage: function(data) {
+			var page = data.create ? this._getProtoModel() : qx.data.marshal.Json.createModel(data.page);
+			this._fc.setModel(page);
+			var evt = data.create ? "newPageLoaded" : "oldPageLoaded";
+			this.fireEvent(evt);
 		},
 
 		getForm: function() {
@@ -43,7 +53,7 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 			}), "title");
 			form.add(new qx.ui.form.TextField(), "Url");
 			form.add(new qx.ui.form.TextField(), "Keywords");
-			form.add(new qx.ui.form.TextField(), "Description");
+			form.add(new qx.ui.form.TextField(), "Desc");
 			this._htmlArea = new vuuvv.ui.HtmlArea();
 			form.add(this._htmlArea, "Content");
 			form.add(new qx.ui.form.TextField(), "Template");
@@ -60,17 +70,41 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 			return form;
 		},
 
+		newPage: function() {
+		},
+
 		goPage: function(url) {
 			if (url) {
 				url = "/admin/page/" + url;
 				this.setUrl(url);
 			}
+			return this;
 		},
 
 		_onSave: function() {
-			this._htmlArea.syncValue();
-			var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
-			console.log(data);
+			if (this._form.validate()) {
+				this._htmlArea.syncValue();
+				var data = qx.util.Serializer.toUriParameter(this._fc.getModel());
+				console.log(data);
+				var url = "/admin/page/save";
+				var req = new qx.io.remote.Request(url, "POST");
+				req.setTimeout(180000);
+				req.setProhibitCaching(false);
+				req.setData(data);
+				req.addListener("completed", this._onSaveCompleted, this);
+				req.addListener("failed", function(e) {
+					this.debug("failed");
+				}, this);
+				req.addListener("timeout", function(e) {
+					this.debug("timeout");
+				}, this);
+				req.send();
+			}
+		},
+
+		_onSaveCompleted: function() {
+			alert("Page Saved");
+			this.debug("data saved");
 		},
 
 		_getProtoModel: function() {
@@ -79,7 +113,7 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 				title: "",
 				url: "",
 				keywords: "",
-				description: "",
+				desc: "",
 				content: "",
 				template: ""
 			};

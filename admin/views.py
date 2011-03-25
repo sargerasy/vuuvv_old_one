@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
-from utils import model_to_dict
+from utils import models_to_dict, model_to_obj
 import json
 import models
 import main.models
@@ -10,7 +10,7 @@ import logging
 
 def appdata(request):
 	data = {"appdata": {
-		"menus": model_to_dict(models.Menu.objects.all()),
+		"menus": models_to_dict(models.Menu.objects.all()),
 	}}
 
 	return HttpResponse(json.dumps(data))
@@ -31,7 +31,7 @@ def upload(request):
 	return HttpResponse(json.dumps({}))
 
 def nav(request):
-	data = {"nav": model_to_dict(main.models.Menu.objects.all())}
+	data = {"nav": models_to_dict(main.models.Menu.objects.all())}
 
 	return HttpResponse(json.dumps(data))
 
@@ -108,16 +108,36 @@ def pages(request):
 	return HttpResponse(json.dumps(list(model)))
 
 def page(request, url):
-	obj = {"create": False, "page": None}
-	model = main.models.Page.objects.filter(url__exact=url)
+	obj = {"create": False, "url": url, "page": None}
+	model = main.models.Page.objects.filter(url__exact=url).values("id", "title", "url", "keywords", "desc", "content", "template")
 	if len(model) < 1:
 		obj["create"] = True
 	else:
-		obj["page"] = list(model)[0]
+		obj["page"] = model[0]
 
 	return HttpResponse(json.dumps(obj))
 
 def save_page(request):
+	title = request.REQUEST["title"]
+	url = request.REQUEST["url"]
+	keywords = request.REQUEST["keywords"]
+	desc = request.REQUEST["desc"]
+	content = request.REQUEST["content"]
+	template = request.REQUEST["template"]
+	id = request.REQUEST["id"]
+
+	page = main.models.Page() if id == "-1" else main.models.Page.objects.get(pk=int(id))
+
+	logging.info("save")
+	if page:
+		page.title = title
+		page.url = url
+		page.keywords = keywords
+		page.desc = desc
+		page.content = content
+		page.template = template
+		page.save()
+
 	return HttpResponse("{}")
 
 def remove_page(request):

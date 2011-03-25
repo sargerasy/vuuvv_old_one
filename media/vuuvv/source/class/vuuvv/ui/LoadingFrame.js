@@ -30,6 +30,7 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 		readyState: {
 			check: ["initialized", "loading", "completed", "failed"],
 			init: "initialized",
+			apply: "_applyReadyState",
 			event: "changeState"
 		},
 
@@ -46,12 +47,21 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 		_loadingPage: null,
 		_loadedPage: null,
 
+		_applyReadyState: function(value, old) {
+			switch (value) {
+				case "loading":
+					this._stack.setSelection([this._loadingPage]);
+					break;
+				case "completed":
+					this._stack.setSelection([this._loadedPage]);
+					break;
+			}
+		},
+
 		_applyUrl: function(url) {
-			console.log(url);
 			var state = this.getReadyState();
 			if (state == "loading") 
 				return;
-			this._stack.setSelection([this._loadingPage]);
 			this.setReadyState("loading");
 
 			var req = new qx.io.remote.Request(url);
@@ -66,7 +76,6 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 					this._loadedPage = page;
 				}
 				this.setupPage(data);
-				this._stack.setSelection([this._loadedPage]);
 				this.setReadyState("completed");
 			}, this);
 

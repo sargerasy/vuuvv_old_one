@@ -166,6 +166,10 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 			if (model.getId() == -1)
 				return;
 			var page = this._pageeditor.goPage(model.getUrl());
+			page.addListener("newPageLoaded", function() {
+				page._fc.getModel().setUrl(model.getUrl());
+				page._fc.getModel().setTitle(model.getLabel());
+			}, this);
 		},
 
 		_onNew: function() {

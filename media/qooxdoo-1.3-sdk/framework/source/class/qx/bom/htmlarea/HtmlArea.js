@@ -977,7 +977,7 @@ qx.Class.define("qx.bom.htmlarea.HtmlArea",
                            '</span>' +
                            '</p>';
 
-      return defaultContent;
+      return value;//defaultContent;
     },
 
 

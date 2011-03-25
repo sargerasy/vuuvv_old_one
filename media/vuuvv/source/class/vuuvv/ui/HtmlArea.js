@@ -37,6 +37,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 		this.bind("value", this._srcArea, "value");
 		this.bind("value", this._htmlArea, "value");
 		this._srcArea.bind("value", this, "value");
+		//this._htmlArea.bind("value", this, "value");
 	},
 
 	properties: {
@@ -44,6 +45,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 			check: "String",
 			init: "",
 			nullable: true,
+			apply: "_applyValue",
 			event: "changeValue"
 		},
 
@@ -57,6 +59,20 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 	members : {
 		_htmlArea: null,
 		_filebrowser: null,
+
+		_applyValue: function(value, old) {
+			this.debug("applyvalue");
+			console.log(this._htmlArea.getValue())
+			if(!this._htmlArea.getIframeObject() && value) {
+				this._htmlArea.addListenerOnce("appear", function() {
+					this.debug("appear");
+					this.debug(value);
+					this.debug(this.getValue());
+					this.setValue(value);
+				}, this._htmlArea);
+			}
+			console.log(this._htmlArea.getValue())
+		},
 
 		syncValue: function() {
 			this.setValue(this._htmlArea.getHtml());

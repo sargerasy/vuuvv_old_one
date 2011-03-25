@@ -67,15 +67,20 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 
 			table.addListener("cellDblclick", function(e) {
 				var model = table.getTableModel();
-				model.cdRow(e.getRow());
+				if (model.cdRow(e.getRow())) {
+					table.setFocusedCell(0, 0);
+					table.getSelectionModel().setSelectionInterval(0, 0);
+				}
 			}, this);
-			table.addListener("cellClick", function(e) {
+			table.getSelectionModel().addListener("changeSelection", function(e) {
 				var model = table.getTableModel();
-				var row = e.getRow();
-				var src = model.rowUrl(row);
-				this.debug(vuuvv.utils.suffix(src));
-				if (["jpg", "png", "gif"].indexOf(vuuvv.utils.suffix(src)) > 0)
-					this._preview.setSource(src);
+				var row = e.getTarget().getSelectedRanges()[0].minIndex;
+				if (row) {
+					var src = model.rowPath(row);
+					this.debug(vuuvv.utils.suffix(src));
+					if (["jpg", "png", "gif"].indexOf(vuuvv.utils.suffix(src)) > 0)
+						this._preview.setSource(src);
+				}
 			}, this);
 			return table;
 		},

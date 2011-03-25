@@ -28,22 +28,28 @@ qx.Class.define("vuuvv.ui.page.Page", {
 			groupBox.setLayout(new qx.ui.layout.Canvas());
 			mainsplit.add(groupBox, 1);
 
-			//this._form = this.getForm();
-			//groupBox.add(new qx.ui.form.renderer.Single(this._form));
+			this._form = new vuuvv.ui.page.PageForm();
+			groupBox.add(this._form);
 
 			return mainsplit;
 		},
 
 		setupPage: function(data) {
-			var model = qx.data.marshal.Json.createModel(data.page);
-			this._lc.setModel()
+			var model = qx.data.marshal.Json.createModel(data);
+			this._lc.setModel(model)
 		},
 
 		getList: function() {
-			var list = new qx.ui.list.List();
+			var list = new qx.ui.form.List();
 			list.set({width: 300});
-			list.setSelectionMode("multi");
+			//list.setSelectionMode("multi");
 			this._lc = new qx.data.controller.List(null, list);
+			this._lc.setDelegate({
+				bindItem: function(ctrl, item, index) {
+					ctrl.bindProperty("url", "label", null, item, index);
+					ctrl.bindProperty("id", "model", null, item, index);
+				}
+			});
 			return list;
 		}
 	}
