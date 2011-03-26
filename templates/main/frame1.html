@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>joyou</title>
+		<link rel="stylesheet" media="screen" href="/media/css/screen.css"/>
+		{% block css %}
+		{% endblock %}
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+		(function() {
+			var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+			var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+
+			if (jQuery.browser.msie && (ie55 || ie6)) {
+				var e = document.createElement("link");
+				e.setAttribute("href", "/media/css/screen-ie.css");
+				e.setAttribute("media", "screen");
+				e.setAttribute("rel", "stylesheet");
+				var head = document.getElementsByTagName("head");
+				head[0].appendChild(e);
+			}
+		}());
+		</script>
+		<script src="/media/js/site.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="header">
+					<div class="logo">
+						<span>
+							<a href="#">Chinese</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">Deutsch</a>
+						</span>
+						<img src="/media/images/logo.jpg"/>
+					</div>
+					<div class="nav-menu">
+						<div class="menu-bar">
+							<div class="menu-main">
+								<div class="menu-upper">
+									{% for item in menus.0.values %} 
+									<div {% if menus.0.select.data.id == item.data.id %}class="item-selected" id="item-selected-{{forloop.counter0}}" {% else %}class="item-normal" id="item-normal-{{forloop.counter0}}" {% endif %} sn="{{forloop.counter0}}">
+										<a class="menu-link" href="{{root}}{{item.data.url}}">
+										<table class="inner"><tr><td style="cursor: pointer;">
+											{{ item.data.label }}
+										</tr></td></table>
+										</a>
+									</div>
+									{% endfor %}
+									<div class="item-last">
+									</div>
+								</div>
+							</div>
+							<div class="menu-sub">
+								{% for key, item in subs %}
+								<div class="sub-container" id="sub-container-{{forloop.counter0}}" style="top:{% if item %} {{"14px"}} {% else %} {{"2px"}} {% endif %}; position: relative; display: {% if key.data.id == menus.0.select.data.id %}block{% else %}none{% endif %}">
+									{% for sub in item %}
+									<div class="sub-item" {% if sub.data.id == menus.1.select.data.id %}id="sub-item-selected"{% endif %}>
+										<a class="sub-link" href="{{root}}{{sub.data.url}}">
+											<div style="position:relative; display: block;">{{ sub.data.label}}</div>
+											<img src="/media/images/light.png" style="width: 80px; border: none;">
+										</a>
+									</div>
+									{% endfor %}
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="body">
+					<div class="main-body">
+					{% block content %}
+					{% endblock %}
+					</div>
+				</div>
+				<div class="footer">
+					<span>
+						JOYOU Copyright &copy; 2009&mdash;2011
+					</span>
+				</div>
+				<div class="content_bottom">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

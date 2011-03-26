@@ -1,0 +1,75 @@
+{% extends "main/frame1.html" %}
+{% block css %}
+	<link rel="stylesheet" media="screen" href="/media/css/normal.css"/>
+{% endblock %}
+
+{% block content %}
+{% if menus.2.values %}
+<div class="tab-header">
+	<div class="tab-container">
+		{% for tab in menus.2.values %}
+		<div class="tab-item {% if tab.data.id == menus.2.select.data.id %} tab-item-selected {% endif %} ">
+			<a href="{{root}}{{tab.data.url}}">
+			<div class="tab-item-left"></div>
+			<div class="tab-item-center">{{tab.data.label}}</div>
+			<div class="tab-item-right"></div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
+<div class="main-tab-content">
+	<div class="tc-top-bg"></div>
+	<table class="tc" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="tc-left-pane">
+				<div class="left-top">
+					<div class="left-content">
+						<div class="left-top-locator">
+							<div class="left-top-links">
+								<div class="lt-list-c">
+									<div class="left-top-head">
+										<div class="lt-title">
+											{{ title }}
+										</div>
+									</div>
+									<table class="left-top-list">
+										{% for item in menus.3.values %}
+										<tr class="lt-menu-item">
+											<td class="lt-menu-decor">
+											</td>
+											<td class="lt-menu-link">
+												<a href="{{root}}{{item.data.url}}">{{item.data.label}}</a>
+											</td>
+										</tr>
+										{% endfor %}
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lt-bottom">
+					</div>
+				</div>
+				<div class="left-split">
+				</div>
+				<div class="left-bottom-bg"><div></div></div>
+				<div>
+					<div class="lb-stock">
+						<img width="164px" src="http://charts25.equitystory.com/charts/181_833/png.php?main_name=&id=833&isin=DE000A0WMLD8&intra_indic=1&DATETIME_TZ_START_RANGE=0000-00-01T00%3A00%3A00&DATETIME_TZ_END_RANGE=0000-00-01T23%3A59%3A59&indic=0+none|&lang=eng&sma_bm1=0&sma_bm2=0&INTERVAL=1_M_1D&SMA=0&SMA2=0&DATETIME_TZ_START_RANGE_=locale_daterange_format&DATETIME_TZ_END_RANGE_=locale_daterange_format&id_exchange=GER&INDIC_NOTATION_ID=0&hideVolumes=0&main_graph_type=4"/>
+					</div>
+				</div>
+			</td>
+			<td class="tc-split-bg"></td>
+			<td class="tc-right-pane">
+<!-- fixture test data -->
+{% block right %}
+{% endblock %}
+<!-- end fixure test data -->
+			</td>
+		</tr>
+	</table>
+	<div class="tc-bottom-bg"></div>
+</div>
+{% endblock %}

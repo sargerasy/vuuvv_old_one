@@ -356,3 +356,32 @@
 .pagelist strong {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;color:#009900;}
 .pagelist a {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;}
 
+/* news page */
+.news-list {
+	padding: 15px 0 15px 0;
+}
+
+.news-image {
+	float: left;
+	margin-right: 12px; 
+}
+
+.news-desc-box {
+	padding-right: 12px;
+}
+
+.news-desc-box h3 {
+	margin-top: 0;
+}
+
+.news-desc-box p {
+	margin-bottom: 4px;
+}
+
+.news-desc-box a {
+	background: url("/media/images/link_arrow.png") no-repeat left center;
+	color: #003377;
+	text-decoration: none;
+	padding: 0 0 0 8px;
+}
+/* end news page */
