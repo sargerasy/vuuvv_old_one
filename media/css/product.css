@@ -1,0 +1,65 @@
+.pcontent{
+	margin-top:20px;
+	background:url(../images/content_top_bg.png) top no-repeat;
+}
+.scontent{
+	min-height:425px;
+	height:auto !important;
+	height:200px;
+	padding-top:10px;
+	background:url(../images/scontent_bg.gif) 0 45px repeat-x;
+}
+.promenu{
+	margin:25px 0 0 25px;
+	clear:both;
+}
+.promenu dt{
+	width:109px;
+	height:131px;
+	padding-top:20px;
+	float:left;
+	background:url(../images/protit_bg.jpg) no-repeat;
+}
+.promenu dd{
+	width:800px;
+	float:right;
+}
+.promenu dd ul li{
+	float:left;
+	margin:15px 0 5px 0;
+	display:inline;
+}
+.pro01_tit a,.pro02_tit a,.pro03_tit a,.pro04_tit a,.pro05_tit a{
+	width:250px;
+	height:150px;
+	display:block;
+	color:#4C5996;
+	font-weight:bold;
+	text-align:left;
+	background: url(../images/protit_bg01.jpg) no-repeat;
+	text-decoration: none;
+	outline: medium none;
+}
+.pro01_tit a span,.pro02_tit a span,.pro03_tit a span,.pro04_tit a span,.pro05_tit a span{
+	width:150px;
+	padding-right:0px;
+	display:block;
+	text-align:right;
+	padding-top:65px;
+}
+.pro09_tit a span{
+	padding-top:46px;
+}
+.pro02_tit a{
+	background:url(../images/protit_bg02.jpg) no-repeat;
+}
+.pro03_tit a{
+	background:url(../images/protit_bg03.jpg) no-repeat;
+}
+.pro04_tit a{
+	background:url(../images/protit_bg04.jpg) no-repeat;
+}
+.pro05_tit a{
+	background:url(../images/protit_bg05.jpg) no-repeat;
+}
+
