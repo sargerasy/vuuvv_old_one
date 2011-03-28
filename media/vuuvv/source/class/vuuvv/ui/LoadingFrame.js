@@ -23,6 +23,10 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 		this._loadingPage = this.getLoadingPage();
 		this._stack.add(this._loadingPage, {flex: 1});
 
+		var page = this.createPage();
+		this._stack.add(page);
+		this._loadedPage = page;
+
 		if (url) this.setUrl(url);
 	},
 
@@ -70,11 +74,6 @@ qx.Class.define("vuuvv.ui.LoadingFrame", {
 
 			req.addListener("completed", function(e) {
 				var data = eval("(" + e.getContent() + ")");
-				if (state == "initialized") {
-					var page = this.createPage();
-					this._stack.add(page);
-					this._loadedPage = page;
-				}
 				this.setupPage(data);
 				this.setReadyState("completed");
 			}, this);

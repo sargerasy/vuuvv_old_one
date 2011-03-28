@@ -107,8 +107,15 @@ def pages(request):
 	model = main.models.Page.objects.order_by("url").values("id", "url")
 	return HttpResponse(json.dumps(list(model)))
 
+def page_id(request, id):
+	obj = {"create": False, "page": None}
+	model = main.models.Page.objects.filter(id__exact=id).values("id", "title", "url", "keywords", "desc", "content", "template")
+	if len(model) > 0:
+		obj["page"] = model[0]
+	return HttpResponse(json.dumps(obj))
+
 def page(request, url):
-	obj = {"create": False, "url": url, "page": None}
+	obj = {"create": False, "page": None}
 	model = main.models.Page.objects.filter(url__exact=url).values("id", "title", "url", "keywords", "desc", "content", "template")
 	if len(model) < 1:
 		obj["create"] = True

@@ -167,8 +167,9 @@ qx.Class.define("vuuvv.ui.page.Menu", {
 				return;
 			var page = this._pageeditor.goPage(model.getUrl());
 			page.addListener("newPageLoaded", function() {
-				page._fc.getModel().setUrl(model.getUrl());
-				page._fc.getModel().setTitle(model.getLabel());
+				var c = page.getController();
+				c.getModel().setUrl(model.getUrl());
+				c.getModel().setTitle(model.getLabel());
 			}, this);
 		},
 
