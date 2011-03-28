@@ -19,3 +19,22 @@ class Page(models.Model):
 	changed_by = models.CharField(max_length=70, default=1)
 	creation_date = models.DateTimeField(default=datetime.now)
 
+class Category(models.Model):
+	name = models.CharField(max_length=128)
+	category = models.ForeignKey('self', blank=True, null=True, related_name="children")
+
+class Article(models.Model):
+	title = models.CharField(max_length=128)
+	thumbnail = models.CharField(max_length=128)
+	content = models.TextField()
+	created_by = models.CharField(max_length=70, default=1)
+	changed_by = models.CharField(max_length=70, default=1)
+	creation_date = models.DateTimeField(default=datetime.now)
+	category = models.ForeignKey(Category)
+
+class Product(models.Model):
+	name = models.CharField(max_length=128)
+	thumbnail = models.CharField(max_length=128)
+	picture = models.CharField(max_length=128)
+	category = models.ForeignKey(Category)
+

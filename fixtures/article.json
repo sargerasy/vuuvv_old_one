@@ -1,0 +1,24 @@
+[
+{
+	"model": "main.Article",
+	"pk": 1,
+	"fields": {
+		"title": "Joyou AG signs major 5 Star Hotel Projects",
+		"thumbnail": "",
+		"content": "Frankfurt am Main, Germany, 22 March 2011. Joyou AG, a leading bathroom solution supplier in China, announces today that it has signed contracts to supply the Kempinski Hotel and the Westin Hotel, both in Xiamen, with sanitary ware products of Joyou and Grohe. The agreements include supplying faucets, showers and accessories.",
+		"creation_date": "2011-03-22",
+		"category": 4
+	}
+},
+{
+	"model": "main.Article",
+	"pk": 2,
+	"fields": {
+		"title": "Joyou AG: Results 2010 exceed guidance and analyst’s estimates",
+		"thumbnail": "",
+		"content": "Frankfurt am Main, Germany, 17 March 2011. Joyou AG, a leading bathroom solution supplier in China, has achieved better financial results in 2010 than expected: The company increased its sales in 2010 by 43% year on year to a total of EUR 246.6 million (2009: EUR 172.3 million). At EUR 71.7 million, total sales in the fourth quarter of 2010 were up 64% on the previous year. Operating income (EBIT) for full year 2010 increased by 11.5% to EUR 43.7 million, representing an EBIT margin of 17.7%. Net income grew at a higher rate of 49% to EUR 33.2 million in 2010 mainly due to EBIT and finance income increase, and obtaining a preferential income tax rate.",
+		"creation_date": "2011-03-17",
+		"category": 4
+	}
+}
+]

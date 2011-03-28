@@ -8,6 +8,8 @@ import views
 
 urlpatterns = patterns('',
 	(r'^appdata$', views.appdata),
+	(r'^articlecount$', views.articlecount),
+	(r'^article/(\d+)/(\d+)', views.article),
 	(r'^nav$', views.nav),
 	(r'^nav/save', views.save_nav),
 	(r'^nav/remove', views.remove_nav),

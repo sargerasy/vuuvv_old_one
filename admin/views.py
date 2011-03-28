@@ -149,7 +149,19 @@ def save_page(request):
 
 def remove_page(request):
 	return HttpResponse("{}")
-	
+
+def articlecount(request):
+	articles = main.models.Article.objects.all()
+	obj = len(articles)
+	return HttpResponse(json.dumps({"count": obj}))
+
+def article(request, first, last):
+	articles = main.models.Article.objects.values("id", "category", "title")
+	obj = articles[first: last]
+	logging.info(articles)
+	logging.info(obj)
+	return HttpResponse(json.dumps(list(obj)))
+
 def file(request, dir):
 	import time
 	path = os.path.join(settings.PROJECT_DIR, dir)

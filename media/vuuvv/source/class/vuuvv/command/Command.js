@@ -6,6 +6,7 @@
 #require(vuuvv.ui.page.Menu)
 #require(vuuvv.ui.page.Page)
 #require(vuuvv.ui.page.About)
+#require(vuuvv.ui.page.Article)
 *****************************************************/
 qx.Class.define("vuuvv.command.Command", {
 	extend: qx.ui.core.Command,
