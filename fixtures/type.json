@@ -30,5 +30,53 @@
 		"name": "Press Releases",
 		"category": 1
 	}
+},
+{
+	"model": "main.Category",
+	"pk": 5,
+	"fields": {
+		"name": "Publication",
+		"category": null 
+	}
+},
+{
+	"model": "main.Category",
+	"pk": 6,
+	"fields": {
+		"name": "Financial Reports",
+		"category": 5
+	}
+},
+{
+	"model": "main.Category",
+	"pk": 7,
+	"fields": {
+		"name": "Presentations",
+		"category": 5
+	}
+},
+{
+	"model": "main.Category",
+	"pk": 8,
+	"fields": {
+		"name": "Coference Calls",
+		"category": 5
+	}
+},
+{
+	"model": "main.Category",
+	"pk": 9,
+	"fields": {
+		"name": "Offering Prospectus",
+		"category": 5
+	}
+},
+{
+	"model": "main.Category",
+	"pk": 10,
+	"fields": {
+		"name": "Voting Rights Announcements",
+		"category": 5
+	}
 }
 ]

@@ -1,0 +1,23 @@
+一个table，双击某一项后弹出一个form的窗口去更改该项
+
+Save
+New
+Update
+Delete
+
+我们已经有了一个Form类，只要提供相应的proto就可以生成相应的form
+
+Container
+FormWindow
+SummaryTable
+RemoteModel
+
+提供
+summary_fields		table中的column			RemoteModel
+Proto				原型数据				Container
+count_url			返回总数量				RemoteModel
+summary_url			返回相应的column中的值	RemoteModel
+detail_url			返回所有的值			SummaryTable
+save_url			保存model				FormWindow save后发saved Event, 
+delete_url(ids)		删除model				SummaryTable
+

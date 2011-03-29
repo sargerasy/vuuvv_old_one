@@ -2,18 +2,38 @@ from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
 from utils import models_to_dict, model_to_obj
 import json
-import models
-import main.models
+from django.db import models
+from models import Menu as Nav
+from main.models import Article, Menu, Publication, Category, Page, Product
 import settings
 import os
 import logging
 
 def appdata(request):
 	data = {"appdata": {
-		"menus": models_to_dict(models.Menu.objects.all()),
+		"menus": models_to_dict(Nav.objects.all()),
 	}}
 
 	return HttpResponse(json.dumps(data))
+
+def count(request, name):
+	count = 0
+	try:
+		cls = globals()[name]
+		if (issubclass(cls, models.Model)):
+			count = len(cls.objects.all())
+	except KeyError:
+		pass
+	return HttpResponse(json.dumps({"count": count}))
+
+def save(request, name):
+	try:
+		cls = globals()[name]
+		if (issubclass(cls, models.Model)):
+			pass
+	except KeyError:
+		pass
+	return HttpResponse(json.dumps({}))
 
 def upload(request):
 	logging.info("upload")
@@ -31,7 +51,7 @@ def upload(request):
 	return HttpResponse(json.dumps({}))
 
 def nav(request):
-	data = {"nav": models_to_dict(main.models.Menu.objects.all())}
+	data = {"nav": models_to_dict(Menu.objects.all())}
 
 	return HttpResponse(json.dumps(data))
 
@@ -43,8 +63,8 @@ def save_nav(request):
 	pid = request.REQUEST["parent"]
 	id = request.REQUEST["id"]
 
-	parent = main.models.Menu.objects.get(pk=int(pid)) if pid != "-1" else None
-	menu = main.models.Menu() if id == "-1" else main.models.Menu.objects.get(pk=int(id))
+	parent = Menu.objects.get(pk=int(pid)) if pid != "-1" else None
+	menu = Menu() if id == "-1" else Menu.objects.get(pk=int(id))
 	create = True if id == "-1" else False
 
 	menu.label = label
@@ -60,7 +80,7 @@ def remove_nav(request):
 	ids = [int(i) for i in request.REQUEST.getlist("ids")]
 	logging.info(ids)
 	for id in ids:
-		model = main.models.Menu.objects.get(pk=id)
+		model = Menu.objects.get(pk=id)
 		model.delete()
 
 	obj = {"ids": ids}
@@ -76,12 +96,12 @@ def save_menu(request):
 	if pid == "-1":
 		parent = None
 	else:
-		parent = models.Menu.objects.get(pk=int(pid))
+		parent = Nav.objects.get(pk=int(pid))
 	if id == "-1":
-		menu = models.Menu()
+		menu = Nav()
 		create = True
 	else:
-		menu = models.Menu.objects.get(pk=int(id))
+		menu = Nav.objects.get(pk=int(id))
 		create = False
 
 	menu.label = label
@@ -97,26 +117,26 @@ def remove_menu(request):
 	ids = [int(i) for i in request.REQUEST.getlist("ids")]
 	logging.info(ids)
 	for id in ids:
-		model = models.Menu.objects.get(pk=id)
+		model = Nav.objects.get(pk=id)
 		model.delete()
 
 	obj = {"ids": ids}
 	return HttpResponse(json.dumps(obj))
 
 def pages(request):
-	model = main.models.Page.objects.order_by("url").values("id", "url")
+	model = Page.objects.order_by("url").values("id", "url")
 	return HttpResponse(json.dumps(list(model)))
 
 def page_id(request, id):
 	obj = {"create": False, "page": None}
-	model = main.models.Page.objects.filter(id__exact=id).values("id", "title", "url", "keywords", "desc", "content", "template")
+	model = Page.objects.filter(id__exact=id).values("id", "title", "url", "keywords", "desc", "content", "template")
 	if len(model) > 0:
 		obj["page"] = model[0]
 	return HttpResponse(json.dumps(obj))
 
 def page(request, url):
 	obj = {"create": False, "page": None}
-	model = main.models.Page.objects.filter(url__exact=url).values("id", "title", "url", "keywords", "desc", "content", "template")
+	model = Page.objects.filter(url__exact=url).values("id", "title", "url", "keywords", "desc", "content", "template")
 	if len(model) < 1:
 		obj["create"] = True
 	else:
@@ -133,7 +153,7 @@ def save_page(request):
 	template = request.REQUEST["template"]
 	id = request.REQUEST["id"]
 
-	page = main.models.Page() if id == "-1" else main.models.Page.objects.get(pk=int(id))
+	page = Page() if id == "-1" else Page.objects.get(pk=int(id))
 
 	logging.info("save")
 	if page:
@@ -151,16 +171,36 @@ def remove_page(request):
 	return HttpResponse("{}")
 
 def articlecount(request):
-	articles = main.models.Article.objects.all()
+	articles = Article.objects.all()
 	obj = len(articles)
 	return HttpResponse(json.dumps({"count": obj}))
 
 def article(request, first, last):
-	articles = main.models.Article.objects.values("id", "category", "title")
+	articles = Article.objects.values("id", "category", "title", "creation_date")
 	obj = articles[first: last]
-	logging.info(articles)
-	logging.info(obj)
-	return HttpResponse(json.dumps(list(obj)))
+	return HttpResponse(json.dumps(list(obj), cls=DjangoJSONEncoder))
+
+def articledetail(request, id):
+	article = Article.objects.filter(id__exact=int(id)).values()
+	category = Category.objects.filter(category__exact=1).values()
+	obj = {"article": article[0], "category": list(category)}
+	return HttpResponse(json.dumps(obj, cls=DjangoJSONEncoder))
+
+def publicationcount(request):
+	publication = Publication.objects.all()
+	obj = len(publication)
+	return HttpResponse(json.dumps({"count": obj}))
+
+def publication(request, first, last):
+	publication = Publication.objects.values("id", "category", "title", "link", "creation_date")
+	obj = publication[first: last]
+	return HttpResponse(json.dumps(list(obj), cls=DjangoJSONEncoder))
+
+def publicationdetail(request, id):
+	publication = Publication.objects.filter(id__exact=int(id)).values()
+	category = Category.objects.filter(category__exact=5).values()
+	obj = {"publication": publication[0], "category": list(category)}
+	return HttpResponse(json.dumps(obj, cls=DjangoJSONEncoder))
 
 def file(request, dir):
 	import time

@@ -1,0 +1,42 @@
+[
+{
+	"model": "main.Publication",
+	"pk": 1,
+	"fields": {
+		"title": "financial statements of 2009.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_2009_financial_statements.pdf",
+		"creation_date": "2011-03-22",
+		"category": 6
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 2,
+	"fields": {
+		"title": "Report Q1 2010.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/E_Joyou_QB1_s.pdf",
+		"creation_date": "2011-03-17",
+		"category": 6
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 3,
+	"fields": {
+		"title": "01.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100401_Stimmrechte.pdf",
+		"creation_date": "2011-03-17",
+		"category": 6
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 4,
+	"fields": {
+		"title": "07.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100407_Stimmrechte2.pdf",
+		"creation_date": "2011-03-17",
+		"category": 6
+	}
+}
+]

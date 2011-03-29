@@ -38,3 +38,10 @@ class Product(models.Model):
 	picture = models.CharField(max_length=128)
 	category = models.ForeignKey(Category)
 
+class Publication(models.Model):
+	title = models.TextField()
+	link = models.CharField(max_length=255, unique=True)
+	created_by = models.CharField(max_length=70, default=1)
+	changed_by = models.CharField(max_length=70, default=1)
+	creation_date = models.DateTimeField(default=datetime.now)
+	category = models.ForeignKey(Category)
