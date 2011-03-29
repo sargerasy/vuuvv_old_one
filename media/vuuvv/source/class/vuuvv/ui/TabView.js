@@ -12,6 +12,7 @@ qx.Class.define("vuuvv.ui.TabView", {
 		{
 			var page = this.getPage(label);
 			if (!page) {
+				console.log(pageClassName);
 				var pageClass = qx.Class.getByName(pageClassName);
 				page = new qx.ui.tabview.Page(label, icon);
 				page.setShowCloseButton(true);

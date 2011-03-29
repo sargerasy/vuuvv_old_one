@@ -1,20 +1,34 @@
-qx.Class.define('vuuvv.model.RemoteArticle', {
+qx.Class.define('vuuvv.model.Remote', {
 	extend: qx.ui.table.model.Remote,
 
-	construct: function() {
+	construct: function(columns, countUrl, summaryUrl, modelName) {
 		this.base(arguments);
-		this.setColumns(["category", "creation_date", "title"]);
+		this.setSummaryUrl(summaryUrl);
+		this.setModelName(modelName);
+		this.setColumns(columns);
 	},
 
 	properties: {
+		modelName: {
+			init: ""
+		},
+
+		countUrl: {
+			init: null,
+			nullable: true
+		},
+
+		summaryUrl: {
+			init: null,
+			nullable: true
+		}
 	},
 
 	members: {
 		// overloaded - called whenever the table request the row count
 		_loadRowCount: function() {
-			var url = "/admin/articlecount"
+			var url = "/admin/count/" + this.getModelName();
 			var req = new qx.io.remote.Request(url, "GET", "application/json");
-
 			req.addListener("completed", this._onRowCountCompleted, this);
 			req.send();
 		},

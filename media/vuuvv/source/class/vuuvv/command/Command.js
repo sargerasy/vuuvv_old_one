@@ -7,6 +7,7 @@
 #require(vuuvv.ui.page.Page)
 #require(vuuvv.ui.page.About)
 #require(vuuvv.ui.page.Article)
+#require(vuuvv.ui.page.Publication)
 *****************************************************/
 qx.Class.define("vuuvv.command.Command", {
 	extend: qx.ui.core.Command,

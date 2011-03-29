@@ -72,6 +72,18 @@ qx.Class.define("vuuvv.ui.Form", {
 				form.add(widget, name);
 				this._widgets[name] = widget;
 
+				if (item.type == "DateField") {
+					widget.setDateFormat(vuuvv.utils.mydateFormat());
+					this._controller.addBindingOptions(name, {
+						converter : function(data) {
+							// model --> target
+							return vuuvv.utils.mydateFormat().parse(data);
+						}}, {converter : function(data) {
+							// target --> model
+							return vuuvv.utils.mydateFormat().format(data);
+					}});
+				}
+
 				if (qx.lang.Type.isNumber(item.init)) {
 					this._controller.addBindingOptions(name, {
 						converter : function(data) {
@@ -87,7 +99,7 @@ qx.Class.define("vuuvv.ui.Form", {
 					ctrl = new qx.data.controller.List(null, widget);
 					if (item.delegate)
 						ctrl.setDelegate(item.delegate);
-					item.controller = ctrl;
+					item["controller"] = ctrl;
 				}
 			}
 
@@ -117,6 +129,12 @@ qx.Class.define("vuuvv.ui.Form", {
 
 		reset: function() {
 			this._controller.setModel(this.getProtoModel());
+		},
+
+		setModel: function(data, name) {
+			var ctrl = name ? this.getController(name) : this.getController();
+			var model = qx.data.marshal.Json.createModel(data);
+			ctrl.setModel(model);
 		},
 
 		/**

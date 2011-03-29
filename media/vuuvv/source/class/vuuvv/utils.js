@@ -74,6 +74,10 @@ qx.Class.define("vuuvv.utils",
 			return parts.length <= 1 ? "" : parts[parts.length - 1];
 		},
 
+		mydateFormat: function(name) {
+			return new qx.util.format.DateFormat("yyyy-MM-dd HH:mm:ss")
+		},
+
 		shrink: function(x, y, mx, my) {
 			var ret = {x: x, y: y};
 			if (x <= mx && y <= my)

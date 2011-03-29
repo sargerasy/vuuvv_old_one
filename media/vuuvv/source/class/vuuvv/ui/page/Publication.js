@@ -1,4 +1,4 @@
-qx.Class.define("vuuvv.ui.page.Article", {
+qx.Class.define("vuuvv.ui.page.Publication", {
 	extend: qx.ui.container.Composite,
 
 	construct: function()
@@ -9,7 +9,7 @@ qx.Class.define("vuuvv.ui.page.Article", {
 		var toolbar = new qx.ui.toolbar.ToolBar();
 		this.add(toolbar);
 
-		var model = new vuuvv.model.RemoteArticle;
+		var model = new vuuvv.model.RemotePublication;
 		var table = new qx.ui.table.Table(model);
 
 		table.addListener("cellDblclick", function(e) {
@@ -17,7 +17,7 @@ qx.Class.define("vuuvv.ui.page.Article", {
 			var row = e.getRow();
 			var data = model.getRowData(row);
 			var id = data.id;
-			this._editArticle(id);
+			this._edit(id);
 		}, this);
 
 		this.add(table);
@@ -27,14 +27,14 @@ qx.Class.define("vuuvv.ui.page.Article", {
 	{
 		_articleForm: null,
 
-		getArticleForm: function() {
-			if (!this._articleForm)
-				this._articleForm = new vuuvv.ui.page.ArticleForm();
-			return this._articleForm;
+		getPublicationForm: function() {
+			if (!this._publicationForm)
+				this._publicationForm = new vuuvv.ui.page.PublicationForm();
+			return this._publicationForm;
 		},
 
-		_editArticle: function(id) {
-			var url = "/admin/articledetail/" + id;
+		_edit: function(id) {
+			var url = "/admin/publicationdetail/" + id;
 			var req = new qx.io.remote.Request(url, "GET", "application/json");
 
 			req.addListener("completed", this._onLoadDataCompleted, this);
@@ -43,7 +43,7 @@ qx.Class.define("vuuvv.ui.page.Article", {
 
 		_onLoadDataCompleted: function(e) {
 			var data = e.getContent();
-			var form = this.getArticleForm();
+			var form = this.getPublicationForm();
 			form.show();
 			form.setData(data);
 		}
