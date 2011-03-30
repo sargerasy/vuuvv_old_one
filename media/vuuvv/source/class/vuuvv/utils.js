@@ -74,6 +74,15 @@ qx.Class.define("vuuvv.utils",
 			return parts.length <= 1 ? "" : parts[parts.length - 1];
 		},
 
+		toUriParameter: function(object, dateFormat) {
+			var result = "";
+			var dateFormat = dateFormat || vuuvv.utils.mydateFormat();
+			for (var key in object) {
+				var value = object[key];
+				var jvalue = qx.util.Json.stringify(value);
+			}
+		},
+
 		mydateFormat: function(name) {
 			return new qx.util.format.DateFormat("yyyy-MM-dd HH:mm:ss")
 		},

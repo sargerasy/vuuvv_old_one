@@ -32,7 +32,12 @@ qx.Class.define("vuuvv.ui.page.ArticleForm", {
 			this._form.reset();
 		},
 
-		_onSave: function() {
+		_onSave: function(e) {
+			var data = e.getData();
+			var url = "/admin/save/Article";
+			var req = new qx.io.remote.Request(url, "POST", "application/json");
+			req.setData(data);
+			req.send();
 		},
 
 		_getProto: function() {

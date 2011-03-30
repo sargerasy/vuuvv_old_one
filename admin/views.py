@@ -1,12 +1,12 @@
 from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
 from utils import models_to_dict, model_to_obj
-import json
 from django.db import models
 from models import Menu as Nav
 from main.models import Article, Menu, Publication, Category, Page, Product
 import settings
 import os
+import json
 import logging
 
 def appdata(request):
@@ -16,24 +16,88 @@ def appdata(request):
 
 	return HttpResponse(json.dumps(data))
 
-def count(request, name):
-	count = 0
-	try:
-		cls = globals()[name]
-		if (issubclass(cls, models.Model)):
-			count = len(cls.objects.all())
-	except KeyError:
-		pass
-	return HttpResponse(json.dumps({"count": count}))
+def modelop(attachable=False):
+	return ModelOp(attachable)
 
-def save(request, name):
-	try:
-		cls = globals()[name]
-		if (issubclass(cls, models.Model)):
-			pass
-	except KeyError:
-		pass
-	return HttpResponse(json.dumps({}))
+class ModelOp(object):
+	attach = {
+		"Article": {"Category": {"category": 1}},
+		"Publication": {"Category": {"category": 5}}
+	}
+
+	def __init__(self, attachable=False):
+		self.attachable  = attachable
+
+	def get_attach(self, name):
+		obj = {}
+		attach = self.attach.get(name, {})
+		for k, v in attach.items():
+			try:
+				cls = globals()[k]
+				if (issubclass(cls, models.Model)):
+					kwargs = {}
+					for k1, v1 in v.items():
+						kwargs[k1 + "__exact"] = v1
+					obj[k] = list(cls.objects.filter(**kwargs).values())
+			except KeyError:
+				pass
+		return obj
+
+	def __call__(self, func):
+		def _func(request, name, *args):
+			obj = self.get_attach(name) if self.attachable else {}
+			try:
+				cls = globals()[name]
+				if (issubclass(cls, models.Model)):
+					obj["value"] = func(request, cls, *args)
+			except KeyError:
+				pass
+			return HttpResponse(json.dumps(obj, cls=DjangoJSONEncoder))
+		return _func
+
+@modelop()
+def count(request, cls):
+	return cls.objects.count()
+
+@modelop()
+def save(request, cls):
+	ret = {"create": False, "id": None}
+	post = request.POST
+	fields = dict([(a.attname, post.get(a.attname)) for a in cls._meta.fields if a.attname in post])
+	id = int(fields["id"])
+	if id == -1:
+		ret["create"] = True
+		fields.pop("id")
+	logging.info(fields)
+	model = cls(**fields)
+	model.save()
+	ret["id"] = model.id
+	return ret
+
+@modelop(True)
+def query(request, cls):
+	fields = request.POST.get("fields", [])
+	logging.info(fields)
+	if fields:
+		logging.info("here")
+		fields = json.loads(fields)
+		if "id" not in fields:
+			fields.append("id")
+	logging.info(fields)
+
+	conditions = request.POST.get("conditions", [])
+	if conditions:
+		conditions = json.loads(conditions)
+	kwargs = {}
+	for item in conditions:
+		key = "__".join(item[0:2])
+		kwargs[key] = item[2]
+
+	obj = cls.objects.filter(**kwargs).values(*fields)
+	return list(obj)
+
+def delete(request, cls):
+	pass
 
 def upload(request):
 	logging.info("upload")

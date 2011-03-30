@@ -7,6 +7,9 @@ qx.Class.define("vuuvv.ui.page.Article", {
 		this.setBackgroundColor("background-splitpane");
 
 		var toolbar = new qx.ui.toolbar.ToolBar();
+		var newBtn = new qx.ui.toolbar.Button("New");
+		toolbar.add(newBtn);
+		newBtn.addListener("execute", this._onNew, this);
 		this.add(toolbar);
 
 		var model = new vuuvv.model.RemoteArticle;
@@ -34,7 +37,7 @@ qx.Class.define("vuuvv.ui.page.Article", {
 		},
 
 		_editArticle: function(id) {
-			var url = "/admin/articledetail/" + id;
+			var url = "/admin/detail/Article/" + id;
 			var req = new qx.io.remote.Request(url, "GET", "application/json");
 
 			req.addListener("completed", this._onLoadDataCompleted, this);
@@ -46,6 +49,14 @@ qx.Class.define("vuuvv.ui.page.Article", {
 			var form = this.getArticleForm();
 			form.show();
 			form.setData(data);
+		},
+
+		_onNew: function(e) {
+			//var url = "/admin/detail/Article/" + id;
+			var req = new qx.io.remote.Request(url, "GET", "application/json");
+
+			req.addListener("completed", this._onLoadDataCompleted, this);
+			req.send();
 		}
 	}
 });

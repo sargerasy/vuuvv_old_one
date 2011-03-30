@@ -12,7 +12,7 @@ qx.Class.define('vuuvv.model.RemotePublication', {
 	members: {
 		// overloaded - called whenever the table request the row count
 		_loadRowCount: function() {
-			var url = "/admin/publicationcount"
+			var url = "/admin/count/Publication"
 			var req = new qx.io.remote.Request(url, "GET", "application/json");
 
 			req.addListener("completed", this._onRowCountCompleted, this);
@@ -22,22 +22,23 @@ qx.Class.define('vuuvv.model.RemotePublication', {
 		_onRowCountCompleted: function(e) {
 			var data = e.getContent();
 			if (data != null) {
-				this._onRowCountLoaded(data.count);
+				this._onRowCountLoaded(data.value);
 			}
 		},
 
 		// overloaded - called whenever the table requests new data
 		_loadRowData: function(firstRow, lastRow) {
-			var url = ["/admin/publication", firstRow, lastRow].join("/")
-			var req = new qx.io.remote.Request(url, "GET", "application/json");
-
-			req.addListener("completed", this._onLoadDataCompleted, this);
-			req.send();
+			var q = new vuuvv.Query;
+			q.addListener("completed", this._onLoadDataCompleted, this);
+			q.setName("Publication");
+			q.setLimit([firstRow, lastRow]);
+			q.setFields(["category", "creation_date", "title", "link"]);
+			q.query();
 		},
 
 		_onLoadDataCompleted: function(e) {
-			var data = e.getContent();
-			this._onRowDataLoaded(data);
+			var data = e.getData();
+			this._onRowDataLoaded(data.value);
 		}
 	}
 });

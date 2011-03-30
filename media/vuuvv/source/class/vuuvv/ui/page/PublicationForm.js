@@ -20,10 +20,10 @@ qx.Class.define("vuuvv.ui.page.PublicationForm", {
 		},
 
 		setData: function(data) {
-			this._form.setModel(data.publication);
+			this._form.setModel(data.value);
 			this._form.setModel(data.category, "category_id");
 			var sel = new qx.data.Array();
-			sel.push(data.publication.category_id);
+			sel.push(data.value.category_id);
 			console.log(sel);
 			this._form.getController("category_id").setSelection(sel);
 		},

@@ -34,15 +34,19 @@ qx.Class.define("vuuvv.ui.page.Publication", {
 		},
 
 		_edit: function(id) {
-			var url = "/admin/publicationdetail/" + id;
-			var req = new qx.io.remote.Request(url, "GET", "application/json");
+			var q = new vuuvv.Query;
+			q.addListener("completed", this._onLoadDataCompleted, this);
+			q.setName("Publication");
+			q.query();
+			//var url = "/admin/publicationdetail/" + id;
+			//var req = new qx.io.remote.Request(url, "GET", "application/json");
 
-			req.addListener("completed", this._onLoadDataCompleted, this);
-			req.send();
+			//req.addListener("completed", this._onLoadDataCompleted, this);
+			//req.send();
 		},
 
 		_onLoadDataCompleted: function(e) {
-			var data = e.getContent();
+			var data = e.getData();
 			var form = this.getPublicationForm();
 			form.show();
 			form.setData(data);

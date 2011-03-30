@@ -64,10 +64,8 @@ qx.Class.define("vuuvv.ui.page.Page", {
 
 		_onDelete: function() {
 			var items = this._lc.getSelection();
-			var proto = {"ids": []};
-			for (var i = 0; i < items.length; i++) {
-				proto.ids.push(items[i].getId());
-			}
+			var proto = {"ids": items.toArray()};
+			console.log(items);
 			var data = qx.util.Serializer.toUriParameter(qx.data.marshal.Json.createModel(proto));
 			var url = "/admin/page/remove"
 			var req = new qx.io.remote.Request(url, "POST");

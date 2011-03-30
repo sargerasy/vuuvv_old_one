@@ -50,6 +50,14 @@ qx.Class.define("vuuvv.test.DemoTest",
       var b = a;
       this.assertIdentical(a, b, "A rose by any other name is still a rose");
       this.assertInRange(3, 1, 10, "You must be kidding, 3 can never be outside [1,10]!");
-    }
+    },
+
+	testQuery: function() {
+		this.debug("testQuery");
+		var q = new vuuvv.Query;
+		q.setName("Menu");
+		q.addCondition("id", "exact", "1");
+		q.query();
+	}
   }
 });
