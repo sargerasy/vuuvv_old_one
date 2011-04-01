@@ -7,6 +7,7 @@ import django.views.static
 import logging
 import utils
 import json
+import getdata
 
 def index(request):
 	return joyou(request, "home")
@@ -22,6 +23,10 @@ def joyou(request, path):
 		template = "index"
 		content = None
 	
+	func = getattr(getdata, template, None)
+	value = func(request) if func is not None else None
+	logging.info(value)
+
 	menus = tree.create_menus(url)
 	
 	return render_to_response("main/%s.html" % template, {
@@ -30,6 +35,7 @@ def joyou(request, path):
 		"title": menus[1],
 		"subs": tree.generate_all_subs(),
 		"content": content,
+		"value": value,
 	})
 
 def media(request, path):

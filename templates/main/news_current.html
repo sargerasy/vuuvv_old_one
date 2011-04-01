@@ -3,26 +3,25 @@
 <div class="right-content">
 	<h5 class="tit">&nbsp;</h5>
 	<div align="left" style="line-height: 20px; paddiing-top: 15px;">
+		{% if value.company %}
 		<div class="round-box">
 			<div class="rb-spacer"></div>
 			<div class="rb-title">
 				<div class="rbt-left">
-					Latest News
+					Latest Company News
 				</div>
 			</div>
 			<div class="rb-top"></div>
 			<div class="rb-middle">
 				<div class="latestnews">
 					<div class="latestnews-inner">
+						{% for item in value.company %}
 						<p>
-							<span class="rb-date">2010-10-12</span>
-							<a href="#">Joyou Excels in Skill Competition</a>
+							<span class="rb-date">{{ item.creation_date }}</span>
+							<a href="#">{{ item.title }}</a>
 						</p>
-						<p>
-							<span class="rb-date">2010-10-12</span>
-							<a href="#">Joyou Awarded “Golden Partner Prize” for Real Estate Engineering Procurement in China</a>
-						</p>
-						<a class="blue-button" href="#">
+						{% endfor %}
+						<a class="blue-button" href="/news/company">
 							<span>View All</span>
 						</a>
 					</div>
@@ -30,6 +29,61 @@
 			</div>
 			<div class="rb-bottom"></div>
 		</div>
+		{% endif %}
+		{% if value.ad_hoc %}
+		<div class="round-box">
+			<div class="rb-spacer"></div>
+			<div class="rb-title">
+				<div class="rbt-left">
+					Latest Ad Hoc Releases
+				</div>
+			</div>
+			<div class="rb-top"></div>
+			<div class="rb-middle">
+				<div class="latestnews">
+					<div class="latestnews-inner">
+						{% for item in value.ad_hoc %}
+						<p>
+							<span class="rb-date">{{ item.creation_date }}</span>
+							<a href="#">{{ item.title }}</a>
+						</p>
+						{% endfor %}
+						<a class="blue-button" href="/news/ad_hoc">
+							<span>View All</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="rb-bottom"></div>
+		</div>
+		{% endif %}
+		{% if value.press %}
+		<div class="round-box">
+			<div class="rb-spacer"></div>
+			<div class="rb-title">
+				<div class="rbt-left">
+					Latest Press Releases
+				</div>
+			</div>
+			<div class="rb-top"></div>
+			<div class="rb-middle">
+				<div class="latestnews">
+					<div class="latestnews-inner">
+						{% for item in value.press %}
+						<p>
+							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
+							<a href="#">{{ item.title }}</a>
+						</p>
+						{% endfor %}
+						<a class="blue-button" href="/news/press">
+							<span>View All</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="rb-bottom"></div>
+		</div>
+		{% endif %}
 	</div>
 </div>
 {% endblock %}

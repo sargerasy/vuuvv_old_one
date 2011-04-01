@@ -4,24 +4,17 @@
 	<h5 class="tit">&nbsp;</h5>
 	<div align="left" style="line-height: 20px; paddiing-top: 15px;">
 		<div class="news-list">
+			{% for item in value.company %}
 			<div class="news">
-				<a href="#" class="news-image"><img width="120" height="120" src="http://www.joyou.com//Upload/20112112062374426.jpg"/></a>
-				<h2><a href="#">Joyou Excels in Skill Competition</a></h2>
-				<h3>2010-11-10</h3>
+				<a href="#" class="news-image"><img width="120" height="120" src="{{ item.thumbnail }}"/></a>
+				<h2><a href="#">{{ item.title }}</a></h2>
+				<h3>{{ item.creattion_date|date:"Y-m-d" }}</h3>
 				<p>
-				On the Closing of the 2nd Plumbing Skills Competition of Quanzhou
+				{{ item.content|truncatewords:40}}
 				<a class="more-link" href="#">[Read More...]</a>
 				</p>
 			</div>
-			<div class="news">
-				<a href="#" class="news-image"><img width="120" height="120" src="http://www.joyou.com//Upload/20112112062374426.jpg"/></a>
-				<h2><a href="#">Joyou Awarded “Golden Partner Prize” for Real Estate Engineering Procurement in China</a></h2>
-				<h3>2010-11-10</h3>
-				<p>
-				The 2nd Innovation Forum for Real Estate Engineering Procurement and the Award Ceremony of the “Golden Partner Prize” for Real Estate Engineering Procurement in China was officially opened
-				<a class="more-link" href="#">[Read More...]</a>
-				</p>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

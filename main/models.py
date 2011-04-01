@@ -45,3 +45,9 @@ class Publication(models.Model):
 	changed_by = models.CharField(max_length=70, default=1)
 	creation_date = models.DateTimeField(default=datetime.now)
 	category = models.ForeignKey(Category)
+
+class Award(models.Model):
+	name = models.CharField(max_length=128)
+	year = models.IntegerField()
+	thumbnail = models.CharField(max_length=128)
+	image = models.CharField(max_length=128)
