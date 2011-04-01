@@ -3,6 +3,9 @@ qx.Class.define("vuuvv.Query", {
 
 	construct: function() {
 		this.base(arguments);
+		console.log(this);
+		this.setConditions([]);
+		this.setFields([]);
 	},
 
 	properties: {
@@ -20,7 +23,7 @@ qx.Class.define("vuuvv.Query", {
 			init: []
 		},
 
-		order: {
+		orderby: {
 			init: null,
 			nullable: true
 		},
@@ -49,7 +52,19 @@ qx.Class.define("vuuvv.Query", {
 	members: {
 		query: function() {
 			var req = new qx.io.remote.Request(this.getUrl(), "POST", "application/json");
-			req.setData(this.parseData());
+			var data;
+			switch (this.getType()) {
+				case "query":
+					data = this.parseData() || "1=1";
+					break;
+				case "save":
+					data = this.getValue();
+					break;
+				case "delete":
+					break;
+			}
+			if (data)
+				req.setData(data);
 
 			req.addListener("completed", this._onCompleted, this);
 			req.addListener("failed", this._onFailed, this);
@@ -62,16 +77,12 @@ qx.Class.define("vuuvv.Query", {
 		},
 
 		parseData: function() {
-			var p = ["conditions", "order", "limit", "value", "fields"];
+			var p = ["conditions", "orderby", "limit", "value", "fields"];
 			var result = "";
 			for(var i = 0; i < p.length; i++) {
 				var name = p[i];
 				var value = this.get(name);
-				console.log(value)
-				console.log(value != [])
-				console.log(value !== [])
-				console.log(value !== [] && value !== {})
-				if (value && value !== [] && value !== {})
+				if (vuuvv.utils.isFalse(value))
 					result += encodeURIComponent(name) + "=" + encodeURIComponent(qx.util.Json.stringify(value)) + "&";
 			}
 			return result.substring(0, result.length - 1);

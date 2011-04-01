@@ -1,4 +1,4 @@
-qx.Class.define("vuuvv.ui.page.Article", {
+qx.Class.define("vuuvv.ui.page.Award", {
 	extend: vuuvv.ui.page.NormalEditor,
 
 	construct: function()

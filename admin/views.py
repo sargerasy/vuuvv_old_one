@@ -77,23 +77,24 @@ def save(request, cls):
 @modelop(True)
 def query(request, cls):
 	fields = request.POST.get("fields", [])
-	logging.info(fields)
-	if fields:
-		logging.info("here")
-		fields = json.loads(fields)
-		if "id" not in fields:
-			fields.append("id")
-	logging.info(fields)
-
 	conditions = request.POST.get("conditions", [])
+	orderby = request.POST.get("orderby", [])
+
+	if fields:
+		fields = json.loads(fields)
+		if fields and "id" not in fields:
+			fields.append("id")
 	if conditions:
 		conditions = json.loads(conditions)
+	if orderby:
+		orderby = json.loads(orderby)
+
 	kwargs = {}
 	for item in conditions:
 		key = "__".join(item[0:2])
 		kwargs[key] = item[2]
 
-	obj = cls.objects.filter(**kwargs).values(*fields)
+	obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
 	return list(obj)
 
 def delete(request, cls):

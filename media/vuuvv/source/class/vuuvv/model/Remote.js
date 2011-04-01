@@ -1,11 +1,12 @@
 qx.Class.define('vuuvv.model.Remote', {
 	extend: qx.ui.table.model.Remote,
 
-	construct: function(columns, countUrl, summaryUrl, modelName) {
+	construct: function(modelName, columns) {
 		this.base(arguments);
-		this.setSummaryUrl(summaryUrl);
 		this.setModelName(modelName);
-		this.setColumns(columns);
+		if (columns)
+			this.setColumns(columns);
+		this.setFields(columns);
 	},
 
 	properties: {
@@ -13,14 +14,8 @@ qx.Class.define('vuuvv.model.Remote', {
 			init: ""
 		},
 
-		countUrl: {
-			init: null,
-			nullable: true
-		},
-
-		summaryUrl: {
-			init: null,
-			nullable: true
+		fields: {
+			init: []
 		}
 	},
 
@@ -36,22 +31,23 @@ qx.Class.define('vuuvv.model.Remote', {
 		_onRowCountCompleted: function(e) {
 			var data = e.getContent();
 			if (data != null) {
-				this._onRowCountLoaded(data.count);
+				this._onRowCountLoaded(data.value);
 			}
 		},
 
 		// overloaded - called whenever the table requests new data
 		_loadRowData: function(firstRow, lastRow) {
-			var url = ["/admin/article", firstRow, lastRow].join("/")
-			var req = new qx.io.remote.Request(url, "GET", "application/json");
-
-			req.addListener("completed", this._onLoadDataCompleted, this);
-			req.send();
+			var q = new vuuvv.Query;
+			q.addListener("completed", this._onLoadDataCompleted, this);
+			q.setName(this.getModelName());
+			q.setLimit([firstRow, lastRow]);
+			q.setFields(this.getFields());
+			q.query();
 		},
 
 		_onLoadDataCompleted: function(e) {
-			var data = e.getContent();
-			this._onRowDataLoaded(data);
+			var data = e.getData();
+			this._onRowDataLoaded(data.value);
 		}
 	}
 });

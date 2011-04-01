@@ -1,3 +1,6 @@
+/**
+#require(qx.ui.form.DateField)
+*/
 qx.Class.define("vuuvv.ui.Form", {
 	extend: qx.ui.container.Composite,
 
@@ -158,8 +161,18 @@ qx.Class.define("vuuvv.ui.Form", {
 						this._widgets[name].syncValue();
 				}
 				var data = qx.util.Serializer.toUriParameter(this._controller.getModel());
-				this.fireDataEvent("save", data);
+				var q = new vuuvv.Query;
+				q.addListener("completed", this._onSaveCompleted, this);
+				q.setName(this.getName());
+				q.setValue(data);
+				q.setType("save");
+				q.query();
 			}
+		},
+
+		_onSaveCompleted: function(e) {
+			var model = this._controller.getModel();
+			this.fireDataEvent("save", e.getData());
 		},
 
 		_onCancel: function() {

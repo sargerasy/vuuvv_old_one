@@ -21,3 +21,14 @@ detail_url			返回所有的值			SummaryTable
 save_url			保存model				FormWindow save后发saved Event, 
 delete_url(ids)		删除model				SummaryTable
 
+通用的ModelEditor
+arguments: ModelName, Proto
+commands: new, delete, edit, find
+widget: ModelList, ModelForm, Toolbar
+
+vuuvv的vuuvv.ui.Form组件的作用
+自己本身是一个Composite
+construct: 提供model名和proto（即model的原型模式）
+将自动生成一个与proto匹配的qx.ui.form.Form作为child放入容器内
+有两个button, "save"和"cancel"，点击这两个button时分别发出save和cancel的Event
+save事件是带有data的，它的data是一个已经将form中的数据转化成uriparameter的数据
