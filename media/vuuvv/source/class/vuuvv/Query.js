@@ -3,7 +3,6 @@ qx.Class.define("vuuvv.Query", {
 
 	construct: function() {
 		this.base(arguments);
-		console.log(this);
 		this.setConditions([]);
 		this.setFields([]);
 	},
@@ -15,7 +14,7 @@ qx.Class.define("vuuvv.Query", {
 		},
 
 		type: {
-			check: ["save", "delete", "query"],
+			check: ["save", "delete", "query", "count"],
 			init: "query"
 		},
 
@@ -54,6 +53,9 @@ qx.Class.define("vuuvv.Query", {
 			var req = new qx.io.remote.Request(this.getUrl(), "POST", "application/json");
 			var data;
 			switch (this.getType()) {
+				case "count":
+					data = this.parseData() || "1=1";
+					break;
 				case "query":
 					data = this.parseData() || "1=1";
 					break;

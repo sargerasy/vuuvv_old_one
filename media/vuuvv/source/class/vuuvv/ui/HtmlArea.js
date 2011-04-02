@@ -61,17 +61,11 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 		_filebrowser: null,
 
 		_applyValue: function(value, old) {
-			this.debug("applyvalue");
-			console.log(this._htmlArea.getValue())
 			if(!this._htmlArea.getIframeObject() && value) {
 				this._htmlArea.addListenerOnce("appear", function() {
-					this.debug("appear");
-					this.debug(value);
-					this.debug(this.getValue());
 					this.setValue(value);
 				}, this._htmlArea);
 			}
-			console.log(this._htmlArea.getValue())
 		},
 
 		syncValue: function() {

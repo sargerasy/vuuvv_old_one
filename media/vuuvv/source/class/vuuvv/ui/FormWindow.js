@@ -10,7 +10,8 @@ qx.Class.define("vuuvv.ui.FormWindow", {
 	},
 
 	events: {
-		save: "qx.event.type.Data"
+		beforsave: "qx.event.type.Data",
+		aftersave: "qx.event.type.Data"
 	},
 
 	members: {
@@ -20,19 +21,20 @@ qx.Class.define("vuuvv.ui.FormWindow", {
 			var form = new vuuvv.ui.Form(name, proto);
 			this.add(form);
 			this._form = form;
-			this._form.addListener("save", this._onSave, this);
+			this._form.addListener("beforesave", this._onBeforeSave, this);
+			this._form.addListener("aftersave", this._onAfterSave, this);
 		},
 
 		reset: function() {
 			this._form.reset();
 		},
 
-		_onSave: function(e) {
-			console.log(e.getData());
+		_onBeforeSave: function(e) {
+			this.fireDataEvent("beforesave", e.getData());
 		},
 
-		_onSaveCompleted: function(e) {
-			this.fireDataEvent("save", e.getData());
+		_onAfterSave: function(e) {
+			this.fireDataEvent("aftersave", e.getData());
 		},
 
 		getForm: function() {

@@ -22,6 +22,7 @@ class Page(models.Model):
 class Category(models.Model):
 	name = models.CharField(max_length=128)
 	category = models.ForeignKey('self', blank=True, null=True, related_name="children")
+	memo = models.CharField(max_length=128)
 
 class Article(models.Model):
 	title = models.CharField(max_length=128)
@@ -35,8 +36,8 @@ class Article(models.Model):
 class Product(models.Model):
 	name = models.CharField(max_length=128)
 	thumbnail = models.CharField(max_length=128)
-	picture = models.CharField(max_length=128)
-	category = models.ForeignKey(Category)
+	image = models.CharField(max_length=128)
+	parent = models.ForeignKey('self', null=True, blank=True, related_name="children")
 
 class Publication(models.Model):
 	title = models.TextField()

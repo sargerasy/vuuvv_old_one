@@ -19,7 +19,8 @@ qx.Class.define("vuuvv.ui.Form", {
 	},
 
 	events: {
-		save: "qx.event.type.Data",
+		beforesave: "qx.event.type.Data",
+		aftersave: "qx.event.type.Data",
 		cancel: "qx.event.type.Event"
 	},
 
@@ -161,6 +162,7 @@ qx.Class.define("vuuvv.ui.Form", {
 						this._widgets[name].syncValue();
 				}
 				var data = qx.util.Serializer.toUriParameter(this._controller.getModel());
+				this.fireDataEvent("beforesave", this._controller.getModel());
 				var q = new vuuvv.Query;
 				q.addListener("completed", this._onSaveCompleted, this);
 				q.setName(this.getName());
@@ -172,7 +174,7 @@ qx.Class.define("vuuvv.ui.Form", {
 
 		_onSaveCompleted: function(e) {
 			var model = this._controller.getModel();
-			this.fireDataEvent("save", e.getData());
+			this.fireDataEvent("aftersave", e.getData());
 		},
 
 		_onCancel: function() {

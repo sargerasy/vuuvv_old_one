@@ -1,52 +1,48 @@
 qx.Class.define("vuuvv.ui.page.Product", {
-	extend: vuuvv.ui.page.NormalEditor,
+	extend: vuuvv.ui.page.ModelPage,
 
 	construct: function()
 	{
-		this.base(arguments, "Article", ["category", "creation_date", "title"]);
+		this.base(arguments, "Menu", ["label", "url", "order", "parent"], vuuvv.ui.TreeModelView);
 	},
 
 	members:
 	{
-		_onDataLoaded: function(e) {
+		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
-			form.setModel(data.Category, "category_id");
+			form.setModel(data.Menu, "parent_id");
 			if (data.value.length > 0) {
 				form.setModel(data.value[0]);
 				var sel = new qx.data.Array();
-				sel.push(data.value[0].category_id);
-				form.getController("category_id").setSelection(sel);
+				sel.push(data.value[0].parent_id);
+				form.getController("parent_id").setSelection(sel);
 			}
 		},
 
 		_getProto: function() {
 			return {
-				title: {
+				label: {
 					init: "",
 					type: "TextField"
 				},
-				thumbnail: {
+				url: {
 					init: "",
 					type: "TextField"
 				},
-				content: {
-					init: "",
-					type: "HtmlArea"
+				order: {
+					init: 0,
+					type: "TextField"
 				},
-				category_id: {
+				parent_id: {
 					init: [],
 					type: "SelectBox",
 					delegate: {
 						bindItem: function(ctrl, widget, index) {
-							ctrl.bindProperty("name", "label", null, widget, index);
+							ctrl.bindProperty("url", "label", null, widget, index);
 							ctrl.bindProperty("id", "model", null, widget, index);
 						}
 					}
-				},
-				creation_date: {
-					init: vuuvv.utils.mydateFormat().format(new Date()),
-					type: "DateField"
 				}
 			};
 		}

@@ -22,7 +22,8 @@ def modelop(attachable=False):
 class ModelOp(object):
 	attach = {
 		"Article": {"Category": {"category": 1}},
-		"Publication": {"Category": {"category": 5}}
+		"Publication": {"Category": {"category": 5}},
+		"Menu": {"Menu": {}},
 	}
 
 	def __init__(self, attachable=False):
@@ -57,7 +58,8 @@ class ModelOp(object):
 
 @modelop()
 def count(request, cls):
-	return cls.objects.count()
+	obj = doquery(request, cls)
+	return obj.count()
 
 @modelop()
 def save(request, cls):
@@ -68,7 +70,6 @@ def save(request, cls):
 	if id == -1:
 		ret["create"] = True
 		fields.pop("id")
-	logging.info(fields)
 	model = cls(**fields)
 	model.save()
 	ret["id"] = model.id
@@ -76,6 +77,10 @@ def save(request, cls):
 
 @modelop(True)
 def query(request, cls):
+	obj = doquery(request, cls)
+	return list(obj)
+
+def doquery(request, cls):
 	fields = request.POST.get("fields", [])
 	conditions = request.POST.get("conditions", [])
 	orderby = request.POST.get("orderby", [])
@@ -95,7 +100,7 @@ def query(request, cls):
 		kwargs[key] = item[2]
 
 	obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
-	return list(obj)
+	return obj
 
 def delete(request, cls):
 	pass
@@ -114,6 +119,11 @@ def upload(request):
 		fd.close()
 
 	return HttpResponse(json.dumps({}))
+
+def product(request):
+	data = {"product": models_to_dict(Menu.objects.all())}
+
+	return HttpResponse(json.dumps(data))
 
 def nav(request):
 	data = {"nav": models_to_dict(Menu.objects.all())}
@@ -234,38 +244,6 @@ def save_page(request):
 
 def remove_page(request):
 	return HttpResponse("{}")
-
-def articlecount(request):
-	articles = Article.objects.all()
-	obj = len(articles)
-	return HttpResponse(json.dumps({"count": obj}))
-
-def article(request, first, last):
-	articles = Article.objects.values("id", "category", "title", "creation_date")
-	obj = articles[first: last]
-	return HttpResponse(json.dumps(list(obj), cls=DjangoJSONEncoder))
-
-def articledetail(request, id):
-	article = Article.objects.filter(id__exact=int(id)).values()
-	category = Category.objects.filter(category__exact=1).values()
-	obj = {"article": article[0], "category": list(category)}
-	return HttpResponse(json.dumps(obj, cls=DjangoJSONEncoder))
-
-def publicationcount(request):
-	publication = Publication.objects.all()
-	obj = len(publication)
-	return HttpResponse(json.dumps({"count": obj}))
-
-def publication(request, first, last):
-	publication = Publication.objects.values("id", "category", "title", "link", "creation_date")
-	obj = publication[first: last]
-	return HttpResponse(json.dumps(list(obj), cls=DjangoJSONEncoder))
-
-def publicationdetail(request, id):
-	publication = Publication.objects.filter(id__exact=int(id)).values()
-	category = Category.objects.filter(category__exact=5).values()
-	obj = {"publication": publication[0], "category": list(category)}
-	return HttpResponse(json.dumps(obj, cls=DjangoJSONEncoder))
 
 def file(request, dir):
 	import time

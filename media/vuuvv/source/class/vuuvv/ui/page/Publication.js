@@ -1,14 +1,14 @@
 qx.Class.define("vuuvv.ui.page.Publication", {
-	extend: vuuvv.ui.page.NormalEditor,
+	extend: vuuvv.ui.page.ModelPage,
 
 	construct: function()
 	{
-		this.base(arguments, "Publication");
+		this.base(arguments, "Publication", null, vuuvv.ui.ModelView);
 	},
 
 	members:
 	{
-		_onDataLoaded: function(e) {
+		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
 			form.setModel(data.Category, "category_id");

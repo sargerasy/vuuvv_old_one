@@ -1,9 +1,10 @@
-qx.Class.define("vuuvv.ui.ModelEditor", {
+qx.Class.define("vuuvv.ui.ModelView", {
 	extend: qx.ui.container.Composite,
 
 	construct: function(name, proto, columns) {
 		this.base(arguments, new qx.ui.layout.VBox);
 		this.setBackgroundColor("background-splitpane");
+
 		this.setName(name);
 		this.setProto(proto);
 		if (!columns) {
@@ -32,7 +33,7 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 	},
 
 	events: {
-		dataLoaded: "qx.event.type.Data"
+		formDataLoaded: "qx.event.type.Data"
 	},
 
 	members: {
@@ -49,7 +50,7 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 		},
 
 		_createContent: function() {
-			this._createCommands();
+			this._createCommands(this.getCommandNames());
 			this.add(this._createToolbar());
 			this.add(this._createTable());
 		},
@@ -63,8 +64,7 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 			return toolbar;
 		},
 
-		_createCommands: function() {
-			var names = ["new", "delete", "edit", "find", "reload"];
+		_createCommands: function(names) {
 			var commands = this.getCommands();
 			var command, name;
 			for (var i = 0; i < names.length; i++) {
@@ -81,10 +81,21 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 			return this.getCommands[name];
 		},
 
+		getFormWindow: function() {
+			if (!this._formWindow)
+				this._formWindow = new vuuvv.ui.FormWindow(this.getName(), this._proto);
+			return this._formWindow;
+		},
+
+		reload: function() {
+			this._table.getTableModel().reloadData();
+		},
+
 		_createTable: function() {
-			var model = new vuuvv.model.Remote(this.getName(), this.getColumns());
+			var cls = this.getTableModelClass();
+			var model = new cls(this.getName(), this.getColumns());
 			this._table = new qx.ui.table.Table(model);
-			this._table.addListener("cellDblclick", this._onEdit, this);
+			this._table.addListener("cellDblclick", this._onDblclick, this);
 			return this._table;
 		},
 
@@ -98,14 +109,16 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 			var data = e.getData();
 			var win = this.getFormWindow();
 			win.show();
-			this.fireDataEvent("dataLoaded", {"data": data, "form": win.getForm()});
+			this.fireDataEvent("formDataLoaded", {"data": data, "form": win.getForm()});
 		},
 
+		//override
 		_onNew: function() {
 			this.getFormWindow().reset();
 			this._edit(-1);
 		},
 
+		//override
 		_edit: function(id) {
 			var q = new vuuvv.Query;
 			q.addListener("completed", this._onLoadDataCompleted, this);
@@ -114,26 +127,33 @@ qx.Class.define("vuuvv.ui.ModelEditor", {
 			q.query();
 		},
 
+		//override
 		_onDelete: function() {
 		},
 
+		//override
 		_onFind: function() {
 		},
 
+		//override
 		_onReload: function() {
 			this.reload();
 		},
 
-		getFormWindow: function() {
-			if (!this._formWindow)
-				this._formWindow = new vuuvv.ui.FormWindow(this.getName(), this._proto);
-			return this._formWindow;
+		//override
+		_onDblclick: function(e) {
+			this._onEdit(e);
 		},
 
-		reload: function() {
-			this._table.getTableModel().reloadData();
-		}
+		//override
+		getCommandNames: function() {
+			return ["new", "delete", "edit", "find", "reload"];
+		},
 
+		//overrride
+		getTableModelClass: function() {
+			return vuuvv.model.Remote;
+		}
 	},
 
 	destruct: function() {

@@ -1,4 +1,4 @@
-qx.Class.define('vuuvv.model.Remote', {
+qx.Class.define('vuuvv.model.RemoteTree', {
 	extend: qx.ui.table.model.Remote,
 
 	construct: function(modelName, columns) {
@@ -16,16 +16,27 @@ qx.Class.define('vuuvv.model.Remote', {
 
 		fields: {
 			init: []
+		},
+
+		parent: {
+			init: null,
+			apply: "_applyParent",
+			nullable: true
 		}
 	},
 
 	members: {
+		_applyParent: function(value, old) {
+			this.reloadData();
+		},
+
 		// overloaded - called whenever the table request the row count
 		_loadRowCount: function() {
 			var q = new vuuvv.Query;
 			q.addListener("completed", this._onRowCountCompleted, this);
 			q.setType("count");
 			q.setName(this.getModelName());
+			q.addCondition("parent", "exact", this.getParent());
 			q.query();
 		},
 
@@ -43,12 +54,20 @@ qx.Class.define('vuuvv.model.Remote', {
 			q.setName(this.getModelName());
 			q.setLimit([firstRow, lastRow]);
 			q.setFields(this.getFields());
+			q.addCondition("parent", "exact", this.getParent());
 			q.query();
 		},
 
 		_onLoadDataCompleted: function(e) {
 			var data = e.getData();
 			this._onRowDataLoaded(data.value);
+		},
+
+		up: function() {
+		},
+
+		enter: function(id) {
+			this.setParent(id);
 		}
 	}
 });
