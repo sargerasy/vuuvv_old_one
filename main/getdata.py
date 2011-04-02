@@ -1,7 +1,7 @@
 from main.models import Article, Publication
 
 def ad_hoc(request):
-	value = Article.objects.filter(category__exact=2).order_by("-creation_date")
+	value = Article.objects.filter(category__exact=3).order_by("-creation_date")
 	return {"ad_hoc": value}
 
 def press(request):
@@ -9,7 +9,7 @@ def press(request):
 	return {"press": value}
 
 def news(request):
-	value = Article.objects.filter(category__exact=3).order_by("-creation_date")
+	value = Article.objects.filter(category__exact=2).order_by("-creation_date")
 	return {"company": value}
 
 def news_current(request):

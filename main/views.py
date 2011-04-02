@@ -42,7 +42,6 @@ def media(request, path):
 	root = getattr(settings, 'MEDIA_ROOT', None)
 	return django.views.static.serve(request, path, root)
 
-
 class MenuTree(object):
 	def __init__(self, models, parent_path="parent_id", label_path="label"):
 		self.obj = models

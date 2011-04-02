@@ -22,10 +22,9 @@ class Page(models.Model):
 class Category(models.Model):
 	name = models.CharField(max_length=128)
 	category = models.ForeignKey('self', blank=True, null=True, related_name="children")
-	memo = models.CharField(max_length=128)
 
 class Article(models.Model):
-	title = models.CharField(max_length=128)
+	title = models.CharField(max_length=255)
 	thumbnail = models.CharField(max_length=128)
 	content = models.TextField()
 	created_by = models.CharField(max_length=70, default=1)
