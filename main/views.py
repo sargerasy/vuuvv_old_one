@@ -13,29 +13,8 @@ def index(request):
 	return joyou(request, "home")
 
 def joyou(request, path):
-	tree = MenuTree(Menu.objects.all())
 	url = "/".join([ i for i in path.split("/") if i])
-	page = Page.objects.filter(url__exact=url)
-	if page:
-		template = page[0].template
-		content = page[0].content
-	else:
-		template = "index"
-		content = None
-	
-	func = getattr(getdata, template, None)
-	value = func(request) if func is not None else None
-
-	menus = tree.create_menus(url)
-	
-	return render_to_response("main/%s.html" % template, {
-		"root": "/",
-		"menus": menus[0],
-		"title": menus[1],
-		"subs": tree.generate_all_subs(),
-		"content": content,
-		"value": value,
-	})
+	return render_page(request, url)
 
 def article(request, id):
 	lookup = {
@@ -45,10 +24,20 @@ def article(request, id):
 	}
 	a = Article.objects.select_related().filter(id__exact=id)
 	if a:
-		return render_page(lookup[a[0].category.id], "article", a[0].content)
+		return render_page(request, lookup[a[0].category.id], "article", a[0].content)
 	return joyou(request, "news")
 
-def render_page(url, template=None, value=None):
+def product(request, cate):
+	parts = [ i for i in cate.split("/") if i]
+	length = len(parts)
+
+	if length == 0:
+		return render_page(request, "products")
+
+	return joyou(request, "home")
+
+
+def render_page(request, url, template=None, value=None):
 	tree = MenuTree(Menu.objects.all())
 	page = Page.objects.filter(url__exact=url)
 
@@ -59,7 +48,7 @@ def render_page(url, template=None, value=None):
 
 	if value is None:
 		func = getattr(getdata, template, None)
-		value = func(*args) if func is not None else None
+		value = func(request) if func is not None else None
 
 	menus = tree.create_menus(url)
 	
