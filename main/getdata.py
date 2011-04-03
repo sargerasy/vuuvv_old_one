@@ -3,7 +3,7 @@ from main.models import Article, Publication, Product
 def normal(request):
 	pass
 
-def product(request):
+def products(request):
 	value = Product.objects.filter(parent__exact=None).order_by("order")
 	return {"product": value}
 

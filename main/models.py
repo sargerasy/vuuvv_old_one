@@ -39,7 +39,7 @@ class Product(models.Model):
 	thumbnail = models.CharField(max_length=128, null=True)
 	image = models.CharField(max_length=128, null=True)
 	order = models.IntegerField()
-	is_category = models.BooleanField()
+	level = models.IntegerField()
 	parent = models.ForeignKey('self', null=True, blank=True, related_name="children")
 
 class Publication(models.Model):

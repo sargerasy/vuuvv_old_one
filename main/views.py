@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.conf import settings
 from main.tree import Node
-from main.models import Menu, Page, Article
+from main.models import Menu, Page, Article, Product 
 import django.views.static
 import logging
 import utils
@@ -27,15 +27,21 @@ def article(request, id):
 		return render_page(request, lookup[a[0].category.id], "article", a[0].content)
 	return joyou(request, "news")
 
-def product(request, cate):
-	parts = [ i for i in cate.split("/") if i]
-	length = len(parts)
-
-	if length == 0:
+def products(request, id):
+	# The top level view
+	if not id:
 		return render_page(request, "products")
 
-	return joyou(request, "home")
-
+	id = int(id)
+	product = Product.objects.filter(id__exact=id)
+	if product:
+		product = product[0]
+		if product.level == 1:
+			value = {}
+			products = Product.objects.select_related("parent").filter(parent__exact=1)
+			for item in products:
+				value[item] = item.children.all()
+			return render_page(request, "products", "products_1", value)
 
 def render_page(request, url, template=None, value=None):
 	tree = MenuTree(Menu.objects.all())

@@ -1,0 +1,39 @@
+{% extends "main/frame1.html" %}
+{% block css %}
+	<link rel="stylesheet" media="screen" href="/media/css/products.css"/>
+{% endblock %}
+
+{% block content %}
+<div class="procontent">
+	<table width="100%">
+	<div class="sprocontent">
+		<div class="leftbar">
+			<div class="leftpicshow">
+				<img src="/media/upload/images/products/2010112315412632421.jpg">
+				<p>including basin faucets and bathtub faucets</p>
+				<div class="left_more"><a href="#"><img src="/media/images/arrow03.gif">  more</a></div>
+			</div>
+			<div class="leftpicshow_bottom"></div>
+		</div>
+		<div class="maincontent">
+			{% for k, v in value.items %}
+			<ul class="prolist">
+				<h5 class="subprotit">{{k.name}}</h5>
+				{% for item  in v %}
+				<li class="proshowlist">
+					<div>
+					<a href="/products/{{item.id}}">
+						<img src="{{item.thumbnail}}">
+					</a>
+					<h3>&nbsp;</h3>
+					<h6>{{item.name}}</h6>
+					</div>
+				</li>				
+				{% endfor %}
+			</ul>
+			{% endfor %}
+		</div>
+	</div>
+	</table>
+</div>
+{% endblock %}
