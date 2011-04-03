@@ -117,7 +117,7 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 					type: "HtmlArea"
 				},
 				template: {
-					init: "",
+					init: "normal",
 					type: "TextField"
 				}
 			};

@@ -36,12 +36,20 @@ def products(request, id):
 	product = Product.objects.filter(id__exact=id)
 	if product:
 		product = product[0]
+		value = {}
 		if product.level == 1:
-			value = {}
-			products = Product.objects.select_related("parent").filter(parent__exact=1)
+			products = Product.objects.filter(parent__exact=id)
 			for item in products:
 				value[item] = item.children.all()
 			return render_page(request, "products", "products_1", value)
+		else:
+			products = Product.objects.filter(parent__exact=id)
+			if products:
+				if products[0].level == 0: # real product
+					template = "products_real"
+				else: # product category
+					template = "products_cate"
+				return render_page(request, "products", template, products)
 
 def render_page(request, url, template=None, value=None):
 	tree = MenuTree(Menu.objects.all())
