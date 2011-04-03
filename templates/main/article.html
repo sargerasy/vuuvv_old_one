@@ -1,0 +1,11 @@
+{% extends "main/frame2.html" %}
+{% block right %}
+<div class="right-content">
+	<h5 class="tit">&nbsp;</h5>
+	<div align="left" style="line-height: 20px; paddiing-top: 15px;">
+{% autoescape off %}
+{{ value }}
+{% endautoescape %}
+	</div>
+</div>
+{% endblock %}

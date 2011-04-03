@@ -6,12 +6,14 @@
 		<div class="news-list">
 			{% for item in value.company %}
 			<div class="news">
-				<a href="#" class="news-image"><img width="120" height="120" src="{{ item.thumbnail }}"/></a>
-				<h2><a href="#">{{ item.title }}</a></h2>
-				<h3>{{ item.creattion_date|date:"Y-m-d" }}</h3>
+				<div class="news-image">
+					<a href="/article/{{item.id}}"><img width="160" height="120" src="{{ item.thumbnail }}"/></a>
+				</div>
+				<h2><a href="/article/{{item.id}}">{{ item.title }}</a></h2>
+				<h3>{{ item.creation_date|date:"Y-m-d" }}</h3>
 				<p>
-				{{ item.content|truncatewords:40}}
-				<a class="more-link" href="#">[Read More...]</a>
+				{{ item.summary }}
+				<a class="more-link" href="/article/{{item.id}}">[Read More...]</a>
 				</p>
 			</div>
 			{% endfor %}

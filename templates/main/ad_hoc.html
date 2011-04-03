@@ -6,7 +6,7 @@
 		<div class="press-list">
 			{% for item in value.ad_hoc %}
 			<div class="press">
-				<h2><a href="#">{{ item.title }}</a></h2>
+				<h2><a href="/article/{{item.id}}">{{ item.title }}</a></h2>
 				<h3>{{item.creation_date|date:"Y-m-d"}}</h3>
 			</div>
 			{% endfor %}

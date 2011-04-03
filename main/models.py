@@ -25,6 +25,7 @@ class Category(models.Model):
 
 class Article(models.Model):
 	title = models.CharField(max_length=255)
+	summary = models.CharField(max_length=400)
 	thumbnail = models.CharField(max_length=128)
 	content = models.TextField()
 	created_by = models.CharField(max_length=70, default=1)
@@ -34,8 +35,11 @@ class Article(models.Model):
 
 class Product(models.Model):
 	name = models.CharField(max_length=128)
-	thumbnail = models.CharField(max_length=128)
-	image = models.CharField(max_length=128)
+	decorator = models.CharField(max_length=255, null=True)
+	thumbnail = models.CharField(max_length=128, null=True)
+	image = models.CharField(max_length=128, null=True)
+	order = models.IntegerField()
+	is_category = models.BooleanField()
 	parent = models.ForeignKey('self', null=True, blank=True, related_name="children")
 
 class Publication(models.Model):

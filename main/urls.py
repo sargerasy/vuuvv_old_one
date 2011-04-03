@@ -9,6 +9,7 @@ import views
 urlpatterns = patterns('',
 	#(r'^test/(.*)$', views.test),
 	(r'^[/]*$', views.index),
+	(r'^article/(\d+)$', views.article),
 	(r'^home[/]?$', views.index),
 	(r'^(.*)$', views.joyou),
 	#(r'^ir/(.*)$', views.ir),

@@ -71,32 +71,67 @@ class Recordset(object):
 accessdb = AccessDb()
 connAccess = accessdb.connect("Database.mdb", "", "", "")
  
-SQL_statement = "SELECT * FROM 35_News"
+SQL_statement = "SELECT * FROM 35_Pro_Class"
 rs = accessdb.getRecordset(connAccess, SQL_statement)
 fields = rs.getFields()
 print fields
  
+lookup = {}
 collection = []
-categorys = {1: 4, 2: 3, 27: 2}
 i = 1
 for item in rs:
 	myobj = {}
-	myobj["model"] = "main.Article"
+	myobj["model"] = "main.Product"
 	myobj["pk"] = i
 	myobj["fields"] = {}
-	myobj["fields"]["title"] = item["Topic"]
-	print len(item["Topic"])
-	myobj["fields"]["content"] = item["Content"]
-	myobj["fields"]["creation_date"] = item["Updatatimes"].Format("%Y-%m-%d %H:%M:%S")
-	myobj["fields"]["thumbnail"] = "/upload/images/articles/" + item["DefaultPic"]
-	if item["Sort_ID"]:
-		myobj["fields"]["category"] = categorys[item["Sort_ID"]]
-		collection.append(myobj)
-	print i
+	myobj["fields"]["name"] = item["Topic"]
+	myobj["fields"]["decorator"] = item["Content"]
+	myobj["fields"]["order"] = item["OrderID"]
+	myobj["fields"]["thumbnail"] = "/media/upload/images/products/" + item["Spic"]
+	myobj["fields"]["image"] = "/media/upload/images/products/" + item["Bpic"]
+	myobj["fields"]["is_category"] = True
+
+	myobj["fields"]["parent"] = None
+	pid = int(item["Roodid"].split(",")[-1])
+	if pid:
+		myobj["fields"]["parent"] = lookup[pid]
+	lookup[item["ID"]] = i
+
+	collection.append(myobj)
+	print i, item["ID"], pid, myobj["fields"]["parent"]
 	i = i + 1
 connAccess.Close()
 
-f = open("news.json", "w")
+connAccess = accessdb.connect("Database.mdb", "", "", "")
+ 
+SQL_statement = "SELECT * FROM 35_Product"
+rs = accessdb.getRecordset(connAccess, SQL_statement)
+fields = rs.getFields()
+
+for item in rs:
+	myobj = {}
+	myobj["model"] = "main.Product"
+	myobj["pk"] = i
+	myobj["fields"] = {}
+	myobj["fields"]["name"] = item["Topic"]
+	myobj["fields"]["decorator"] = None
+	myobj["fields"]["order"] = item["OrderID"]
+	myobj["fields"]["thumbnail"] = "/media/upload/images/products/" + item["DefaultPic"]
+	myobj["fields"]["image"] = "/media/upload/images/products/" + item["DefaultPic1"]
+	myobj["fields"]["is_category"] = False
+
+	myobj["fields"]["parent"] = None
+	pid = lookup.get(int(item["ClassID"]), None)
+	if pid:
+		myobj["fields"]["parent"] = pid
+	#lookup[item["ID"]] = i
+
+		collection.append(myobj)
+	print i, item["ID"], pid, myobj["fields"]["parent"]
+	i = i + 1
+connAccess.Close()
+
+f = open("product.json", "w")
 f.write(json.dumps(collection))
 f.close() 
 

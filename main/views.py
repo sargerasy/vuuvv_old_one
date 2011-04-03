@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.conf import settings
 from main.tree import Node
-from main.models import Menu, Page
+from main.models import Menu, Page, Article
 import django.views.static
 import logging
 import utils
@@ -25,7 +25,6 @@ def joyou(request, path):
 	
 	func = getattr(getdata, template, None)
 	value = func(request) if func is not None else None
-	logging.info(value)
 
 	menus = tree.create_menus(url)
 	
@@ -35,6 +34,40 @@ def joyou(request, path):
 		"title": menus[1],
 		"subs": tree.generate_all_subs(),
 		"content": content,
+		"value": value,
+	})
+
+def article(request, id):
+	lookup = {
+		2: "news/company",
+		3: "news/ad_hoc",
+		4: "news/press",
+	}
+	a = Article.objects.select_related().filter(id__exact=id)
+	if a:
+		return render_page(lookup[a[0].category.id], "article", a[0].content)
+	return joyou(request, "news")
+
+def render_page(url, template=None, value=None):
+	tree = MenuTree(Menu.objects.all())
+	page = Page.objects.filter(url__exact=url)
+
+	temp = page[0].template if page else "index"
+	template = template if template is not None else temp
+	if page and template == "normal":
+		value = page[0].content
+
+	if value is None:
+		func = getattr(getdata, template, None)
+		value = func(*args) if func is not None else None
+
+	menus = tree.create_menus(url)
+	
+	return render_to_response("main/%s.html" % template, {
+		"root": "/",
+		"menus": menus[0],
+		"title": menus[1],
+		"subs": tree.generate_all_subs(),
 		"value": value,
 	})
 

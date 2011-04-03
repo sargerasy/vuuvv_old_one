@@ -1,4 +1,11 @@
-from main.models import Article, Publication
+from main.models import Article, Publication, Product
+
+def normal(request, id):
+	pass
+
+def product(request):
+	value = Product.objects.filter(parent__exact=None).order_by("order")
+	return {"product": value}
 
 def ad_hoc(request):
 	value = Article.objects.filter(category__exact=3).order_by("-creation_date")

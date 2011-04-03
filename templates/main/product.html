@@ -10,11 +10,9 @@
 			<dt><img src="/media/images/bathroom_tit.jpg"></dt>
 			<dd>
 			<ul>
-				<li class="pro01_tit"><a href="productshow.asp?CateID=1"><span>Bathroom Faucets</span></a></li>
-				<li class="pro02_tit"><a href="productshow.asp?CateID=2"><span>Kitchen Products</span></a></li>
-				<li class="pro03_tit"><a href="productshow.asp?CateID=7"><span>Shower Products</span></a></li>
-				<li class="pro04_tit"><a href="productshow.asp?CateID=8"><span>Other Bathroom Products &amp; Accessories</span></a></li>
-				<li class="pro05_tit"><a href="productshow.asp?CateID=9"><span>Other Faucets and Sanitary Hardware</span></a></li>
+				{% for item in value.product %}
+				<li class="pro_tit"><a href="#" style="background: url('{{item.image}}') no-repeat"><span>{{item.name}}</span></a></li>
+				{% endfor %}
 			</ul>
 			</dd>
 		</dl>

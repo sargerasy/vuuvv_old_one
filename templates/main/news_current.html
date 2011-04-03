@@ -17,7 +17,7 @@
 					<div class="latestnews-inner">
 						{% for item in value.company %}
 						<p>
-							<span class="rb-date">{{ item.creation_date }}</span>
+							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
 							<a href="#">{{ item.title }}</a>
 						</p>
 						{% endfor %}
@@ -44,7 +44,7 @@
 					<div class="latestnews-inner">
 						{% for item in value.ad_hoc %}
 						<p>
-							<span class="rb-date">{{ item.creation_date }}</span>
+							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
 							<a href="#">{{ item.title }}</a>
 						</p>
 						{% endfor %}

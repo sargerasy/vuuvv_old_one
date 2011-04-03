@@ -37,7 +37,7 @@ class Recordset(object):
 	def __iter__(self):
 		""" Returns a paged iterator by default. See paged().
 		"""
-		return self.paged()
+		return self.paged(-1)
 
 	def paged(self,pagesize=128):
 		""" Returns an iterator on the data contained in the sheet. Each row
@@ -55,6 +55,7 @@ class Recordset(object):
 				rows = zip(*self.rs.GetRows(pagesize))
 
 				if self.rs.EOF:
+					print "row count", self.rs.RecordCount
 					# close the recordset as soon as possible
 					self.rs.Close()
 					self.rs = None
@@ -63,6 +64,7 @@ class Recordset(object):
 				for row in rows:
 					yield dict(zip(fields, row))
 		except:
+			print "here"
 			if self.rs is not None:
 				self.rs.Close()
 				del self.rs
@@ -85,14 +87,14 @@ for item in rs:
 	myobj["pk"] = i
 	myobj["fields"] = {}
 	myobj["fields"]["title"] = item["Topic"]
-	print len(item["Topic"])
+	myobj["fields"]["summary"] = item["Keywords"]
 	myobj["fields"]["content"] = item["Content"]
 	myobj["fields"]["creation_date"] = item["Updatatimes"].Format("%Y-%m-%d %H:%M:%S")
-	myobj["fields"]["thumbnail"] = "/upload/images/articles/" + item["DefaultPic"]
+	myobj["fields"]["thumbnail"] = "/media/upload/images/articles/" + item["DefaultPic"]
 	if item["Sort_ID"]:
 		myobj["fields"]["category"] = categorys[item["Sort_ID"]]
 		collection.append(myobj)
-	print i
+	print i, item["ID"], len(item["Keywords"])
 	i = i + 1
 connAccess.Close()
 
@@ -110,6 +112,6 @@ f.close()
 #
 #cmd = win32com.client.Dispatch("ADODB.Command")
 #cmd.ActiveConnection = conn
-#
+#rs.Open(SQL_statement, connAccess, AD_OPEN_KEYSET, AD_LOCK_OPTIMISTIC)#
 #print rs.Fields.Count
 

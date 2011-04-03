@@ -29,18 +29,17 @@
 	margin:15px 0 5px 0;
 	display:inline;
 }
-.pro01_tit a,.pro02_tit a,.pro03_tit a,.pro04_tit a,.pro05_tit a{
+.pro_tit a {
 	width:250px;
 	height:150px;
 	display:block;
 	color:#4C5996;
 	font-weight:bold;
 	text-align:left;
-	background: url(../images/protit_bg01.jpg) no-repeat;
 	text-decoration: none;
 	outline: medium none;
 }
-.pro01_tit a span,.pro02_tit a span,.pro03_tit a span,.pro04_tit a span,.pro05_tit a span{
+.pro_tit a span {
 	width:150px;
 	padding-right:0px;
 	display:block;
@@ -49,17 +48,5 @@
 }
 .pro09_tit a span{
 	padding-top:46px;
-}
-.pro02_tit a{
-	background:url(../images/protit_bg02.jpg) no-repeat;
-}
-.pro03_tit a{
-	background:url(../images/protit_bg03.jpg) no-repeat;
-}
-.pro04_tit a{
-	background:url(../images/protit_bg04.jpg) no-repeat;
-}
-.pro05_tit a{
-	background:url(../images/protit_bg05.jpg) no-repeat;
 }
 

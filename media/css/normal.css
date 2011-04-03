@@ -367,9 +367,16 @@
 }
 
 .news-image {
+	margin: 0 10px 5px 0;
+	padding: 4px;
+	width: 160px;
+	height: 120px;
 	float: left;
+	border: 1px solid #dddddd;
+}
+
+.news-image a {
 	outline: medium none;
-	margin: 0 10px 0 0; 
 }
 
 .news a {
@@ -404,9 +411,6 @@
 
 .news img {
 	background: none;
-	border: 1px solid #dddddd;
-	margin: 0 0 5px;
-	padding: 4px;
 }
 
 .round-box {
@@ -524,8 +528,7 @@ a.blue-button:hover span{
 }
 
 .press a:hover {
-	color: #0088bb;
-	text-decoration: underline;
+	color: #9c5656;
 }
 
 .press h2 a {
