@@ -1,4 +1,4 @@
-from main.models import Article, Publication, Product
+from main.models import Article, Publication, Product, Category
 
 def normal(request):
 	pass
@@ -9,6 +9,14 @@ def products(request):
 
 def product_2(request):
 	pass
+
+def publication(request):
+	value = []
+	cates = Category.objects.select_related().filter(category__exact=5)
+	for item in cates:
+		pub = Publication.objects.select_related().filter(category__exact=item.id).order_by("-creation_date")
+		value.append((item, pub))
+	return value
 
 def ad_hoc(request):
 	value = Article.objects.filter(category__exact=3).order_by("-creation_date")

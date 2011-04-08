@@ -1,0 +1,34 @@
+{% extends "main/frame2.html" %}
+{% block right %}
+<div class="right-content">
+	<h5 class="tit">&nbsp;</h5>
+	<div align="left" style="line-height: 20px; paddiing-top: 15px;">
+		{% for k, v in value %}
+		<div class="round-box">
+			<div class="rb-spacer"></div>
+			<div class="rb-title">
+				<div class="rbt-left">
+					{{k.name}}
+				</div>
+			</div>
+			<div class="rb-top"></div>
+			<div class="rb-middle">
+				<div class="latestnews">
+					<div class="latestnews-inner">
+						{% for item in v %}
+						<p>
+							<a href="{{item.link}}"><img src="/media/images/icon_pdf.gif"/></a>
+							<span class="rb-date">{{item.creation_date|date:"Y-m-d"}}</span>
+							<a href="{{item.link}}">{{item.title}}</a>
+						</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="rb-bottom"></div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+

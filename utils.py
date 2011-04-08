@@ -1,3 +1,5 @@
+import logging
+
 def models_to_dict(qs):
 	ret = {}
 	for i in qs:
@@ -16,3 +18,24 @@ def model_to_obj(model):
 		ret[attr] = getattr(model, attr)
 	return ret
 
+def qs_replace(qs, maps={}, fields=[]):
+	ret = []
+	field_names = qs.model._meta.get_all_field_names()
+	if fields == []:
+		fields = field_names
+	else:
+		fields = [f for f in field_names if f in fields]
+	logging.info(qs)
+	logging.info(fields)
+	for item in qs:
+		value = {}
+		for f in fields:
+			v = getattr(item, f)
+			logging.info(f)
+			logging.info(maps)
+			if f in maps:
+				logging.info("here")
+				v = getattr(v, maps[f])
+			value[f] = v
+		ret.append(value)
+	return ret

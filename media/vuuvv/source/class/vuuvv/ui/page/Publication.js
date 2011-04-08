@@ -11,13 +11,16 @@ qx.Class.define("vuuvv.ui.page.Publication", {
 		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
-			form.setModel(data.Category, "category_id");
+			form.setModel(data.Category, "category");
 			if (data.value.length > 0) {
 				form.setModel(data.value[0]);
 				var sel = new qx.data.Array();
-				sel.push(data.value[0].category_id);
-				form.getController("category_id").setSelection(sel);
+				sel.push(data.value[0].category);
+				form.getController("category").setSelection(sel);
 			}
+		},
+
+		_getRelationship: function() {
 		},
 
 		_getProto: function() {
@@ -30,8 +33,9 @@ qx.Class.define("vuuvv.ui.page.Publication", {
 					init: "",
 					type: "TextField"
 				},
-				category_id: {
+				category: {
 					init: [],
+					db_name: "category_id",
 					type: "SelectBox",
 					delegate: {
 						bindItem: function(ctrl, widget, index) {

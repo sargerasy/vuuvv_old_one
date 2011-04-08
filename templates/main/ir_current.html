@@ -19,10 +19,10 @@
 						<p>
 							<span class="rb-date">{{item.creation_date|date:"Y-m-d"}}</span>
 							<span class="rb-cate">{{item.category.name}}</span>
-							<a href="#">{{item.title}}</a>
+							<a href="/article/{{item.id}}">{{item.title}}</a>
 						</p>
 						{% endfor %}
-						<a class="blue-button" href="#">
+						<a class="blue-button" href="/news">
 							<span>View All</span>
 						</a>
 					</div>

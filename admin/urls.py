@@ -7,6 +7,7 @@ import views
 
 
 urlpatterns = patterns('',
+	(r'^test$', views.test),
 	(r'^appdata$', views.appdata),
 	(r'^count/(.+)', views.count),
 	(r'^save/(\w+)', views.save),

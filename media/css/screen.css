@@ -20,7 +20,7 @@ body {
 	clear: both;
 	color: #76797C;
 	margin: 0 auto;
-	padding-bottom: 110px;
+	padding-bottom: 79px;
 	min-width: 960px;
 	overflow: hidden;
 	width: 100%;
@@ -39,13 +39,16 @@ body {
 }
 
 /*------------------- bottom and footer --------------*/
-.footer{
-	background: none repeat scroll 0 0 #f5f5f5;
+.footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.footer-inner{
 	clear: both;
-	color: #666;
-	height: 45px;
+	color: #072B60;
 	padding: 15px 40px 0 60px;
-	text-align: left;
+	text-align: right;
 }
 
 .footer span {
@@ -293,6 +296,10 @@ a.sub-link:hover {
 	position: relative;
 	top: -5px;
 	display: none;
+}
+
+#sub-item-selected a{
+	color: #e0e0e0;
 }
 
 #sub-item-selected img{

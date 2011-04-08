@@ -5,7 +5,7 @@
 	"fields": {
 		"title": "financial statements of 2009.",
 		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_2009_financial_statements.pdf",
-		"creation_date": "2011-03-22",
+		"creation_date": "2010-03-22",
 		"category": 6
 	}
 },
@@ -15,7 +15,7 @@
 	"fields": {
 		"title": "Report Q1 2010.",
 		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/E_Joyou_QB1_s.pdf",
-		"creation_date": "2011-03-17",
+		"creation_date": "2010-06-17",
 		"category": 6
 	}
 },
@@ -23,20 +23,430 @@
 	"model": "main.Publication",
 	"pk": 3,
 	"fields": {
-		"title": "01.04.2010",
-		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100401_Stimmrechte.pdf",
-		"creation_date": "2011-03-17",
-		"category": 10
+		"title": "Report Q2 2010.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/020910_E_HJ1_JoyouAG.pdf",
+		"creation_date": "2010-09-02",
+		"category": 6
 	}
 },
 {
 	"model": "main.Publication",
 	"pk": 4,
 	"fields": {
+		"title": "Report Q3 2010.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20101122_E_Joyou_QB3.pdf",
+		"creation_date": "2010-12-17",
+		"category": 6
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 5,
+	"fields": {
+		"title": "The presentation for the conference call according to the Group Interim Report Q2 2010.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_Presentation_H1_2010.pdf",
+		"creation_date": "2010-03-17",
+		"category": 7
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 6,
+	"fields": {
+		"title": "The recording of the conference call according to the Group Interim Report Q2 2010.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/Video/20100831_Joyou_CC.mp3",
+		"creation_date": "2010-03-17",
+		"category": 8
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 7,
+	"fields": {
+		"title": "The Offering Prospectus for the IPO and the Listing of Joyou AG on the Frankfurt Stock Exchange.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_Prospekt_final.pdf",
+		"creation_date": "2010-03-17",
+		"category": 9
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 8,
+	"fields": {
+		"title": "The Supplement to Prospectus.",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_Nachtrag_Clean_20100323_10h15.pdf",
+		"creation_date": "2010-03-17",
+		"category": 9 
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 9,
+	"fields": {
+		"title": "The declaration according to sec. 8 para. 1 cl. 6 of the German Securities Prospectus (German).",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/Joyou_Prospekt_final.pdf",
+		"creation_date": "2010-03-17",
+		"category": 9
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 10,
+	"fields": {
+		"title": "01.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100401_Stimmrechte.pdf",
+		"creation_date": "2010-04-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 11,
+	"fields": {
 		"title": "07.04.2010",
 		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100407_Stimmrechte2.pdf",
-		"creation_date": "2011-03-17",
-		"category": 10 
+		"creation_date": "2010-04-07",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 12,
+	"fields": {
+		"title": "07.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100407_Stimmrechte.pdf",
+		"creation_date": "2010-04-07",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 13,
+	"fields": {
+		"title": "08.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100408_Stimmrechte3.pdf",
+		"creation_date": "2010-04-08",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 14,
+	"fields": {
+		"title": "08.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100408_Stimmrechte2.pdf",
+		"creation_date": "2010-04-08",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 15,
+	"fields": {
+		"title": "08.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100408_Stimmrechte.pdf",
+		"creation_date": "2010-04-08",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 16,
+	"fields": {
+		"title": "14.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100414_Stimmrechte.pdf",
+		"creation_date": "2010-04-14",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 17,
+	"fields": {
+		"title": "23.04.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100423_Stimmrechte.pdf",
+		"creation_date": "2010-04-23",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 18,
+	"fields": {
+		"title": "18.06.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100618_Stimmrechte.pdf",
+		"creation_date": "2010-06-18",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 19,
+	"fields": {
+		"title": "28.06.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100628_Stimmrechte.pdf",
+		"creation_date": "2010-06-28",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 20,
+	"fields": {
+		"title": "27.07.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100727_Stimmrechte.pdf",
+		"creation_date": "2010-07-27",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 21,
+	"fields": {
+		"title": "14.09.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100914_Stimmrechte.pdf",
+		"creation_date": "2010-09-14",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 22,
+	"fields": {
+		"title": "20.09.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100920_Stimmrechte.pdf",
+		"creation_date": "2010-09-20",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 23,
+	"fields": {
+		"title": "21.09.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100921_Stimmrechte.pdf",
+		"creation_date": "2010-09-21",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 24,
+	"fields": {
+		"title": "26.10.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20101026_Stimmrechte.pdf",
+		"creation_date": "2010-10-26",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 25,
+	"fields": {
+		"title": "27.12.2010",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20101227_Stimmrechte.pdf",
+		"creation_date": "2010-12-27",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 26,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 27,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte2.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 28,
+	"fields": {
+		"title": "01.03.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110301_Stimmrechte.pdf",
+		"creation_date": "2011-03-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 29,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_GroheAsia.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 30,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_GroheHolding.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 31,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_TPG.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 32,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_Glacier.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 33,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_GlacierOne.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 34,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110222_Stimmrechte_GlacierTwo.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 35,
+	"fields": {
+		"title": "22.02.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20100401_Stimmrechte.pdf",
+		"creation_date": "2011-02-22",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 36,
+	"fields": {
+		"title": "01.03.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110301_Stimmrechte_Bathware.pdf",
+		"creation_date": "2011-03-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 37,
+	"fields": {
+		"title": "01.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110301_Stimmrechte_GlacierOne_Korr.pdf",
+		"creation_date": "2011-03-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 38,
+	"fields": {
+		"title": "01.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110301_Stimmrechte_GlacierTwo_Korr.pdf",
+		"creation_date": "2011-03-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 39,
+	"fields": {
+		"title": "01.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110301_Stimmrechte_Bathware_Korr.pdf",
+		"creation_date": "2011-03-01",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 40,
+	"fields": {
+		"title": "03.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110303_Stimmrechte_GroheHolding_Korr.pdf",
+		"creation_date": "2011-03-03",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 41,
+	"fields": {
+		"title": "03.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110303_Stimmrechte_GroheAsia_Korr.pdf",
+		"creation_date": "2011-03-03",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 42,
+	"fields": {
+		"title": "03.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110303_Stimmrechte_Bathware_Korr.pdf",
+		"creation_date": "2011-03-03",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 43,
+	"fields": {
+		"title": "08.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110308_Stimmrechte_CreditSuisse_Korr.pdf",
+		"creation_date": "2011-03-08",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 44,
+	"fields": {
+		"title": "09.03.2011",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110309_Stimmrechte_GroheAsia.pdf",
+		"creation_date": "2011-03-09",
+		"category": 10
+	}
+},
+{
+	"model": "main.Publication",
+	"pk": 45,
+	"fields": {
+		"title": "10.03.2011 correction",
+		"link": "http://typo3.joyou-ag.de/fileadmin/PDF/20110310_Stimmrechte_TPG_Korr.pdf",
+		"creation_date": "2011-03-10",
+		"category": 10
 	}
 }
 ]

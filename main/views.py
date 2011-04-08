@@ -2,11 +2,10 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.conf import settings
 from main.tree import Node
-from main.models import Menu, Page, Article, Product 
+from main.models import Menu, Page, Article, Product, Publication 
 import django.views.static
 import logging
 import utils
-import json
 import getdata
 
 def index(request):
@@ -36,11 +35,11 @@ def products(request, id):
 	product = Product.objects.filter(id__exact=id)
 	if product:
 		product = product[0]
-		value = {}
+		value = [] 
 		if product.level == 1:
-			products = Product.objects.filter(parent__exact=id)
+			products = Product.objects.filter(parent__exact=id).order_by("order")
 			for item in products:
-				value[item] = item.children.all()
+				value.append((item, item.children.all()))
 			return render_page(request, "products", "products_1", value)
 		else:
 			products = Product.objects.filter(parent__exact=id)
@@ -50,6 +49,8 @@ def products(request, id):
 				else: # product category
 					template = "products_cate"
 				return render_page(request, "products", template, products)
+			else:
+				return render_page(request, "products", "products_real", products)
 
 def render_page(request, url, template=None, value=None):
 	tree = MenuTree(Menu.objects.all())

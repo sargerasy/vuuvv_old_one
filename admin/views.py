@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
-from utils import models_to_dict, model_to_obj
+from utils import models_to_dict, model_to_obj, qs_replace
 from django.db import models
 from models import Menu as Nav
 from main.models import Article, Menu, Publication, Category, Page, Product
@@ -8,6 +8,10 @@ import settings
 import os
 import json
 import logging
+
+def test(request):
+	ret = qs_replace(Publication.objects.filter(id__exact=1), {"category": "name"})
+	return HttpResponse(json.dumps(ret, cls=DjangoJSONEncoder))
 
 def appdata(request):
 	data = {"appdata": {
@@ -80,6 +84,11 @@ def query(request, cls):
 	obj = doquery(request, cls)
 	return list(obj)
 
+@modelop()
+def related_query(request, cls):
+	obj = doquery(request, cls)
+	return list(obj)
+
 def doquery(request, cls):
 	fields = request.POST.get("fields", [])
 	conditions = request.POST.get("conditions", [])
@@ -89,6 +98,10 @@ def doquery(request, cls):
 		fields = json.loads(fields)
 		if fields and "id" not in fields:
 			fields.append("id")
+	
+	if not fields:
+		fields = cls._meta.get_all_field_names()
+	
 	if conditions:
 		conditions = json.loads(conditions)
 	if orderby:

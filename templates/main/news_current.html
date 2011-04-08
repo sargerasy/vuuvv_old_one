@@ -18,7 +18,7 @@
 						{% for item in value.company %}
 						<p>
 							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
-							<a href="#">{{ item.title }}</a>
+							<a href="/article/{{item.id}}">{{ item.title }}</a>
 						</p>
 						{% endfor %}
 						<a class="blue-button" href="/news/company">
@@ -45,7 +45,7 @@
 						{% for item in value.ad_hoc %}
 						<p>
 							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
-							<a href="#">{{ item.title }}</a>
+							<a href="/article/{{item.id}}">{{ item.title }}</a>
 						</p>
 						{% endfor %}
 						<a class="blue-button" href="/news/ad_hoc">
@@ -72,7 +72,7 @@
 						{% for item in value.press %}
 						<p>
 							<span class="rb-date">{{ item.creation_date|date:"Y-m-d" }}</span>
-							<a href="#">{{ item.title }}</a>
+							<a href="/article/{{item.id}}">{{ item.title }}</a>
 						</p>
 						{% endfor %}
 						<a class="blue-button" href="/news/press">

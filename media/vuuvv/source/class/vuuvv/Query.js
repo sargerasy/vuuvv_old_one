@@ -14,7 +14,7 @@ qx.Class.define("vuuvv.Query", {
 		},
 
 		type: {
-			check: ["save", "delete", "query", "count"],
+			check: ["save", "delete", "query", "count", "related_query"],
 			init: "query"
 		},
 
@@ -39,6 +39,10 @@ qx.Class.define("vuuvv.Query", {
 
 		fields: {
 			init: []
+		},
+
+		related: {
+			init: {}
 		}
 	},
 
@@ -57,6 +61,9 @@ qx.Class.define("vuuvv.Query", {
 					data = this.parseData() || "1=1";
 					break;
 				case "query":
+					data = this.parseData() || "1=1";
+					break;
+				case "related_query":
 					data = this.parseData() || "1=1";
 					break;
 				case "save":
@@ -79,7 +86,7 @@ qx.Class.define("vuuvv.Query", {
 		},
 
 		parseData: function() {
-			var p = ["conditions", "orderby", "limit", "value", "fields"];
+			var p = ["conditions", "orderby", "limit", "value", "fields", "related"];
 			var result = "";
 			for(var i = 0; i < p.length; i++) {
 				var name = p[i];

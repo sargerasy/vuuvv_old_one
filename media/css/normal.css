@@ -246,7 +246,7 @@
 	width: 693px;
 	margin: 20px auto;
 	min-height: 450px;
-	padding-bottom: 50px;
+	padding-bottom: 120px;
 	text-align: left;
 }
 
@@ -357,6 +357,17 @@
 .pagelist strong {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;color:#009900;}
 .pagelist a {padding:2px;border:1px solid #E7E7E7;font-size:12px;margin:0px 1px;}
 
+.contact_tit {
+	border-bottom: 1px solid #CCCCCC;
+	color: #5670B6;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	margin-top: 20px;
+	overflow: hidden;
+	padding: 4px 10px;
+	width: 450px;
+}
 /* news page */
 
 .news {
@@ -415,6 +426,7 @@
 
 .round-box {
 	float: left;
+	width: 100%;
 }
 
 .rb-title {
