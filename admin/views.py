@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
-from utils import models_to_dict, model_to_obj, qs_replace
+from utils import models_to_dict, model_to_obj, qs_replace, get_fields_names
 from django.db import models
 from models import Menu as Nav
 from main.models import Article, Menu, Publication, Category, Page, Product
@@ -25,9 +25,10 @@ def modelop(attachable=False):
 
 class ModelOp(object):
 	attach = {
-		"Article": {"Category": {"category": 1}},
-		"Publication": {"Category": {"category": 5}},
-		"Menu": {"Menu": {}},
+		"Article": {"Category": {"filter": {"category__exact": 1}, "fields": ["id", "name"], "orderby": ["name"]}},
+		"Publication": {"Category": {"filter": {"category__exact": 5}, "fields":["id", "name"], "orderby": ["name"]}},
+		"Menu": {"Menu": {"filter": {}, "fields": ["id", "url"], "orderby": ["url"]}},
+		"Product": {"Product": {"filter": {"level__gt": 0}, "fields":["id", "name"], "orderby": ["name"]}},
 	}
 
 	def __init__(self, attachable=False):
@@ -41,9 +42,11 @@ class ModelOp(object):
 				cls = globals()[k]
 				if (issubclass(cls, models.Model)):
 					kwargs = {}
-					for k1, v1 in v.items():
-						kwargs[k1 + "__exact"] = v1
-					obj[k] = list(cls.objects.filter(**kwargs).values())
+					for k1, v1 in v["filter"].items():
+						kwargs[k1] = v1
+					fields = v.get("fields", [])
+					orderby = v.get("orderby", [])
+					obj[k] = list(cls.objects.filter(**kwargs).order_by(*orderby).values(*fields))
 			except KeyError:
 				pass
 		return obj
@@ -117,10 +120,7 @@ def doquery(request, cls, related=False):
 		kwargs[key] = item[2]
 
 	if not fields:
-		if related:
-			fields = cls._meta.get_all_field_names()
-		else:
-			fields = [f.attname for f in cls._meta.fields]
+		fields = get_fields_names(cls)
 
 	if related:
 		obj = qs_replace(cls.objects.filter(**kwargs).order_by(*orderby), relation, fields)
@@ -145,11 +145,6 @@ def upload(request):
 		fd.close()
 
 	return HttpResponse(json.dumps({}))
-
-def product(request):
-	data = {"product": models_to_dict(Menu.objects.all())}
-
-	return HttpResponse(json.dumps(data))
 
 def nav(request):
 	data = {"nav": models_to_dict(Menu.objects.all())}

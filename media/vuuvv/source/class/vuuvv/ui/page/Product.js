@@ -11,7 +11,7 @@ qx.Class.define("vuuvv.ui.page.Product", {
 		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
-			form.setModel(data.Menu, "parent");
+			form.setModel(data.Product, "parent");
 			if (data.value.length > 0) {
 				form.setModel(data.value[0]);
 				var sel = new qx.data.Array();
@@ -57,7 +57,7 @@ qx.Class.define("vuuvv.ui.page.Product", {
 					type: "SelectBox",
 					delegate: {
 						bindItem: function(ctrl, widget, index) {
-							ctrl.bindProperty("url", "name", null, widget, index);
+							ctrl.bindProperty("name", "label", null, widget, index);
 							ctrl.bindProperty("id", "model", null, widget, index);
 						}
 					}

@@ -1,3 +1,4 @@
+from django.db.models.related import RelatedObject
 import logging
 
 def models_to_dict(qs):
@@ -39,3 +40,12 @@ def qs_replace(qs, maps={}, fields=[]):
 			value[f] = v
 		ret.append(value)
 	return ret
+
+def get_fields_names(cls):
+	opt = cls._meta
+	try:
+		cache = opt._name_map
+	except AttributeError:
+		cache = opt.init_name_map()
+	return [f for f, v in cache.items() if not isinstance(v[0], RelatedObject)]
+
