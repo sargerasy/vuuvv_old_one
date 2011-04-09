@@ -42,7 +42,8 @@ qx.Class.define("vuuvv.Query", {
 		},
 
 		related: {
-			init: {}
+			init: null,
+			nullable: true
 		}
 	},
 

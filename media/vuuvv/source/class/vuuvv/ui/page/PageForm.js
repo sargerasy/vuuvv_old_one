@@ -39,7 +39,7 @@ qx.Class.define("vuuvv.ui.page.PageForm", {
 			container.add(form);
 			this._form = form;
 			this._htmlArea = form.getWidget("Content");
-			this._form.addListener("save", this._onSave, this);
+			this._form.addListener("aftersave", this._onSave, this);
 
 			return container;
 		},

@@ -20,7 +20,10 @@ qx.Class.define("vuuvv.ui.page.Publication", {
 			}
 		},
 
-		_getRelationship: function() {
+		_getRelated: function() {
+			return {
+				category: "name"
+			};
 		},
 
 		_getProto: function() {
@@ -35,7 +38,6 @@ qx.Class.define("vuuvv.ui.page.Publication", {
 				},
 				category: {
 					init: [],
-					db_name: "category_id",
 					type: "SelectBox",
 					delegate: {
 						bindItem: function(ctrl, widget, index) {

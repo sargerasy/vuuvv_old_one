@@ -1,12 +1,13 @@
 qx.Class.define('vuuvv.model.Remote', {
 	extend: qx.ui.table.model.Remote,
 
-	construct: function(modelName, columns) {
+	construct: function(modelName, columns, related) {
 		this.base(arguments);
 		this.setModelName(modelName);
 		if (columns)
 			this.setColumns(columns);
 		this.setFields(columns);
+		this.setRelated(related);
 	},
 
 	properties: {
@@ -16,6 +17,11 @@ qx.Class.define('vuuvv.model.Remote', {
 
 		fields: {
 			init: []
+		},
+
+		related: {
+			init: null,
+			nullable: true
 		}
 	},
 
@@ -40,9 +46,11 @@ qx.Class.define('vuuvv.model.Remote', {
 		_loadRowData: function(firstRow, lastRow) {
 			var q = new vuuvv.Query;
 			q.addListener("completed", this._onLoadDataCompleted, this);
+			q.setType("related_query");
 			q.setName(this.getModelName());
 			q.setLimit([firstRow, lastRow]);
 			q.setFields(this.getFields());
+			q.setRelated(this.getRelated());
 			q.query();
 		},
 

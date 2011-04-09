@@ -6,7 +6,7 @@ qx.Class.define("vuuvv.ui.page.ModelPage", {
 		this.base(arguments, new qx.ui.layout.VBox);
 		this.setBackgroundColor("background-splitpane");
 
-		var view = new viewCls(name, this._getProto(), columns);
+		var view = new viewCls(name, this._getProto(), columns, this._getRelated());
 		this.add(view, {flex: 1});
 
 		view.addListener("formDataLoaded", this._onFormDataLoaded, this);
@@ -20,6 +20,10 @@ qx.Class.define("vuuvv.ui.page.ModelPage", {
 
 		// override
 		_getProto: function() {
+		},
+
+		_getRelated: function() {
+			return null;
 		}
 	}
 });

@@ -1,7 +1,12 @@
+/* ************************************************************************
+
+#asset(qx/icon/${qx.icontheme}/22/actions/*.png)
+
+************************************************************************ */
 qx.Class.define("vuuvv.ui.ModelView", {
 	extend: qx.ui.container.Composite,
 
-	construct: function(name, proto, columns) {
+	construct: function(name, proto, columns, related) {
 		this.base(arguments, new qx.ui.layout.VBox);
 		this.setBackgroundColor("background-splitpane");
 
@@ -14,6 +19,7 @@ qx.Class.define("vuuvv.ui.ModelView", {
 			}
 		}
 		this.setColumns(columns);
+		this.setRelated(related);
 
 		this._createContent();
 	},
@@ -25,6 +31,11 @@ qx.Class.define("vuuvv.ui.ModelView", {
 
 		columns: {
 			init: []
+		},
+
+		related: {
+			init: null,
+			nullable: true
 		},
 
 		commands: {
@@ -71,6 +82,7 @@ qx.Class.define("vuuvv.ui.ModelView", {
 				command = new qx.ui.core.Command();
 				name = qx.lang.String.firstUp(names[i]);
 				command.setLabel(name);
+				command.setIcon(vuuvv.Global.getIcon(name));
 				command.addListener("execute", this["_on" + name], this);
 				commands[names[i]] = command;
 			}
@@ -93,7 +105,7 @@ qx.Class.define("vuuvv.ui.ModelView", {
 
 		_createTable: function() {
 			var cls = this.getTableModelClass();
-			var model = new cls(this.getName(), this.getColumns());
+			var model = new cls(this.getName(), this.getColumns(), this.getRelated());
 			this._table = new qx.ui.table.Table(model);
 			this._table.addListener("cellDblclick", this._onDblclick, this);
 			return this._table;

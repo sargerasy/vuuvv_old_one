@@ -86,10 +86,10 @@ def query(request, cls):
 
 @modelop()
 def related_query(request, cls):
-	obj = doquery(request, cls)
+	obj = doquery(request, cls, related=True)
 	return list(obj)
 
-def doquery(request, cls):
+def doquery(request, cls, related=False):
 	fields = request.POST.get("fields", [])
 	conditions = request.POST.get("conditions", [])
 	orderby = request.POST.get("orderby", [])
@@ -99,20 +99,33 @@ def doquery(request, cls):
 		if fields and "id" not in fields:
 			fields.append("id")
 	
-	if not fields:
-		fields = cls._meta.get_all_field_names()
-	
 	if conditions:
 		conditions = json.loads(conditions)
 	if orderby:
 		orderby = json.loads(orderby)
+
+	if related:
+		relation = request.POST.get("related", "{}")
+		relation = json.loads(relation)
+		relation = relation if relation else {}
+		if not relation:
+			related = False
 
 	kwargs = {}
 	for item in conditions:
 		key = "__".join(item[0:2])
 		kwargs[key] = item[2]
 
-	obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
+	if not fields:
+		if related:
+			fields = cls._meta.get_all_field_names()
+		else:
+			fields = [f.attname for f in cls._meta.fields]
+
+	if related:
+		obj = qs_replace(cls.objects.filter(**kwargs).order_by(*orderby), relation, fields)
+	else:
+		obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
 	return obj
 
 def delete(request, cls):

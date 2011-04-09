@@ -3,7 +3,7 @@ qx.Class.define("vuuvv.ui.page.Product", {
 
 	construct: function()
 	{
-		this.base(arguments, "Menu", ["label", "url", "order", "parent"], vuuvv.ui.TreeModelView);
+		this.base(arguments, "Product", null, vuuvv.ui.TreeModelView);
 	},
 
 	members:
@@ -11,22 +11,36 @@ qx.Class.define("vuuvv.ui.page.Product", {
 		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
-			form.setModel(data.Menu, "parent_id");
+			form.setModel(data.Menu, "parent");
 			if (data.value.length > 0) {
 				form.setModel(data.value[0]);
 				var sel = new qx.data.Array();
-				sel.push(data.value[0].parent_id);
-				form.getController("parent_id").setSelection(sel);
+				sel.push(data.value[0].parent);
+				form.getController("parent").setSelection(sel);
 			}
+		},
+
+		_getRelated: function() {
+			return {
+				"parent": "name"
+			};
 		},
 
 		_getProto: function() {
 			return {
-				label: {
+				name: {
 					init: "",
 					type: "TextField"
 				},
-				url: {
+				decorator: {
+					init: "",
+					type: "TextField"
+				},
+				thumbnail: {
+					init: "",
+					type: "TextField"
+				},
+				image: {
 					init: "",
 					type: "TextField"
 				},
@@ -34,12 +48,16 @@ qx.Class.define("vuuvv.ui.page.Product", {
 					init: 0,
 					type: "TextField"
 				},
-				parent_id: {
+				level: {
+					init: 0,
+					type: "TextField"
+				},
+				parent: {
 					init: [],
 					type: "SelectBox",
 					delegate: {
 						bindItem: function(ctrl, widget, index) {
-							ctrl.bindProperty("url", "label", null, widget, index);
+							ctrl.bindProperty("url", "name", null, widget, index);
 							ctrl.bindProperty("id", "model", null, widget, index);
 						}
 					}

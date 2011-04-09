@@ -35,7 +35,7 @@ def qs_replace(qs, maps={}, fields=[]):
 			logging.info(maps)
 			if f in maps:
 				logging.info("here")
-				v = getattr(v, maps[f])
+				v = getattr(v, maps[f]) if v else None
 			value[f] = v
 		ret.append(value)
 	return ret

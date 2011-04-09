@@ -1,12 +1,14 @@
 qx.Class.define('vuuvv.model.RemoteTree', {
 	extend: qx.ui.table.model.Remote,
 
-	construct: function(modelName, columns) {
+	construct: function(modelName, columns, related) {
 		this.base(arguments);
 		this.setModelName(modelName);
 		if (columns)
 			this.setColumns(columns);
 		this.setFields(columns);
+		this.debug(related);
+		this.setRelated(related);
 	},
 
 	properties: {
@@ -16,6 +18,11 @@ qx.Class.define('vuuvv.model.RemoteTree', {
 
 		fields: {
 			init: []
+		},
+
+		related: {
+			init: null,
+			nullable: true
 		},
 
 		parent: {
@@ -54,6 +61,8 @@ qx.Class.define('vuuvv.model.RemoteTree', {
 			q.setName(this.getModelName());
 			q.setLimit([firstRow, lastRow]);
 			q.setFields(this.getFields());
+			q.setType("related_query");
+			q.setRelated(this.getRelated());
 			q.addCondition("parent", "exact", this.getParent());
 			q.query();
 		},

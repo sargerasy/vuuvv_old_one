@@ -1,8 +1,8 @@
 qx.Class.define("vuuvv.ui.TreeModelView", {
 	extend: vuuvv.ui.ModelView,
 
-	construct: function(name, proto, columns) {
-		this.base(arguments, name, proto, columns);
+	construct: function(name, proto, columns, related) {
+		this.base(arguments, name, proto, columns, related);
 		this.setAcenstors([]);
 	},
 
@@ -29,7 +29,9 @@ qx.Class.define("vuuvv.ui.TreeModelView", {
 		},
 
 		_onUp: function() {
-			var id = this.getAcenstors().pop() || null;
+			var acenstors = this.getAcenstors();
+			acenstors.pop();
+			var id = acenstors[acenstors.length-1] || null;
 			var model = this._table.getTableModel();
 			model.enter(id);
 		},
