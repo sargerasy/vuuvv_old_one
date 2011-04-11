@@ -1,5 +1,18 @@
 /*
 #asset(vuuvv/*)
+#require(vuuvv.command.Test)
+#require(vuuvv.command.AdminMenu)
+#require(vuuvv.command.Login)
+#require(vuuvv.command.User)
+#require(vuuvv.command.Group)
+#require(vuuvv.command.Permission)
+#require(vuuvv.command.Menu)
+#require(vuuvv.command.Page)
+#require(vuuvv.command.About)
+#require(vuuvv.command.Article)
+#require(vuuvv.command.Publication)
+#require(vuuvv.command.Product)
+#require(vuuvv.command.Award)
 */
 
 qx.Class.define("vuuvv.ui.ClientArea", {

@@ -9,6 +9,7 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 		this.setUrl(url);
 		this.setTop(top);
 		this.setPath(top);
+		this.setMaxCachedBlockCount(50);
 	},
 
 	properties: {
@@ -66,7 +67,8 @@ qx.Class.define('vuuvv.model.RemoteFileModel', {
 		},
 
 		// overloaded - called whenever the table requests new data
-		_loadRowData: function() {
+		_loadRowData: function(first, last) {
+			this.debug(first + "," + last);
 			var items = this.getData();
 			this._onRowDataLoaded(items);
 		},

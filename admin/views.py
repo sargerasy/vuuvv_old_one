@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.core.serializers.json import DjangoJSONEncoder, Serializer
-from utils import models_to_dict, model_to_obj, qs_replace, get_fields_names
+from utils import models_to_dict, model_to_obj, qs_replace, get_fields_names, uncollided_name
 from django.db import models
 from models import Menu as Nav
 from main.models import Article, Menu, Publication, Category, Page, Product
@@ -96,16 +96,21 @@ def doquery(request, cls, related=False):
 	fields = request.POST.get("fields", [])
 	conditions = request.POST.get("conditions", [])
 	orderby = request.POST.get("orderby", [])
+	limit = request.POST.get("limit", None)
 
 	if fields:
 		fields = json.loads(fields)
 		if fields and "id" not in fields:
 			fields.append("id")
-	
+	if not fields:
+		fields = get_fields_names(cls)
+
 	if conditions:
 		conditions = json.loads(conditions)
 	if orderby:
 		orderby = json.loads(orderby)
+	if limit:
+		limit = json.loads(limit)
 
 	if related:
 		relation = request.POST.get("related", "{}")
@@ -119,30 +124,27 @@ def doquery(request, cls, related=False):
 		key = "__".join(item[0:2])
 		kwargs[key] = item[2]
 
-	if not fields:
-		fields = get_fields_names(cls)
-
 	if related:
 		obj = qs_replace(cls.objects.filter(**kwargs).order_by(*orderby), relation, fields)
 	else:
 		obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
-	return obj
+	logging.info(limit)
+	return obj[limit[0]:limit[1]] if limit else obj
 
 def delete(request, cls):
 	pass
 
 def upload(request):
-	logging.info("upload")
 	if request.method == 'POST':
 		file = request.FILES['Filedata']
 		path = settings.PROJECT_DIR + request.POST['path']
-		logging.info(path)
-		logging.info(file.name)
-		path = "/".join([path, file.name])
-		fd = open(path, "wb+")
+		path = os.path.join(path, file.name)
+		dirname, basename = uncollided_name(path)
+		fd = open(os.path.join(dirname, basename), "wb+")
 		for chunk in file.chunks():
 			fd.write(chunk);
 		fd.close()
+		return HttpResponse(basename)
 
 	return HttpResponse(json.dumps({}))
 

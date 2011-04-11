@@ -85,30 +85,30 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 
 		_getToolbarEntries: function() {
 			return [{
-				bold:                { text: "Format Bold", image: "qx/icon/Oxygen/16/actions/format-text-bold.png", action: this._htmlArea.setBold },
-				italic:              { text: "Format Italic", image: "qx/icon/Oxygen/16/actions/format-text-italic.png", action: this._htmlArea.setItalic },
-				underline:           { text: "Format Underline", image: "qx/icon/Oxygen/16/actions/format-text-underline.png", action: this._htmlArea.setUnderline },
-				strikethrough:       { text: "Format Strikethrough", image: "qx/icon/Oxygen/16/actions/format-text-strikethrough.png", action: this._htmlArea.setStrikeThrough },
-				removeFormat:        { text: "Remove Format", image: "qx/icon/Oxygen/16/actions/edit-clear.png", action: this._htmlArea.removeFormat }
+				bold:                { text: "Format Bold", action: this._htmlArea.setBold },
+				italic:              { text: "Format Italic", action: this._htmlArea.setItalic },
+				underline:           { text: "Format Underline", action: this._htmlArea.setUnderline },
+				strikethrough:       { text: "Format Strikethrough", action: this._htmlArea.setStrikeThrough },
+				removeFormat:        { text: "Remove Format", action: this._htmlArea.removeFormat }
 			}, {
-				alignLeft:           { text: "Align Left", image: "qx/icon/Oxygen/16/actions/format-justify-left.png", action: this._htmlArea.setJustifyLeft },
-				alignCenter:         { text: "Align Center", image: "qx/icon/Oxygen/16/actions/format-justify-center.png", action: this._htmlArea.setJustifyCenter },
-				alignRight:          { text: "Align Right", image: "qx/icon/Oxygen/16/actions/format-justify-right.png", action: this._htmlArea.setJustifyRight },
-				alignJustify:        { text: "Align Justify", image: "qx/icon/Oxygen/16/actions/format-justify-fill.png", action: this._htmlArea.setJustifyFull }
+				alignLeft:           { text: "Align Left", action: this._htmlArea.setJustifyLeft },
+				alignCenter:         { text: "Align Center", action: this._htmlArea.setJustifyCenter },
+				alignRight:          { text: "Align Right", action: this._htmlArea.setJustifyRight },
+				alignJustify:        { text: "Align Justify", action: this._htmlArea.setJustifyFull }
 			}, {
-				indent:              { text: "Indent More", image: "qx/icon/Oxygen/16/actions/format-indent-more.png", action: this._htmlArea.insertIndent },
-				outdent:             { text: "Indent Less", image: "qx/icon/Oxygen/16/actions/format-indent-less.png", action: this._htmlArea.insertOutdent }
+				indent:              { text: "Indent More", action: this._htmlArea.insertIndent },
+				outdent:             { text: "Indent Less", action: this._htmlArea.insertOutdent }
 			}, {
-				insertImage:         { text: "Insert Image", image: "qx/icon/Oxygen/16/actions/insert-image.png", action: this._insertImageHandler, context: this},
-				insertHR:            { text: "Insert Horizontal Ruler", image: "vuuvv/images/insert-horizontal-rule.png", action: this._htmlArea.insertHorizontalRuler }
+				insertImage:         { text: "Insert Image", action: this._insertImageHandler, context: this},
+				insertHR:            { text: "Insert Horizontal Ruler", action: this._htmlArea.insertHorizontalRuler }
 			}, {
-				ol:                  { text: "Insert Ordered List", image: "vuuvv/images/format-list-ordered.png", action: this._htmlArea.insertOrderedList },
-				ul:                  { text: "Inserted Unordered List", image: "vuuvv/images/format-list-unordered.png", action: this._htmlArea.insertUnorderedList }
+				ol:                  { text: "Insert Ordered List", action: this._htmlArea.insertOrderedList },
+				ul:                  { text: "Inserted Unordered List", action: this._htmlArea.insertUnorderedList }
 			}, {
-				undo:                { text: "Undo Last Change", image: "qx/icon/Oxygen/16/actions/edit-undo.png", action: this._htmlArea.undo },
-				redo:                { text: "Redo Last Undo Step", image: "qx/icon/Oxygen/16/actions/edit-redo.png", action: this._htmlArea.redo }
+				undo:                { text: "Undo Last Change", action: this._htmlArea.undo },
+				redo:                { text: "Redo Last Undo Step", action: this._htmlArea.redo }
 			}, {
-				src:                 { text: "Go to source code", image: "", action: this._showSource, context: this}
+				src:                 { text: "Go to source code", action: this._showSource, context: this}
 			}];
 		},
 
@@ -125,7 +125,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 					var item = items[i][j];
 					var label = item.image ? null : j;
 					var context = item.context ? item.context : this._htmlArea;
-					btn = new qx.ui.toolbar.Button(label, item.image);
+					btn = new qx.ui.toolbar.Button(label, vuuvv.Global.getIcon(j));//item.image);
 					btn.set({
 						focusable: false,
 						keepFocus: true,

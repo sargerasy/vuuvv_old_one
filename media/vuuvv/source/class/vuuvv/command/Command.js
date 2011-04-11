@@ -14,13 +14,6 @@
 qx.Class.define("vuuvv.command.Command", {
 	extend: qx.ui.core.Command,
 
-	properties:
-	{
-		pageClassName:
-		{
-			check: String
-		}
-	},
 	construct: function(options)
 	{
 		this.base(arguments);
@@ -28,15 +21,12 @@ qx.Class.define("vuuvv.command.Command", {
 		this.setToolTipText(options.getTooltip());
 		this.setIcon(options.getIcon());
 		this.addListener("execute", this.handle, this);
-		this.setPageClassName("vuuvv.ui.page." + options.getCommand());
 	},
 
 	members:
 	{
 		handle: function() {
-			var app = qx.core.Init.getApplication();
-			var tabs = app.getTabView();
-			tabs.add(this.getLabel(), this.getIcon(), this.getPageClassName());
+			this.debug("error");
 		}
 	}
 });

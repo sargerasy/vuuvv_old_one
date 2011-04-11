@@ -421,7 +421,7 @@ qx.Class.define("qx.ui.table.model.Remote",
     // overridden
     prefetchRows : function(firstRowIndex, lastRowIndex)
     {
-      // this.debug("Prefetch wanted: " + firstRowIndex + ".." + lastRowIndex);
+      this.debug("Prefetch wanted: " + firstRowIndex + ".." + lastRowIndex);
       if (this.__firstLoadingBlock == -1)
       {
         var blockSize = this.getBlockSize();

@@ -1,30 +1,8 @@
 /* ************************************************************************
 
-   qooxdoo - the new era of web development
-
-   http://qooxdoo.org
-
-   Copyright:
-   2004-2009 1&1 Internet AG, Germany, http://www.1und1.de
-
-   License:
-   LGPL: http://www.gnu.org/licenses/lgpl.html
-   EPL: http://www.eclipse.org/org/documents/epl-v10.php
-   See the LICENSE file in the project's top-level directory for details.
-
-   Authors:
- * Martin Wittemann (martinwittemann)
-
- ************************************************************************ */
-/* ************************************************************************
-
 #asset(vuuvv/images/*)
 
  ************************************************************************ */
-
-/**
- * The playground toolbar containing all buttons and menus.
- */
 qx.Class.define("vuuvv.ui.view.Menubar", {
 	extend : qx.ui.menubar.MenuBar,
 
@@ -89,7 +67,9 @@ qx.Class.define("vuuvv.ui.view.Menubar", {
 					this.tr(item.getLabel())
 				);
 				widget.add(menu);
-				var comm = new vuuvv.command.Command(item);
+				var commandCls = qx.Class.getByName("vuuvv.command." + item.getCommand());
+				var emptyComm = new qx.ui.core.Command();
+				var comm = commandCls ? new commandCls(item) : emptyComm;
 				menu.setCommand(comm);
 				var children = item.getChildren();
 				if (children.getLength()) {

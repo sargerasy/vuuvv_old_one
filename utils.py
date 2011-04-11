@@ -1,15 +1,12 @@
-from django.db.models.related import RelatedObject
+import os
+import re
 import logging
 
 def models_to_dict(qs):
 	ret = {}
 	for i in qs:
-		#attrs = [a.attname for a in i._meta.fields]
 		ret[i.id] = model_to_obj(i)
-		#ret[i.id] = {}
-		#for attr in attrs:
-		#	ret[i.id][attr] = getattr(i, attr)
-	
+
 	return ret
 
 def model_to_obj(model):
@@ -26,26 +23,41 @@ def qs_replace(qs, maps={}, fields=[]):
 		fields = field_names
 	else:
 		fields = [f for f in field_names if f in fields]
-	logging.info(qs)
-	logging.info(fields)
 	for item in qs:
 		value = {}
 		for f in fields:
 			v = getattr(item, f)
-			logging.info(f)
-			logging.info(maps)
 			if f in maps:
-				logging.info("here")
 				v = getattr(v, maps[f]) if v else None
 			value[f] = v
 		ret.append(value)
 	return ret
 
 def get_fields_names(cls):
+	from django.db.models.related import RelatedObject
 	opt = cls._meta
 	try:
 		cache = opt._name_map
 	except AttributeError:
 		cache = opt.init_name_map()
 	return [f for f, v in cache.items() if not isinstance(v[0], RelatedObject)]
+
+def collide_repl(m):
+	return m.group(1) + str(int(m.group(2)) + 1) + m.group(3)
+
+def uncollided_name(path):
+	dirname, basename = os.path.split(path)
+	parts = None
+	while os.path.exists(path):
+		parts = basename.split(".")
+		name, suffix = ".".join(parts[0:-1]), parts[-1]
+		m = re.match("^.*\((\d+)\)$", name)
+		if m:
+			name = re.sub("^(.*\()(\d+)(\))$", collide_repl, name)
+		else:
+			name += "(1)"
+		basename = ".".join([name, suffix])
+		path = os.path.join(dirname, basename)
+
+	return dirname, basename
 

@@ -78,7 +78,7 @@ qx.Class.define("vuuvv.ui.FileBrowser", {
 				if (row) {
 					var src = model.rowPath(row);
 					this.debug(vuuvv.utils.suffix(src));
-					if (["jpg", "png", "gif"].indexOf(vuuvv.utils.suffix(src)) > 0)
+					if (["jpg", "png", "gif"].indexOf(vuuvv.utils.suffix(src)) >= 0)
 						this._preview.setSource(src);
 				}
 			}, this);

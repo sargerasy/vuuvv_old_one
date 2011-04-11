@@ -1,21 +1,24 @@
 qx.Class.define("vuuvv.ui.Uploader", {
 	extend: qx.ui.embed.Flash,
 
-	construct: function(swfUrl, callback, buttonSkin) {
+	construct: function(swfUrl, callback, buttonSkin, multiple) {
 		swfUrl = swfUrl || "/media/flash/uploader.swf";
 		callback = callback || "vuuvv.ui.Uploader.callback";
 		buttonSkin = buttonSkin || "/media/images/selectFileButton.png";
+		multiple = multiple === undefined ? true : multiple;
 		this.base(arguments, swfUrl);
 		this.setWmode("transparent");
+		var id = vuuvv.ui.Uploader.generateId();
 		this.setVariables({
 			"YUIBridgeCallback": callback,
-			"buttonSkin": buttonSkin
+			"buttonSkin": buttonSkin,
+			"YUISwfId": id
 		});
-		vuuvv.utils.getApp().setUploader(this);
+		this.setId(id);
+		vuuvv.ui.Uploader.addUploader(id, this);
 		this.addListener("swfReady", function(e) {
-			this.setAllowMultipleFiles(true);
+			this.setAllowMultipleFiles(multiple);
 		}, this);
-		console.log(this);
 	},
 
 	events: {
@@ -30,8 +33,24 @@ qx.Class.define("vuuvv.ui.Uploader", {
 	},
 
 	statics: {
+		uploader: {},
+
+		id: 1,
+
+		addUploader: function(id, uploader) {
+			vuuvv.ui.Uploader.uploader[id] = uploader;
+		},
+
+		generateId: function() {
+			return "genuploader-" + vuuvv.ui.Uploader.id++;
+		},
+
+		getUploader: function(id) {
+			return vuuvv.ui.Uploader.uploader[id] || null;
+		},
+
 		callback: function(id, evt) {
-			var me = vuuvv.utils.getApp().getUploader();
+			var me = vuuvv.ui.Uploader.getUploader(id);
 			var data = {};
 			for (var key in evt) {
 				if (key !== "type")
@@ -96,5 +115,6 @@ qx.Class.define("vuuvv.ui.Uploader", {
 
 	destruct: function() {
 		this._disposeObjects();
+		delete vuuvv.ui.Uploader.uploader(this.getId());
 	}
 });
