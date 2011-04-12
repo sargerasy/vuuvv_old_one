@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gb2312" ?> 
+<news>
+<newid id="1" title="北京" color="#225564" num="2"/> 
+<newid id="2" title="天津" color="#ffff00" num="51"/> 
+<newid id="3" title="上海" color="#ffffff" num="2"/> 
+<newid id="4" title="重庆" color="#ffff00" num="51"/> 
+<newid id="5" title="黑龙江" color="#ffff00" num="2"/> 
+<newid id="6" title="吉林" color="#ffff00" num="51"/> 
+<newid id="7" title="辽宁" color="#ffff00" num="10"/> 
+<newid id="8" title="河北" color="#ffff00" num="51"/> 
+<newid id="9" title="河南" color="#ffff00" num="101"/> 
+<newid id="10" title="山东" color="#ffff00" num="101"/>
+<newid id="11" title="江苏" color="#ffff00" num="201"/> 
+<newid id="13" title="福建" color="#ffff00" num="151"/> 
+<newid id="14" title="广东" color="#ffff00" num="101"/> 
+<newid id="15" title="广西" color="#ffff00" num="51"/> 
+<newid id="16" title="江西" color="#ffff00" num="101"/> 
+<newid id="17" title="安徽" color="#ffff00" num="51"/> 
+<newid id="18" title="湖南" color="#FF0000" num="101"/> 
+<newid id="19" title="湖北" color="#ffff00" num="101"/> 
+<newid id="20" title="山西" color="#ffff00" num="2"/> 
+<newid id="21" title="内蒙古" color="#ffff00" num="2"/> 
+<newid id="22" title="宁夏" color="#ffff00" num="10"/> 
+<newid id="23" title="陕西" color="#ffff00" num="51"/> 
+<newid id="24" title="贵州" color="#ffff00" num="5"/> 
+<newid id="25" title="云南" color="#ffff00" num="51"/> 
+<newid id="26" title="四川" color="#ffff00" num="52"/> 
+<newid id="27" title="甘肃" color="#ffff00" num="40"/> 
+<newid id="28" title="青海" color="#ffff00" num="2"/> 
+<newid id="29" title="西藏" color="#ffff00" num="0"/> 
+<newid id="30" title="新疆" color="#ffff00" num="2"/> 
+<newid id="31" title="台湾" color="#ffff00" num="0"/> 
+<newid id="32" title="澳门" color="#ffff00" num="2"/> 
+<newid id="33" title="香港" color="#ffff00" num="5"/> 
+<newid id="34" title="海南" color="#ffff00" num="5"/> 
+<newid id="35" title="浙江" color="#000000" num="101"/>
+</news>

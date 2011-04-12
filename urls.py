@@ -8,11 +8,12 @@ from django.contrib import admin as _admin
 _admin.autodiscover()
 
 urlpatterns = patterns('',
-		(r'^media/(.*)$', main.views.media),
+	(r'^media/(.*)$', main.views.media),
+	(r'^template/images/(.*)$', main.views.template),
 
-		(r'^_admin/doc/', include('django.contrib.admindocs.urls')),
-		(r'^_admin/', include(_admin.site.urls)),
-		(r'^admin/', include(admin.urls)),
-		(r'', include(main.urls)),
+	(r'^_admin/doc/', include('django.contrib.admindocs.urls')),
+	(r'^_admin/', include(_admin.site.urls)),
+	(r'^admin/', include(admin.urls)),
+	(r'', include(main.urls)),
 )
 

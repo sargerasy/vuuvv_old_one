@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 from django.conf import settings
 from main.tree import Node
 from main.models import Menu, Page, Article, Product, Publication 
+import os
 import django.views.static
 import logging
 import utils
@@ -77,6 +78,10 @@ def render_page(request, url, template=None, value=None):
 
 def media(request, path):
 	root = getattr(settings, 'MEDIA_ROOT', None)
+	return django.views.static.serve(request, path, root)
+
+def template(request, path):
+	root = os.path.join(settings.PROJECT_DIR, 'template/images/')
 	return django.views.static.serve(request, path, root)
 
 class MenuTree(object):
