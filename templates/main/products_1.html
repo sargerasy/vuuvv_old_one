@@ -1,9 +1,9 @@
-{% extends "main/frame1.html" %}
+{% extends "main/products_layout.html" %}
 {% block css %}
 	<link rel="stylesheet" media="screen" href="/media/css/products.css"/>
 {% endblock %}
 
-{% block content %}
+{% block products %}
 <div class="procontent">
 	<table width="100%">
 	<div class="sprocontent">
@@ -16,7 +16,7 @@
 			<div class="leftpicshow_bottom"></div>
 		</div>
 		<div class="maincontent">
-			{% for k, v in value %}
+			{% for k, v in value.products %}
 			<ul class="prolist">
 				<h5 class="subprotit">{{k.name}}</h5>
 				{% for item  in v %}
@@ -28,7 +28,7 @@
 					<h3>&nbsp;</h3>
 					<h6>{{item.name}}</h6>
 					</div>
-				</li>				
+				</li>
 				{% endfor %}
 			</ul>
 			{% endfor %}

@@ -4,11 +4,8 @@ def normal(request):
 	pass
 
 def products(request):
-	value = Product.objects.filter(parent__exact=None).order_by("order")
-	return {"product": value}
-
-def product_2(request):
-	pass
+	roots = Product.objects.filter(parent__exact=None)
+	return {"roots": roots, "products": roots}
 
 def publication(request):
 	value = []

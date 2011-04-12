@@ -28,6 +28,7 @@ def article(request, id):
 	return joyou(request, "news")
 
 def products(request, id):
+	roots = Product.objects.filter(parent__exact=None)
 	# The top level view
 	if not id:
 		return render_page(request, "products")
@@ -41,7 +42,7 @@ def products(request, id):
 			products = Product.objects.filter(parent__exact=id).order_by("order")
 			for item in products:
 				value.append((item, item.children.all()))
-			return render_page(request, "products", "products_1", value)
+			return render_page(request, "products", "products_1", {"roots": roots, "products":value})
 		else:
 			products = Product.objects.filter(parent__exact=id)
 			if products:
@@ -49,9 +50,9 @@ def products(request, id):
 					template = "products_real"
 				else: # product category
 					template = "products_cate"
-				return render_page(request, "products", template, products)
+				return render_page(request, "products", template, {"roots": roots, "products": products})
 			else:
-				return render_page(request, "products", "products_real", products)
+				return render_page(request, "products", "products_real", {"roots": roots, "products": products})
 
 def render_page(request, url, template=None, value=None):
 	tree = MenuTree(Menu.objects.all())

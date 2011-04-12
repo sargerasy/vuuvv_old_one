@@ -1,0 +1,19 @@
+{% extends "main/frame1.html" %}
+{% block css %}
+	<link rel="stylesheet" media="screen" href="/media/css/products.css"/>
+{% endblock %}
+
+{% block content %}
+<div class="protip">
+	<ul>
+		{% for item in value.roots %}
+		<li class="pro0{{forloop.counter}}">
+			<a href="/products/{{item.id}}">{{item.name}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+<div class="protip_bottom"></div>
+{% block products %}
+{% endblock %}
+{% endblock %}

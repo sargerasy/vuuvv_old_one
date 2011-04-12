@@ -1,9 +1,9 @@
-{% extends "main/frame1.html" %}
+{% extends "main/products_layout.html" %}
 {% block css %}
 	<link rel="stylesheet" media="screen" href="/media/css/products.css"/>
 {% endblock %}
 
-{% block content %}
+{% block products %}
 <div class="procontent">
 	<table width="100%">
 	<div class="sprocontent">
@@ -17,10 +17,10 @@
 		</div>
 		<div class="maincontent">
 			<ul class="prolist">
-				{% for item  in value %}
+				{% for item  in value.products %}
 				<li>
 					<div>
-					<a href="/products/{{item.id}}">
+					<a href="#">
 						<img src="{{item.thumbnail}}">
 					</a>
 					<h3>&nbsp;</h3>

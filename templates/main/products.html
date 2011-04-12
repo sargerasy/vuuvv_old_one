@@ -1,16 +1,16 @@
-{% extends "main/frame1.html" %}
+{% extends "main/products_layout.html" %}
 {% block css %}
 	<link rel="stylesheet" media="screen" href="/media/css/products.css"/>
 {% endblock %}
 
-{% block content %}
+{% block products %}
 <div class="pcontent">
 	<div class="scontent">
 		<dl class="promenu">
 			<dt><img src="/media/images/bathroom_tit.jpg"></dt>
 			<dd>
 			<ul>
-				{% for item in value.product %}
+				{% for item in value.products %}
 				<li class="pro_tit"><a href="/products/{{item.id}}" style="background: url('{{item.thumbnail}}') no-repeat"><span>{{item.name}}</span></a></li>
 				{% endfor %}
 			</ul>

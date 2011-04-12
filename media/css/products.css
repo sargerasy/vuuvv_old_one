@@ -148,3 +148,115 @@
 }
 .maincontent .prolist li h3{ height:20px;}
 
+.protip {
+	background: #fff;
+	padding: 20px 0 0 5px;
+	height: 140px;
+}
+
+.protip ul li {
+	float: left;
+	margin: 0 3px;
+	width: 180px;
+}
+
+.protip_bottom {
+    background: url("../images/protip_bottom_bg.png") no-repeat scroll 0 0 transparent;
+    clear: both;
+    height: 30px;
+}
+
+.pro01 a,.pro02 a,.pro03 a,.pro04 a,.pro05 a,.pro06 a,.pro07 a,.pro08 a,.pro09 a{
+	height:45px;
+	line-height:1em;
+	display:block;
+	text-align:left;
+	padding:85px 0 0 13px;
+	color:#fff;
+	background:url("/media/images/pro01.jpg") no-repeat;
+}
+.pro01 a:hover{
+	background:url("/media/images/pro01.jpg") 0 -130px no-repeat;
+}
+.pro01 a.current{
+	background:#000 url("/media/images/pro01.jpg") 0 -260px no-repeat;
+}
+.pro02 a{
+	background:url("/media/images/pro02.jpg") no-repeat;
+}
+.pro02 a:hover{
+	background:url("/media/images/pro02.jpg") 0 -130px no-repeat;
+}
+.pro02 a.current{
+	background:url("/media/images/pro02.jpg") 0 -260px no-repeat;
+}
+.pro03 a{
+	background:url("/media/images/pro03.jpg") no-repeat;
+}
+.pro03 a:hover{
+	background:url("/media/images/pro03.jpg") 0 -130px no-repeat;
+}
+.pro03 a.current{
+	background:url("/media/images/pro03.jpg") 0 -260px no-repeat;
+}
+.pro04 a{
+	background:url("/media/images/pro04.jpg") no-repeat;
+}
+.pro04 a:hover{
+	background:url("/media/images/pro04.jpg") 0 -130px no-repeat;
+}
+.pro04 a.current{
+	background:url("/media/images/pro04.jpg") 0 -260px no-repeat;
+}
+.pro05 a{
+	background:url("/media/images/pro05.jpg") no-repeat;
+}
+.pro05 a:hover{
+	background:url("/media/images/pro05.jpg") 0 -130px no-repeat;
+}
+.pro05 a.current{
+	background:url("/media/images/pro05.jpg") 0 -260px no-repeat;
+}
+.pro09 a{
+	padding-top:80px;
+	background:url("/media/images/pro06.jpg") no-repeat;
+}
+.pro09 a:hover{
+	background:url("/media/images/pro06.jpg") 0 -130px no-repeat;
+}
+.pro09 a.current{
+	background:url("/media/images/pro06.jpg") 0 -260px no-repeat;
+}
+.pro06 a{
+	background:url("/media/images/pro07.jpg") no-repeat;
+}
+.pro06 a:hover{
+	background:url("/media/images/pro07.jpg") 0 -130px no-repeat;
+}
+.pro06 a.current{
+	background:url("/media/images/pro07.jpg") 0 -260px no-repeat;
+}
+.pro08 a{
+	background:url("/media/images/pro09.jpg") no-repeat;
+}
+.pro08 a:hover{
+	background:url("/media/images/pro09.jpg") 0 -130px no-repeat;
+}
+.pro08 a.current{
+	background:url("/media/images/pro09.jpg") 0 -260px no-repeat;
+}
+.pro07 a{
+	background:url("/media/images/pro08.jpg") no-repeat;
+}
+.pro07 a:hover{
+	background:url("/media/images/pro08.jpg") 0 -130px no-repeat;
+}
+.pro07 a.current{
+	background:url("/media/images/pro08.jpg") 0 -260px no-repeat;
+}
+.protip_bottom{
+	height:30px;
+	clear:both;
+	background:url("/media/images/protip_bottom_bg.png") no-repeat;
+}
+
