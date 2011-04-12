@@ -71,6 +71,7 @@ qx.Class.define("vuuvv.Query", {
 					data = this.getValue();
 					break;
 				case "delete":
+					data = this.parseData() || "1=1";
 					break;
 			}
 			if (data)

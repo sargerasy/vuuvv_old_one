@@ -39,9 +39,11 @@ qx.Class.define("vuuvv.ui.TreeModelView", {
 		_onEnter: function(e) {
 			var row = this._table.getSelectionModel().getSelectedRanges()[0].minIndex;
 			var model = this._table.getTableModel();
-			var id = model.getRowData(row).id;
-			model.enter(id);
-			this.getAcenstors().push(id);
+			if (model.getRowData(row).level != 0) {
+				var id = model.getRowData(row).id;
+				model.enter(id);
+				this.getAcenstors().push(id);
+			}
 		}
 	}
 });

@@ -128,11 +128,20 @@ def doquery(request, cls, related=False):
 		obj = qs_replace(cls.objects.filter(**kwargs).order_by(*orderby), relation, fields)
 	else:
 		obj = cls.objects.filter(**kwargs).order_by(*orderby).values(*fields)
-	logging.info(limit)
 	return obj[limit[0]:limit[1]] if limit else obj
 
+@modelop()
 def delete(request, cls):
-	pass
+	conditions = request.POST.get("conditions", [])
+	kwargs = {}
+	if conditions:
+		conditions = json.loads(conditions)
+	for item in conditions:
+		key = "__".join(item[0:2])
+		kwargs[key] = item[2]
+	obj = cls.objects.filter(**kwargs)
+	obj.delete()
+	return "deleted"
 
 def upload(request):
 	if request.method == 'POST':

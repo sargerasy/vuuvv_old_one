@@ -94,8 +94,10 @@ qx.Class.define("vuuvv.ui.ModelView", {
 		},
 
 		getFormWindow: function() {
-			if (!this._formWindow)
+			if (!this._formWindow) {
 				this._formWindow = new vuuvv.ui.FormWindow(this.getName(), this._proto);
+				this._formWindow.addListener("aftersave", this._onItemSaved, this);
+			}
 			return this._formWindow;
 		},
 
@@ -108,6 +110,10 @@ qx.Class.define("vuuvv.ui.ModelView", {
 			var model = new cls(this.getName(), this.getColumns(), this.getRelated());
 			this._table = new qx.ui.table.Table(model);
 			this._table.addListener("cellDblclick", this._onDblclick, this);
+			this._table.setShowCellFocusIndicator(false);
+			this._table.getSelectionModel().setSelectionMode(
+				qx.ui.table.selection.Model.MULTIPLE_INTERVAL_SELECTION
+			);
 			return this._table;
 		},
 
@@ -122,6 +128,16 @@ qx.Class.define("vuuvv.ui.ModelView", {
 			var win = this.getFormWindow();
 			win.show();
 			this.fireDataEvent("formDataLoaded", {"data": data, "form": win.getForm()});
+		},
+
+		_onItemSaved: function(e) {
+			var data = e.getData().value;
+			if (data.create) {
+				var model = this._table.getTableModel();
+				var row = model.getRowCount();
+			}
+			this.reload();
+			this.getFormWindow().hide();
 		},
 
 		//override
@@ -141,6 +157,28 @@ qx.Class.define("vuuvv.ui.ModelView", {
 
 		//override
 		_onDelete: function() {
+			var r = confirm("Are you sure delete these items?");
+			if (r == true) {
+				var ranges = this._table.getSelectionModel().getSelectedRanges();
+				var ids = [];
+				for (var i = 0; i < ranges.length; i++) {
+					var range = ranges[i];
+					for (var j = range.minIndex; j <= range.maxIndex; j++)
+						ids.push(this._table.getTableModel().getRowData(j).id);
+				}
+				console.log(ids);
+				var q = new vuuvv.Query;
+				q.addListener("completed", this._onItemDeleted, this);
+				q.setName(this.getName());
+				q.setType("delete");
+				q.addCondition("id", "in", ids);
+				q.query();
+			}
+		},
+
+		_onItemDeleted: function() {
+			this.reload();
+			this._table.resetSelection();
 		},
 
 		//override

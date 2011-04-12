@@ -8,6 +8,7 @@ qx.Class.define("vuuvv.ui.page.ModelPage", {
 
 		var view = new viewCls(name, this._getProto(), columns, this._getRelated());
 		this.add(view, {flex: 1});
+		this._view = view;
 
 		view.addListener("formDataLoaded", this._onFormDataLoaded, this);
 	},

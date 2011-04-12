@@ -11,13 +11,19 @@ qx.Class.define("vuuvv.ui.page.Product", {
 		_onFormDataLoaded: function(e) {
 			var data = e.getData().data;
 			var form = e.getData().form;
+			qx.lang.Array.insertAt(data.Product, {id: null, name: "---"}, 0);
 			form.setModel(data.Product, "parent");
+			var pid;
 			if (data.value.length > 0) {
 				form.setModel(data.value[0]);
-				var sel = new qx.data.Array();
-				sel.push(data.value[0].parent);
-				form.getController("parent").setSelection(sel);
+				pid = data.value[0].parent;
+			} else {
+				var acenstor = this._view.getAcenstors();
+				pid = acenstor[acenstor.length - 1];
 			}
+			var sel = new qx.data.Array();
+			sel.push(pid);
+			form.getController("parent").setSelection(sel);
 		},
 
 		_getRelated: function() {
