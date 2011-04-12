@@ -126,7 +126,7 @@ qx.Class.define("vuuvv.ui.HtmlArea", {
 					var image = vuuvv.Global.getIcon(j);
 					var label = image ? null : j;
 					var context = item.context ? item.context : this._htmlArea;
-					btn = new qx.ui.toolbar.Button(label, image);//item.image);
+					btn = new qx.ui.toolbar.Button(label, image);;
 					btn.set({
 						focusable: false,
 						keepFocus: true,
