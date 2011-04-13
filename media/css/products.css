@@ -54,6 +54,9 @@
 	padding-top:20px;
 	background:url(/media/images/procontent_top_bg.gif) top no-repeat;
 }
+.maincontent a {
+	outline: none;
+}
 .leftbar{
 	width:213px;
 	float:left;
